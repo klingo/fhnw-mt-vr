@@ -116,6 +116,7 @@
 \usepackage[acronym]{glossaries}
 \usepackage{\missingPackages/lstpatch}
 \usepackage{booktabs} %nicer tables
+\usepackage{textcomp} %allows to use /textdegree
 \renewcommand{\arraystretch}{1.2} %nicer tables
 \lstset{captionpos=b,
         frame=tb,
