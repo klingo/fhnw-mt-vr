@@ -117,6 +117,13 @@
 \usepackage{\missingPackages/lstpatch}
 \usepackage{booktabs} %nicer tables
 \usepackage{textcomp} %allows to use /textdegree
+\usepackage{enumitem} %allows [noitemsep] in lists
+\usepackage{chngcntr} %allows to change counter of tables,figures etc
+
+% have global counters for tables and figures
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
 \renewcommand{\arraystretch}{1.2} %nicer tables
 \lstset{captionpos=b,
         frame=tb,
