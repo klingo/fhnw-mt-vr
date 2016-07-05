@@ -276,7 +276,7 @@
     \end{flushright}
     \end{minipage}\\[3cm]
  
-    \large \textit{A thesis presented to the \hsw{} of the \fhnw{} in partial fulfilment of the requirements for the degree of \degreeName{} }\\[4cm] % University requirement text
+    \large \textit{A thesis presented to the \hsw{} of the \fhnw{} in partial fulfilment of the requirements for the degree of \degreeName{} }\\[2.8cm] % University requirement text
  
     {\large \today}\\% Date
  
@@ -310,7 +310,7 @@
 
     \btypeout{Acknowledgements Page}
     
-    \addtotoc{Acknowledgements} % Add the "Abstract" page entry to the Contents
+    \addtotoc{Acknowledgements} % Add the "Acknowledgements" page entry to the Contents
     \addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
     
     \markboth{Acknowledgements}{} % Add "Acknowledgements" to fancy header
