@@ -369,9 +369,11 @@
     \addtotoc{Bibliography}
     \addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
 
-    \bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+    \bibliographystyle{agsm}
+%    \bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
 
-    \bibliography{Bibliography} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+    \bibliography{library}
+%    \bibliography{Bibliography} % The references (bibliography) information are stored in the file named "Bibliography.bib"
 }
 
 %----------------------------------------------------------------------------------------
