@@ -329,7 +329,8 @@
 %	TABLE OF CONTENTS DESIGN
 %----------------------------------------------------------------------------------------
 \addtocounter{secnumdepth}{1}
-\setcounter{tocdepth}{6}
+%\setcounter{tocdepth}{6}
+\setcounter{tocdepth}{2}
 \newcounter{dummy}
 \newcommand\addtotoc[1]{
 \refstepcounter{dummy}
