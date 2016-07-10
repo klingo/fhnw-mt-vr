@@ -119,6 +119,7 @@
 \usepackage{textcomp} %allows to use /textdegree
 \usepackage{enumitem} %allows [noitemsep] in lists
 \usepackage{chngcntr} %allows to change counter of tables,figures etc
+\usepackage{framed} %allows frames around text
 
 % have global counters for tables and figures
 \counterwithout{figure}{chapter}
