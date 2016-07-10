@@ -93,7 +93,7 @@ From the MRQ, the SRQs can be derived and are defined as follows:
 
 \section{Research Objective}
 
-The research objective of this master thesis is to enhance the interaction with data in virtual reality by proposing the utilization of sensor information from gesture controllers and 360° motion tracking.
+The research objective of this master thesis is to enhance the interaction with data in virtual reality by proposing the utilization of sensor information from gesture controllers and 360° motion tracking.\newline
 This objective will be adressed by first conducting a literature review on the research that has already been done in this field. Based on this a possible prototype will be designed and implemented that will make use if the to be proposed interaction patterns. This also acts as a verification that the interaction patterns indeed are feasible for the currently available technology.
 
 
@@ -110,7 +110,37 @@ This objective will be adressed by first conducting a literature review on the r
 
 \section{Delineations and Limitations}
 
-blub
+HTC Vive
+No speech
+focus on
+
+In regards of the design and implementation of the prototype, the artefact will be implemented in Unity3D 5.4 with the SteamVR framework. Although focusing on the technical capabilities of the HTC Vive with its gesture controllers and 360° motion tracking, due to the SteamVR framework functionality (Figure \ref{fig:steamvr}), the reuse of the research for other hardware should be possible in the future. \newline
+In addition, with the design and development of a prototype, this thesis focuses more on the technical feasibility than the socioligal aspects of usability, user expercience, or productiviy measurements. 
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/04_Valve/OpenVR_SteamVR.png}
+		\caption[Steam VR Unity Plugin]{Steam VR Unity Plugin (adopted from \cite{Valve2016})}
+		\label{fig:steamvr}
+	\end{center}
+\end{figure}
+
+
+
+Regarding the design and implementation of the Prototype the artefact will be based and optimized on the capability of the Android OS and a chosen smartphone. Nonetheless, the design decision should not restrict the reuse of the research outcome for similar applications and hardware.
+With the world getting more and more connected and with the Internet of Things trend (Schwafert, 2015) – smartphones on one part are able to add/retrieve additional information to the tracked sensor data by connecting specific Internet based services (e.g. Points of Interests). In addition, they can also receive actively data from sensors outside the smartphone itself (e.g. sensors of a smart city2). Anyhow, for this thesis, only data that are directly created/received by the built-in sensors are considered – but the scope can be extended for future work.
+
+
+During the development of the artefact, recommended HCI guidelines provided by the chosen OS manufacturer will be followed (http://developer.android.com/design/index.html) and general consideration to make the app easy to use will be made. However, this thesis focuses more on the technical feasibility – and therefore an in-depth optimization of the HCI and additional usability testing is not foreseen during the development of the artefact.
+
+
+
+
+In this thesis only the Swiss version of the MDS-HC questionnaire is covered. Even though it is similar to the one, which is used in other countries, there are small differences. The questionnaire form is attached to Appendix I.
+With regard to sensors, only non-invasive body sensors and environment sensors, which are also called ambient sensors, are used in this study.
+1.7 Limitations
+Even though invasive sensors are used for different purposes, e.g. blood pressure measurement or blood sugar monitoring (Cleven, Muntjes et al., 2012; Coosemans and Puers, 2005; Tan, Schulam et al., 2013) they are not included in this thesis. For these kinds of sensors it is difficult to find publicly available datasets and so it is not possible to include them in an analysis. Additionally these sensors would require a surgery (Luo, Cheng et al., 2014), which is out of the scope of this master thesis.
+Furthermore, data security and privacy are not discussed in this thesis. These are important aspects when information technology is used in the health care domain. Personal health data is very sensitive, however, the focus of this thesis is the mapping of sensors to MDS-HC questions.
 
 
 %----------------------------------------------------------------------------------------
