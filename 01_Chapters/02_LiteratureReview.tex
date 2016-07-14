@@ -66,13 +66,20 @@ There are some limitations of the multimodal interaction. For example, when the 
 \subsubsection{Gesture Controllers}
 
 Very similar to the hand gestures, the gesture controllers intend to improve the tracking of the hand movements by adding hardware to the hands of the users that is easier to track but still leaves options for simple interaction with buttons and triggers. \newline
-One of the first commercial gesture controllers was the \textit{PlayStation Move}, introduced by \cite{Sony2010}.
+One of the first commercial gesture controllers was the \textit{PlayStation Move}, introduced by \cite{Sony2010}. While the controller itself can detect its own motion, the position is tracked with a camera attached to the PlayStation. This allows for a more accurate tracking of a specific point which \cite{Takala2014} made use of by attaching a PlayStation Miove to their HMD in order to have a more accurate positioning than it was possible with solely the Microsoft Kinect. \newline
+Alongside the \textit{HTC Vive} HMD, two new gesture controllers also have been provided \citep{Htcvive2016}. In combination with the Lighthouse technology (described in chapter \ref{360MotionTracking}), the controllers can also be proberly tracked if they are e.g. hidden behind the back of the user, which is not possible with the PlayStation Move.
 
-We present a video1 of a VR demo called TurboTuscany, where we employ such controllers; our demo combines a Kinect controlled full body avatar with Oculus Rift head-mounted-display [2]. We implemented three positional head tracking schemes that use Kinect, Razer Hydra, and PlayStation (PS) Move controllers.
-\cite{Takala2014}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=10cm]{03_Figures/05_LitReview/HTCCorp2016_GestureController.png}
+		\caption[Gesture Controller for the HTC Vive]{Gesture Controller for the HTC Vive \citep{HTCCorp2016}}
+		\label{fig:gesturecontroller}
+	\end{center}
+\end{figure}
 
 Tracking the position of the gesture controllers within the room (room scale experience)
-\cite{Htcvive2016}
+
 
 
 \subsubsection{Speech Recognition}
@@ -115,6 +122,7 @@ Based on this technology, \cite{Takala2014} proposed a combination of a full bod
 
 
 \subsubsection{360° Motion Tracking}
+\label{360MotionTracking}
 
 One of the latest additions to the interaction possibilities is the 360° motion tracking, introduced with the HTC Vive which was just released in April 2016 \citep{Htcvive2016}. Figure \ref{fig:lighthouses} shows the setup of the two base stations (i.e. Lightouses) in opposing corners of the room that will be used for the 360° motion tracking. In essence, the two Lighthouse base stations emit a laser sweap across the room 60 times a second with a flash in between which allows any device with photosensors to calculate its exact position relative to the base station(s) \citep{Gizmodo2015}. This allows for a very accurate tracking and due to the opposing corners, at least one Lighthouse always has direct \textit{line of sight} to the HMD and the controllers. \newline
 With this additional sensor information, the movement of the HMD and the controllers is tracked in all three axis and allow for new movements to be recognized, such as crouching or jumping within the relations of the room. \newline
