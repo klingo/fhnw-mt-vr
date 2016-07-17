@@ -7,7 +7,7 @@
 \label{ChapterLiteratureReview} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 In the literature review chapter, an overview of existing research found in secondary literature, that is relevant to the thesis statement of this paper, is given. Every \gls{srq} is discussed in its own subchapter where its relevance to the \gls{mrq} is elaborated. Each subchapter ends with a short conclusion and answers to the corresponding research question are given.
-Figure XXX shows the correlation between the subchapters and the research questions. In chapter \ref{SectionLiteratureReviewSRQ1}, the different methods for user input in virtual reality are analyzed. The next chapter \ref{SectionLiteratureReviewSRQ2} focuses on existing interaction patterns with data in virtual reality. By looking at possible enhancements of existing interaction patterns with new methos for user input, the third SRQ is covered in chapter \ref{SectionLiteratureReviewSRQ3}. To wrap everything up, a conclusion of the literature review is presented in chapter \ref{SectionLiteratureReviewConclusion} which builds the base for the research design in chapter \ref{Research Method}.
+Figure XXX shows the correlation between the subchapters and the research questions. In chapter \ref{SectionLiteratureReviewSRQ1}, the different methods for user input in virtual reality are analyzed. The next chapter \ref{SectionLiteratureReviewSRQ2} focuses on existing data interaction patterns in virtual reality. By looking at possible enhancements of existing interaction patterns with new methods for user input, the third SRQ is covered in chapter \ref{SectionLiteratureReviewSRQ3}. To wrap everything up, a conclusion of the literature review is presented in chapter \ref{SectionLiteratureReviewConclusion} which builds the base for the research design in chapter \ref{Research Method}.
 
 % TODO: ADD FIGURE !!!
 
@@ -25,8 +25,8 @@ Figure XXX shows the correlation between the subchapters and the research questi
 %-----------------------------------
 \subsection{Introduction}
 
-\gls{hci} itself has been worked and research on approximately from the 1950s onwards, where the main focus was on the direct manipulation of graphical objects, the mouse as well as gesture recognition \citep{Myers1998}. During this time however, gesture recognition was rather understood as devices that work with pen-based input devices and thus can recognize patterns that are drawn with these pens \citep{Myers1998}. In the regular interactiion between human and machines this is still fairly sufficient as even today we are still fully relying on having a mouse/trackpad/touchscreen and a keyboard to interact with our computers. \newline
-Virtual reality changes this since quite a bit as waering a \gls{hmd} with their own displays obstructs the view on the so far used physical input devices. New solutions had to be found for this changed situation. An overview on the researched interaction patterns with virtual reality is shown in the following subchapter.
+\gls{hci} itself has been worked and research on approximately from the 1950s onwards, where the main focus was on the direct manipulation of graphical objects with the mouse as well as gesture recognition \citep{Myers1998}. During this time however, gesture recognition was rather understood as devices that work with pen-based input devices and thus can recognize patterns that are drawn with these pens \citep{Myers1998}. In the regular interaction between human and machines these methods for user input are still fairly sufficient as even today we are still fully relying on having a mouse/trackpad/touchscreen and a keyboard to interact with our computers. \newline
+Virtual reality changes this since quite a bit since wearing a \gls{hmd} with its own display obstructs the view on the so far used physical input devices. New solutions had to be found for this changed situation. An overview on the researched interaction patterns with virtual reality is shown in the following subchapter.
 
 
 %-----------------------------------
@@ -35,32 +35,34 @@ Virtual reality changes this since quite a bit as waering a \gls{hmd} with their
 
 \subsection{Overview}
 
-The reviewed literature brought up different means to interact with the virtual reality environment. In order to review them in a more stuctured way, they have been grouped based on their core technology on which they base on. The game controllers have been excluded in this review since they basically are not much different from mouse and keyboard as they don't provide any added interaction functionality.
+The reviewed literature brought up different means in research to interact with the virtual reality environment. In order to review them in a more stuctured way, they have been grouped based on their core technology (i.e. hand gestures, speech recognition etc.) on which they base on. The regular game controllers have been excluded in this research since they basically are not much different from mouse and keyboard as they do not provide any added interaction functionality.
 
 
 \subsubsection{Hand Gestures}
 
+\label{SubSubSectionHandGestures}
 
-
-We highlight results drawn from a study on pointing and draw conclusions for the implementation of pointing-based conversational interactions in partly immersive virtual reality.
-\cite{Pfeiffer2008}
-
-The environment constructed in this research allows a user to communicate by talking and showing gestures
-to a personified agent in virtual environment. A user can use his/her finger to point at a virtual object and ask the agent to manipulate the virtual object.
-\cite{Uchino2008}
-
-The Hand gesture recognition system based interface proposed and implemented in this paper consists of a detection, tracking and recognition module.
-Hand gesture communication based vocabulary offers many variations ranging from simple action of using our finger to point at to using hands for moving objects around to the rather complex one like expression of the feelings. The proposed hand gesture recognition system offers intensions to traditional input devices for interaction with the virtual environments
-\cite{Rautaray2011}
-
-Oculus Rift can track head movement and change view point follow it. Leap Motion is in - air controller that can track hand gesture of the user. The combination of them will make users feel like immerse to VR. Users can move avatar any way in VR by their hand interact through the system via these devices. We introduce a new interactive hand gesture system with palm normal for control steering develop by the game engine Unity3D applies synchronization of Oculus Rift and Leap Motion.
-\cite{Khundam2015a}
-
-It allows user to interact with the virtual reality system with the static and stroke hand gesture along with speech. This multimodal interaction technique is able to perform few functions such as select, move, scale, rotate, copy, mirror, delete, check the shape, check and change the colour of an object.
-\cite{Chun2015}
-
-There are some limitations of the multimodal interaction. For example, when the hand is not tracked properly, the stroke gesture recognizer cannot recognize the stroke gesture command. User also has to perform the stroke command in certain speed level.
-\cite{Chun2015}
+The by far most utilized and researched interaction method is hand gestures. Since we also heavily rely on this interaction pattern in real life with other human beings, it is fair to assume that the familiarity of it helps the research in a significant way whereas methods that rely on physical hardware often feel more distant. \newline
+\cite{Pfeiffer2008} conducted an empirical study about conversational pointing gestures in virtual reality interaction where the focus lied on the system to recognize on which object the user was pointing at. \cite{Pfeiffer2008} distinguished between \gls{ifp} where the direction of where the index finger is pointing at, and \gls{gfp} where an imaginary line between the viewers eye and the tip of the index finger is drawn. Provided the objects are nod too close to each other (>20cm), both methods had equal accuracy and success while tracked with two cameras from different angles and motion capturing \citep{Pfeiffer2008}. Figure \ref{fig:pointinggesture} shows the application of this in an identification game which was part of the empirical study.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=10cm]{03_Figures/05_LitReview/Pfeiffer2008_Pointing.png}
+		\caption[Cone-based model for extenstion of pointing gestures refined for identification game]{Cone-based model for extenstion of pointing gestures (left) refined for identification game (right) \citep{Pfeiffer2008}}
+		\label{fig:pointinggesture}
+	\end{center}
+\end{figure}
+\newline
+A similar approach has been research by \cite{Rautaray2011} who used a single camera with an application that did the image capturing, locating the hand and its orientation and finally model the gesture to find a match for predefined gestures. The focus relied on simple gestures for \textit{punch} (three fingers), \textit{grab} (fist), \textit{throw} (five fingers), and to \textit{move forward} (thumb up) within a simple VR game \citep{Rautaray2011}. The recognition rate was between 80\% and 94\% (depending on the gesture), which might not be accurate enough for practical use cases as also acknowledged by \cite{Rautaray2011}. \newline
+In a more recent study of \cite{Khundam2015}, it was not cameras that were used to track the hand gestures but a Leap Motion (an in-air controller) attached to the front of an Oculus Rift. Figure \ref{fig:leapmotion} shows the different gestures that were implemented by \cite{Khundam2015} in order to navigate within a virtual environment. Depending on how far the hand is moved towards a certain angle, the speed of the movement can be influenced to increase or decrease it \citep{Khundam2015}. Although the applied gestures are understandable and easy to learn, they still brings some unfamiliarity with them since in real life movement already has a specific gesture which however utilizes the legs and not the hands.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/05_LitReview/Khundam2015_LeapMotion.png}
+		\caption[Hand gestures for forward/backward movement, stepping left/right and holding position]{Hand gestures for forward/backward movement (a,b), stepping left/right (c,d) and holding position (e) \citep{Khundam2015}}
+		\label{fig:leapmotion}
+	\end{center}
+\end{figure}
+\newline
+For their research on static and stroke gestures, \cite{Chun2015} made use of a depth-camera in order to track hand gestures and combined it with speech recognition. The latter is discussed in more detail in chapter \ref{SubSubSectionSpeechRecognition} which covers the methods of speech recognition in general. \cite{Chun2015} defined different hand and finger gestures for selecting, moving, scaling, rotating, copying and deleting objects, all of which actions had to be confirmed by a specific yes/no gesture. This set of gestures makes it a very natural, intuitive and interactive way for the user to alter virtual objects. As often with the use cameras, there are limitations to it. The hand has to be tracked properly for the whole performance of the gesture and it has to be done with the right speed for a proper recognition of the command \citep{Chun2015}.
 
 
 \subsubsection{Gesture Controllers}
@@ -79,15 +81,28 @@ Alongside the \textit{HTC Vive} HMD, a new gesture controller also have been int
 
 \subsubsection{Speech Recognition}
 
-A system for the visualization of three-dimensional anatomical data, derived from magnetic resonance imaging (MRI) or computed tomography (CT), enables the physician to navigate through and interact with the patient's 3D scans in a virtual environment. This paper presents the multimodal human-machine interaction focusing the speech input. For the concerned task, a speech understanding front-end using a special kind of semantic decoder was successfully adopted
-\cite{Muller1998}
+\label{SubSubSectionSpeechRecognition}
 
-The environment constructed in this research allows a user to communicate by talking and showing gestures
-to a personified agent in virtual environment. A user can use his/her finger to point at a virtual object and ask the agent to manipulate the virtual object.
-\cite{Uchino2008}
-
-It allows user to interact with the virtual reality system with the static and stroke hand gesture along with speech. This multimodal interaction technique is able to perform few functions such as select, move, scale, rotate, copy, mirror, delete, check the shape, check and change the colour of an object.
-\cite{Chun2015}
+The second natural interaction after hand gestures is speech recongition. It is often combined with hand gesture as they can complement eachother quite seamlessly. \newline
+For the navigation within 3D scans from \gls{mri} or \gls{ct}, \cite{Muller1998} proposed a speech recongition system as illustrated with an example in figure \ref{fig:speechrecognitionmedical}. With semantic decoding and a semantic strcuture, the commands can be interpreted and processed by the intention decoder to tell the system what to \citep{Muller1998}. This is a very time-consuming process since all commands have to be prepared and accoustic-phonetic models need to be generated during the collection of training data. Provided the users followed the instructions, a 99.8\% semantic accuracy could be acheived which basically means that the system is almost fully accurate in this scenario \citep{Muller1998}.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=10cm]{03_Figures/05_LitReview/Muller1998_SpeechRecognition.png}
+		\caption[Architecture and example of speech recognition and interaction for physicians]{Architecture and example of speech recognition and interaction for physicians \citep{Muller1998}}
+		\label{fig:speechrecognitionmedical}
+	\end{center}
+\end{figure}
+\newline
+\cite{Uchino2008} combined speech recognition with a camera to identify where the user is pointing at on a computer screen to interact with a virtual agent. In their example, a set of pens with different colours are presented to the user where the selection is made in combination with gestures (pointing at the pen) and speech (e.g. "\textit{Please give the red one}") \citep{Uchino2008}. Figure \ref{fig:speechrecignitionpen} shows how such a conversation with a virtual agent can proceed where the agent picks the wrong pen based on the pointing and ambiguous speech and thus has to be corrected to pick the one with the right color. Although this research was not focussed on virtual reality, this research can also be applied in virtual reality which might even improve the accurace of the pointing gesture.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=10cm]{03_Figures/05_LitReview/Uchino2008_SpeechPointing.png}
+		\caption[Flow of a conversation with the virtual pen agent]{Flow of a conversation with the virtual pen agent \citep{Uchino2008}}
+		\label{fig:speechrecignitionpen}
+	\end{center}
+\end{figure}
+\newline
+As described in chapter \ref{SubSubSectionHandGestures}, \cite{Chun2015} utilized hand gestures to interact with virtual objects and further enhanced them with speech recognition. While objects can be altered in their spatial appearance, speech is used to change the colour of the object or ask questions about the type, shape or colour of it \citep{Chun2015}. Instead of relying on a physical device with buttons to change the colours, a multimodal interaction combines speech and gesture to a more natural and intuitive method that is also closer to the real world \citep{Chun2015} .
 
 
 \subsubsection{Physical Placement of Interactive Objects}
@@ -130,33 +145,91 @@ So far there are no official devices that track the position of the feet, though
 	\end{center}
 \end{figure}
 
+
 %-----------------------------------
 %	SUBSECTION 3
 %-----------------------------------
 
-\subsection{Visual Information Seeking Mantra}
-
-blub
-
-
-
-%-----------------------------------
-%	SUBSECTION 4
-%-----------------------------------
-
 \subsection{Conclusion}
 
-blub
+The literature review on different methods for user input in virtual reality showed that there are various types can be used or even combined. \newline
+There are six main methods for user input in virtual reality. These are hand gestures, gesture controllers, speech recognition, physical placement of interactive objects, full body tracking and 360° motion tracking. Hand gestures track the movement of the whole hand and/or the individual fingers with one or more (regular, infrared or depth) cameras. Gesture controllers are physical devices with buttons that are held in the hands and also tracked in their spatial position. Speech recognition tries to understand and interpret spoken words and sentences in order to find the correct commands. The physical placement of interatice objects extrapolates the movement of the hand to physically place a button in front of the finger where a virtual one is shown in VR. Full body tracking uses cameras to track the whole body including the movement of all extremities from one angle. Finally, 360° motion tracking can locate the position of special devices within an actual room on all three axis from opposing corners. The most used method in the reviewed literature is the hand gestures, followed by the hand gestures in combination with speech recongition. \newline
+Depending on the chosen method, there are advantages and disadvantages (or even limitations) for certain use cases. Table \ref{tbl:methodscomparison} shows a summary of these findings.
 
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{ | p{3.7cm} | p{4.9cm} | p{4.9cm} | } 
+			\hline
+			\textbf{Method} & \textbf{Advantages} & \textbf{Disadvantages} \\
+			\hline
+				Hand Gestures & 
+				- Highest familiarity \newline - Inexpensive & 
+				- Limited tracking area \newline - Only from one angle \newline - Decreasing accuracy with faster movement  \\
+			\hline
+				Gesture Controllers &
+				- Very accurate \newline - Similarity to hand gestures \newline - Buttons for more interaction &
+				- Additional device required \newline - Have to be held all the time \\
+			\hline
+				Speech Recognition &
+				- Most natural to humans \newline - Known from smartphones &
+				- Different languages, dialects \newline - Requires silent area \\ 
+			\hline
+				Physical Placement of Objects &
+				- Realistic experience \newline - Tangible interaction with VR &
+				- Expensive \newline - Difficult to build \newline - Stationary \\ 
+			\hline
+				Full Body Tracking &
+				- Tracks all extremities \newline - Natural interaction possible &
+				- Only from one angle \newline - Limited accuracy on details \\ 
+			\hline
+				360° Motion Tracking &
+				- Room-scale movement \newline - Very accurate \newline - Spatial positioning on all three axis &
+				- Only dedicated HMD and controllers can be tracked \newline - Stationary (base stations) \\ 
+			\hline
+		\end{tabular}
+		\caption{Advantages and disadvantages/limitations of different methods for user input in virtual reality}
+		\label{tbl:methodscomparison}
+	\end{center}
+\end{table}
+
+In regards of the thesis statement, a combination of two methods is recommended to outweigh the individual disadvantages and utilize the benefits of both methods.
 
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 
-\section{Existing Interaction Patterns with Data in Virtual Reality}
+\section{Existing Data Interaction Patterns in Virtual Reality}
 
 \label{SectionLiteratureReviewSRQ2}
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+
+\subsection{Introduction}
+
+
+blub
+
+
+TO CHECK: “Put-that-there”: Voice and Gesture at the Graphics Interface \citep{Bolt1980}
+
+TO CHECK: ALl interaction in RL is multimodal \citep{Bunt1998}
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
+\subsection{Visual Information Seeking Mantra}
+
+blub
+
+%-----------------------------------
+%	SUBSECTION 3
+%-----------------------------------
+
+\subsection{Conclusion}
 
 blub
 
@@ -169,6 +242,29 @@ blub
 \section{Enhancement of Existing Interaction Patterns with new Methods for User Input}
 
 \label{SectionLiteratureReviewSRQ3}
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+
+\subsection{Introduction}
+
+blub
+
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
+\subsection{tbd}
+
+blub
+
+%-----------------------------------
+%	SUBSECTION 3
+%-----------------------------------
+
+\subsection{Conclusion}
 
 blub
 
