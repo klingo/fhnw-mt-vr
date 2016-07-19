@@ -264,6 +264,8 @@ An example of this is the ability to track the users head position so that we ca
 
 Since the user loses all sight of their hands from within the device, traditional mouse and keyboard in- teraction is limited. While we do not address specific interaction challenges here, we did want to avail ourselves of the head tracking capabilities of the HMD. Since the device tracks the position and direction of the camera, we can also utilize this information to de- termine what the user is looking at, use this information to identify focal points, aid the user in making selections, and provide instan- taneous details of the selected data. \cite{Kwon2015}
 
+When the user uses this reticle to select a node, the node and all its neighbors are brought closer to the user’s viewpoint. Similarly, all the control points for all affected edges are also brought closer. This serves to separate the selected node and its neighbors from the rest of the graph and bring them into a closer, focal plane. To further accentuate this, we apply a halo technique to the selected node’s edges. The overall effect is that the selection is easily distinguished from the remainder of the graph, and the immediate connections are easy to visually follow to their destinations. Multiple nodes can be selected and brought into this focal plane, allowing the user to explore any potentially interesting paths or relations that they find. \cite{Kwon2015}
+
 
 
 In our virtual environment, a fully immersed person is working on a specific task and several (up to 20) outsiders (participants) observe the fully immersed person and would like to comment and affect the fully immersed person’s work. \cite{Deligiannidis2003}
