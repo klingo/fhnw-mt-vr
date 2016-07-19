@@ -268,7 +268,21 @@ The space around the participant who is controlling the camera is divided into t
 Since wearing of the goggles effectively precludes the use of a keyboard interface, we need a tool where a user can use physical gestures to manipulate virtual objects and data displays. \cite{Donalek2014} - Leap Motion
 
 
-At our demonstrations, we observed that many users had difficulty interacting with keyboard and mouse when they could not see their hands, but most users were able to use the Xbox controller intuitively. Figure 4 shows a demonstration of the first implementation of the prototype from the 2015 Joint NSRC Workshop on Big, Deep, and Smart Data Analytics in Materials Imaging. Users were able to “fly” through the data and, using the Oculus head-tracking, look around and view the data from different perspectives. \cite{Drouhard2015}
+At our demonstrations, we observed that many users had difficulty interacting with keyboard and mouse when they could not see their hands, but most users were able to use the Xbox controller intuitively. Users were able to “fly” through the data and, using the Oculus head-tracking, look around and view the data from different perspectives. \cite{Drouhard2015}
+
+Our immersive visualization also incorporates gaze interaction, arguably the most natural form of interaction in virtual reality environments. In order to help users target objects more effectively, we provide a crosshair reticle that is rendered visible when a button is pressed to enter “target mode.” If, when the trigger button is pressed, the reticle is targeting a data object, the trigger also bookmarks that data object and highlights it in a contrast color. When the trigger button is pressed, the user’s location is saved regardless of whether or not a data object is bookmarked \cite{Drouhard2015}
+
+
+
+Interactive brushing of a 3D scatterplot inside a CAVE-like virtual environment. The brushing operation begins with an empty selection box (left). The user then specifies the selection box’s body diagonal by moving the input device. This locally highlights points in the selection in real-time (center). Only after releasing the input device’s button, the update is remotely computed and the selection for all plots is shown (right). \citep{Hentschel2009}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=12cm]{03_Figures/05_LitReview/Hentschel2009_InteractiveBrushing.png}
+		\caption[tbd]{tbd \citep{Hentschel2009}}
+		\label{fig:interactivebrushing}
+	\end{center}
+\end{figure}
+
 
 %-----------------------------------
 %	SUBSECTION 4
