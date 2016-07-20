@@ -204,7 +204,7 @@ In regards of the thesis statement, a combination of two methods is recommended 
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 
-\section{Existing Data Interaction Patterns in Virtual Reality}
+\section{Existing Interaction Patterns in Virtual Reality}
 
 \label{SectionLiteratureReviewSRQ2}
 
@@ -219,23 +219,7 @@ This chapter addresses the second SRQ by having a look at existing interaction p
 
 \subsection{Introduction}
 
-As early as in the 1980s, interaction patterns with data have already been defined, such as the "Put-That-There" voice and gesture interface as described by \cite{Bolt1980}. This interfaces focus on certain voice command to manipulate objects in a virtual space which have been defined as following \citep{Bolt1980}:
-\begin{itemize}[noitemsep,nolistsep]
-	\item "Create..." \textit{(a default object, with default size and colour on a default position)}
-	\item "Move..." \textit{(an object to a specific position)}
-	\item "Make that..." \textit{(altering an object in colour and size)}
-	\item "Delete..." \textit{(removal of an object)}
-	\item "Call that..." \textit{(give an object a name to which it can be referred to)}
-\end{itemize}
-In addition, the spoken \textit{"there"} serves as some kind of voice button where the \textit{"there"} refers to the cursor position, thus introducing the gestures as an input method for this interface \citep{Bolt1980}. \newline
-It can be seen that even more than three decades ago, the need to simplify more complicated interactions such as changing the colour of an object which would require multiple inputs with mouse/keyboard, were tested to be simplified with new means of interaction patterns.
 
-
-blub
-
-
-
-TO CHECK: ALl interaction in RL is multi-modal \citep{Bunt1998}
 
 %-----------------------------------
 %	SUBSECTION 2
@@ -258,35 +242,46 @@ A review and extension of the Visual Information Seeking Mantra (VISM) \cite{Sta
 %	SUBSECTION 3
 %-----------------------------------
 
-\subsection{Multi-modal  something}
+\subsection{Multi-modal interaction}
 
 \cite{Bunt1998} stated that "Human communication is inherently multimodal in nature".
 
-blub
+One approach to the problems of understanding natural language is to enable multiple communication modes. In a multimodal  user interface, a user might make a spoken natural language request, but supplement it with one or more gestures. For example, the user might say "Put that there," while also point- ing with the hand or pressing a button (Bolt 1980).  \cite{Rosson2002}
 
+
+%-----------------------------------
+%	SUBSECTION 4
+%-----------------------------------
+
+\subsection{Interaction patterns}
+
+
+%-----------------------------------
+%	SUBSUBSECTION 1
+%-----------------------------------
+
+\subsubsection{Navigation}
+
+An example of this is the ability to track the users head position so that we can appear to look around object, this is how as humans we are familiar with examining objects of interest, rather than moving a mouse. In a totally immersive virtual environment we can use body movement to walk around objects or put our head inside virtual representation of our data. Also within an immersive environment it is possi- ble to map the users hand position in the real world to a virtual hand in the VE, therefore allowing the user to manipulate virtual objects. \cite{Jamieson2007}
+
+
+In our virtual environment, a fully immersed person is working on a specific task and several (up to 20) outsiders (participants) observe the fully immersed person and would like to comment and affect the fully immersed person’s work. \cite{Deligiannidis2003}
+
+The current communication technique used is vocal instruction, which is distracting to everyone. This paper presents a technique in which the fully immersed person and the participants can interact using a second camera directed for a third person’s view of the environment. This technique attempts to provide the best of both worlds (first and third person views) so the formerly passive participants can become more immersed in the environment. \cite{Deligiannidis2003}
+
+The space around the participant who is controlling the camera is divided into two hemispheres, the top and the bottom one. Camera manipulation is activated when both sensors enter the top hemisphere, and hand manipulation is activated when both hands enter the bottom hemisphere. \cite{Deligiannidis2003}
+
+
+At our demonstrations, we observed that many users had difficulty interacting with keyboard and mouse when they could not see their hands, but most users were able to use the Xbox controller intuitively. Users were able to “fly” through the data and, using the Oculus head-tracking, look around and view the data from different perspectives. \cite{Drouhard2015}
+
+
+%-----------------------------------
+%	SUBSUBSECTION 2
+%-----------------------------------
+
+\subsubsection{Selection}
 
 PS Move or Razer Hydra controller is used to control locomotion, and for selecting and manipulating objects. \cite{Takala2014}
-
-
-One approach to the problems of understanding natural language is to enable multiple communication modes. In a rnultirnodal user interface, a user might make a spoken natural language request, but supplement it with one or more gestures. For example, the user might say "Put that there," while also point- ing with the hand or pressing a button (Bolt 1980).  \cite{Rosson2002}
-
-
-In order to be as immersive as possible, the project has to conform to 1) Three Dimensional Viewing, 2) Full User-Navigation Integration, and 3) an Interactive Environment. \cite{Woodard2015}
-
-Once the collider is created and added as a child element to the object needing interaction, there will be a script added in either C\# or Java that checks to see whether the character object is within the mesh collider, and if a designated keystroke has been pressed. Once both of these criteria have been met, the object goes through a rotation about an axis (in the door case, a 90 degree rotation about its perceived hinge, and in the light switch case, a 45 degree rotation as well as a light probe being disabled/enabled). \cite{Woodard2015}
-
-
-
-We will consider two aspects of performance: task performance and technique performance with human effects. Task performance refers to the quality of task completion, such as time for completion or accuracy. It is usually measured quantitatively. Technique performance refers to the qualitative experience of the user during interaction, including ease of use, ease of learning, and user comfort. This is related to the concept of usability. \cite{Bowman2002}
-
-A common misconception about virtual environments is that, in order to be effective, they should work exactly the way the real world works, or at least as close as is practically possible (interaction with a VE application should be “natural”). In fact, the very term “virtual reality” promotes such a view that virtual reality should be the same as “real reality.” In fact, this is not always the case. It may be very useful to create VEs that operate quite differently from the physical world. \cite{Bowman2002}
-
-there is an alternative to the naturalistic approach, which we’ll call “magic” \citep{Smith1987}. In this approach, the user is given new abilities, and non-natural methods for performing tasks are used. Examples include allowing the user to change his scale (grow or shrink), providing the user with an extremely long arm to manipulate faraway objects, or letting the user fly like a bird. Magic techniques are less natural, and thus may require more explanation or instruction, but they can also be more flexible and efficient if designed for specific interaction tasks. \cite{Bowman2002}
-
-This is as much a myth as the concept discussed earlier that all interaction should mimic the real world. In fact, there are many 2D interaction metaphors which can be used directly in or adapted for use in VEs. Pull-down or pop-up menus, 2D buttons, and 2D drag and drop manipulation have all been implemented in VEs with success (e.g. \cite{Bowman1998}). Again, the issue often is related to reducing the number of DOFs the user must control. When 2D interaction metaphors are used, the provision of a 2D surface for interaction (such as the pen and tablet metaphor discussed above) can increase precision and efficiency.  \cite{Bowman2002}
-
-
-Many people equate VR with immersive environments, where the simulated reality is experienced as "all around" the user. Immersive VR requires multi- modal input and output. For example, a head-mounted display provides surround vision, including peripheral details; data gloves or body suits process physical movements as well as providing haptic (pressure) feedback; speech recognition and generation allows convenient and direct requests for services; and an eye-gaze or facial gesture analysis tool can respond automatically to non- verbal communication. All of these devices work in parallel to produce the sensa- tion of looking, moving, and interacting within the simulated physical setting. The degree to which participants feel they are actually "in" the artificial setting is often referred to as presence. \cite{Rosson2002}
 
 
 Simple selection techniques (a) Ray-based selection is effected by choosing first object to intersect the ray from the hand (Object A in this case) (b) Small Volume Selection is effected by choosing ever object’s volumes intersect the volume attached to the hand (Object C). (c) Cone Selection can be effected by choosing all objects that lie within the cone (Objects E and F). \citep{Steed2006}
@@ -300,31 +295,13 @@ Simple selection techniques (a) Ray-based selection is effected by choosing firs
 \end{figure}
 
 
-
-
-An example of this is the ability to track the users head position so that we can appear to look around object, this is how as hu- mans we are familiar with examining objects of interest, rather than moving a mouse. In a totally immersive virtual environment we can use body movement to walk around objects or put our head inside virtual representation of our data. Also within an immersive environment it is possi- ble to map the users hand position in the real world to a virtual hand in the VE, therefore allowing the user to manipulate virtual objects. \cite{Jamieson2007}
-
-
 Since the user loses all sight of their hands from within the device, traditional mouse and keyboard in- teraction is limited. While we do not address specific interaction challenges here, we did want to avail ourselves of the head tracking capabilities of the HMD. Since the device tracks the position and direction of the camera, we can also utilize this information to de- termine what the user is looking at, use this information to identify focal points, aid the user in making selections, and provide instan- taneous details of the selected data. \cite{Kwon2015}
+
 
 When the user uses this reticle to select a node, the node and all its neighbors are brought closer to the user’s viewpoint. Similarly, all the control points for all affected edges are also brought closer. This serves to separate the selected node and its neighbors from the rest of the graph and bring them into a closer, focal plane. To further accentuate this, we apply a halo technique to the selected node’s edges. The overall effect is that the selection is easily distinguished from the remainder of the graph, and the immediate connections are easy to visually follow to their destinations. Multiple nodes can be selected and brought into this focal plane, allowing the user to explore any potentially interesting paths or relations that they find. \cite{Kwon2015}
 
 
-
-In our virtual environment, a fully immersed person is working on a specific task and several (up to 20) outsiders (participants) observe the fully immersed person and would like to comment and affect the fully immersed person’s work. \cite{Deligiannidis2003}
-
-The current communication technique used is vocal instruction, which is distracting to everyone. This paper presents a technique in which the fully immersed person and the participants can interact using a second camera directed for a third person’s view of the environment. This technique attempts to provide the best of both worlds (first and third person views) so the formerly passive participants can become more immersed in the environment. \cite{Deligiannidis2003}
-
-The space around the participant who is controlling the camera is divided into two hemispheres, the top and the bottom one. Camera manipulation is activated when both sensors enter the top hemisphere, and hand manipulation is activated when both hands enter the bottom hemisphere. \cite{Deligiannidis2003}
-
-
-Since wearing of the goggles effectively precludes the use of a keyboard interface, we need a tool where a user can use physical gestures to manipulate virtual objects and data displays. \cite{Donalek2014} - Leap Motion
-
-
-At our demonstrations, we observed that many users had difficulty interacting with keyboard and mouse when they could not see their hands, but most users were able to use the Xbox controller intuitively. Users were able to “fly” through the data and, using the Oculus head-tracking, look around and view the data from different perspectives. \cite{Drouhard2015}
-
 Our immersive visualization also incorporates gaze interaction, arguably the most natural form of interaction in virtual reality environments. In order to help users target objects more effectively, we provide a crosshair reticle that is rendered visible when a button is pressed to enter “target mode.” If, when the trigger button is pressed, the reticle is targeting a data object, the trigger also bookmarks that data object and highlights it in a contrast color. When the trigger button is pressed, the user’s location is saved regardless of whether or not a data object is bookmarked \cite{Drouhard2015}
-
 
 
 Interactive brushing of a 3D scatterplot inside a CAVE-like virtual environment. The brushing operation begins with an empty selection box (left). The user then specifies the selection box’s body diagonal by moving the input device. This locally highlights points in the selection in real-time (center). Only after releasing the input device’s button, the update is remotely computed and the selection for all plots is shown (right). \citep{Hentschel2009}
@@ -338,7 +315,53 @@ Interactive brushing of a 3D scatterplot inside a CAVE-like virtual environment.
 
 
 %-----------------------------------
-%	SUBSECTION 4
+%	SUBSUBSECTION 3
+%-----------------------------------
+
+\subsubsection{Manipulation}
+
+As early as in the 1980s, interaction patterns with data have already been defined, such as the "Put-That-There" voice and gesture interface as described by \cite{Bolt1980}. This interfaces focus on certain voice command to manipulate objects in a virtual space which have been defined as following \citep{Bolt1980}:
+\begin{itemize}[noitemsep,nolistsep]
+	\item "Create..." \textit{(a default object, with default size and colour on a default position)}
+	\item "Move..." \textit{(an object to a specific position)}
+	\item "Make that..." \textit{(altering an object in colour and size)}
+	\item "Delete..." \textit{(removal of an object)}
+	\item "Call that..." \textit{(give an object a name to which it can be referred to)}
+\end{itemize}
+In addition, the spoken \textit{"there"} serves as some kind of voice button where the \textit{"there"} refers to the cursor position, thus introducing the gestures as an input method for this interface \citep{Bolt1980}. \newline
+It can be seen that even more than three decades ago, the need to simplify more complicated interactions such as changing the colour of an object which would require multiple inputs with mouse/keyboard, were tested to be simplified with new means of interaction patterns.
+
+
+Since wearing of the goggles effectively precludes the use of a keyboard interface, we need a tool where a user can use physical gestures to manipulate virtual objects and data displays. \cite{Donalek2014} - Leap Motion
+
+
+Once the collider is created and added as a child element to the object needing interaction, there will be a script added in either C\# or Java that checks to see whether the character object is within the mesh collider, and if a designated keystroke has been pressed. Once both of these criteria have been met, the object goes through a rotation about an axis (in the door case, a 90 degree rotation about its perceived hinge, and in the light switch case, a 45 degree rotation as well as a light probe being disabled/enabled). \cite{Woodard2015}
+
+
+%-----------------------------------
+%	SUBSECTION 5
+%-----------------------------------
+
+\subsection{Immersion and task performance}
+
+
+In order to be as immersive as possible, the project has to conform to 1) Three Dimensional Viewing, 2) Full User-Navigation Integration, and 3) an Interactive Environment. \cite{Woodard2015}
+
+
+We will consider two aspects of performance: task performance and technique performance with human effects. Task performance refers to the quality of task completion, such as time for completion or accuracy. It is usually measured quantitatively. Technique performance refers to the qualitative experience of the user during interaction, including ease of use, ease of learning, and user comfort. This is related to the concept of usability. \cite{Bowman2002}
+
+A common misconception about virtual environments is that, in order to be effective, they should work exactly the way the real world works, or at least as close as is practically possible (interaction with a VE application should be “natural”). In fact, the very term “virtual reality” promotes such a view that virtual reality should be the same as “real reality.” In fact, this is not always the case. It may be very useful to create VEs that operate quite differently from the physical world. \cite{Bowman2002}
+
+there is an alternative to the naturalistic approach, which we’ll call “magic” \citep{Smith1987}. In this approach, the user is given new abilities, and non-natural methods for performing tasks are used. Examples include allowing the user to change his scale (grow or shrink), providing the user with an extremely long arm to manipulate faraway objects, or letting the user fly like a bird. Magic techniques are less natural, and thus may require more explanation or instruction, but they can also be more flexible and efficient if designed for specific interaction tasks. \cite{Bowman2002}
+
+This is as much a myth as the concept discussed earlier that all interaction should mimic the real world. In fact, there are many 2D interaction metaphors which can be used directly in or adapted for use in VEs. Pull-down or pop-up menus, 2D buttons, and 2D drag and drop manipulation have all been implemented in VEs with success (e.g. \cite{Bowman1998}). Again, the issue often is related to reducing the number of DOFs the user must control. When 2D interaction metaphors are used, the provision of a 2D surface for interaction (such as the pen and tablet metaphor discussed above) can increase precision and efficiency.  \cite{Bowman2002}
+
+Many people equate VR with immersive environments, where the simulated reality is experienced as "all around" the user. Immersive VR requires multi- modal input and output. For example, a head-mounted display provides surround vision, including peripheral details; data gloves or body suits process physical movements as well as providing haptic (pressure) feedback; speech recognition and generation allows convenient and direct requests for services; and an eye-gaze or facial gesture analysis tool can respond automatically to non- verbal communication. All of these devices work in parallel to produce the sensation of looking, moving, and interacting within the simulated physical setting. The degree to which participants feel they are actually "in" the artificial setting is often referred to as presence. \cite{Rosson2002}
+
+
+
+%-----------------------------------
+%	SUBSECTION 6
 %-----------------------------------
 
 \subsection{Conclusion}
