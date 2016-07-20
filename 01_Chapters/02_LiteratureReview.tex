@@ -246,7 +246,7 @@ Based on this, \cite{Ahlberg1994} proposed the Visual Information Seeking Princi
 \begin{framed}
 	\textit{Overview first, zoom and filter, then details-on-demand}
 \end{framed}
-As an abstraction of reality, \cite{Shneiderman1996} further defined seven tasks that are inherently crucial for the work with data:
+As an abstraction of reality, \cite{Shneiderman1996} further defined seven tasks (four main and three support tasks) that are inherently crucial for the analysis and work with data:
 \begin{itemize}[noitemsep,nolistsep]
 	\item Overview \textit{(Gain an overview of the entire collection)}
 	\item Zoom \textit{(Zoom in on items of interest)}
@@ -256,19 +256,25 @@ As an abstraction of reality, \cite{Shneiderman1996} further defined seven tasks
 	\item History \textit{(Keep a history of actions to support undo, replace and refinement)}
 	\item Extract \textit{(Allow extraction of sub-collections and of the query parameters)}
 \end{itemize}
+Figure \ref{fig:vism} shows a visualisation of these tasks as well as the relationship to each other. It shows that in order to move from the \textit{Overview} to the \textit{Details}, the user either has to \textit{Zoom} or apply some \textit{Filtering} on the presented data set.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/05_LitReview/Stauffer2016_VISM1.png}
+		\caption[Visual Information Seeking Mantra]{Visual Information Seeking Mantra \citep{Stauffer2016}}
+		\label{fig:vism}
+	\end{center}
+\end{figure}
 
-In the analysis of \gls{vism} by \cite{Craft2005}, they point out that it should only be seen as guidelines and also note that although it defines some tasks that a system \textit{should} fulfill, it gives no indication on the question \textit{"How?"}.
+\cite{Stauffer2016} reviewed and extended the \gls{vism} to version 2.0. By distinguishing between \textit{Zoom In} and \textit{Zoom Out} as well as a more flexible entry point for the different tasks, they also deal with one of the big downfalls of \gls{vism} when a user already knows what data is important and thus does not want to start with the \textit{Overview} \citep{Neil2006}. Shifting \textit{Relate} to the main tasks helps to align it with \textit{Details} to provide a multi view where multiples views can be shown and altered simultaneously \citep{Stauffer2016}. The additional \textit{Collaboration} support tasks suggest that communication possibilities should be implemented directly inside the the application system instead of relying on third party applications. Figure \ref{fig:vism2} shows version 2.0 of the \gls{vism} with a direct comparison of 1.0 (green) and 2.0 (orange).
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/05_LitReview/Stauffer2016_VISM2.png}
+		\caption[Visual Information Seeking Mantra 2.0]{Visual Information Seeking Mantra 2.0 \citep{Stauffer2016}}
+		\label{fig:vism2}
+	\end{center}
+\end{figure}
 
-
-Visual Information Seeking: Tight Coupling of Dynamic Query Filters with Starfield Displays \cite{Ahlberg1994}
-
-The Eyes Have It: A Task by Data Type Taxonomy for Information Visualizations \cite{Shneiderman1996}
-
-Beyond Guidelines: What Can We Learn from the Visual Information Seeking Mantra? \cite{Craft2005}
-
-When the visual information-seeking mantra fails \cite{Neil2006}, they point
-
-A review and extension of the Visual Information Seeking Mantra (VISM) \cite{Stauffer2016}
+In the analysis of \gls{vism} by \cite{Craft2005}, they point out that it should only be seen as guidelines and also note that although it defines some tasks that a system \textit{should} fulfil, it gives no indication on the question \textit{"How?"}. This conclusion can still be seen as valid since also with version 2.0 of the \gls{vism}, the focus remains on what kind of interaction should be present and not how these interactions could look like.
 
 
 %-----------------------------------
