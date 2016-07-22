@@ -214,7 +214,7 @@ In regards of the thesis statement, a combination of two methods is recommended 
 
 \label{SectionLiteratureReviewSRQ2}
 
-This chapter addresses the second SRQ by having a look at existing interaction patterns in virtual reality and evaluating their strengths and weaknesses. It starts with a short introduction, followed by an analysis of the visual information seeking mantra. Then more details are given on different interaction patterns for navigation, selection and manipulation as well as the idea of multi-modal interaction, before the importance of immersion and task performance is elaborated. A conclusion summarises the research done in this chapter.
+This chapter addresses the second SRQ by having a look at existing interaction patterns in virtual reality and evaluating their strengths and weaknesses. It starts with a short introduction, followed by an analysis of the visual information seeking mantra. Then more details are given on different interaction patterns for travel, selection and manipulation as well as the idea of multi-modal interaction, before the importance of immersion and task performance is elaborated. A conclusion summarises the research done in this chapter.
 \begin{framed}
 	\textit{SRQ 2: Which ways of interaction with multi-dimensional data exist and what are their strengths and weaknesses?}
 \end{framed}
@@ -281,22 +281,32 @@ In the analysis of \gls{vism} by \cite{Craft2005}, they point out that it should
 \subsection{Interaction Patterns}
 
 \cite{Bunt1998} stated that "Human communication is inherently multimodal in nature". What he means with this is that in a multi-modal user interface, a user can combine a spoken natural language request with one or more gestures \citep{Rosson2002}. By allowing this combination, the interaction in virtual reality can become closer to how we already interact with each other in real life. \newline
-In order to understand the different interaction patterns better, they have been grouped in three distinctive categories: Navigation, Selection and Manipulation. \textit{Navigation} deals with how the user can navigate in the virtual environment, how the movement and visual exploration works. \textit{Selection} then focuses on the first interaction with a virtual object, how one or many object can be selected and how this is visualised for the user. Finally, in \textit{Manipulation} the actual alteration of a virtual object in its appearance and behaviour is discussed.
+In order to understand the different interaction patterns better, \cite{Bowman2002a} has grouped them in three distinctive categories: Travel, Selection and Manipulation. \textit{Travel} deals with how the user can navigate in the virtual environment, how the movement and visual exploration works. \textit{Selection} then focuses on the first interaction with a virtual object, how one or many object can be selected and how this is visualised for the user. Finally, in \textit{Manipulation} the actual alteration of a virtual object in its appearance and behaviour is discussed.
 
 
 %-----------------------------------
 %	SUBSUBSECTION 1
 %-----------------------------------
 
-\subsubsection{Navigation}
+\subsubsection{Travel}
 
-In \gls{vr},, the most important interaction pattern is the navigation itself, since without navigation the experience is not much different from a 2D display. \cite{Kwon2015} and  \cite{Jamieson2007} confirmed in their research that the simplest method for this is to utilize the built in head tracking capabilities of the \gls{hmd} itself. It in fact is more familiar to us humans to examin objects of interest this way, rather than using mouse and keyboard \citep{Jamieson2007}. Either with the gyroscope sensor information or with tracking the position and direction of the camera, this information allows to determine where the user is looking at \citep{Kwon2015}. \cite{Jamieson2007} continues that for a totally immersive experience in \gls{vr}, also body movement would have to be tracked to allow to walk around or even to put the head inside the visualised data objects.
+In \gls{vr},, the most important interaction pattern is the navigation itself, since without navigation the experience is not much different from a 2D display. \cite{Kwon2015} and  \cite{Jamieson2007} confirmed in their research that the simplest method for this is to utilize the built in head tracking capabilities of the \gls{hmd} itself. It in fact is more familiar to us humans to examine objects of interest this way, rather than using mouse and keyboard \citep{Jamieson2007}. Either with the gyroscope sensor information or with tracking the position and direction of the camera, this information allows to determine where the user is looking at \citep{Kwon2015}. \cite{Jamieson2007} continues that for a totally immersive experience in \gls{vr}, also body movement would have to be tracked to allow to walk around or even to put the head inside the visualised data objects.
 
 \cite{Deligiannidis2003} researched this topic based on a problem from practice where a person is working on a specific task in \gls{vr} and up to 20 outsider participant can observe and comment on the work of the fully immersed person. The use of vocal instructions however was distracting to everyone and there were no possibilities for the outsiders to interact with the virtual environment \citep{Deligiannidis2003}. Their solution to this was dividing the area in front of each outsider into two hemispheres, reaching with the hands in the top one allowed each person to manipulate the camera (third person view) whereas if the hands are on the lower one the hand manipulation (first person view) was activated \citep{Deligiannidis2003}. this combination allowed the before passive observers to be much more immersed in the virtual environment and to exploration on their own.
 
-During their demonstrations, \cite{Drouhard2015} observed difficulties when the users waring a \gls{hmd} had to interact (blindly) with keyboard and mouse , whereas most of them could use an Xbox controller rather intuitively. In their application, the controller was used to "fly" around within the virtual environment and the head tracking capabilities of the \gls{hmd} allowed them to explore the environment and look at the data from different perspectives \citep{Drouhard2015}.
+\cite{Bowman2002} defined guidelines for designing travel techniques, which inherently are related to the navigation and can be summarized as follows:
+\begin{itemize}[noitemsep,nolistsep]
+	\item Make simple travel tasks simple by using target-based techniques
+	\item Use physical head motion for viewpoint orientation if possible
+	\item Avoid teleportation; provide smooth transitional motion between locations instead
+	\item If steering techniques are used, users should be trained beforehand
+	\item Use non-head-coupled techniques for efficiency in relative motion tasks
+	\item Provide integrated aids to help the user decide where to move
+\end{itemize}
 
-The reviewed literature showed that for looking around, researchers exclusively relied on the head-tracking capabilities of the \gls{hmd} whereas for the navigation in space either third-party controllers were used or the idea of full body tracking was briefly mentioned.
+During their demonstrations, \cite{Drouhard2015} observed difficulties when the users wearing a \gls{hmd} had to interact (blindly) with keyboard and mouse , whereas most of them could use an Xbox controller rather intuitively. In their application, the controller was used to "fly" around within the virtual environment and the head tracking capabilities of the \gls{hmd} allowed them to explore the environment and look at the data from different perspectives \citep{Drouhard2015}.
+
+The reviewed literature showed that for looking around, researchers exclusively relied on the head-tracking capabilities of the \gls{hmd} whereas for the travel in space either third-party controllers were used or the idea of full body tracking was briefly mentioned.
 
 
 %-----------------------------------
@@ -305,7 +315,7 @@ The reviewed literature showed that for looking around, researchers exclusively 
 
 \subsubsection{Selection}
 
-After looking at the navigation, the second interaction pattern is the selection of objects in the virtual environment either to get more information on them or to do manipulate them. Based on the selected input method, different patterns come to action.
+After looking at \textit{Travel}, the second interaction pattern is the selection of objects in the virtual environment either to get more information on them or to do manipulate them. Based on the selected input method, different patterns come to action.
 
 \subparagraph{Hand}
 
@@ -323,7 +333,7 @@ Each technique has different applications where they make more sense or allow fo
 \subparagraph{HMD Reticle}
 
 \cite{Kwon2015} and \cite{Drouhard2015} focussed their research on a selection technique using a reticle that is visualised inside the \gls{hmd}, like a crosshair. When the user selects a node with this reticle, this node and its neighbours are brought closer to the user and are highlighted in order to see more details and allow the user to make further selections \citep{Kwon2015}. With the option to select multiple nodes and the visualization of the nodes amongst themselves, interesting paths or relations can be visualized in an effective way \citep{Kwon2015}. It however is not mentioned how the selection itself is triggered, whether a button has to be pushed or if the gaze just has to be held for a couple of seconds. It is also not mentioned how the "\textit{Zoom Out}" task can be performed. \newline
-\cite{Drouhard2015} provided more details on this part in their research where they implement a "target mode" that the user can enter. Only in this case the crosshair reticle is shown to the user and the selection happens by targeting a data object and pressing the trigger button \citep{Drouhard2015}. It can be assumed that this separation of "target mode" and "view mode" will help the combination of \textit{Selection} and \textit{Navigation} and makes the data analysis more convenient as the reticle is only shown when absolutely necessary. \newline
+\cite{Drouhard2015} provided more details on this part in their research where they implement a "target mode" that the user can enter. Only in this case the crosshair reticle is shown to the user and the selection happens by targeting a data object and pressing the trigger button \citep{Drouhard2015}. It can be assumed that this separation of "target mode" and "view mode" will help the combination of \textit{Selection} and \textit{Travel} and makes the data analysis more convenient as the reticle is only shown when absolutely necessary. \newline
 \cite{Drouhard2015} furthermore states that gaze interaction arguably is the most natural form of interaction in virtual environments.
 
 
@@ -357,7 +367,7 @@ As early as in the 1980s, interaction patterns with data (i.e. manipulations) ha
 In addition, the spoken \textit{"there"} serves as some kind of voice button where the \textit{"there"} refers to the cursor position, thus introducing the gestures as an input method for this interface \citep{Bolt1980}.
 It can be seen that even more than three decades ago, the need to simplify more complicated interactions such as changing the colour of an object, which would require several inputs actions with mouse or keyboard, were tested to be simplified with new means of interaction patterns. \cite{Donalek2014} also mentioned thee for a new tool where the user can manipulate with these objects since wearing a \gls{hmd} blocks the view on the keyboard interface. \newline
 \cite{Woodard2015} explained their approach on a more technical level in which they basically utilize the concept of the Small Volume Selection from \cite{Steed2006} to trigger certain manipulations like opening a door (i.e. rotating an object on its axis). \newline
-Literature review has shown that most research focuses on the navigation and selection whereas the manipulation of data objects is not part of it at all.
+Literature review has shown that most research focuses on \textit{Trabvel} and \textit{Selection} whereas \textit{Manipulation} of data objects is in most cases not covered at all.
 
 
 %-----------------------------------
@@ -366,11 +376,27 @@ Literature review has shown that most research focuses on the navigation and sel
 
 \subsection{Importance of Immersion and Task Performance}
 
+In addition to the interaction patterns to perform tasks, the level of immersion and the performance of task execution is as important. \newline
+\cite{Woodard2015} defined three rules a project has to be conform with in order to be as immersive as possible
+\begin{itemize}[noitemsep,nolistsep]
+	\item Three Dimensional Viewing
+	\item Full User-Navigation Integration
+	\item Interactive Environment
+\end{itemize}
+The first two points have to be ensured by the application design itself as well as interaction patterns for \textit{Travel}. The third point is more complex as it covers the interaction patterns for \textit{Selection} and \textit{Manipulation} which are more crucial for the performance.
 
-In order to be as immersive as possible, the project has to conform to 1) Three Dimensional Viewing, 2) Full User-Navigation Integration, and 3) an Interactive Environment. \cite{Woodard2015}
+\cite{Bowman2002} separates this a bit more and considers two aspects of performance:
+\begin{itemize}[noitemsep,nolistsep]
+	\item Task performance \textit{(quality of task completion: measured in time, accuracy, ...)}
+	\item Technique performance \textit{(qualitative experience of the user during interaction)}
+\end{itemize}
+Since the technique performance is ultimately related to the concept of usability, which is not part of this thesis, the main focus lies on the task performance.
+
+Therefore...
 
 
-We will consider two aspects of performance: task performance and technique performance with human effects. Task performance refers to the quality of task completion, such as time for completion or accuracy. It is usually measured quantitatively. Technique performance refers to the qualitative experience of the user during interaction, including ease of use, ease of learning, and user comfort. This is related to the concept of usability. \cite{Bowman2002}
+
+
 
 A common misconception about virtual environments is that, in order to be effective, they should work exactly the way the real world works, or at least as close as is practically possible (interaction with a VE application should be “natural”). In fact, the very term “virtual reality” promotes such a view that virtual reality should be the same as “real reality.” In fact, this is not always the case. It may be very useful to create VEs that operate quite differently from the physical world. \cite{Bowman2002}
 
@@ -388,7 +414,7 @@ Many people equate \gls{vr} with immersive environments, where the simulated rea
 
 \subsection{Conclusion}
 
-The \gls{vism} provides a solid foundation of what tasks the interaction patterns should be able to fulfil. It however gives no guidelines or recommendations in how these interaction patterns could look like. The interaction patterns can be grouped into three categories: \textit{Navigation}, \textit{Selection} and \textit{Manipulation}. Each of them has its own patterns which are more or less suited for certain applications. In general it can be seen that the \textit{Manipulation} pattern are researched the least so far.
+The \gls{vism} provides a solid foundation of what tasks the interaction patterns should be able to fulfil. It however gives no guidelines or recommendations in how these interaction patterns could look like. The interaction patterns can be grouped into three categories: \textit{Travel}, \textit{Selection} and \textit{Manipulation}. Each of them has its own patterns which are more or less suited for certain applications. In general it can be seen that the \textit{Manipulation} pattern are researched the least so far.
 
 blub
 
