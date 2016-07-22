@@ -296,7 +296,7 @@ In \gls{vr},, the most important interaction pattern is the navigation itself, s
 
 During their demonstrations, \cite{Drouhard2015} observed difficulties when the users waring a \gls{hmd} had to interact (blindly) with keyboard and mouse , whereas most of them could use an Xbox controller rather intuitively. In their application, the controller was used to "fly" around within the virtual environment and the head tracking capabilities of the \gls{hmd} allowed them to explore the environment and look at the data from different perspectives \citep{Drouhard2015}.
 
-The reviewed literature showed that for looking around, researchers exclusively relied on the head-tracking capabilities of the \gls{hdm} whereas for the navigation in space either third-party controllers were used or the idea of full body tracking was briefly mentioned.
+The reviewed literature showed that for looking around, researchers exclusively relied on the head-tracking capabilities of the \gls{hmd} whereas for the navigation in space either third-party controllers were used or the idea of full body tracking was briefly mentioned.
 
 
 %-----------------------------------
@@ -305,19 +305,23 @@ The reviewed literature showed that for looking around, researchers exclusively 
 
 \subsubsection{Selection}
 
-PS Move or Razer Hydra controller is used to control locomotion, and for selecting and manipulating objects. \cite{Takala2014}
+After looking at the navigation, the second interaction pattern is the selection of objects in the virtual environment either to get more information on them or to do manipulate them. Based on the selected input method, different patterns come to action.
 
+\subparagraph{Hand}
 
-Simple selection techniques (a) Ray-based selection is effected by choosing first object to intersect the ray from the hand (Object A in this case) (b) Small Volume Selection is effected by choosing ever object’s volumes intersect the volume attached to the hand (Object C). (c) Cone Selection can be effected by choosing all objects that lie within the cone (Objects E and F). \citep{Steed2006}
+Simple selection techniques (a) Ray-based selection is effected by choosing first object to intersect the ray from the hand (Object A in this case) (b) Small Volume Selection is effected by choosing ever object’s volumes intersect the volume attached to the hand (Object C). (c) Cone Selection can be effected by choosing all objects that lie within the cone (Objects E and F). \cite{Steed2006}
 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/05_LitReview/Steed2006_SelectionTechniques.png}
-		\caption[tbd]{tbd \citep{Steed2006}}
+		\caption[Simple selection techniques for objects in VR: Ray-based, Small Volume Selection and Cone Selection]{Simple selection techniques for objects in VR: Ray-based (a), Small Volume Selection (b) and Cone Selection (c) \citep{Steed2006}}
 		\label{fig:selectiontechniques}
 	\end{center}
 \end{figure}
 
+
+
+\subparagraph{HMD Reticle}
 
 Since the user loses all sight of their hands from within the device, traditional mouse and keyboard in- teraction is limited. While we do not address specific interaction challenges here, we did want to avail ourselves of the head tracking capabilities of the HMD. Since the device tracks the position and direction of the camera, we can also utilize this information to de- termine what the user is looking at, use this information to identify focal points, aid the user in making selections, and provide instan- taneous details of the selected data. \cite{Kwon2015}
 
@@ -326,6 +330,11 @@ When the user uses this reticle to select a node, the node and all its neighbors
 
 
 Our immersive visualization also incorporates gaze interaction, arguably the most natural form of interaction in virtual reality environments. In order to help users target objects more effectively, we provide a crosshair reticle that is rendered visible when a button is pressed to enter “target mode.” If, when the trigger button is pressed, the reticle is targeting a data object, the trigger also bookmarks that data object and highlights it in a contrast color. When the trigger button is pressed, the user’s location is saved regardless of whether or not a data object is bookmarked \cite{Drouhard2015}
+
+
+\subparagraph{Controller}
+
+PS Move or Razer Hydra controller is used to control locomotion, and for selecting and manipulating objects. \cite{Takala2014}
 
 
 Interactive brushing of a 3D scatterplot inside a CAVE-like virtual environment. The brushing operation begins with an empty selection box (left). The user then specifies the selection box’s body diagonal by moving the input device. This locally highlights points in the selection in real-time (center). Only after releasing the input device’s button, the update is remotely computed and the selection for all plots is shown (right). \citep{Hentschel2009}
