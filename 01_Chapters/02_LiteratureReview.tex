@@ -290,7 +290,7 @@ In order to understand the different interaction patterns better, \cite{Bowman20
 
 \subsubsection{Travel}
 
-In \gls{vr},, the most important interaction pattern is the navigation itself, since without navigation the experience is not much different from a 2D display. \cite{Kwon2015} and  \cite{Jamieson2007} confirmed in their research that the simplest method for this is to utilize the built in head tracking capabilities of the \gls{hmd} itself. It in fact is more familiar to us humans to examine objects of interest this way, rather than using mouse and keyboard \citep{Jamieson2007}. Either with the gyroscope sensor information or with tracking the position and direction of the camera, this information allows to determine where the user is looking at \citep{Kwon2015}. \cite{Jamieson2007} continues that for a totally immersive experience in \gls{vr}, also body movement would have to be tracked to allow to walk around or even to put the head inside the visualised data objects.
+In \gls{vr}, the most important interaction pattern is the navigation itself, since without navigation the experience is not much different from a 2D display. \cite{Kwon2015} and  \cite{Jamieson2007} confirmed in their research that the simplest method for this is to utilize the built in head tracking capabilities of the \gls{hmd} itself. It in fact is more familiar to us humans to examine objects of interest this way, rather than using mouse and keyboard \citep{Jamieson2007}. Either with the gyroscope sensor information or with tracking the position and direction of the camera, this information allows to determine where the user is looking at \citep{Kwon2015}. \cite{Jamieson2007} continues that for a totally immersive experience in \gls{vr}, also body movement would have to be tracked to allow to walk around or even to put the head inside the visualised data objects.
 
 \cite{Deligiannidis2003} researched this topic based on a problem from practice where a person is working on a specific task in \gls{vr} and up to 20 outsider participant can observe and comment on the work of the fully immersed person. The use of vocal instructions however was distracting to everyone and there were no possibilities for the outsiders to interact with the virtual environment \citep{Deligiannidis2003}. Their solution to this was dividing the area in front of each outsider into two hemispheres, reaching with the hands in the top one allowed each person to manipulate the camera (third person view) whereas if the hands are on the lower one the hand manipulation (first person view) was activated \citep{Deligiannidis2003}. this combination allowed the before passive observers to be much more immersed in the virtual environment and to exploration on their own.
 
@@ -318,11 +318,11 @@ The reviewed literature showed that for looking around, researchers exclusively 
 After looking at \textit{Travel}, the second interaction pattern is the selection of objects in the virtual environment either to get more information on them or to do manipulate them. Based on the selected input method, different patterns come to action. \newline
 As for travel, \cite{Bowman2002} defined guidelines for designing selection techniques that can be summarised as follow:
 \begin{itemize}[noitemsep,nolistsep]
-	\item Use the natural virtual hand technique if all selection is within arm’s reach
+	\item Use the natural virtual hand technique if all selection is within arm's reach
 	\item Use ray-casting techniques if speed of remote selection is a requirement
 	\item The chosen selection technique should integrates well with the manipulation technique
 	\item Multi-modal input for combined selection and command tasks
-	\item IEnvironment design should maximize the perceived size of objects
+	\item Environment design should maximize the perceived size of objects
 	\item Provide integrated aids to help the user decide where to move
 \end{itemize}
 
@@ -341,18 +341,18 @@ Each technique has different applications where they make more sense or allow fo
 
 \subparagraph{HMD Reticle}
 
-\cite{Kwon2015} and \cite{Drouhard2015} focussed their research on a selection technique using a reticle that is visualised inside the \gls{hmd}, like a crosshair. When the user selects a node with this reticle, this node and its neighbours are brought closer to the user and are highlighted in order to see more details and allow the user to make further selections \citep{Kwon2015}. With the option to select multiple nodes and the visualization of the nodes amongst themselves, interesting paths or relations can be visualized in an effective way \citep{Kwon2015}. It however is not mentioned how the selection itself is triggered, whether a button has to be pushed or if the gaze just has to be held for a couple of seconds. It is also not mentioned how the "\textit{Zoom Out}" task can be performed. \newline
-\cite{Drouhard2015} provided more details on this part in their research where they implement a "target mode" that the user can enter. Only in this case the crosshair reticle is shown to the user and the selection happens by targeting a data object and pressing the trigger button \citep{Drouhard2015}. It can be assumed that this separation of "target mode" and "view mode" will help the combination of \textit{Selection} and \textit{Travel} and makes the data analysis more convenient as the reticle is only shown when absolutely necessary. \newline
+\cite{Kwon2015} and \cite{Drouhard2015} focussed their research on a selection technique using a reticle that is visualised inside the \gls{hmd}, like a cross-hair When the user selects a node with this reticle, this node and its neighbours are brought closer to the user and are highlighted in order to see more details and allow the user to make further selections \citep{Kwon2015}. With the option to select multiple nodes and the visualization of the nodes amongst themselves, interesting paths or relations can be visualized in an effective way \citep{Kwon2015}. It however is not mentioned how the selection itself is triggered, whether a button has to be pushed or if the gaze just has to be held for a couple of seconds. It is also not mentioned how the "\textit{Zoom Out}" task can be performed. \newline
+\cite{Drouhard2015} provided more details on this part in their research where they implement a "target mode" that the user can enter. Only in this case the cross-hair reticle is shown to the user and the selection happens by targeting a data object and pressing the trigger button \citep{Drouhard2015}. It can be assumed that this separation of "target mode" and "view mode" will help the combination of \textit{Selection} and \textit{Travel} and makes the data analysis more convenient as the reticle is only shown when absolutely necessary. \newline
 \cite{Drouhard2015} furthermore states that gaze interaction arguably is the most natural form of interaction in virtual environments.
 
 
 \subparagraph{Gesture Controller}
 
-Finally, also gesture controllers allow for dedicated selection patterns. \cite{Hentschel2009} used a controller to select multiple data points out of a 3D scatterplot which they called interactive brushing and is shown in Figure \ref{fig:interactivebrushing}. The first (left) picture shows the empty selection box that can be moved and scaled (middle and right picture) in order to make the actual selection \citep{Hentschel2009}. Although the middle and right picture look almost the same, the difference is that with the middle picture the visualization of the scatterplot is done in real-time and only upon releasing the button on the device, the actual selection with remote selection and computing is done \citep{Hentschel2009} .
+Finally, also gesture controllers allow for dedicated selection patterns. \cite{Hentschel2009} used a controller to select multiple data points out of a 3D scatter-plot which they called interactive brushing and is shown in Figure \ref{fig:interactivebrushing}. The first (left) picture shows the empty selection box that can be moved and scaled (middle and right picture) in order to make the actual selection \citep{Hentschel2009}. Although the middle and right picture look almost the same, the difference is that with the middle picture the visualization of the scatter-plot is done in real-time and only upon releasing the button on the device, the actual selection with remote selection and computing is done \citep{Hentschel2009} .
 \begin{figure}[t]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/05_LitReview/Hentschel2009_InteractiveBrushing.png}
-		\caption[Box selection of scatterplot data in VR]{Box selection of scatterplot data in VR \citep{Hentschel2009}}
+		\caption[Box selection of scatter-plot data in VR]{Box selection of scatter-plot data in VR \citep{Hentschel2009}}
 		\label{fig:interactivebrushing}
 	\end{center}
 \end{figure}
