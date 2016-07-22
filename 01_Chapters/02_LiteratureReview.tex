@@ -320,19 +320,16 @@ Each technique has different applications where they make more sense or allow fo
 \end{figure}
 
 
-
 \subparagraph{HMD Reticle}
 
-Since the user loses all sight of their hands from within the device, traditional mouse and keyboard in- teraction is limited. While we do not address specific interaction challenges here, we did want to avail ourselves of the head tracking capabilities of the HMD. Since the device tracks the position and direction of the camera, we can also utilize this information to de- termine what the user is looking at, use this information to identify focal points, aid the user in making selections, and provide instan- taneous details of the selected data. \cite{Kwon2015}
+\cite{Kwon2015} and \cite{Drouhard2015} focussed their research on a selection technique using a reticle that is visualised inside the \gls{hmd}, like a crosshair. When the user selects a node with this reticle, this node and its neighbours are brought closer to the user and are highlighted in order to see more details and allow the user to make further selections \citep{Kwon2015}. With the option to select multiple nodes and the visualization of the nodes amongst themselves, interesting paths or relations can be visualized in an effective way \citep{Kwon2015}. It however is not mentioned how the selection itself is triggered, whether a button has to be pushed or if the gaze just has to be held for a couple of seconds. It is also not mentioned how the "\textit{Zoom Out}" task can be performed. \newline
+\cite{Drouhard2015} provided more details on this part in their research where they implement a "target mode" that the user can enter. Only in this case the crosshair reticle is shown to the user and the selection happens by targeting a data object and pressing the trigger button \citep{Drouhard2015}. It can be assumed that this separation of "target mode" and "view mode" will help the combination of \textit{Selection} and \textit{Navigation} and makes the data analysis more convenient as the reticle is only shown when absolutely necessary. \newline
+\cite{Drouhard2015} furthermore states that gaze interaction arguably is the most natural form of interaction in virtual environments.
 
 
-When the user uses this reticle to select a node, the node and all its neighbors are brought closer to the user’s viewpoint. Similarly, all the control points for all affected edges are also brought closer. This serves to separate the selected node and its neighbors from the rest of the graph and bring them into a closer, focal plane. To further accentuate this, we apply a halo technique to the selected node’s edges. The overall effect is that the selection is easily distinguished from the remainder of the graph, and the immediate connections are easy to visually follow to their destinations. Multiple nodes can be selected and brought into this focal plane, allowing the user to explore any potentially interesting paths or relations that they find. \cite{Kwon2015}
+\subparagraph{Gesture Controller}
 
-
-Our immersive visualization also incorporates gaze interaction, arguably the most natural form of interaction in virtual reality environments. In order to help users target objects more effectively, we provide a crosshair reticle that is rendered visible when a button is pressed to enter “target mode.” If, when the trigger button is pressed, the reticle is targeting a data object, the trigger also bookmarks that data object and highlights it in a contrast color. When the trigger button is pressed, the user’s location is saved regardless of whether or not a data object is bookmarked \cite{Drouhard2015}
-
-\subparagraph{Controller}
-
+Finally, also gesture allow for dedicated interaction patterns.
 PS Move or Razer Hydra controller is used to control locomotion, and for selecting and manipulating objects. \cite{Takala2014}
 
 
@@ -340,7 +337,7 @@ Interactive brushing of a 3D scatterplot inside a CAVE-like virtual environment.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/05_LitReview/Hentschel2009_InteractiveBrushing.png}
-		\caption[tbd]{tbd \citep{Hentschel2009}}
+		\caption[Box selection of scatterplot data in VR]{Box selection of scatterplot data in VR \citep{Hentschel2009}}
 		\label{fig:interactivebrushing}
 	\end{center}
 \end{figure}
