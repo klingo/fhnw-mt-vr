@@ -309,8 +309,8 @@ After looking at the navigation, the second interaction pattern is the selection
 
 \subparagraph{Hand}
 
-Simple selection techniques (a) Ray-based selection is effected by choosing first object to intersect the ray from the hand (Object A in this case) (b) Small Volume Selection is effected by choosing ever object’s volumes intersect the volume attached to the hand (Object C). (c) Cone Selection can be effected by choosing all objects that lie within the cone (Objects E and F). \cite{Steed2006}
-
+\cite{Steed2006} researched different simple selection techniques using the hand. He distinguishes between Ray-based selection, Small Volume Selection and Cone Selection which are illustrated in Figure \ref{fig:selectiontechniques} \citep{Steed2006}. In the Ray-based selection, an imaginary ray is cast in the direction of the hand to choose the first object interacts with (object A), whereas in the Small Volume selection, the intersection of the hand with the volume of an object determines the selection (object C) \citep{Steed2006}. Lastly, \cite{Steed2006} defined the Cone Selection similar to the Ray-based one, however there are two rays in this case and all objects that are in between them are considered selected (objects E and F). \newline
+Each technique has different applications where they make more sense or allow for a better immersion than any of the other techniques, such as when a virtual button or handle can be triggered, the Small Volume selection can be considered the closest to how we would interact in the real world.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/05_LitReview/Steed2006_SelectionTechniques.png}
@@ -330,7 +330,6 @@ When the user uses this reticle to select a node, the node and all its neighbors
 
 
 Our immersive visualization also incorporates gaze interaction, arguably the most natural form of interaction in virtual reality environments. In order to help users target objects more effectively, we provide a crosshair reticle that is rendered visible when a button is pressed to enter “target mode.” If, when the trigger button is pressed, the reticle is targeting a data object, the trigger also bookmarks that data object and highlights it in a contrast color. When the trigger button is pressed, the user’s location is saved regardless of whether or not a data object is bookmarked \cite{Drouhard2015}
-
 
 \subparagraph{Controller}
 
