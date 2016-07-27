@@ -120,6 +120,10 @@
 \usepackage{enumitem} %allows [noitemsep] in lists
 \usepackage{chngcntr} %allows to change counter of tables,figures etc
 \usepackage{framed} %allows frames around text
+\usepackage{multirow} %allows multirows in tables
+\usepackage{array} %allows for centered rows with defined width
+\usepackage[table]{xcolor} %allows to color cells of a table
+\usepackage{hhline} %allows for partial lines in tables in combination with xcolor
 
 % have global counters for tables and figures
 \counterwithout{figure}{chapter}

@@ -329,7 +329,8 @@ As for travel, \cite{Bowman2002} defined guidelines for designing selection tech
 \subparagraph{Hand}
 
 \cite{Steed2006} researched different simple selection techniques using the hand. He distinguishes between Ray-based selection, Small Volume Selection and Cone Selection which are illustrated in Figure \ref{fig:selectiontechniques} \citep{Steed2006}. In the Ray-based selection, an imaginary ray is cast in the direction of the hand to choose the first object interacts with (object A), whereas in the Small Volume selection, the intersection of the hand with the volume of an object determines the selection (object C) \citep{Steed2006}. Lastly, \cite{Steed2006} defined the Cone Selection similar to the Ray-based one, however there are two rays in this case and all objects that are in between them are considered selected (objects E and F). \newline
-Each technique has different applications where they make more sense or allow for a better immersion than any of the other techniques, such as when a virtual button or handle can be triggered, the Small Volume selection can be considered the closest to how we would interact in the real world.
+Each technique has different applications where they make more sense or allow for a better immersion than any of the other techniques, such as when a virtual button or handle can be triggered, the Small Volume selection can be considered the closest to how we would interact in the real world. \newline
+Since these techniques are highly linked to the methods of using hand gestures as input, they bring their strengths and weaknesses along. While it is the most familiar way for humans to interact (or in this case select something), it is highly depending on accurate tracking capabilities and good interpretation of gestures if more than a simple pointing gesture is required.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/05_LitReview/Steed2006_SelectionTechniques.png}
@@ -343,12 +344,14 @@ Each technique has different applications where they make more sense or allow fo
 
 \cite{Kwon2015} and \cite{Drouhard2015} focussed their research on a selection technique using a reticle that is visualised inside the \gls{hmd}, like a cross-hair When the user selects a node with this reticle, this node and its neighbours are brought closer to the user and are highlighted in order to see more details and allow the user to make further selections \citep{Kwon2015}. With the option to select multiple nodes and the visualization of the nodes amongst themselves, interesting paths or relations can be visualized in an effective way \citep{Kwon2015}. It however is not mentioned how the selection itself is triggered, whether a button has to be pushed or if the gaze just has to be held for a couple of seconds. It is also not mentioned how the "\textit{Zoom Out}" task can be performed. \newline
 \cite{Drouhard2015} provided more details on this part in their research where they implement a "target mode" that the user can enter. Only in this case the cross-hair reticle is shown to the user and the selection happens by targeting a data object and pressing the trigger button \citep{Drouhard2015}. It can be assumed that this separation of "target mode" and "view mode" will help the combination of \textit{Selection} and \textit{Travel} and makes the data analysis more convenient as the reticle is only shown when absolutely necessary. \newline
-\cite{Drouhard2015} furthermore states that gaze interaction arguably is the most natural form of interaction in virtual environments.
+\cite{Drouhard2015} furthermore states that gaze interaction arguably is the most natural form of interaction in virtual environments. \newline
+One fact that is not mentioned in literature but becomes clear is that with an \gls{hmd} reticle, the selection is directly linked to the viewing experience. It is not possible to select something without directly looking at it, which inherently limits the multitasking possibilities .
 
 
 \subparagraph{Gesture Controller}
 
-Finally, also gesture controllers allow for dedicated selection patterns. \cite{Hentschel2009} used a controller to select multiple data points out of a 3D scatter-plot which they called interactive brushing and is shown in Figure \ref{fig:interactivebrushing}. The first (left) picture shows the empty selection box that can be moved and scaled (middle and right picture) in order to make the actual selection \citep{Hentschel2009}. Although the middle and right picture look almost the same, the difference is that with the middle picture the visualization of the scatter-plot is done in real-time and only upon releasing the button on the device, the actual selection with remote selection and computing is done \citep{Hentschel2009} .
+Finally, also gesture controllers allow for dedicated selection patterns. \cite{Hentschel2009} used a controller to select multiple data points out of a 3D scatter-plot which they called interactive brushing and is shown in Figure \ref{fig:interactivebrushing}. The first (left) picture shows the empty selection box that can be moved and scaled (middle and right picture) in order to make the actual selection \citep{Hentschel2009}. Although the middle and right picture look almost the same, the difference is that with the middle picture the visualization of the scatter-plot is done in real-time and only upon releasing the button on the device, the actual selection with remote selection and computing is done \citep{Hentschel2009}. \newline
+As with the selection by hand, also the selection by gesture controllers brings their advantages and disadvantages from the method as an input device itself with them. While they offer very good accuracy and increased functionality with buttons and triggers, it requires additional hardware and tracking devices.
 \begin{figure}[t]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/05_LitReview/Hentschel2009_InteractiveBrushing.png}
@@ -422,6 +425,40 @@ It can be said that if a task feels tedious and difficult to execute in \gls{vr}
 \subsection{Conclusion}
 
 The \gls{vism} provides a solid foundation of what tasks the interaction patterns should be able to fulfil. It however gives no guidelines or recommendations in how these interaction patterns could look like. The interaction patterns can be grouped into three categories: \textit{Travel}, \textit{Selection} and \textit{Manipulation}. Each of them has its own patterns which are more or less suited for certain applications. In general it can be seen that the \textit{Manipulation} pattern are researched the least so far and can be a suitable candidate for further research. Whichever interaction pattern is selected and implemented, its ability to allow the user to have a good task performance is crucial for any practical applications.
+\begin{table}[b]
+	\begin{center}
+		\begin{tabular}{ | p{4cm} | p{6cm} | } 
+			\hline
+			\textbf{Pattern} & \textbf{Method} \\
+			\hline
+			Travel:  \newline \textit{Controllers} &
+			- Gesture Controllers \newline - Physical Placement of Objects \\
+			\hline
+			Travel: \newline \textit{Full body tracking} &
+			- Fully Body Tracking \newline - 360° Motion Tracking \\
+			\hline
+			Selection: \newline \textit{Hand} & 
+			- Hand Gestures \\
+			\hline
+			Selection: \newline \textit{HMD Reticle} &
+			- \gls{hmd} \\
+			\hline
+			Selection: \newline \textit{Gesture Controllers} &
+			- Gesture Controllers \\ 
+			\hline
+			Manipulation: \newline \textit{"Put that there"} &
+			- Speech Recognition \newline - Hand Gestures \\ 
+			\hline
+			Manipulation: \newline \textit{Others} &
+			- Gesture Controllers \\ 
+			\hline
+		\end{tabular}
+		\caption{Mapping of interaction pattern with their correlating input method}
+		\label{tbl:pattermethodmapping}
+	\end{center}
+\end{table}
+\newline In general, the strengths and weaknesses of the individual patterns are heavily related to advantages and disadvantages of the input method they base on. It can be said that the interaction patterns have to be selected in correlation with the decision for the matching input methods. Table \ref{tbl:pattermethodmapping} shows a mapping of pattern and method.
+
 
 
 %----------------------------------------------------------------------------------------
