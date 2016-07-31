@@ -7,12 +7,12 @@
 \label{ChapterLiteratureReview} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 In the literature review chapter, an overview of existing research found in secondary literature, that is relevant to the thesis statement of this paper, is given. Every \gls{srq} is discussed in its own sub-chapter where its relevance to the \gls{mrq} is elaborated. Each sub-chapter ends with a short conclusion and answers to the corresponding research question are given.
-Figure \ref{fig:litreviewoverview} shows the correlation between the sub-chapters and the research questions. In chapter \ref{SectionLiteratureReviewSRQ1}, the different methods for user input in virtual reality are analysed The next chapter \ref{SectionLiteratureReviewSRQ2} focuses on existing data interaction patterns in virtual reality. By looking at possible enhancements of existing interaction patterns with new methods for user input, the third SRQ is covered in chapter \ref{SectionLiteratureReviewSRQ3}. To wrap everything up, a conclusion of the literature review is presented in chapter \ref{SectionLiteratureReviewConclusion} which builds the base for the research design in chapter \ref{Research Method}.
+Figure \ref{fig:litreviewoverview} shows the correlation between the sub-chapters and the research questions. In chapter \ref{SectionLiteratureReviewSRQ1}, the different methods for user input in virtual reality are analysed The next chapter \ref{SectionLiteratureReviewSRQ2} focuses on existing data interaction patterns in virtual reality. By looking at possible enhancements of interaction patterns with new methods for user input, the third SRQ is covered in chapter \ref{SectionLiteratureReviewSRQ3}. To wrap everything up, a conclusion of the literature review is presented in chapter \ref{SectionLiteratureReviewConclusion} which builds the base for the research design in chapter \ref{Research Method}.
 \newline
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=12cm]{03_Figures/05_LitReview/LitReview_SRQ.png}
-		\caption[Chapter 2 Overview]{Chapter 2 Overview}
+		\caption{Chapter 2 Overview}
 		\label{fig:litreviewoverview}
 	\end{center}
 \end{figure}
@@ -36,8 +36,8 @@ This chapter deals with the first SRQ, focusing on the currently used and resear
 %-----------------------------------
 \subsection{Introduction}
 
-\gls{hci} itself has been worked and research on approximately from the 1950s onwards, where the main focus was on the direct manipulation of graphical objects with the mouse as well as gesture recognition \citep{Myers1998}. During this time however, gesture recognition was rather understood as devices that work with pen-based input devices and thus can recognize patterns that are drawn with these pens \citep{Myers1998}. In the regular interaction between human and machines these methods for user input are still fairly sufficient as even today we are still fully relying on having a mouse/track-pad/touch-screen and a keyboard to interact with our computers. \newline
-Virtual reality changes this since quite a bit since wearing a \gls{hmd} with its own display obstructs the view on the so far used physical input devices. New solutions had to be found for this changed situation. An overview on the researched interaction patterns with virtual reality is shown in the following sub-chapter
+\gls{hci} itself has been worked and research on approximately from the 1950s onwards, where the main focus was on the direct manipulation of graphical objects with the mouse as well as gesture recognition \citep{Myers1998}. During this time however, gesture recognition was rather understood as devices that work with pen-based input devices and thus can recognize patterns that are drawn with these pens \citep{Myers1998}. In the regular interaction between human and machines these methods for user input are still fairly sufficient as even today we are completely relying on having a mouse/track-pad/touch-screen and a keyboard to interact with our devices. \newline
+Virtual reality changes this quite a bit since wearing a \gls{hmd} with its own display obstructs the view on the so far used physical input devices. New solutions had to be found for this changed situation. An overview on the researched interaction patterns with virtual reality is shown in the following sub-chapter.
 
 
 %-----------------------------------
@@ -46,7 +46,7 @@ Virtual reality changes this since quite a bit since wearing a \gls{hmd} with it
 
 \subsection{Overview of the Different Methods}
 
-The reviewed literature brought up different means in research to interact with the virtual reality environment. In order to review them in a more structured way, they have been grouped based on their core technology (i.e. hand gestures, speech recognition etc.) on which they base on. The regular game controllers have been excluded in this research since they basically are not much different from mouse and keyboard as they do not provide any added interaction functionality.
+The reviewed literature brought up different means in research to interact with the virtual reality environment. In order to review them in a more structured way, they have been grouped by their core technology (i.e. hand gestures, speech recognition etc.) on which they base on. The regular game controllers have been excluded in this research since they basically are not much different from mouse and keyboard as they do not provide any added interaction functionality.
 
 
 \subsubsection{Hand Gestures}
@@ -54,7 +54,7 @@ The reviewed literature brought up different means in research to interact with 
 \label{SubSubSectionHandGestures}
 
 The by far most utilized and researched interaction method is hand gestures. Since we also heavily rely on this interaction pattern in real life with other human beings, it is fair to assume that the familiarity of it helps the research in a significant way whereas methods that rely on physical hardware often feel more distant. \newline
-\cite{Pfeiffer2008} conducted an empirical study about conversational pointing gestures in virtual reality interaction where the focus lied on the system to recognize on which object the user was pointing at. \cite{Pfeiffer2008} distinguished between \gls{ifp} where the direction of where the index finger is pointing at, and \gls{gfp} where an imaginary line between the viewers eye and the tip of the index finger is drawn. Provided the objects are nod too close to each other (>20cm), both methods had equal accuracy and success while tracked with two cameras from different angles and motion capturing \citep{Pfeiffer2008}. Figure \ref{fig:pointinggesture} shows the application of this in an identification game which was part of the empirical study.
+\cite{Pfeiffer2008} conducted an empirical study about conversational pointing gestures in virtual reality interaction where the focus lied on the system to recognize on which object the user was pointing at. \cite{Pfeiffer2008} distinguished between \gls{ifp} where the direction of where the index finger is pointing at, and \gls{gfp} where an imaginary line between the viewers eye and the tip of the index finger is drawn. Provided the objects are nod too close to each other (ca. 20cm), both methods had equal accuracy and success while tracked with two cameras from different angles and motion capturing \citep{Pfeiffer2008}. Figure \ref{fig:pointinggesture} shows the application of this in an identification game which was part of the empirical study.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=10cm]{03_Figures/05_LitReview/Pfeiffer2008_Pointing.png}
@@ -63,8 +63,8 @@ The by far most utilized and researched interaction method is hand gestures. Sin
 	\end{center}
 \end{figure}
 \newline
-A similar approach has been research by \cite{Rautaray2011} who used a single camera with an application that did the image capturing, locating the hand and its orientation and finally model the gesture to find a match for predefined gestures. The focus relied on simple gestures for \textit{punch} (three fingers), \textit{grab} (fist), \textit{throw} (five fingers), and to \textit{move forward} (thumb up) within a simple \gls{vr} game \citep{Rautaray2011}. The recognition rate was between 80\% and 94\% (depending on the gesture), which might not be accurate enough for practical use cases as also acknowledged by \cite{Rautaray2011}. \newline
-In a more recent study of \cite{Khundam2015}, it was not cameras that were used to track the hand gestures but a Leap Motion (an in-air controller) attached to the front of an Oculus Rift. Figure \ref{fig:leapmotion} shows the different gestures that were implemented by \cite{Khundam2015} in order to navigate within a virtual environment. Depending on how far the hand is moved towards a certain angle, the speed of the movement can be influenced to increase or decrease it \citep{Khundam2015}. Although the applied gestures are understandable and easy to learn, they still brings some unfamiliarity with them since in real life movement already has a specific gesture which however utilizes the legs and not the hands.
+A similar approach has been research by \cite{Rautaray2011} who used a single camera with an application that did the image capturing, locating the hand and its orientation and finally modelling the gesture to find a match for predefined gestures. The focus relied on simple gestures for \textit{punch} (three fingers), \textit{grab} (fist), \textit{throw} (five fingers), and to \textit{move forward} (thumb up) within a simple \gls{vr} game \citep{Rautaray2011}. The recognition rate was between 80\% and 94\% (depending on the gesture), which might not be accurate enough for practical use cases as also acknowledged by \cite{Rautaray2011}. \newline
+In a more recent study of \cite{Khundam2015}, it was not cameras that were used to track the hand gestures but a Leap Motion (an in-air controller) attached to the front of an Oculus Rift. Figure \ref{fig:leapmotion} shows the different gestures that were implemented by \cite{Khundam2015} in order to navigate within a virtual environment. Depending on how far the hand is moved towards a certain angle, the speed of the movement can be influenced to increase or decrease it \citep{Khundam2015}. Although the applied gestures are understandable and easy to learn, they still bring some unfamiliarity with them since in real life movement already has a specific gesture which however utilizes the legs and not the hands.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/05_LitReview/Khundam2015_LeapMotion.png}
@@ -95,7 +95,7 @@ Alongside the \textit{HTC Vive} HMD, a new gesture controller also have been int
 \label{SubSubSectionSpeechRecognition}
 
 The second natural interaction after hand gestures is speech recognition It is often combined with hand gesture as they can complement each other quite seamlessly. \newline
-For the navigation within 3D scans from \gls{mri} or \gls{ct}, \cite{Muller1998} proposed a speech recognition system as illustrated with an example in figure \ref{fig:speechrecognitionmedical}. With semantic decoding and a semantic structure, the commands can be interpreted and processed by the intention decoder to tell the system what to \citep{Muller1998}. This is a very time-consuming process since all commands have to be prepared and acoustic-phonetic models need to be generated during the collection of training data. Provided the users followed the instructions, a 99.8\% semantic accuracy could be achieved which basically means that the system is almost fully accurate in this scenario \citep{Muller1998}.
+For the navigation within 3D scans from \gls{mri} or \gls{ct}, \cite{Muller1998} proposed a speech recognition system as illustrated with an example in Figure \ref{fig:speechrecognitionmedical}. With semantic decoding and a semantic structure, the commands can be interpreted and processed by the intention decoder to tell the system what to do \citep{Muller1998}. This is a very time-consuming process since all commands have to be prepared and acoustic-phonetic models need to be generated during the collection of training data. Provided the users followed the instructions, a 99.8\% semantic accuracy could be achieved which basically means that the system is almost fully accurate in this scenario \citep{Muller1998}.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=10cm]{03_Figures/05_LitReview/Muller1998_SpeechRecognition.png}
@@ -132,8 +132,8 @@ Quite a bit older, from the 1990s, is the idea of dynamically placing physical k
 \subsubsection{Full Body Tracking}
 
 In June 2010, Microsoft announced the \textit{Kinect for Xbox 360}, a controller-free gaming device for the living room \citep{Microsoft2010}. Instead of relying on any physical input devices, the Kinect contains a camera with motion-sensing technology that can track up to 48 points of movement on the human body, turning the player himself into a controller \citep{Microsoft2010}. \newline
-Based on this technology, \cite{Takala2014} proposed a combination of a full body avatar controlled by Kinect with the Oculus Rift as display. This combination proved to be quite powerful although they were facing a couple of challenges as well. The Kinect sometimes lost track of the hands or the movement was not recognized at all which \cite{Takala2014} tried to resolve by attaching a PlayStation Move to the HMD and put a Razer Hydra controller into the hands (Figure \ref{fig:kinectbody}). Although this improved the situation, different latencies of the individual dampened the experience. Furthermore, although Kinect was used for full-body tracking, only the movement of the hands and legs was utilized, whereas the movement within the virtual world was still relying on a physical controller.
-\begin{figure}[h]
+Based on this technology, \cite{Takala2014} proposed a combination of a full body avatar controlled by Kinect with the Oculus Rift as display. This combination proved to be quite powerful although they were facing a couple of challenges as well. The Kinect sometimes lost track of the hands or the movement was not recognized at all which \cite{Takala2014} tried to resolve by attaching a PlayStation Move to the HMD and put a Razer Hydra controller into the hands (Figure \ref{fig:kinectbody}). Although this improved the situation, different latencies of the individual devices dampened the experience. Furthermore, although Kinect was used for full-body tracking, only the movement of the hands and legs was utilized, whereas the movement within the virtual world was still relying on a physical controller.
+\begin{figure}[t]
 	\begin{center}
 		\includegraphics[width=12cm]{03_Figures/05_LitReview/Takala2014_KinectBody.png}
 		\caption[Player's view of their virtual body that is tracked with Kinect]{Player's view of their virtual body (left) that is tracked with Kinect (right) \citep{Takala2014}}
@@ -146,7 +146,7 @@ Based on this technology, \cite{Takala2014} proposed a combination of a full bod
 \label{360MotionTracking}
 
 One of the latest additions to the interaction possibilities is the 360° motion tracking, introduced with the HTC Vive which was just released in April 2016 \citep{Htcvive2016}. Figure \ref{fig:lighthouses} shows the setup of the two base stations (i.e. Lighthouses) in opposing corners of the room that will be used for the 360° motion tracking. In essence, the two Lighthouse base stations emit a laser sweep across the room 60 times a second with a flash in between which allows any device with photo-sensors to calculate its exact position relative to the base station(s) \citep{Gizmodo2015}. This allows for a very accurate tracking and due to the opposing corners, at least one Lighthouse always has direct \textit{line of sight} to the HMD and the controllers. \newline
-With this additional sensor information, the movement of the HMD and the controllers is tracked in all three axis and allow for new movements to be recognized, such as crouching or jumping within the relations of the room.
+With this additional sensor information, the movement of the HMD and the controllers is tracked in all three axis and allows for new movements to be recognized, such as crouching or jumping within the relations of the room.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=10cm]{03_Figures/05_LitReview/HTCCorp2016_LighthouseRoomScale.png}
@@ -163,7 +163,10 @@ A more simplified variation of this is described by \cite{Donalek2014}, who used
 
 \subsection{Conclusion}
 
-\begin{table}[b]
+The literature review on different methods for user input in virtual reality showed that there are various types can be used or even combined. \newline
+There are six main methods for user input in virtual reality. These are hand gestures, gesture controllers, speech recognition, physical placement of interactive objects, full body tracking and 360° motion tracking. Hand gestures track the movement of the whole hand and/or the individual fingers with one or more (regular, infra-red or depth) cameras. Gesture controllers are physical devices with buttons that are held in the hands and also tracked in their spatial position. Speech recognition tries to understand and interpret spoken words and sentences in order to find the correct commands. The physical placement of interstice objects extrapolates the movement of the hand to physically place a button in front of the finger where a virtual one is shown in \gls{vr}. Full body tracking uses cameras to track the whole body including the movement of all extremities from one angle. Finally, 360° motion tracking can locate the position of special devices within an actual room on all three axis from opposing corners. The most used method in the reviewed literature is the hand gestures, followed by the hand gestures in combination with speech recognition \newline
+Depending on the chosen method, there are advantages and disadvantages (or even limitations) for certain use cases. Table \ref{tbl:methodscomparison} shows a summary of these findings.
+\begin{table}[h]
 	\begin{center}
 		\begin{tabular}{ | p{3.7cm} | p{4.9cm} | p{4.9cm} | } 
 			\hline
@@ -197,12 +200,7 @@ A more simplified variation of this is described by \cite{Donalek2014}, who used
 		\caption{Advantages and disadvantages/limitations of different methods for user input in virtual reality}
 		\label{tbl:methodscomparison}
 	\end{center}
-\end{table}
-
-The literature review on different methods for user input in virtual reality showed that there are various types can be used or even combined. \newline
-There are six main methods for user input in virtual reality. These are hand gestures, gesture controllers, speech recognition, physical placement of interactive objects, full body tracking and 360° motion tracking. Hand gestures track the movement of the whole hand and/or the individual fingers with one or more (regular, infra-red or depth) cameras. Gesture controllers are physical devices with buttons that are held in the hands and also tracked in their spatial position. Speech recognition tries to understand and interpret spoken words and sentences in order to find the correct commands. The physical placement of interstice objects extrapolates the movement of the hand to physically place a button in front of the finger where a virtual one is shown in V Full body tracking uses cameras to track the whole body including the movement of all extremities from one angle. Finally, 360° motion tracking can locate the position of special devices within an actual room on all three axis from opposing corners. The most used method in the reviewed literature is the hand gestures, followed by the hand gestures in combination with speech recognition \newline
-Depending on the chosen method, there are advantages and disadvantages (or even limitations) for certain use cases. Table \ref{tbl:methodscomparison} shows a summary of these findings.
-
+\end{table} \newline
 In regards of the thesis statement, a combination of two methods is recommended to outweigh the individual disadvantages and utilize the benefits of both methods.
 
 
@@ -225,7 +223,7 @@ This chapter addresses the second SRQ by having a look at existing interaction p
 
 \subsection{Introduction}
 
-During the 1960s, the first interaction patterns such as clicking or grabbing and moving objects have been defined on which even now we are still relying on with mouse and keyboard \citep{Myers1998}. But with wearing a \gls{hmd}, the situation changes as it obstructs our view on the so well known devices. New methods for user input had to be research and inherently also new interaction patterns had to be defined. \cite{Donalek2014} mentioned that a new tool is required where physical gestures can be used to manipulate with virtual objects. In order to understand what kind of gestures should be considered, the Visual Information Seeking Mantra of \cite{Shneiderman1996} is looked at.
+During the 1960s, the first interaction patterns such as clicking or grabbing and moving objects have been defined on which even now we are still relying on with mouse and keyboard \citep{Myers1998}. But with wearing a \gls{hmd}, the situation changes as it obstructs our view on the so well known devices. New methods for user input had to be researched and inherently also new interaction patterns had to be defined. \cite{Donalek2014} mentioned that a new tool is required where physical gestures can be used to manipulate with virtual objects. In order to understand what kind of gestures should be considered, the Visual Information Seeking Mantra of \cite{Shneiderman1996} is looked at.
 
 
 %-----------------------------------
@@ -238,18 +236,23 @@ During the 1960s, the first interaction patterns such as clicking or grabbing an
 \begin{itemize}[noitemsep,nolistsep]
 	\item visual representation of the world of action including both the objects and actions
 	\item rapid, incremental and reversible actions
-	\item selection by pointing(instead of typing)
+	\item selection by pointing (instead of typing)
 \end{itemize}
 Based on this, \cite{Ahlberg1994} proposed the Visual Information Seeking Principle in 1994 that focused in displaying a graph with buttons and sliders for real-time manipulation of the displayed data. This concept fulfilled all principles for direct manipulation and was so successful that it became the foundation for the \gls{vism} \citep{Shneiderman1996}. \cite{Shneiderman1996} was looking at many visual design guidelines but fundamentally always concluded the following mantra:
 \begin{framed}
 	\textit{Overview first, zoom and filter, then details-on-demand}
 \end{framed}
-As an abstraction of reality, \cite{Shneiderman1996} further defined seven tasks (four main and three support tasks) that are inherently crucial for the analysis and work with data:
+As an abstraction of reality, \cite{Shneiderman1996} further defined seven tasks (four main and three support tasks) that are inherently crucial for the analysis and work with data.
+
+Main tasks:
 \begin{itemize}[noitemsep,nolistsep]
 	\item Overview \textit{(Gain an overview of the entire collection)}
 	\item Zoom \textit{(Zoom in on items of interest)}
 	\item Filter \textit{(Filter out uninteresting items)}
 	\item Details-on-demand \textit{(Select and item or group and get details when needed)}
+\end{itemize}
+Support tasks:
+\begin{itemize}[noitemsep,nolistsep]
 	\item Relate \textit{(View relationships among items)}
 	\item History \textit{(Keep a history of actions to support undo, replace and refinement)}
 	\item Extract \textit{(Allow extraction of sub-collections and of the query parameters)}
@@ -280,8 +283,8 @@ In the analysis of \gls{vism} by \cite{Craft2005}, they point out that it should
 
 \subsection{Interaction Patterns}
 
-\cite{Bunt1998} stated that "Human communication is inherently multimodal in nature". What he means with this is that in a multi-modal user interface, a user can combine a spoken natural language request with one or more gestures \citep{Rosson2002}. By allowing this combination, the interaction in virtual reality can become closer to how we already interact with each other in real life. \newline
-In order to understand the different interaction patterns better, \cite{Bowman2002} has grouped them in three distinctive categories: Travel, Selection and Manipulation. \textit{Travel} deals with how the user can navigate in the virtual environment, how the movement and visual exploration works. \textit{Selection} then focuses on the first interaction with a virtual object, how one or many object can be selected and how this is visualised for the user. Finally, in \textit{Manipulation} the actual alteration of a virtual object in its appearance and behaviour is discussed.
+\cite{Bunt1998} stated that "Human communication is inherently multimodal in nature". What he meant with this is that in a multi-modal user interface, a user can combine a spoken natural language request with one or more gestures \citep{Rosson2002}. By allowing this combination, the interaction in virtual reality can become closer to how we already interact with each other in real life. \newline
+In order to understand the different interaction patterns better, \cite{Bowman2002} has grouped them in three distinctive categories: Travel, Selection and Manipulation. \textit{Travel} deals with how the user can navigate in the virtual environment, how the movement and visual exploration works. \textit{Selection} focuses on the first interaction with a virtual object, how one or many object can be selected and how this is visualised for the user. Finally, in \textit{Manipulation} the actual alteration of a virtual object in its appearance and behaviour is discussed.
 
 
 %-----------------------------------
@@ -290,11 +293,11 @@ In order to understand the different interaction patterns better, \cite{Bowman20
 
 \subsubsection{Travel}
 
-In \gls{vr}, the most important interaction pattern is the navigation itself, since without navigation the experience is not much different from a 2D display. \cite{Kwon2015} and  \cite{Jamieson2007} confirmed in their research that the simplest method for this is to utilize the built in head tracking capabilities of the \gls{hmd} itself. It in fact is more familiar to us humans to examine objects of interest this way, rather than using mouse and keyboard \citep{Jamieson2007}. Either with the gyroscope sensor information or with tracking the position and direction of the camera, this information allows to determine where the user is looking at \citep{Kwon2015}. \cite{Jamieson2007} continues that for a totally immersive experience in \gls{vr}, also body movement would have to be tracked to allow to walk around or even to put the head inside the visualised data objects.
+In \gls{vr}, the most important interaction pattern is the navigation itself, since without navigation the experience is not much different from a 2D display. \cite{Kwon2015} and \cite{Jamieson2007} confirmed in their research that the simplest method for this is to utilize the built in head tracking capabilities of the \gls{hmd} itself. It in fact is more familiar to us humans to examine objects of interest this way, rather than using mouse and keyboard \citep{Jamieson2007}. Either with the gyroscope sensor information or with tracking the position and direction of the camera, this information allows to determine where the user is looking at \citep{Kwon2015}. \cite{Jamieson2007} continue that for a totally immersive experience in \gls{vr}, also body movement would have to be tracked to allow to walk around or even to put the head inside the visualised data objects.
 
-\cite{Deligiannidis2003} researched this topic based on a problem from practice where a person is working on a specific task in \gls{vr} and up to 20 outsider participant can observe and comment on the work of the fully immersed person. The use of vocal instructions however was distracting to everyone and there were no possibilities for the outsiders to interact with the virtual environment \citep{Deligiannidis2003}. Their solution to this was dividing the area in front of each outsider into two hemispheres, reaching with the hands in the top one allowed each person to manipulate the camera (third person view) whereas if the hands are on the lower one the hand manipulation (first person view) was activated \citep{Deligiannidis2003}. this combination allowed the before passive observers to be much more immersed in the virtual environment and to exploration on their own.
+\cite{Deligiannidis2003} researched this topic based on a problem from practice where a person is working on a specific task in \gls{vr} and up to 20 outsider participants can observe and comment on the work of the fully immersed person. The use of vocal instructions however was distracting to everyone and there were no possibilities for the outsiders to interact with the virtual environment \citep{Deligiannidis2003}. Their solution to this was dividing the area in front of each outsider into two hemispheres, reaching with the hands in the top one allowed each person to manipulate the camera (third person view) whereas if the hands are on the lower one the hand manipulation (first person view) was activated \citep{Deligiannidis2003}. This combination allowed the before passive observers to be much more immersed in the virtual environment and to do exploration on their own.
 
-During their demonstrations, \cite{Drouhard2015} observed difficulties when the users wearing a \gls{hmd} had to interact (blindly) with keyboard and mouse , whereas most of them could use an Xbox controller rather intuitively. In their application, the controller was used to "fly" around within the virtual environment and the head tracking capabilities of the \gls{hmd} allowed them to explore the environment and look at the data from different perspectives \citep{Drouhard2015}.
+During their demonstrations, \cite{Drouhard2015} observed difficulties when the users wearing a \gls{hmd} had to interact (blindly) with keyboard and mouse, whereas most of them could use an Xbox controller rather intuitively. In their application, the controller was used to "fly" around within the virtual environment and the head tracking capabilities of the \gls{hmd} allowed them to explore the environment and look at the data from different perspectives \citep{Drouhard2015}.
 
 \cite{Bowman2002} also defined guidelines for designing travel techniques, which inherently are related to the navigation and can be summarized as follows:
 \begin{itemize}[noitemsep,nolistsep]
@@ -308,6 +311,16 @@ During their demonstrations, \cite{Drouhard2015} observed difficulties when the 
 
 The reviewed literature showed that for looking around, researchers exclusively relied on the head-tracking capabilities of the \gls{hmd} whereas for the travel in space either third-party controllers were used or the idea of full body tracking was briefly mentioned.
 
+On a more practical side, \cite{CloudheadGames2016} released their \gls{vr} game \textit{The Gallery - Episode 1: Call of the Starseed} for the HTC Vive in April 2016 and offered two different ways for travelling in the virtual environment. The player can chose between "gaze-teleportation" where the location to be teleported at is controlled with the \gls{hmd} and confirmed with a click, or "point-teleportation" where the target spot is chosen and confirmed by pointing at with the gesture controller \citep{CloudheadGames2016}. While the travelling with gaze follows the research of \cite{Jamieson2007} and their conclusion that using the \gls{hmd} is the simplest method, it limits the possibilities for multitasking. By utilizing the gesture controllers for travelling, a certain independence of the viewing experience is achieved and allows "blind" travelling without the need to also look into that direction, just like if we walk backwards in the real world. Both methods of travelling are illustrated in Figure \ref{fig:gazePointTeleportation}.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=7cm]{03_Figures/05_LitReview/Cloudhead2016_TheGallery2.png}
+		\includegraphics[width=7cm]{03_Figures/05_LitReview/HTCVive2016_ViveHome.png}
+		\caption[Gaze and point teleportation in "The Gallery" and "Vive Home"]{Gaze (left) and point (right) teleportation in "The Gallery"  \citep{CloudheadGames2016} and "Vive Home" \citep{Htcvive2016a}}
+		\label{fig:gazePointTeleportation}
+	\end{center}
+\end{figure} \newline
+The fact that both options are provided for the player to chose from can be seen as an indication, that even in practice for entertainment purposes, there is no clear strategy yet as to which travelling method is more natural, efficient or practical.
 
 %-----------------------------------
 %	SUBSUBSECTION 2
@@ -315,8 +328,8 @@ The reviewed literature showed that for looking around, researchers exclusively 
 
 \subsubsection{Selection}
 
-After looking at \textit{Travel}, the second interaction pattern is the selection of objects in the virtual environment either to get more information on them or to do manipulate them. Based on the selected input method, different patterns come to action. \newline
-As for travel, \cite{Bowman2002} defined guidelines for designing selection techniques that can be summarised as follow:
+After looking at \textit{Travel}, the second interaction pattern is the selection of objects in the virtual environment either to get more information on them or to do manipulate them in a subsequent step. Based on the selected input method, different patterns come to action. \newline
+\cite{Bowman2002} also defined guidelines for designing selection techniques that can be summarised as follow:
 \begin{itemize}[noitemsep,nolistsep]
 	\item Use the natural virtual hand technique if all selection is within arm's reach
 	\item Use ray-casting techniques if speed of remote selection is a requirement
@@ -326,11 +339,13 @@ As for travel, \cite{Bowman2002} defined guidelines for designing selection tech
 	\item Provide integrated aids to help the user decide where to move
 \end{itemize}
 
+Research showed, that three main types of selection patterns have been research: Hand, HMD Reticle and Gesture Controllers.
+
 \subparagraph{Hand}
 
 \cite{Steed2006} researched different simple selection techniques using the hand. He distinguishes between Ray-based selection, Small Volume Selection and Cone Selection which are illustrated in Figure \ref{fig:selectiontechniques} \citep{Steed2006}. In the Ray-based selection, an imaginary ray is cast in the direction of the hand to choose the first object interacts with (object A), whereas in the Small Volume selection, the intersection of the hand with the volume of an object determines the selection (object C) \citep{Steed2006}. Lastly, \cite{Steed2006} defined the Cone Selection similar to the Ray-based one, however there are two rays in this case and all objects that are in between them are considered selected (objects E and F). \newline
-Each technique has different applications where they make more sense or allow for a better immersion than any of the other techniques, such as when a virtual button or handle can be triggered, the Small Volume selection can be considered the closest to how we would interact in the real world. \newline
-Since these techniques are highly linked to the methods of using hand gestures as input, they bring their strengths and weaknesses along. While it is the most familiar way for humans to interact (or in this case select something), it is highly depending on accurate tracking capabilities and good interpretation of gestures if more than a simple pointing gesture is required.
+Each technique has different applications where it makes more sense or allows for a better immersion than any of the other techniques, such as when a virtual button or handle can be triggered, the Small Volume selection can be considered the closest to how we would interact in the real world. \newline
+Since these techniques are highly linked to the methods of using hand gestures as input, they bring their strengths and weaknesses along. While it is the most familiar way for humans to interact (or in this case to select something), it is highly depending on accurate tracking capabilities and good interpretation of gestures if more than a simple pointing gesture is required.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/05_LitReview/Steed2006_SelectionTechniques.png}
@@ -342,24 +357,32 @@ Since these techniques are highly linked to the methods of using hand gestures a
 
 \subparagraph{HMD Reticle}
 
-\cite{Kwon2015} and \cite{Drouhard2015} focussed their research on a selection technique using a reticle that is visualised inside the \gls{hmd}, like a cross-hair When the user selects a node with this reticle, this node and its neighbours are brought closer to the user and are highlighted in order to see more details and allow the user to make further selections \citep{Kwon2015}. With the option to select multiple nodes and the visualization of the nodes amongst themselves, interesting paths or relations can be visualized in an effective way \citep{Kwon2015}. It however is not mentioned how the selection itself is triggered, whether a button has to be pushed or if the gaze just has to be held for a couple of seconds. It is also not mentioned how the "\textit{Zoom Out}" task can be performed. \newline
+\cite{Kwon2015} and \cite{Drouhard2015} focused their research on a selection technique using a reticle that is visualised inside the \gls{hmd}, like a cross-hair. When the user selects a node with this reticle, this node and its neighbours are brought closer to the user and are highlighted in order to see more details and allow the user to make further selections \citep{Kwon2015}. With the option to select multiple nodes and the visualization of the nodes amongst themselves, interesting paths or relations can be visualized in an effective way \citep{Kwon2015}. It however is not mentioned how the selection itself is triggered, whether a button has to be pushed or if the gaze just has to be held for a couple of seconds. It is also not mentioned how the "\textit{Zoom Out}" task can be performed. \newline
 \cite{Drouhard2015} provided more details on this part in their research where they implement a "target mode" that the user can enter. Only in this case the cross-hair reticle is shown to the user and the selection happens by targeting a data object and pressing the trigger button \citep{Drouhard2015}. It can be assumed that this separation of "target mode" and "view mode" will help the combination of \textit{Selection} and \textit{Travel} and makes the data analysis more convenient as the reticle is only shown when absolutely necessary. \newline
 \cite{Drouhard2015} furthermore states that gaze interaction arguably is the most natural form of interaction in virtual environments. \newline
-One fact that is not mentioned in literature but becomes clear is that with an \gls{hmd} reticle, the selection is directly linked to the viewing experience. It is not possible to select something without directly looking at it, which inherently limits the multitasking possibilities .
+One fact that is not mentioned in literature but becomes clear is that with an \gls{hmd} reticle, the selection is directly linked to the viewing experience. It is not possible to select something without directly looking at it, which inherently limits the multitasking possibilities.
 
 
 \subparagraph{Gesture Controller}
 
-Finally, also gesture controllers allow for dedicated selection patterns. \cite{Hentschel2009} used a controller to select multiple data points out of a 3D scatter-plot which they called interactive brushing and is shown in Figure \ref{fig:interactivebrushing}. The first (left) picture shows the empty selection box that can be moved and scaled (middle and right picture) in order to make the actual selection \citep{Hentschel2009}. Although the middle and right picture look almost the same, the difference is that with the middle picture the visualization of the scatter-plot is done in real-time and only upon releasing the button on the device, the actual selection with remote selection and computing is done \citep{Hentschel2009}. \newline
-As with the selection by hand, also the selection by gesture controllers brings their advantages and disadvantages from the method as an input device itself with them. While they offer very good accuracy and increased functionality with buttons and triggers, it requires additional hardware and tracking devices.
-\begin{figure}[t]
+Finally, also gesture controllers allow for dedicated selection patterns. \cite{Hentschel2009} used a controller to select multiple data points out of a 3D scatter-plot which they called interactive brushing and is shown in Figure \ref{fig:interactivebrushing}. The first (left) picture shows the empty selection box that can be moved and scaled (middle and right picture) in order to make the actual selection \citep{Hentschel2009}. Although the middle and right picture look almost the same, the difference is that with the middle picture the visualization of the scatter-plot is done in real-time and only upon releasing the button on the device, the actual selection with remote selection and computing is done \citep{Hentschel2009}.
+\begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/05_LitReview/Hentschel2009_InteractiveBrushing.png}
 		\caption[Box selection of scatter-plot data in VR]{Box selection of scatter-plot data in VR \citep{Hentschel2009}}
 		\label{fig:interactivebrushing}
 	\end{center}
-\end{figure}
-
+\end{figure} \newline
+In their game \textit{The Gallery - Episode 1: Call of the Starseed}, \cite{CloudheadGames2016} provide the option to select objects by utilizing the gesture controllers that in \gls{vr} are visualised as hands as shown in Figure \ref{fig:theGalleryHands}. With the trigger button, the hand can be closed and thus objects can be grabbed and moved around. The game further distinguishes between "important" and "unimportant" objects, where the "important" ones are stuck in the grip of the hand even if the trigger was released (i.e. a flashlight) and "unimportant" objects would immediately drop once the trigger button is released. This allows for a more convenient interaction since it can become irritating to keep the trigger button held for a longer amount of time. \newline
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=7cm]{03_Figures/05_LitReview/Cloudhead2016_TheGallery.png}
+		\includegraphics[width=7cm]{03_Figures/05_LitReview/Cloudhead2016_TheGallery3.png}
+		\caption[Gesture Controllers visualized as Hands in "The Gallery"]{Gesture Controllers visualized as Hands in "The Gallery" \citep{CloudheadGames2016}}
+		\label{fig:theGalleryHands}
+	\end{center}
+\end{figure} \newline
+As with the selection by hand, also the selection by gesture controllers brings their advantages and disadvantages from the method as an input device itself with them. While they offer very good accuracy and increased functionality with buttons and triggers, it requires additional hardware and tracking devices.
 
 
 %-----------------------------------
@@ -377,8 +400,8 @@ As early as in the 1980s, interaction patterns with data (i.e. manipulations) ha
 	\item "Call that..." \textit{(give an object a name to which it can be referred to)}
 \end{itemize}
 In addition, the spoken \textit{"there"} serves as some kind of voice button where the \textit{"there"} refers to the cursor position, thus introducing the gestures as an input method for this interface \citep{Bolt1980}.
-It can be seen that even more than three decades ago, the need to simplify more complicated interactions such as changing the colour of an object, which would require several inputs actions with mouse or keyboard, were tested to be simplified with new means of interaction patterns. \cite{Donalek2014} also mentioned thee for a new tool where the user can manipulate with these objects since wearing a \gls{hmd} blocks the view on the keyboard interface. \newline
-\cite{Woodard2015} explained their approach on a more technical level in which they basically utilize the concept of the Small Volume Selection from \cite{Steed2006} to trigger certain manipulations like opening a door (i.e. rotating an object on its axis).
+It can be seen that even more than three decades ago, the need to simplify more complicated interactions such as changing the colour of an object, which would require several inputs actions with mouse or keyboard, were tested to be simplified with new means of interaction patterns. \cite{Donalek2014} also mentioned the need for a new tool where the user can manipulate with these objects since wearing a \gls{hmd} blocks the view on the keyboard interface. \newline
+\cite{Woodard2015} explained their approach on a more technical level in which they basically utilized the concept of the Small Volume Selection from \cite{Steed2006} to trigger certain manipulations like opening a door (i.e. rotating an object on its axis).
 
 \cite{Bowman2002} again defined guidelines for designing manipulation techniques, that can be summarized as follow:
 \begin{itemize}[noitemsep,nolistsep]
@@ -390,6 +413,17 @@ It can be seen that even more than three decades ago, the need to simplify more 
 
 Literature review has shown that most research focuses on \textit{Travel} and \textit{Selection} whereas \textit{Manipulation} of data objects is in most cases not covered at all. This is also shown with the defined guidelines from \cite{Bowman2002} as they are more vague than for the other techniques.
 
+With the release of the HTC Vive, \cite{Google2016} released a \gls{vr} application called \textit{Tilt Brush} which basically is a 3D painting application in virtual reality. It allows the user to choose between different pencils, brush sizes, colours and also provides an "undo" functionality, all that is controlled with pop-up menus that can be interacted with using the gesture controllers as shown in Figure \ref{fig:tiltBrushMenus}.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=7cm]{03_Figures/05_LitReview/Google2016_TiltBrush.png}
+		\includegraphics[width=7cm]{03_Figures/05_LitReview/Google2016_TiltBrush2.png}
+		\caption[Pop-up menu with Gesture Controllers in "Tilt Brush"]{Pop-up menu with Gesture Controllers in "Tilt Brush" \citep{Google2016}}
+		\label{fig:tiltBrushMenus}
+	\end{center}
+\end{figure} \newline
+The research of \cite{Bowman2002} has shown, that although this type of non-natural interaction indeed can be quite effective, especially since it allows for tasks to be executed that cannot be done naturally. Although it would be possible to provide a virtual colour palette where the user would have to choose the colour by hand to eliminate this option from the pop-up menu, this would drastically impact the task performance in a negative way.
+
 
 %-----------------------------------
 %	SUBSECTION 4
@@ -397,8 +431,7 @@ Literature review has shown that most research focuses on \textit{Travel} and \t
 
 \subsection{Importance of Immersion and Task Performance}
 
-In addition to the interaction patterns to perform tasks, the level of immersion and the performance of task execution is as important. \newline
-\cite{Woodard2015} defined three rules a project has to be conform with in order to be as immersive as possible:
+In addition to the interaction patterns to perform tasks, the level of immersion and the performance of task execution is as important. \cite{Woodard2015} defined three rules a project has to be conform with in order to be as immersive as possible:
 \begin{itemize}[noitemsep,nolistsep]
 	\item Three Dimensional Viewing
 	\item Full User-Navigation Integration
@@ -469,7 +502,7 @@ The \gls{vism} provides a solid foundation of what tasks the interaction pattern
 
 \label{SectionLiteratureReviewSRQ3}
 
-Building up on the research done in chapter \ref{SectionLiteratureReviewSRQ1} and \ref{SectionLiteratureReviewSRQ2}, this  chapter focuses on combinations/enhancements of interaction patterns and input methods, thus addresses the third SRQ.
+Building up on the research done in chapter \ref{SectionLiteratureReviewSRQ1} and \ref{SectionLiteratureReviewSRQ2}, this  chapter focuses on combinations and enhancements of interaction patterns and input methods, thus addressing the third \gls{srq}.
 \begin{framed}
 	\textit{SRQ 3: How can the sensor information from gesture controllers and 360° motion tracking be used to enhance existing interaction patterns?}
 \end{framed}
@@ -481,15 +514,16 @@ Building up on the research done in chapter \ref{SectionLiteratureReviewSRQ1} an
 
 \subsection{Introduction}
 
-Under the aspect of immersion and task performance, the interaction methods with gesture controllers and 360° motion tracking showed to be the most promising. The 360° motion tracking has just been released recently and not much research has been conducted on it yet, while the gesture controllers provide almost the same similarity like hand gestures, but are far more accurate and are well integrated with the motion tracking. In term of interaction patterns, the \textit{Travel} can in its simplest form become irrelevant due to the natural movement that is possible with the 360° motion tracking. The focus therefore lies on the patterns for \textit{Selection} and especially \textit{Manipulation}.
+Under the aspect of immersion and task performance, the interaction methods with gesture controllers and 360° motion tracking showed to be the most promising. The 360° motion tracking has just been released recently and not much research has been conducted on it yet, while the gesture controllers provide almost the same similarity like hand gestures, but are far more accurate and are well integrated with the motion tracking. In terms of interaction patterns, the \textit{Travel} can in its simplest form become irrelevant due to the natural movement that is possible with the 360° motion tracking. The focus therefore lies on the patterns for \textit{Selection} and especially \textit{Manipulation}.
 
 
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
 
-\subsection{tbd}
+\subsection{To be defined}
 
+The third and final \gls{srq} focuses on the selection and enhancement of existing interactions patterns with new methods for user input which will be implemented, tested and evaluated in a \gls{vr} application prototype. It therefore is not discussed as part of the Master Thesis Research Proposal.
 
 % "The fourth and final sub research question aims at selecting one or more object recognition methods which will be tested and evaluated in a robot prototype"
 
@@ -500,9 +534,10 @@ Under the aspect of immersion and task performance, the interaction methods with
 
 \subsection{Conclusion}
 
-This literature review has shown that...
-\newline \newline
-to be completed (\gls{vism} 3.0 ?)
+To be completed as part of the main Master Thesis.
+
+%This literature review has shown that...
+% to be completed (\gls{vism} 3.0 ?)
 
 
 
@@ -517,5 +552,5 @@ to be completed (\gls{vism} 3.0 ?)
 
 \label{SectionLiteratureReviewConclusion}
 
-to be completed
+To be completed as part of the main Master Thesis.
 
