@@ -46,8 +46,7 @@ Virtual reality changes this quite a bit since wearing a \gls{hmd} with its own 
 
 \subsection{Overview of the Different Methods}
 
-The reviewed literature brought up different means in research to interact with the virtual reality environment. In order to review them in a more structured way, they have been grouped by their core technology (i.e. hand gestures, speech recognition etc.) on which they base on.
-TODO: Maybe exted a bit since a part has been shifted to delimitiatoins
+The reviewed literature brought up different means in research to interact with the virtual reality environment. In order to review them in a more structured way, they have been grouped by their core technology (i.e. hand gestures, speech recognition etc.) on which they base on. Every core technology is discussed individually, its advantages and disadvantages are discussed, as well as their similarities or differences are explained.
 
 
 \subsubsection{Hand Gestures}
@@ -167,7 +166,7 @@ The main difference to full body tracking is that the 360° motion tracking reli
 
 The literature review on different methods for user input in virtual reality showed that there are various types which can be used or even combined. \newline
 There are six main methods for user input in virtual reality. These are hand gestures, gesture controllers, speech recognition, physical placement of interactive objects, full body tracking and 360° motion tracking. Hand gestures track the movement of the whole hand and/or the individual fingers with one or more (regular, infra-red or depth) cameras. Gesture controllers are physical devices with buttons that are held in the hands and also tracked in their spatial position. Speech recognition tries to understand and interpret spoken words and sentences in order to find the correct commands. The physical placement of interstice objects extrapolates the movement of the hand to physically place a button in front of the finger where a virtual one is shown in \gls{vr}. Full body tracking uses cameras to track the whole body including the movement of all extremities from one angle. Finally, 360° motion tracking can locate the position of special devices within an actual room on all three axis from opposing corners. The most used method in the reviewed literature is the hand gestures, followed by the hand gestures in combination with speech recognition \newline
-Depending on the chosen method, there are advantages and disadvantages (or even limitations) for certain use cases. Table \ref{tbl:methodscomparison} shows a summary of these findings.
+Depending on the chosen method, there are advantages and disadvantages (or even limitations) for certain use cases. Table \ref{tbl:methodscomparison} shows a summary of these findings and is also the answer to the first \gls{srq}.
 \begin{table}[h]
 	\begin{center}
 		\begin{tabular}{ | p{3.7cm} | p{4.9cm} | p{4.9cm} | } 
@@ -204,8 +203,6 @@ Depending on the chosen method, there are advantages and disadvantages (or even 
 	\end{center}
 \end{table} \newline
 In regards of the thesis statement, a combination of two methods is recommended to outweigh the individual disadvantages and utilize the benefits of both methods.
-
-TOOD: Cleary answer SRQ1 one!
 
 
 %----------------------------------------------------------------------------------------
@@ -461,12 +458,13 @@ It can be said that if a task feels tedious and difficult to execute in \gls{vr}
 
 \subsection{Conclusion}
 
-The \gls{vism} provides a solid foundation of what tasks the interaction patterns should be able to fulfil. It however gives no guidelines or recommendations in how these interaction patterns could look like. The interaction patterns can be grouped into three categories: \textit{Travel}, \textit{Selection} and \textit{Manipulation}. Each of them has its own patterns which are more or less suited for certain applications. In general it can be seen that the \textit{Manipulation} pattern are researched the least so far and can be a suitable candidate for further research. Whichever interaction pattern is selected and implemented, its ability to allow the user to have a good task performance is crucial for any practical applications.
-\begin{table}[b]
+The \gls{vism} provides a solid foundation of what tasks the interaction patterns should be able to fulfil. It however gives no guidelines or recommendations in how these interaction patterns could look like. The interaction patterns can be grouped into three categories: \textit{Travel}, \textit{Selection} and \textit{Manipulation}. Each of them has its own patterns which are more or less suited for certain applications. In general it can be seen that the \textit{Manipulation} pattern are researched the least so far and can be a suitable candidate for further research. Whichever interaction pattern is selected and implemented, its ability to allow the user to have a good task performance is crucial for any practical applications. \newline
+In general, the strengths and weaknesses of the individual patterns are heavily related to advantages and disadvantages of the input method they base on. It can be said that the interaction patterns have to be selected in correlation with the decision for the matching input methods. Table \ref{tbl:pattermethodmapping} shows a mapping of pattern and method.
+\begin{table}[t]
 	\begin{center}
 		\begin{tabular}{ | p{4cm} | p{6cm} | } 
 			\hline
-			\textbf{Pattern} & \textbf{Method} \\
+			\textbf{Interaction Pattern} & \textbf{Input Method} \\
 			\hline
 			Travel:  \newline \textit{Controllers} &
 			- Gesture Controllers \newline - Physical Placement of Objects \\
@@ -494,9 +492,8 @@ The \gls{vism} provides a solid foundation of what tasks the interaction pattern
 		\label{tbl:pattermethodmapping}
 	\end{center}
 \end{table}
-\newline In general, the strengths and weaknesses of the individual patterns are heavily related to advantages and disadvantages of the input method they base on. It can be said that the interaction patterns have to be selected in correlation with the decision for the matching input methods. Table \ref{tbl:pattermethodmapping} shows a mapping of pattern and method.
 
-TOOD: Cleary answer SRQ1 one!
+Although no distinct answer can be given to the second \gls{srq}, in combination with the findings from the first /gls{srq} it has been shown where the strengths lie and how they can be utilized. This also shows the close connection between the input method and interaction pattern and that they have to be aligned in order to create an immersive and productive experience.
 
 
 %----------------------------------------------------------------------------------------
@@ -507,11 +504,12 @@ TOOD: Cleary answer SRQ1 one!
 
 \label{SectionLiteratureReviewSRQ3}
 
-TODO: FIx this
-Building up on the research done in chapter \ref{SectionLiteratureReviewSRQ1} and \ref{SectionLiteratureReviewSRQ2}, this  chapter focuses on combinations and enhancements of interaction patterns and input methods, thus addressing the third \gls{srq}.
+After covering the different methods for user input in \gls{vr} in chapter \ref{SectionLiteratureReviewSRQ1} and the interaction patterns in \gls{vr} in chapter \ref{SectionLiteratureReviewSRQ2}, this chapter concludes the literature research by looking at traditional data visualisation that are used for 2D data and how they have been applied to and enhanced for 3D space in \gls{vr}. After a short introduction to the topic, the two main parts of data visualisation and data manipulation are discussed in more detail, with a focus on the differences between the application in 2D respectively 3D space. Finally, the research covered in this chapter is summarized in the conclusion and will answer the third \gls{srq}.
 \begin{framed}
 	\textit{SRQ 3: Which traditional strategies for visualization and manipulation of 2D data have been applied and enhanced for 3D space in virtual reality?}
 \end{framed}
+
+% "The fourth and final sub research question aims at selecting one or more object recognition methods which will be tested and evaluated in a robot prototype"
 
 
 %-----------------------------------
@@ -520,7 +518,27 @@ Building up on the research done in chapter \ref{SectionLiteratureReviewSRQ1} an
 
 \subsection{Introduction}
 
-Under the aspect of immersion and task performance, the interaction methods with gesture controllers and 360° motion tracking showed to be the most promising. The 360° motion tracking has just been released recently and not much research has been conducted on it yet, while the gesture controllers provide almost the same similarity like hand gestures, but are far more accurate and are well integrated with the motion tracking. In terms of interaction patterns, the \textit{Travel} can in its simplest form become irrelevant due to the natural movement that is possible with the 360° motion tracking. The focus therefore lies on the patterns for \textit{Selection} and especially \textit{Manipulation}.
+% Under the aspect of immersion and task performance, the interaction methods with gesture controllers and 360° motion tracking showed to be the most promising. The 360° motion tracking has just been released recently and not much research has been conducted on it yet, while the gesture controllers provide almost the same similarity like hand gestures, but are far more accurate and are well integrated with the motion tracking. In terms of interaction patterns, the \textit{Travel} can in its simplest form become irrelevant due to the natural movement that is possible with the 360° motion tracking. The focus therefore lies on the patterns for \textit{Selection} and especially \textit{Manipulation}.
+
+TODO: Introduction
+
+TODO: Check:
+\cite{Ribarsky1994} - Visualization and Analysis Using Virtual Reality
+\cite{Stone1994} - Visualizing Data: Is Virtual Reality the Key?
+\cite{Ware1994} - Viewing a Graph in a Virtual Reality Display is Three Times as Good as a 2D Diagram
+\cite{Ankerst1996} - 'Circle Segments': A Technique for Visually Exploring Large Multidimensional Data Sets
+\cite{Whyte1999} - Visualization and Information: A Building Design Perspective
+\cite{Sarathy2000} - Visualization of Large Complex Datasets using Virtual Reality
+\cite{Jamieson2007} - A data forest: Multi-dimensional visualization
+\cite{Soldati2007} - SphereViz - Data Exploration in a Virtual Reality Environment
+\cite{Hentschel2009} - Virtual reality-based multi-view visualization of time-dependent simulation data
+\cite{Laha2012} - Effects of Immersion on Visual Analysis of Volume Data
+\cite{Nguyen2012} - Visualization of Spatio-temporal Data of Bus Trips
+\cite{Donalek2014} - Immersive and Collaborative Data Visualization Using Virtual Reality Platforms
+\cite{Drouhard2015} - Immersive Visualization for Materials Science Data Analysis using the Oculus Rift
+\cite{Kwon2015} - Spherical Layout and Rendering Methods for Immersive Graph Visualization
+
+
 
 
 %-----------------------------------
@@ -529,10 +547,22 @@ Under the aspect of immersion and task performance, the interaction methods with
 
 \subsection{Data Presentation}
 
-The third and final \gls{srq} focuses on the selection and enhancement of existing interactions patterns with new methods for user input which will be implemented, tested and evaluated in a \gls{vr} application prototype. It therefore is not discussed as part of the Master Thesis Research Proposal.
+% The third and final \gls{srq} focuses on the selection and enhancement of existing interactions patterns with new methods for user input which will be implemented, tested and evaluated in a \gls{vr} application prototype. It therefore is not discussed as part of the Master Thesis Research Proposal.
 
-% "The fourth and final sub research question aims at selecting one or more object recognition methods which will be tested and evaluated in a robot prototype"
+TODO: Data presentation
 
+
+\subsubsection{Charts}
+
+TODO: barchar, line-chart, pie-chart
+TODO: advancement: rings with different speeds and colour?
+\cite{CodeScience2015}
+
+
+\subsubsection{Data-type-focused Presentation}
+
+TODO: country maps with cantons (colour, shape, size), or grey-scale citymap with coloured houses (SimCity?)
+TODO: advancement: unknown, no massive changes required?
 
 
 %-----------------------------------
@@ -541,11 +571,19 @@ The third and final \gls{srq} focuses on the selection and enhancement of existi
 
 \subsection{Data Manipulation}
 
-To be completed as part of the main Master Thesis.
+TODO: Data manipulation
 
-%This literature review has shown that...
-% to be completed (\gls{vism} 3.0 ?)
 
+brainstorming
+- click to select/highlight/focus   --> click with controller
+- click+drag to re-order / rotate	--> re-order remains the same, rotate by walking (!!)
+- click+drag to select area to zoom   --> walking closer, maybe select range with controllers
+- mouse-wheel to zoom in/out   --> zoom by walking closer (!!)
+- right-lick for context menu (add, remove, ...)   --> click with controller
+- enable/disable with checkboxes
+
+currently primarily done with mouse which can be 1:1 substituted with a gesture controller
+BUT use 3d space to utilize walking option
 
 
 %-----------------------------------
@@ -554,13 +592,10 @@ To be completed as part of the main Master Thesis.
 
 \subsection{Conclusion}
 
-To be completed as part of the main Master Thesis.
+TODO: summarize srq3 chapter
 
 %This literature review has shown that...
 % to be completed (\gls{vism} 3.0 ?)
-
-
-
 
 
 
@@ -572,5 +607,5 @@ To be completed as part of the main Master Thesis.
 
 \label{SectionLiteratureReviewConclusion}
 
-To be completed as part of the main Master Thesis.
+TODO: summarize the whole chapter 2
 
