@@ -523,7 +523,7 @@ After covering the different methods for user input in \gls{vr} in chapter \ref{
 It also provides an opportunity to rely on the interplay of combined senses rather than on a single or even dominant sense.
 \cite{Ribarsky1994}
 
-(Annotated) Notes might take the form of digitized speech or of written text, depending upon the user’s needs and preferences. We
+(Annotated) Notes might take the form of digitized speech or of written text, depending upon the user’s needs and preferences.
 \cite{Ribarsky1994}
 
 A visualization goal is to simplify the analysis of large-quantity, numerical data by rendering the data as an image that can be intuitively manipulated.
@@ -536,17 +536,6 @@ Second, visualization is entwined with manipulation. We don't just want to look 
 \cite{Stone1994}
 
 Visualization is more of a technique than a task. That is, people don't usually visualize data just for the hell of it. They may be trying to solve a problem, test a theory, understand a data set, or communicate their understanding to others. These differing goals have an impact on how visualization should be supported, and make it difficult to discuss the problem at a general level. 
-\cite{Stone1994}
-
-Data with dimensionalities higher than three can be visualized by using multiple characteristics of the virtual objects. Examples include
-Size (e.g. large, medium, small)
-Shape (e.g. triangle, square, pentagon)
-Color (e.g. red, purple, blue)
-Texture (photographic images can be "painted" onto objects)
-Position (X, Y, and Z)
-Orientation (roll, pitch, yaw)
-Behavior (spinning, bouncing, blinking, breathing, etc.)
-Sound (chiming, singing, buzzing, etc.)
 \cite{Stone1994}
 
 On a given trial the subject viewed a randomly laid out network of nodes and arcs with two nodes highlighted. The task was to say if there was a path between the the highlighted nodes, while in fact there was either a path of length two or no path, each occurring 50\% of the time. [...]
@@ -593,112 +582,18 @@ Using our approach up to eight different parameters can be visualized by any one
 Stock Market Data: Therefore it is possible to match the movement of share prices with the changing shape/growth of the forest. An example of this can be seen in Figure 5.
 \cite{Jamieson2007}
 
-SphereViz interface: The 3D interface is designed for virtual reality (VR) environments. It presents a collection of image thumbnails in a virtual sphere as outlined in Figure 1. The position of a thumbnail in the sphere is determined by a number of parameters. These parameters either describe image properties such as total intensity, color proportions, etc, or characterize the image content.
-\cite{Soldati2007}
 
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=7cm]{03_Figures/05_LitReview/Soldati2007_SphereViz.png}
-		\caption[Schematic view of SphereViz where parameters influence the position of data objects]{Schematic view of SphereViz where parameters (ellipsoids) influence the position of data objects (rectangles) \citep{Soldati2007}}
-		\label{fig:sphereviz}
-	\end{center}
-\end{figure} 
 
-From an interaction point of view, the user can now walk through the virtual world and inspect groups of
-thumbnails or magnify single thumbnails. Additionally he or she can grab the parameter handles and move them freely on the sphere surface. This will cause the thumbnails to be re-arranged in real-time. This visible movement gives valuable feedback to the user.
-\cite{Soldati2007}
 
-SphereViz benefits from the advanced spatial visualisation and interaction methods provided by Virtual Reality. Spatial visualisation allows presenting clusters of images in a very user friendly way, spatial interaction is used for evaluation and searching tasks. VR increases the legibility of large datasets and provides more intuitive techniques for browsing through the data.
-\cite{Soldati2007}
 
-Visualized data objects are characterized by three attributes: size, scale, and distance. They play an important role for a better understanding of the displayed data in particular because the objects are perceived in "natural scale".
-\cite{Soldati2007}
 
-Users can freely walk in the virtual world and interact with virtual data objects. They can control the visualization by natural actions like grabbing or moving objects. Thumbnails that are covered by an other object can be brought
-to the foreground just by walking around the object. Thus, the user can focus on his or her main task, without bothering about input devices.
-\cite{Soldati2007}
 
-The World in Miniature (WIM) is an interface technique that uses a virtual hand-held miniature copy of the immersive virtual scene for visualization and interaction tasks. In addition to the first-person perspective offered by a virtual environment, WIM offers a second dynamic perspective onto the scene. Objects can be manipulated directly in the immersive scene or through the WIM.
-\cite{Soldati2007}
 
-We see a great potential in using VR for visual exploration of multi-dimensional data sets and in particular in SphereViz. Amongst others driven by the game industry, we expect VR technology to evolve significantly within the next 10 to 15 years. VR will allow users to look at and interact with large datasets in new ways.
-\cite{Soldati2007}
 
-Taking the Visual Information-Seeking Mantra into account [9] the current application covers the zoom and filter and the details on demand part. In future versions we plan to extend the WIM to give the overview of all available data.
-\cite{Soldati2007}
 
-The analysis of time-dependent simulation data is a demanding task, both in terms of computing power and time. Interactive analysis using multiple linked views has been shown to be one possible solution to this problem. However, there are two significant short- comings when limited to a standard desktop-based setup: First, complex spatial relationships are hard to understand using only 2D projections of the data. [...]
-\cite{Hentschel2009}
-
-In general, our visualization approach relies on multiple linked three-dimensional scatterplots which are presented and interacted with in a virtual environment, as shown in Figure 1. Each plot shows an arbitrary combination of three data attributes which are recorded per grid point. Time-dependent data is handled by animating the plots. All scatterplots are linked to each other, i.e., updates to a single plot become directly visible in all plots. This concept of linked views is combined with interactive brushing.
-\cite{Hentschel2009}
-
-Traditionally, researchers look at 3D volume renderings on desktop computer monitors or larger displays, which lack the more realistic visual stimuli found in more advanced displays, such as stereoscopic 3D graphics and motion parallax due to head tracking. Thus, it may be more difficult for the user to judge the size, shape, or depth of the structures in the volume data. Judgments of this sort are required not only for general understanding, but also for performing interactive tasks such as segmentation of a dataset. Conducting such tasks with traditional displays, therefore, may result in slower performance and/or erroneous interpretation.
-\cite{Laha2012}
-
-We conducted a controlled empirical study in which we studied the independent and combined effects of three components of immersion (head tracking, FOR, and stereoscopic rendering) on the analysis of two different volume-visualized microscopic computed tomography (micro-CT) datasets. We found significant positive effects of these components of immersion, but the results also show that the effects are dependent on how the components are combined and on the type of analysis task.
-\cite{Laha2012}
-
-We found that most of the benefits of high immersion for analyzing volume data are positive. Of the three components of immersion that we evaluated in our controlled study, FOR had the most positive effects on the widest range of tasks. However, levels of immersion have differential effects on different tasks. We observed the most positive effects of immersion for tasks involving visually and spatially complex search for features in the volume datasets. General descriptive tasks showed mixed effects of immersion. Users showed mixed preferences for the different levels of immersion. They felt that stereoscopic vision made it easier to understand features of a volume dataset, and head-based rendering provided greater ease of obtaining the desired view they wanted and of exploring the datasets in general.
-\cite{Laha2012}
-
-Visualization is the main bridge between the quantitative content of the data and human intuition, and it can be argued that we cannot really understand or intuitively comprehend anything (including mathematical constructs) that we cannot visualize in some way.
-\cite{Donalek2014}
-
-VR has been shown to lead to better discovery in domains that whose primary dimensions are spatial.
-\cite{Donalek2014}
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=14cm]{03_Figures/05_LitReview/Donalek2014_Caltech.png}
-		\caption[Data visualization experiments in the OpenSim-based virtual world vCaltech]{Data visualization experiments in the OpenSim-based virtual world vCaltech \citep{Donalek2014}}
-		\label{fig:caltechsim}
-	\end{center}
-\end{figure}
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=14cm]{03_Figures/05_LitReview/Donalek2014_iViz.png}
-		\caption[Example of an interactive user interface for the Unity-based data visualizer, iViz]{Example of an interactive user interface for the Unity-based data visualizer, iViz \citep{Donalek2014}}
-		\label{fig:iviz}
-	\end{center}
-\end{figure}
-
-In this project, our objective is to lower the barriers to entry for exploratory analysis of complex scientific data by leveraging the Oculus Rift to provide intuitive interactions and efficient navigation in an immersive 3D environment
-\cite{Drouhard2015}
-
-Van Dam et al. detail similar applications and argue that VR offers substantial advantages for nonhuman- scale visualization, particularly for data that should be explored in multiple time and space scales [7]. These functions are especially challenging for user interface design, the authors point out, but VR has the potential to display a larger quantity of meaningful data and facilitate more natural interaction than traditional 2D visualization techniques.
-\cite{Drouhard2015}
-From a user interface perspective, perhaps the greatest challenges and rewards lie in the use of IVR for non- human-scale scientific visualization. The need to handle enormous quantities of data, visualize abstract relation- ships, display size ranges from atomic to cosmic, slow down/speed up/stop multidimensional data flows, or interact with inaccessible areas such as the interior of an artery provides challenges not only for visualization but also for the interaction devices and mechanisms.
-\cite{VanDam2002}
-
-There are clear advantages to conventional two-dimensional (2D) techniques, such as the bar chart and the scatterplot. The most powerful pattern-finding mechanisms of the brain work in 2D, not 3D. Designers already know how to draw diagrams and represent data effectively in two dimensions, and the results can easily be included in books and reports. Of course, one compelling reason for an interest in 3D space perception is the explosive advance in 3D computer graphics.
-\cite{Ware2012}
-
-We still lack design rules for 3D environments, and many interaction techniques are competing for adoption. The strongest argument for the ultimate ascendancy of 3D visualization systems, and 3D user interfaces in general, must be that we live in a 3D world and our brains have evolved to recognize and interact within 3D. The 3D design space is richer than the 2D design space, because a 2D space is a part of 3D space. It is always possible to flatten out part of a 3D display and represent it in 2D.
-\cite{Ware2012}
-
-Nevertheless, it also should be cautioned that going from 2D to 3D adds far less visual information than might be supposed. Consider the following simple argument. On a one-dimensional line of a computer display, we can perceive 1000 distinct pixels. On a 2D plane of the same display, we can display 1000 × 1000 = 1,000,000 pixels, but going to a 3D stereoscopic display only increases the number of pixels by a factor of 2, and this does not double the available information because the two images must be highly correlated for us to perceive stereoscopic depth.
-\cite{Ware2012}
-
-They examine how traditional methods for 2D User interface/User Experience usability evaluation may be applied to VR interfaces. They also discuss subjective measures that should be used to assess VR applications, including user comfort and ease of use. --> 12 (Bowman2012a)
-\cite{Drouhard2015}
-
-In the case of scientific analysis, the transition to a 3D environment can be difficult, as most scientists typically explore their data using 2D visualizations, and they have been doing so for decades. Careful thought should be devoted to ways to capture the essence of the most effective 2D interactions and bring them to bear in a 3D display.
-\cite{Drouhard2015}
-
-In a 2D environment (such as a monitor), it makes sense to arrange a scene in a 2D space. But in a virtual reality environment, the user’s location is the focal point of the scene, and there is freedom in the user’s view direction, as the entire sphere of directionality around that point is available. Visibility of the scene from the perspective of the user’s location is vital, so our approach takes advantage of this freedom by using graph layouts on the surface of a sphere, so that all nodes are equally visible to the user. In order to not occlude nodes, edges are routed outside the sphere along more distant control points in a bundled fashion.
-\cite{Kwon2015}
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=14cm]{03_Figures/05_LitReview/Kwon2015_SphericalGraphLayout.png}
-		\caption[2D layouts mapped to a sphere with varying amounts of distortion]{2D layouts mapped to a sphere with varying amounts of distortion:  \citep{Kwon2015}}
-		\label{fig:iviz}
-	\end{center}
-\end{figure}
 
 There is strong evidence to support both viewpoint-dependent recognition of objects and the theory  that  the  brain  creates  3D  structural  models  of  objects.  Therefore,  in  representing  information as objects, both kinds of perceptually stored information should be taken into account. Even though data may be represented as a 3D structure, it is critical that this structure be laid out in such a way that it presents a clear 2D image. Special attention should be paid to silhouette information, and if objects are to be rapidly recognized, they should be presented in a familiar orientation.
+TODO: CITE ???
 
 % Under the aspect of immersion and task performance, the interaction methods with gesture controllers and 360° motion tracking showed to be the most promising. The 360° motion tracking has just been released recently and not much research has been conducted on it yet, while the gesture controllers provide almost the same similarity like hand gestures, but are far more accurate and are well integrated with the motion tracking. In terms of interaction patterns, the \textit{Travel} can in its simplest form become irrelevant due to the natural movement that is possible with the 360° motion tracking. The focus therefore lies on the patterns for \textit{Selection} and especially \textit{Manipulation}.
 
@@ -728,9 +623,57 @@ TODO: Check:
 
 \subsection{Data Presentation}
 
-% The third and final \gls{srq} focuses on the selection and enhancement of existing interactions patterns with new methods for user input which will be implemented, tested and evaluated in a \gls{vr} application prototype. It therefore is not discussed as part of the Master Thesis Research Proposal.
-
 TODO: Data presentation
+
+SphereViz interface: The 3D interface is designed for virtual reality (VR) environments. It presents a collection of image thumbnails in a virtual sphere as outlined in Figure 1. The position of a thumbnail in the sphere is determined by a number of parameters. These parameters either describe image properties such as total intensity, color proportions, etc, or characterize the image content.
+\cite{Soldati2007}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=7cm]{03_Figures/05_LitReview/Soldati2007_SphereViz.png}
+		\caption[Schematic view of SphereViz where parameters influence the position of data objects]{Schematic view of SphereViz where parameters (ellipsoids) influence the position of data objects (rectangles) \citep{Soldati2007}}
+		\label{fig:sphereviz}
+	\end{center}
+\end{figure} 
+
+SphereViz benefits from the advanced spatial visualisation and interaction methods provided by Virtual Reality. Spatial visualisation allows presenting clusters of images in a very user friendly way, spatial interaction is used for evaluation and searching tasks. VR increases the legibility of large datasets and provides more intuitive techniques for browsing through the data.
+\cite{Soldati2007}
+
+Visualized data objects are characterized by three attributes: size, scale, and distance. They play an important role for a better understanding of the displayed data in particular because the objects are perceived in "natural scale".
+\cite{Soldati2007}
+
+In general, our visualization approach relies on multiple linked three-dimensional scatterplots which are presented and interacted with in a virtual environment, as shown in Figure 1. Each plot shows an arbitrary combination of three data attributes which are recorded per grid point. Time-dependent data is handled by animating the plots. All scatterplots are linked to each other, i.e., updates to a single plot become directly visible in all plots. This concept of linked views is combined with interactive brushing.
+\cite{Hentschel2009}
+
+Visualization is the main bridge between the quantitative content of the data and human intuition, and it can be argued that we cannot really understand or intuitively comprehend anything (including mathematical constructs) that we cannot visualize in some way.
+\cite{Donalek2014}
+
+Van Dam et al. detail similar applications and argue that VR offers substantial advantages for nonhuman- scale visualization, particularly for data that should be explored in multiple time and space scales [7]. These functions are especially challenging for user interface design, the authors point out, but VR has the potential to display a larger quantity of meaningful data and facilitate more natural interaction than traditional 2D visualization techniques.
+\cite{Drouhard2015}
+From a user interface perspective, perhaps the greatest challenges and rewards lie in the use of IVR for non- human-scale scientific visualization. The need to handle enormous quantities of data, visualize abstract relation- ships, display size ranges from atomic to cosmic, slow down/speed up/stop multidimensional data flows, or interact with inaccessible areas such as the interior of an artery provides challenges not only for visualization but also for the interaction devices and mechanisms.
+\cite{VanDam2002}
+
+Data with dimensionalities higher than three can be visualized by using multiple characteristics of the virtual objects. Examples include
+Size (e.g. large, medium, small)
+Shape (e.g. triangle, square, pentagon)
+Color (e.g. red, purple, blue)
+Texture (photographic images can be "painted" onto objects)
+Position (X, Y, and Z)
+Orientation (roll, pitch, yaw)
+Behavior (spinning, bouncing, blinking, breathing, etc.)
+Sound (chiming, singing, buzzing, etc.)
+\cite{Stone1994}
+
+In a 2D environment (such as a monitor), it makes sense to arrange a scene in a 2D space. But in a virtual reality environment, the user’s location is the focal point of the scene, and there is freedom in the user’s view direction, as the entire sphere of directionality around that point is available. Visibility of the scene from the perspective of the user’s location is vital, so our approach takes advantage of this freedom by using graph layouts on the surface of a sphere, so that all nodes are equally visible to the user. In order to not occlude nodes, edges are routed outside the sphere along more distant control points in a bundled fashion.
+\cite{Kwon2015}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/05_LitReview/Kwon2015_SphericalGraphLayout.png}
+		\caption[2D layouts mapped to a sphere with varying amounts of distortion]{2D layouts mapped to a sphere with varying amounts of distortion:  \citep{Kwon2015}}
+		\label{fig:sphericalgraph}
+	\end{center}
+\end{figure}
 
 
 \subsubsection{Charts}
@@ -783,6 +726,74 @@ TODO: Data-Forest!
 \subsection{Data Manipulation}
 
 TODO: Data manipulation
+TODO: Rename to something like "Work with data"?
+
+From an interaction point of view, the user can now walk through the virtual world and inspect groups of
+thumbnails or magnify single thumbnails. Additionally he or she can grab the parameter handles and move them freely on the sphere surface. This will cause the thumbnails to be re-arranged in real-time. This visible movement gives valuable feedback to the user.
+\cite{Soldati2007}
+
+Users can freely walk in the virtual world and interact with virtual data objects. They can control the visualization by natural actions like grabbing or moving objects. Thumbnails that are covered by an other object can be brought
+to the foreground just by walking around the object. Thus, the user can focus on his or her main task, without bothering about input devices.
+\cite{Soldati2007}
+
+The World in Miniature (WIM) is an interface technique that uses a virtual hand-held miniature copy of the immersive virtual scene for visualization and interaction tasks. In addition to the first-person perspective offered by a virtual environment, WIM offers a second dynamic perspective onto the scene. Objects can be manipulated directly in the immersive scene or through the WIM.
+\cite{Soldati2007}
+
+We see a great potential in using VR for visual exploration of multi-dimensional data sets and in particular in SphereViz. Amongst others driven by the game industry, we expect VR technology to evolve significantly within the next 10 to 15 years. VR will allow users to look at and interact with large datasets in new ways.
+\cite{Soldati2007}
+
+Taking the Visual Information-Seeking Mantra into account [9] the current application covers the zoom and filter and the details on demand part. In future versions we plan to extend the WIM to give the overview of all available data.
+\cite{Soldati2007}
+
+The analysis of time-dependent simulation data is a demanding task, both in terms of computing power and time. Interactive analysis using multiple linked views has been shown to be one possible solution to this problem. However, there are two significant short- comings when limited to a standard desktop-based setup: First, complex spatial relationships are hard to understand using only 2D projections of the data. [...]
+\cite{Hentschel2009}
+
+Traditionally, researchers look at 3D volume renderings on desktop computer monitors or larger displays, which lack the more realistic visual stimuli found in more advanced displays, such as stereoscopic 3D graphics and motion parallax due to head tracking. Thus, it may be more difficult for the user to judge the size, shape, or depth of the structures in the volume data. Judgments of this sort are required not only for general understanding, but also for performing interactive tasks such as segmentation of a dataset. Conducting such tasks with traditional displays, therefore, may result in slower performance and/or erroneous interpretation.
+\cite{Laha2012}
+
+We conducted a controlled empirical study in which we studied the independent and combined effects of three components of immersion (head tracking, FOR, and stereoscopic rendering) on the analysis of two different volume-visualized microscopic computed tomography (micro-CT) datasets. We found significant positive effects of these components of immersion, but the results also show that the effects are dependent on how the components are combined and on the type of analysis task.
+\cite{Laha2012}
+
+We found that most of the benefits of high immersion for analyzing volume data are positive. Of the three components of immersion that we evaluated in our controlled study, FOR had the most positive effects on the widest range of tasks. However, levels of immersion have differential effects on different tasks. We observed the most positive effects of immersion for tasks involving visually and spatially complex search for features in the volume datasets. General descriptive tasks showed mixed effects of immersion. Users showed mixed preferences for the different levels of immersion. They felt that stereoscopic vision made it easier to understand features of a volume dataset, and head-based rendering provided greater ease of obtaining the desired view they wanted and of exploring the datasets in general.
+\cite{Laha2012}
+
+VR has been shown to lead to better discovery in domains that whose primary dimensions are spatial.
+\cite{Donalek2014}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/05_LitReview/Donalek2014_Caltech.png}
+		\caption[Data visualization experiments in the OpenSim-based virtual world vCaltech]{Data visualization experiments in the OpenSim-based virtual world vCaltech \citep{Donalek2014}}
+		\label{fig:caltechsim}
+	\end{center}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/05_LitReview/Donalek2014_iViz.png}
+		\caption[Example of an interactive user interface for the Unity-based data visualizer, iViz]{Example of an interactive user interface for the Unity-based data visualizer, iViz \citep{Donalek2014}}
+		\label{fig:iviz}
+	\end{center}
+\end{figure}
+
+
+In this project, our objective is to lower the barriers to entry for exploratory analysis of complex scientific data by leveraging the Oculus Rift to provide intuitive interactions and efficient navigation in an immersive 3D environment
+\cite{Drouhard2015}
+
+There are clear advantages to conventional two-dimensional (2D) techniques, such as the bar chart and the scatterplot. The most powerful pattern-finding mechanisms of the brain work in 2D, not 3D. Designers already know how to draw diagrams and represent data effectively in two dimensions, and the results can easily be included in books and reports. Of course, one compelling reason for an interest in 3D space perception is the explosive advance in 3D computer graphics.
+\cite{Ware2012}
+
+We still lack design rules for 3D environments, and many interaction techniques are competing for adoption. The strongest argument for the ultimate ascendancy of 3D visualization systems, and 3D user interfaces in general, must be that we live in a 3D world and our brains have evolved to recognize and interact within 3D. The 3D design space is richer than the 2D design space, because a 2D space is a part of 3D space. It is always possible to flatten out part of a 3D display and represent it in 2D.
+\cite{Ware2012}
+
+Nevertheless, it also should be cautioned that going from 2D to 3D adds far less visual information than might be supposed. Consider the following simple argument. On a one-dimensional line of a computer display, we can perceive 1000 distinct pixels. On a 2D plane of the same display, we can display 1000 × 1000 = 1,000,000 pixels, but going to a 3D stereoscopic display only increases the number of pixels by a factor of 2, and this does not double the available information because the two images must be highly correlated for us to perceive stereoscopic depth.
+\cite{Ware2012}
+
+They examine how traditional methods for 2D User interface/User Experience usability evaluation may be applied to VR interfaces. They also discuss subjective measures that should be used to assess VR applications, including user comfort and ease of use. --> 12 (Bowman2012a)
+\cite{Drouhard2015}
+
+In the case of scientific analysis, the transition to a 3D environment can be difficult, as most scientists typically explore their data using 2D visualizations, and they have been doing so for decades. Careful thought should be devoted to ways to capture the essence of the most effective 2D interactions and bring them to bear in a 3D display.
+\cite{Drouhard2015}
 
 
 brainstorming
