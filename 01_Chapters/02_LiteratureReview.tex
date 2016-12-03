@@ -667,8 +667,10 @@ VR has been shown to lead to better discovery in domains that whose primary dime
 In this project, our objective is to lower the barriers to entry for exploratory analysis of complex scientific data by leveraging the Oculus Rift to provide intuitive interactions and efficient navigation in an immersive 3D environment
 \cite{Drouhard2015}
 
-Van Dam et al. detail similar applications and argue that VR offers substantial advantages for nonhuman- scale visualization, particularly for data that should be ex- plored in multiple time and space scales [7]. These functions are especially challenging for user interface design, the authors point out, but VR has the potential to display a larger quantity of meaningful data and facilitate more natural interaction than traditional 2D visualization techniques.
+Van Dam et al. detail similar applications and argue that VR offers substantial advantages for nonhuman- scale visualization, particularly for data that should be explored in multiple time and space scales [7]. These functions are especially challenging for user interface design, the authors point out, but VR has the potential to display a larger quantity of meaningful data and facilitate more natural interaction than traditional 2D visualization techniques.
 \cite{Drouhard2015}
+From a user interface perspective, perhaps the greatest challenges and rewards lie in the use of IVR for non- human-scale scientific visualization. The need to handle enormous quantities of data, visualize abstract relation- ships, display size ranges from atomic to cosmic, slow down/speed up/stop multidimensional data flows, or interact with inaccessible areas such as the interior of an artery provides challenges not only for visualization but also for the interaction devices and mechanisms.
+\cite{VanDam2002}
 
 Colin Ware points out that “the most powerful pattern-finding mechanisms of the brain work in 2D, not 3D” [8, p. 239]. Nevertheless, Ware argues that 3D user interfaces are likely to predominate in the long run, since humans are accustomed to perceiving, interacting with, and forming intuition about objects in a 3D world [8, p. 290].
 \cite{Drouhard2015}
@@ -679,10 +681,18 @@ They examine how traditional methods for 2D User interface/User Experience usabi
 In the case of scientific analysis, the transition to a 3D environment can be difficult, as most scientists typically explore their data using 2D visualizations, and they have been doing so for decades. Careful thought should be devoted to ways to capture the essence of the most effective 2D interactions and bring them to bear in a 3D display.
 \cite{Drouhard2015}
 
+In a 2D environment (such as a monitor), it makes sense to arrange a scene in a 2D space. But in a virtual reality environment, the user’s location is the focal point of the scene, and there is freedom in the user’s view direction, as the entire sphere of directionality around that point is available. Visibility of the scene from the perspective of the user’s location is vital, so our approach takes advantage of this freedom by using graph layouts on the surface of a sphere, so that all nodes are equally visible to the user. In order to not occlude nodes, edges are routed outside the sphere along more distant control points in a bundled fashion.
+\cite{Kwon2015}
 
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/05_LitReview/Kwon2015_SphericalGraphLayout.png}
+		\caption[2D layouts mapped to a sphere with varying amounts of distortion]{2D layouts mapped to a sphere with varying amounts of distortion:  \citep{Kwon2015}}
+		\label{fig:iviz}
+	\end{center}
+\end{figure}
 
-TODO: complete Drouhard
-
+There is strong evidence to support both viewpoint-dependent recognition of objects and the theory  that  the  brain  creates  3D  structural  models  of  objects.  Therefore,  in  representing  information as objects, both kinds of perceptually stored information should be taken into account. Even though data may be represented as a 3D structure, it is critical that this structure be laid out in such a way that it presents a clear 2D image. Special attention should be paid to silhouette information, and if objects are to be rapidly recognized, they should be presented in a familiar orientation.
 
 % Under the aspect of immersion and task performance, the interaction methods with gesture controllers and 360° motion tracking showed to be the most promising. The 360° motion tracking has just been released recently and not much research has been conducted on it yet, while the gesture controllers provide almost the same similarity like hand gestures, but are far more accurate and are well integrated with the motion tracking. In terms of interaction patterns, the \textit{Travel} can in its simplest form become irrelevant due to the natural movement that is possible with the 360° motion tracking. The focus therefore lies on the patterns for \textit{Selection} and especially \textit{Manipulation}.
 
@@ -702,9 +712,12 @@ TODO: Check:
 \cite{Kwon2015} - Spherical Layout and Rendering Methods for Immersive Graph Visualization
 
 TODO: CHECK
-[7] A. Van Dam, D. H. Laidlaw, and R. M. Simpson, “Experiments in immersive virtual reality for scientific visualization,” Computers & Graphics, vol. 26, no. 4, pp. 535–555, 2002.
-[8] C. Ware, Information Visualization: Perception for Design, ser. Interactive Technologies. Elsevier Science, 2012. [Online]. Available: http://books.google.com/books?id=UpYCSS6snnAC
-[12] D. A. Bowman, J. L. Gabbard, and D. Hix, “A survey of usability evaluation in virtual environments: classification and comparison of methods,” Presence: Teleoperators and Virtual Environments, vol. 11, no. 4, pp. 404–424, 2002.
+%[7] A. Van Dam, D. H. Laidlaw, and R. M. Simpson, “Experiments in immersive virtual reality for scientific visualization,” Computers & Graphics, vol. 26, no. 4, pp. 535–555, 2002.
+%--> VanDam2002
+%[8] C. Ware, Information Visualization: Perception for Design, ser. Interactive Technologies. Elsevier Science, 2012. [Online]. Available: http://books.google.com/books?id=UpYCSS6snnAC
+% -->
+%[12] D. A. Bowman, J. L. Gabbard, and D. Hix, “A survey of usability evaluation in virtual environments: classification and comparison of methods,” Presence: Teleoperators and Virtual Environments, vol. 11, no. 4, pp. 404–424, 2002.
+%--> Bowman2002a
 
 
 %-----------------------------------
