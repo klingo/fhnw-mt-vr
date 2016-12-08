@@ -516,45 +516,8 @@ After covering the different methods for user input in \gls{vr} in chapter \ref{
 
 \subsection{Introduction}
 
-It also provides an opportunity to rely on the interplay of combined senses rather than on a single or even dominant sense.
-\cite{Ribarsky1994}
-
-(Annotated) Notes might take the form of digitized speech or of written text, depending upon the user’s needs and preferences.
-\cite{Ribarsky1994}
-
-Visualization is more of a technique than a task. That is, people don't usually visualize data just for the hell of it. They may be trying to solve a problem, test a theory, understand a data set, or communicate their understanding to others. These differing goals have an impact on how visualization should be supported, and make it difficult to discuss the problem at a general level. 
-\cite{Stone1994} - copy
-
-Any method that uses a 3D object approach will be more effective because it represents the way in which humans view near objects and therefore it is more natural and intuitive.
-\cite{Jamieson2007} - copy
-
-A visualization goal is to simplify the analysis of large-quantity, numerical data by rendering the data as an image that can be intuitively manipulated.
-\cite{Stone1994} - copy
-
-
-There is strong evidence to support both viewpoint-dependent recognition of objects and the theory  that  the  brain  creates  3D  structural  models  of  objects.  Therefore,  in  representing  information as objects, both kinds of perceptually stored information should be taken into account. Even though data may be represented as a 3D structure, it is critical that this structure be laid out in such a way that it presents a clear 2D image. Special attention should be paid to silhouette information, and if objects are to be rapidly recognized, they should be presented in a familiar orientation.
-TODO: CITE ???
-
-% Under the aspect of immersion and task performance, the interaction methods with gesture controllers and 360° motion tracking showed to be the most promising. The 360° motion tracking has just been released recently and not much research has been conducted on it yet, while the gesture controllers provide almost the same similarity like hand gestures, but are far more accurate and are well integrated with the motion tracking. In terms of interaction patterns, the \textit{Travel} can in its simplest form become irrelevant due to the natural movement that is possible with the 360° motion tracking. The focus therefore lies on the patterns for \textit{Selection} and especially \textit{Manipulation}.
-
-TODO: Introduction
-
-TODO: Check:
-\cite{Ribarsky1994} - Visualization and Analysis Using Virtual Reality
-\cite{Stone1994} - Visualizing Data: Is Virtual Reality the Key?
-\cite{Ware1994} - Viewing a Graph in a Virtual Reality Display is Three Times as Good as a 2D Diagram
-\cite{VanDam2002} - Experiments in Immersive Virtual Reality for Scientific Visualization
-\cite{Sarathy2000} - Visualization of Large Complex Datasets using Virtual Reality
-\cite{Bowman2002a} - A Survey of Usability Evaluation in Virtual Environments: Classification and Comparison of Methods
-\cite{Jamieson2007} - A data forest: Multi-dimensional visualization
-\cite{Soldati2007} - SphereViz - Data Exploration in a Virtual Reality Environment
-\cite{Hentschel2009} - Virtual reality-based multi-view visualization of time-dependent simulation data
-\cite{Laha2012} - Effects of Immersion on Visual Analysis of Volume Data
-\cite{Ware2012} - Information Visualization: Perception for Design
-\cite{Donalek2014} - Immersive and Collaborative Data Visualization Using Virtual Reality Platforms
-\cite{Drouhard2015} - Immersive Visualization for Materials Science Data Analysis using the Oculus Rift
-\cite{Kwon2015} - Spherical Layout and Rendering Methods for Immersive Graph Visualization
-
+With the invention of (multiple) windows on a computer screen in the late 1960s and the first spreadsheet (VisiCalc) developed in the late 1970s, the era for the visualization of data had just begun \citep{Myers1998}. Although the first \gls{hmd} was already invented in 1960 by Morton Heilig, it was only used for non-interactive film without any motion tracking \citep{vrs2015}. The actual availability for the public of such devices was not possible until the early 1990s although they still were rather expensive or did not fulfil the consumers expectations rendering them a flow (e.g. Nintendo Virtual Boy) \citep{vrs2015}. \cite{Ribarsky1994} highlighted that complicated manipulations of data will be simplified as \gls{vr} can provide a more natural interface between human and computer. He further continues that with \gls{vr} more of our senses are engaged than with regular 2D displays and thus can provide an opportunity to combine them \citep{Ribarsky1994}. \cite{Jamieson2007} further confirm the increased effectiveness and more natural and intuitive view on objects that use a 3D approach as it represents how humans view objects. \newline
+\citet[p.411]{Stone1994} emphasized that: \blockquote{Visualization is more of a technique than a task. That is, people don't usually visualize data just for the hell of it.} They further conclude that due to the different goals for the visualization (e.g. testing a theory or understanding the data set), it makes it difficult on a general level to discuss the problems with how the visualization should be supported \citep{Stone1994}. This highlights the importance of the right type of visualization depending on the data itself and the goal that shall be reached. For a better understanding, the following chapter will focus on different approaches and techniques for the presentation of data.
 
 
 %-----------------------------------
@@ -563,87 +526,33 @@ TODO: Check:
 
 \subsection{Data Presentation}
 
-TODO: Data presentation
+When we talk about the presentation of data, many will immediately think of Microsoft Excel and the many different charts (e.g. bar chart, line chart, pie chart, scatter plot etc.) that can be created with just a few clicks based on almost any data set. But not only in such mass consumer products, also big \gls{bi} solutions like \cite{TableauSoftware2016} rely on these well known and widely accepted techniques for their visualization of (big) data. \newline
+\cite{Jamieson2007} highlighted that in the current time the focus shifted from producing and storing even larger amounts of data, to actually making use of it, especially since it becomes increasingly difficult to get a meaningful understanding of the data. They further continue that our traditional visualizations methods will come at their limits with the many different forms of (big) data that are produced every day \citep{Jamieson2007}. Also \cite{Sarathy2000} mentioned that with better performing hardware and software, more data can be collected and processed and thus going beyond the ability of humans to understand and comprehend this vast amounts of data with our traditional visualization methods. \cite[p.609]{Donalek2014} summarise this situation with \blockquote{Visualization is the main bridge between the quantitative content of the data and human intuition [...]} and that we arguably can only understand anything that can be visualized in some way. This bears the questions whether \gls{vr} could be the enabling factor to breach the current limitations of 2D visualization.\newline
+\cite{VanDam2002} argue that with \gls{vr}, considerable advantages for non-human-scale visualizations can be achieved especially when the data should be explored in multiple spatial and temporal levels. To put this theory to a test, \cite{Ware1994} made a trial where the subjects had to look at a randomly organized network of nodes and arcs where two of the nodes where highlighted and they had to say whether these two nodes have a path between them. Based on their results, \cite{Ware1994} could conclude that compared to a 2D graph, with head coupled stereo the understood graphs were three times as large for any given error rate. This gives a strong indication on the potential benefits that can be achieved with the right visualization method in \gls{vr}. \newline
+In order to further analyse the different data presentations, we can distinguish between the traditional visualization methods summarised as 'Traditional Charts' and the specifically for \gls{vr} designed, data-type-focused methods.
 
-Visualization is more of a technique than a task. That is, people don't usually visualize data just for the hell of it. They may be trying to solve a problem, test a theory, understand a data set, or communicate their understanding to others. These differing goals have an impact on how visualization should be supported, and make it difficult to discuss the problem at a general level. 
-\cite{Stone1994}
 
-On a given trial the subject viewed a randomly laid out network of nodes and arcs with two nodes highlighted. The task was to say if there was a path between the the highlighted nodes, while in fact there was either a path of length two or no path, each occurring 50\% of the time. [...]
-On the basis of these results we conclude that the graph that can be understood with head coupled stereo is about 3.0 times as large as the 2D graph for any given error rate (taking the ratios of the gradients).
-\cite{Ware1994}
+\subsubsection{Traditional Charts}
 
-Major advances in high performance computing software and hardware have made it possible for designers and analysts to obtain detailed information about the behavior of complex systems. However, this has lead to a proliferation of vast amounts of data which is beyond the ability of humans to easily comprehend using traditional visualization methods.
-\cite{Sarathy2000}
+While any 2D chart can also be visualized in the same way in a virtual environment, it only can become beneficial when the additional space is utilized. \cite{Jamieson2007} give an example where a data value can be represented as a 3D object, such as a box. This reminds of the 3D-like bar and pie charts from Microsoft Excel, except that they would be real 3D objects in three dimensional space instead of on a flat screen.
 
-As Terabyte datasets become the norm, the focus has shifted away from our ability to produce and store ever larger amounts of data, onto its utilization. It is becoming increasingly difficult to gain meaningful insights into the data produced. Also many forms of the data we are currently producing cannot easily fit into traditional visualization methods.
-\cite{Jamieson2007}
 
-Any method that uses a 3D object approach will be more effective because it represents the way in which humans view near objects and therefore it is more natural and intuitive.
-\cite{Jamieson2007}
 
-VR is a discipline that enables users to view large complex data sets in an intuitive and natural manner. For example it is possible to represent a particular data value as a 3D object (e.g. the size of a box can represent a parameter value within a dataset).
-\cite{Jamieson2007}
+
 
 Information visualization has relied on traditional methods, namely data mining techniques. [...] This data is usually visualized using 2D graphs, spread sheets, or quasi-3D structures but using a 2D medium (e.g. desktop monitor or projector). The ability to interact with the data is an advantage that data mining techniques does not easily fulfil, also there is a lack of feedback to the user, in timescales that could be considered useful. [...] Furthermore these methods do not scale well to the large multi-dimensional data sets. New methods are required that utilise the advantages of new technology (e.g. VR).
 \cite{Jamieson2007}
 
-A dynamic forest will allow for the use of time variant information. A data tree has been chosen due to the fact that it is a simple object that people are familiar with. People can relate to making decisions on the size and shape of a tree relative to another.
-\cite{Jamieson2007}
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=7cm]{03_Figures/05_LitReview/Jamieson2007_DataTree.png}
-		\includegraphics[width=7cm]{03_Figures/05_LitReview/Jamieson2007_DataTreeOverview.png}
-		\caption[Navigation and Overview mode in a Data Forest]{Navigation (1) and Overview (2) mode in a Data Forest \citep{Jamieson2007}}
-		\label{fig:datatrees}
-	\end{center}
-\end{figure} 
-
-Using our approach up to eight different parameters can be visualized by any one data tree. This number can be achieved by matching the physical properties of the tree (i.e. trunk and crown) to different parameters within the data set. The eight different parameters are listed below,
-• position of the tree within the VE • height of trunk • width of trunk • colour of trunk • transparency value of the trunk • size of crown • colour of crown • transparency value of crown
-\cite{Jamieson2007}
-
-SphereViz interface: The 3D interface is designed for virtual reality (VR) environments. It presents a collection of image thumbnails in a virtual sphere as outlined in Figure 1. The position of a thumbnail in the sphere is determined by a number of parameters. These parameters either describe image properties such as total intensity, color proportions, etc, or characterize the image content.
-\cite{Soldati2007}
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=7cm]{03_Figures/05_LitReview/Soldati2007_SphereViz.png}
-		\caption[Schematic view of SphereViz where parameters influence the position of data objects]{Schematic view of SphereViz where parameters (ellipsoids) influence the position of data objects (rectangles) \citep{Soldati2007}}
-		\label{fig:sphereviz}
-	\end{center}
-\end{figure} 
-
-SphereViz benefits from the advanced spatial visualisation and interaction methods provided by Virtual Reality. Spatial visualisation allows presenting clusters of images in a very user friendly way, spatial interaction is used for evaluation and searching tasks. VR increases the legibility of large datasets and provides more intuitive techniques for browsing through the data.
-\cite{Soldati2007}
-
-Visualized data objects are characterized by three attributes: size, scale, and distance. They play an important role for a better understanding of the displayed data in particular because the objects are perceived in "natural scale".
-\cite{Soldati2007}
-
 In general, our visualization approach relies on multiple linked three-dimensional scatterplots which are presented and interacted with in a virtual environment, as shown in Figure 1. Each plot shows an arbitrary combination of three data attributes which are recorded per grid point. Time-dependent data is handled by animating the plots. All scatterplots are linked to each other, i.e., updates to a single plot become directly visible in all plots. This concept of linked views is combined with interactive brushing.
 \cite{Hentschel2009}
 
-Visualization is the main bridge between the quantitative content of the data and human intuition, and it can be argued that we cannot really understand or intuitively comprehend anything (including mathematical constructs) that we cannot visualize in some way.
-\cite{Donalek2014}
-
-Van Dam et al. detail similar applications and argue that VR offers substantial advantages for nonhuman- scale visualization, particularly for data that should be explored in multiple time and space scales [7]. These functions are especially challenging for user interface design, the authors point out, but VR has the potential to display a larger quantity of meaningful data and facilitate more natural interaction than traditional 2D visualization techniques.
-\cite{Drouhard2015}
-From a user interface perspective, perhaps the greatest challenges and rewards lie in the use of IVR for non- human-scale scientific visualization. The need to handle enormous quantities of data, visualize abstract relation- ships, display size ranges from atomic to cosmic, slow down/speed up/stop multidimensional data flows, or interact with inaccessible areas such as the interior of an artery provides challenges not only for visualization but also for the interaction devices and mechanisms.
-\cite{VanDam2002}
-
-Data with dimensionalities higher than three can be visualized by using multiple characteristics of the virtual objects. Examples include
-Size (e.g. large, medium, small)
-Shape (e.g. triangle, square, pentagon)
-Color (e.g. red, purple, blue)
-Texture (photographic images can be "painted" onto objects)
-Position (X, Y, and Z)
-Orientation (roll, pitch, yaw)
-Behavior (spinning, bouncing, blinking, breathing, etc.)
-Sound (chiming, singing, buzzing, etc.)
-\cite{Stone1994}
-
 In a 2D environment (such as a monitor), it makes sense to arrange a scene in a 2D space. But in a virtual reality environment, the user’s location is the focal point of the scene, and there is freedom in the user’s view direction, as the entire sphere of directionality around that point is available. Visibility of the scene from the perspective of the user’s location is vital, so our approach takes advantage of this freedom by using graph layouts on the surface of a sphere, so that all nodes are equally visible to the user. In order to not occlude nodes, edges are routed outside the sphere along more distant control points in a bundled fashion.
 \cite{Kwon2015}
+
+\cite{Kwon2015} specify this more by saying that in a 2D environment/space (like a regular screen) it makes sense to also use 2D objects for the presentation, whereas in a \gls{vr} environment where the viewing direction can be freely chosen by the user, the whole three dimensional space should be utilized. 
+
+TODO: advancement: rings with different speeds and colour?
+\cite{CodeScience2015}
 
 \begin{figure}[h]
 	\begin{center}
@@ -652,13 +561,6 @@ In a 2D environment (such as a monitor), it makes sense to arrange a scene in a 
 		\label{fig:sphericalgraph}
 	\end{center}
 \end{figure}
-
-
-\subsubsection{Charts}
-
-TODO: barchar, line-chart, pie-chart
-TODO: advancement: rings with different speeds and colour?
-\cite{CodeScience2015}
 
 
 \begin{figure}[h]
@@ -689,13 +591,58 @@ TODO: advancement: rings with different speeds and colour?
 
 
 
-
 \subsubsection{Data-type-focused Presentation}
 
 TODO: country maps with cantons (colour, shape, size), or grey-scale citymap with coloured houses (SimCity?)
 TODO: advancement: unknown, no massive changes required?
 TODO: Data-Forest!
 
+Data with dimensionalities higher than three can be visualized by using multiple characteristics of the virtual objects. Examples include
+Size (e.g. large, medium, small)
+Shape (e.g. triangle, square, pentagon)
+Color (e.g. red, purple, blue)
+Texture (photographic images can be "painted" onto objects)
+Position (X, Y, and Z)
+Orientation (roll, pitch, yaw)
+Behavior (spinning, bouncing, blinking, breathing, etc.)
+Sound (chiming, singing, buzzing, etc.)
+\cite{Stone1994}
+
+Using our approach up to eight different parameters can be visualized by any one data tree. This number can be achieved by matching the physical properties of the tree (i.e. trunk and crown) to different parameters within the data set. The eight different parameters are listed below,
+• position of the tree within the VE • height of trunk • width of trunk • colour of trunk • transparency value of the trunk • size of crown • colour of crown • transparency value of crown
+\cite{Jamieson2007}
+
+Stock Market Data: Therefore it is possible to match the movement of share prices with the changing shape/growth of the forest. An example of this can be seen in Figure 5.
+\cite{Jamieson2007}
+
+A dynamic forest will allow for the use of time variant information. A data tree has been chosen due to the fact that it is a simple object that people are familiar with. People can relate to making decisions on the size and shape of a tree relative to another.
+\cite{Jamieson2007}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=7cm]{03_Figures/05_LitReview/Jamieson2007_DataTree.png}
+		\includegraphics[width=7cm]{03_Figures/05_LitReview/Jamieson2007_DataTreeOverview.png}
+		\caption[Navigation and Overview mode in a Data Forest]{Navigation (1) and Overview (2) mode in a Data Forest \citep{Jamieson2007}}
+		\label{fig:datatrees}
+	\end{center}
+\end{figure} 
+
+SphereViz interface: The 3D interface is designed for virtual reality (VR) environments. It presents a collection of image thumbnails in a virtual sphere as outlined in Figure 1. The position of a thumbnail in the sphere is determined by a number of parameters. These parameters either describe image properties such as total intensity, color proportions, etc, or characterize the image content.
+\cite{Soldati2007}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=7cm]{03_Figures/05_LitReview/Soldati2007_SphereViz.png}
+		\caption[Schematic view of SphereViz where parameters influence the position of data objects]{Schematic view of SphereViz where parameters (ellipsoids) influence the position of data objects (rectangles) \citep{Soldati2007}}
+		\label{fig:sphereviz}
+	\end{center}
+\end{figure} 
+
+SphereViz benefits from the advanced spatial visualisation and interaction methods provided by Virtual Reality. Spatial visualisation allows presenting clusters of images in a very user friendly way, spatial interaction is used for evaluation and searching tasks. VR increases the legibility of large datasets and provides more intuitive techniques for browsing through the data.
+\cite{Soldati2007}
+
+Visualized data objects are characterized by three attributes: size, scale, and distance. They play an important role for a better understanding of the displayed data in particular because the objects are perceived in "natural scale".
+\cite{Soldati2007}
 
 %-----------------------------------
 %	SUBSECTION 3
@@ -705,6 +652,9 @@ TODO: Data-Forest!
 
 TODO: Data manipulation
 TODO: Rename to something like "Work with data"?
+
+"Direct Manipulation of Graphical Objects" since 1960 in University Research, since 1970 in Corporate Research and since 1980 in Commercial Products.
+\cite{Myers1998}
 
 A visualization goal is to simplify the analysis of large-quantity, numerical data by rendering the data as an image that can be intuitively manipulated.
 \cite{Stone1994}
@@ -719,9 +669,6 @@ VR allows us to create Virtual Environments (VEs) in which we can render our 3D 
 \cite{Jamieson2007}
 
 “Drilling down” is a common term in mentioned in data mining techniques, but here we have taken the approach of “exposing the roots” of the data tree. Users can choose a particular tree that they are interested in by using their input device to “touch” the tree, then using a 3D menu (see Figure 3) choose to further examine the related data.
-\cite{Jamieson2007}
-
-Stock Market Data: Therefore it is possible to match the movement of share prices with the changing shape/growth of the forest. An example of this can be seen in Figure 5.
 \cite{Jamieson2007}
 
 From an interaction point of view, the user can now walk through the virtual world and inspect groups of
