@@ -124,6 +124,7 @@
 \usepackage{array} %allows for centered rows with defined width
 \usepackage[table]{xcolor} %allows to color cells of a table
 \usepackage{hhline} %allows for partial lines in tables in combination with xcolor
+\usepackage[autostyle]{csquotes} %allows for context sensitive quotations
 
 % have global counters for tables and figures
 \counterwithout{figure}{chapter}
