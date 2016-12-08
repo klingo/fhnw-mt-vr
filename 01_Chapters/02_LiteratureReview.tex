@@ -528,22 +528,13 @@ With the invention of (multiple) windows on a computer screen in the late 1960s 
 
 When we talk about the presentation of data, many will immediately think of Microsoft Excel and the many different charts (e.g. bar chart, line chart, pie chart, scatter plot etc.) that can be created with just a few clicks based on almost any data set. But not only in such mass consumer products, also big \gls{bi} solutions like \cite{TableauSoftware2016} rely on these well known and widely accepted techniques for their visualization of (big) data. \newline
 \cite{Jamieson2007} highlighted that in the current time the focus shifted from producing and storing even larger amounts of data, to actually making use of it, especially since it becomes increasingly difficult to get a meaningful understanding of the data. They further continue that our traditional visualizations methods will come at their limits with the many different forms of (big) data that are produced every day \citep{Jamieson2007}. Also \cite{Sarathy2000} mentioned that with better performing hardware and software, more data can be collected and processed and thus going beyond the ability of humans to understand and comprehend this vast amounts of data with our traditional visualization methods. \cite[p.609]{Donalek2014} summarise this situation with \blockquote{Visualization is the main bridge between the quantitative content of the data and human intuition [...]} and that we arguably can only understand anything that can be visualized in some way. This bears the questions whether \gls{vr} could be the enabling factor to breach the current limitations of 2D visualization.\newline
-\cite{VanDam2002} argue that with \gls{vr}, considerable advantages for non-human-scale visualizations can be achieved especially when the data should be explored in multiple spatial and temporal levels.
-
-In a 2D environment (such as a monitor), it makes sense to arrange a scene in a 2D space. But in a virtual reality environment, the user’s location is the focal point of the scene, and there is freedom in the user’s view direction, as the entire sphere of directionality around that point is available. Visibility of the scene from the perspective of the user’s location is vital, so our approach takes advantage of this freedom by using graph layouts on the surface of a sphere, so that all nodes are equally visible to the user. In order to not occlude nodes, edges are routed outside the sphere along more distant control points in a bundled fashion.
-\cite{Kwon2015}
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=14cm]{03_Figures/05_LitReview/Kwon2015_SphericalGraphLayout.png}
-		\caption[2D layouts mapped to a sphere with varying amounts of distortion]{2D layouts mapped to a sphere with varying amounts of distortion:  \citep{Kwon2015}}
-		\label{fig:sphericalgraph}
-	\end{center}
-\end{figure}
+\cite{VanDam2002} argue that with \gls{vr}, considerable advantages for non-human-scale visualizations can be achieved especially when the data should be explored in multiple spatial and temporal levels. \cite{Kwon2015} specify this more by saying that in a 2D environment/space (like a regular screen) it makes sense to also use 2D objects for the presentation, whereas in a \gls{vr} environment where the viewing direction can be freely chosen by the user, the whole three dimensional space should be utilized.
 
 On a given trial the subject viewed a randomly laid out network of nodes and arcs with two nodes highlighted. The task was to say if there was a path between the the highlighted nodes, while in fact there was either a path of length two or no path, each occurring 50\% of the time. [...]
 On the basis of these results we conclude that the graph that can be understood with head coupled stereo is about 3.0 times as large as the 2D graph for any given error rate (taking the ratios of the gradients).
 \cite{Ware1994}
+
+
 
 
 
@@ -564,6 +555,19 @@ Information visualization has relied on traditional methods, namely data mining 
 
 In general, our visualization approach relies on multiple linked three-dimensional scatterplots which are presented and interacted with in a virtual environment, as shown in Figure 1. Each plot shows an arbitrary combination of three data attributes which are recorded per grid point. Time-dependent data is handled by animating the plots. All scatterplots are linked to each other, i.e., updates to a single plot become directly visible in all plots. This concept of linked views is combined with interactive brushing.
 \cite{Hentschel2009}
+
+
+In a 2D environment (such as a monitor), it makes sense to arrange a scene in a 2D space. But in a virtual reality environment, the user’s location is the focal point of the scene, and there is freedom in the user’s view direction, as the entire sphere of directionality around that point is available. Visibility of the scene from the perspective of the user’s location is vital, so our approach takes advantage of this freedom by using graph layouts on the surface of a sphere, so that all nodes are equally visible to the user. In order to not occlude nodes, edges are routed outside the sphere along more distant control points in a bundled fashion.
+\cite{Kwon2015}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/05_LitReview/Kwon2015_SphericalGraphLayout.png}
+		\caption[2D layouts mapped to a sphere with varying amounts of distortion]{2D layouts mapped to a sphere with varying amounts of distortion:  \citep{Kwon2015}}
+		\label{fig:sphericalgraph}
+	\end{center}
+\end{figure}
+
 
 \begin{figure}[h]
 	\begin{center}
