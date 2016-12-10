@@ -17,6 +17,8 @@ Figure \ref{fig:litreviewoverview} shows the correlation between the sub-chapter
 	\end{center}
 \end{figure}
 
+TODO: UPDATE THIS GRAPHIC!!!
+
 
 %----------------------------------------------------------------------------------------
 %	SECTION 1
@@ -64,7 +66,7 @@ The by far most utilized and researched interaction method is hand gestures. Sin
 \end{figure}
 \newline
 A similar approach has been research by \cite{Rautaray2011} who used a single camera with an application that did the image capturing, locating the hand and its orientation and finally modelling the gesture to find a match for predefined gestures. The focus relied on simple gestures for \textit{punch} (three fingers), \textit{grab} (fist), \textit{throw} (five fingers), and to \textit{move forward} (thumb up) within a simple \gls{vr} game \citep{Rautaray2011}. The recognition rate was between 80\% and 94\% (depending on the gesture), which might not be accurate enough for practical use cases as also acknowledged by \cite{Rautaray2011}. \newline
-In a more recent study of \cite{Khundam2015}, it was not cameras that were used to track the hand gestures but a Leap Motion (an in-air controller) attached to the front of an Oculus Rift. Figure \ref{fig:leapmotion} shows the different gestures that were implemented by \cite{Khundam2015} in order to navigate within a virtual environment. Depending on how far the hand is moved towards a certain angle, the speed of the movement can be influenced to increase or decrease it \citep{Khundam2015}. Although the applied gestures are understandable and easy to learn, they still bring some unfamiliarity with them since in real life movement already has a specific gesture which however utilizes the legs and not the hands.
+In a more recent study of \cite{Khundam2015}, it was not cameras that were used to track the hand gestures but a Leap Motion (an in-air controller) attached to the front of an Oculus Rift. Figure \ref{fig:leapmotion} shows the different gestures that were implemented by \cite{Khundam2015} in order to navigate within a \gls{ve}. Depending on how far the hand is moved towards a certain angle, the speed of the movement can be influenced to increase or decrease it \citep{Khundam2015}. Although the applied gestures are understandable and easy to learn, they still bring some unfamiliarity with them since in real life movement already has a specific gesture which however utilizes the legs and not the hands.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/05_LitReview/Khundam2015_LeapMotion.png}
@@ -213,7 +215,7 @@ In regards of the thesis statement, a combination of two methods is recommended 
 
 \label{SectionLiteratureReviewSRQ2}
 
-This chapter addresses the second SRQ by having a look at existing interaction patterns in virtual reality and evaluating their strengths and weaknesses. It starts with a short introduction, followed by an analysis of the visual information seeking mantra. Then more details are given on different interaction patterns for travel, selection and manipulation as well as the idea of multi-modal interaction, before the importance of immersion and task performance is elaborated. A conclusion summarises the research done in this chapter.
+This chapter addresses the second SRQ by having a look at existing interaction patterns in virtual reality and evaluating their strengths and weaknesses. It starts with a short introduction, followed by an analysis of the visual information seeking mantra. Then more details are given on different interaction patterns for travel, selection and manipulation as well as the idea of multi-modal interaction, before the importance of immersion and task performance is elaborated. A conclusion summarizes the research done in this chapter.
 \begin{framed}
 	\textit{SRQ 2: Which ways for interaction with multi-dimensional data exist and what are their strengths and weaknesses?}
 \end{framed}
@@ -285,7 +287,7 @@ In the analysis of \gls{vism} by \cite{Craft2005}, they point out that it should
 \subsection{Interaction Patterns}
 
 \cite{Bunt1998} stated that "Human communication is inherently multimodal in nature". What he meant with this is that in a multi-modal user interface, a user can combine a spoken natural language request with one or more gestures \citep{Rosson2002}. By allowing this combination, the interaction in virtual reality can become closer to how we already interact with each other in real life. \newline
-In order to understand the different interaction patterns better, \cite{Bowman2002} has grouped them in three distinctive categories: Travel, Selection and Manipulation. \textit{Travel} deals with how the user can navigate in the virtual environment, how the movement and visual exploration works. \textit{Selection} focuses on the first interaction with a virtual object, how one or many object can be selected and how this is visualised for the user. Finally, in \textit{Manipulation} the actual alteration of a virtual object in its appearance and behaviour is discussed.
+In order to understand the different interaction patterns better, \cite{Bowman2002} has grouped them in three distinctive categories: Travel, Selection and Manipulation. \textit{Travel} deals with how the user can navigate in the \gls{ve}, how the movement and visual exploration works. \textit{Selection} focuses on the first interaction with a virtual object, how one or many object can be selected and how this is visualized for the user. Finally, in \textit{Manipulation} the actual alteration of a virtual object in its appearance and behaviour is discussed.
 
 
 %-----------------------------------
@@ -294,11 +296,11 @@ In order to understand the different interaction patterns better, \cite{Bowman20
 
 \subsubsection{Travel}
 
-In \gls{vr}, the most important interaction pattern is the navigation itself, since without navigation the experience is not much different from a 2D display. \cite{Kwon2015} and \cite{Jamieson2007} confirmed in their research that the simplest method for this is to utilize the built in head tracking capabilities of the \gls{hmd} itself. It in fact is more familiar to us humans to examine objects of interest this way, rather than using mouse and keyboard \citep{Jamieson2007}. Either with the gyroscope sensor information or with tracking the position and direction of the camera, this information allows to determine where the user is looking at \citep{Kwon2015}. \cite{Jamieson2007} continue that for a totally immersive experience in \gls{vr}, also body movement would have to be tracked to allow to walk around or even to put the head inside the visualised data objects.
+In \gls{vr}, the most important interaction pattern is the navigation itself, since without navigation the experience is not much different from a 2D display. \cite{Kwon2015} and \cite{Jamieson2007} confirmed in their research that the simplest method for this is to utilize the built in head tracking capabilities of the \gls{hmd} itself. It in fact is more familiar to us humans to examine objects of interest this way, rather than using mouse and keyboard \citep{Jamieson2007}. Either with the gyroscope sensor information or with tracking the position and direction of the camera, this information allows to determine where the user is looking at \citep{Kwon2015}. \cite{Jamieson2007} continue that for a totally immersive experience in \gls{vr}, also body movement would have to be tracked to allow to walk around or even to put the head inside the visualized data objects.
 
-\cite{Deligiannidis2003} researched this topic based on a problem from practice where a person is working on a specific task in \gls{vr} and up to 20 outsider participants can observe and comment on the work of the fully immersed person. The use of vocal instructions however was distracting to everyone and there were no possibilities for the outsiders to interact with the virtual environment \citep{Deligiannidis2003}. Their solution to this was dividing the area in front of each outsider into two hemispheres, reaching with the hands in the top one allowed each person to manipulate the camera (third person view) whereas if the hands are on the lower one the hand manipulation (first person view) was activated \citep{Deligiannidis2003}. This combination allowed the before passive observers to be much more immersed in the virtual environment and to do exploration on their own.
+\cite{Deligiannidis2003} researched this topic based on a problem from practice where a person is working on a specific task in \gls{vr} and up to 20 outsider participants can observe and comment on the work of the fully immersed person. The use of vocal instructions however was distracting to everyone and there were no possibilities for the outsiders to interact with the \gls{ve} \citep{Deligiannidis2003}. Their solution to this was dividing the area in front of each outsider into two hemispheres, reaching with the hands in the top one allowed each person to manipulate the camera (third person view) whereas if the hands are on the lower one the hand manipulation (first person view) was activated \citep{Deligiannidis2003}. This combination allowed the before passive observers to be much more immersed in the \gls{ve} and to do exploration on their own.
 
-During their demonstrations, \cite{Drouhard2015} observed difficulties when the users wearing a \gls{hmd} had to interact (blindly) with keyboard and mouse, whereas most of them could use an Xbox controller rather intuitively. In their application, the controller was used to "fly" around within the virtual environment and the head tracking capabilities of the \gls{hmd} allowed them to explore the environment and look at the data from different perspectives \citep{Drouhard2015}.
+During their demonstrations, \cite{Drouhard2015} observed difficulties when the users wearing a \gls{hmd} had to interact (blindly) with keyboard and mouse, whereas most of them could use an Xbox controller rather intuitively. In their application, the controller was used to "fly" around within the \gls{ve} and the head tracking capabilities of the \gls{hmd} allowed them to explore the environment and look at the data from different perspectives \citep{Drouhard2015}.
 
 \cite{Bowman2002} also defined guidelines for designing travel techniques, which inherently are related to the navigation and can be summarized as follows:
 \begin{itemize}[noitemsep,nolistsep]
@@ -312,7 +314,7 @@ During their demonstrations, \cite{Drouhard2015} observed difficulties when the 
 
 The reviewed literature showed that for looking around, researchers exclusively relied on the head-tracking capabilities of the \gls{hmd} whereas for the travel in space either third-party controllers were used or the idea of full body tracking was briefly mentioned.
 
-On a more practical side, \cite{CloudheadGames2016} released their \gls{vr} game \textit{The Gallery - Episode 1: Call of the Starseed} for the HTC Vive in April 2016 and offered two different ways for travelling in the virtual environment. The player can chose between "gaze-teleportation" where the location to be teleported at is controlled with the \gls{hmd} and confirmed with a click, or "point-teleportation" where the target spot is chosen and confirmed by pointing at with the gesture controller \citep{CloudheadGames2016}. While the travelling with gaze follows the research of \cite{Jamieson2007} and their conclusion that using the \gls{hmd} is the simplest method, it limits the possibilities for multitasking. By utilizing the gesture controllers for travelling, a certain independence of the viewing experience is achieved and allows "blind" travelling without the need to also look into that direction, just like if we walk backwards in the real world. Both methods of travelling are illustrated in Figure \ref{fig:gazePointTeleportation}.
+On a more practical side, \cite{CloudheadGames2016} released their \gls{vr} game \textit{The Gallery - Episode 1: Call of the Starseed} for the HTC Vive in April 2016 and offered two different ways for travelling in the \gls{ve}. The player can chose between "gaze-teleportation" where the location to be teleported at is controlled with the \gls{hmd} and confirmed with a click, or "point-teleportation" where the target spot is chosen and confirmed by pointing at with the gesture controller \citep{CloudheadGames2016}. While the travelling with gaze follows the research of \cite{Jamieson2007} and their conclusion that using the \gls{hmd} is the simplest method, it limits the possibilities for multitasking. By utilizing the gesture controllers for travelling, a certain independence of the viewing experience is achieved and allows "blind" travelling without the need to also look into that direction, just like if we walk backwards in the real world. Both methods of travelling are illustrated in Figure \ref{fig:gazePointTeleportation}.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=7cm]{03_Figures/05_LitReview/Cloudhead2016_TheGallery2.png}
@@ -329,8 +331,8 @@ The fact that both options are provided for the player to chose from can be seen
 
 \subsubsection{Selection}
 
-After looking at \textit{Travel}, the second interaction pattern is the selection of objects in the virtual environment either to get more information on them or to do manipulate them in a subsequent step. Based on the selected input method, different patterns come to action. \newline
-\cite{Bowman2002} also defined guidelines for designing selection techniques that can be summarised as follow:
+After looking at \textit{Travel}, the second interaction pattern is the selection of objects in the \gls{ve} either to get more information on them or to do manipulate them in a subsequent step. Based on the selected input method, different patterns come to action. \newline
+\cite{Bowman2002} also defined guidelines for designing selection techniques that can be summarized as follow:
 \begin{itemize}[noitemsep,nolistsep]
 	\item Use the natural virtual hand technique if all selection is within arm's reach
 	\item Use ray-casting techniques if speed of remote selection is a requirement
@@ -350,7 +352,7 @@ Since these techniques are highly linked to the methods of using hand gestures a
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/05_LitReview/Steed2006_SelectionTechniques.png}
-		\caption[Simple selection techniques for objects in VR: Ray-based, Small Volume Selection and Cone Selection]{Simple selection techniques for objects in VR: Ray-based (a), Small Volume Selection (b) and Cone Selection (c) \citep{Steed2006}}
+		\caption[Simple selection techniques for objects in \gls{vr}: Ray-based, Small Volume Selection and Cone Selection]{Simple selection techniques for objects in \gls{vr}: Ray-based (a), Small Volume Selection (b) and Cone Selection (c) \citep{Steed2006}}
 		\label{fig:selectiontechniques}
 	\end{center}
 \end{figure}
@@ -358,23 +360,25 @@ Since these techniques are highly linked to the methods of using hand gestures a
 
 \subparagraph{HMD Reticle}
 
-\cite{Kwon2015} and \cite{Drouhard2015} focused their research on a selection technique using a reticle that is visualised inside the \gls{hmd}, like a cross-hair. When the user selects a node with this reticle, this node and its neighbours are brought closer to the user and are highlighted in order to see more details and allow the user to make further selections \citep{Kwon2015}. With the option to select multiple nodes and the visualization of the nodes amongst themselves, interesting paths or relations can be visualized in an effective way \citep{Kwon2015}. It however is not mentioned how the selection itself is triggered, whether a button has to be pushed or if the gaze just has to be held for a couple of seconds. It is also not mentioned how the "\textit{Zoom Out}" task can be performed. \newline
+\cite{Kwon2015} and \cite{Drouhard2015} focused their research on a selection technique using a reticle that is visualized inside the \gls{hmd}, like a cross-hair. When the user selects a node with this reticle, this node and its neighbours are brought closer to the user and are highlighted in order to see more details and allow the user to make further selections \citep{Kwon2015}. With the option to select multiple nodes and the visualization of the nodes amongst themselves, interesting paths or relations can be visualized in an effective way \citep{Kwon2015}. It however is not mentioned how the selection itself is triggered, whether a button has to be pushed or if the gaze just has to be held for a couple of seconds. It is also not mentioned how the "\textit{Zoom Out}" task can be performed. \newline
 \cite{Drouhard2015} provided more details on this part in their research where they implement a "target mode" that the user can enter. Only in this case the cross-hair reticle is shown to the user and the selection happens by targeting a data object and pressing the trigger button \citep{Drouhard2015}. It can be assumed that this separation of "target mode" and "view mode" will help the combination of \textit{Selection} and \textit{Travel} and makes the data analysis more convenient as the reticle is only shown when absolutely necessary. \newline
-\cite{Drouhard2015} furthermore states that gaze interaction arguably is the most natural form of interaction in virtual environments. \newline
+\cite{Drouhard2015} furthermore states that gaze interaction arguably is the most natural form of interaction in \gls{ve}s. \newline
 One fact that is not mentioned in literature but becomes clear is that with an \gls{hmd} reticle, the selection is directly linked to the viewing experience. It is not possible to select something without directly looking at it, which inherently limits the multitasking possibilities.
 
 
 \subparagraph{Gesture Controller}
 
+\label{HentschelFigureRef}
+
 Finally, also gesture controllers allow for dedicated selection patterns. \cite{Hentschel2009} used a controller to select multiple data points out of a 3D scatter-plot which they called interactive brushing and is shown in Figure \ref{fig:interactivebrushing}. The first (left) picture shows the empty selection box that can be moved and scaled (middle and right picture) in order to make the actual selection \citep{Hentschel2009}. Although the middle and right picture look almost the same, the difference is that with the middle picture the visualization of the scatter-plot is done in real-time and only upon releasing the button on the device, the actual selection with remote selection and computing is done \citep{Hentschel2009}.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/05_LitReview/Hentschel2009_InteractiveBrushing.png}
-		\caption[Box selection of scatter-plot data in VR]{Box selection of scatter-plot data in VR \citep{Hentschel2009}}
+		\caption[Box selection of scatter-plot data in \gls{vr}]{Box selection of scatter-plot data in \gls{vr} \citep{Hentschel2009}}
 		\label{fig:interactivebrushing}
 	\end{center}
 \end{figure} \newline
-In their game \textit{The Gallery - Episode 1: Call of the Starseed}, \cite{CloudheadGames2016} provide the option to select objects by utilizing the gesture controllers that in \gls{vr} are visualised as hands as shown in Figure \ref{fig:theGalleryHands}. With the trigger button, the hand can be closed and thus objects can be grabbed and moved around. The game further distinguishes between "important" and "unimportant" objects, where the "important" ones are stuck in the grip of the hand even if the trigger was released (i.e. a flashlight) and "unimportant" objects would immediately drop once the trigger button is released. This allows for a more convenient interaction since it can become irritating to keep the trigger button held for a longer amount of time. \newline
+In their game \textit{The Gallery - Episode 1: Call of the Starseed}, \cite{CloudheadGames2016} provide the option to select objects by utilizing the gesture controllers that in \gls{vr} are visualized as hands as shown in Figure \ref{fig:theGalleryHands}. With the trigger button, the hand can be closed and thus objects can be grabbed and moved around. The game further distinguishes between "important" and "unimportant" objects, where the "important" ones are stuck in the grip of the hand even if the trigger was released (i.e. a flashlight) and "unimportant" objects would immediately drop once the trigger button is released. This allows for a more convenient interaction since it can become irritating to keep the trigger button held for a longer amount of time. \newline
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=7cm]{03_Figures/05_LitReview/Cloudhead2016_TheGallery.png}
@@ -447,8 +451,8 @@ The first two points have to be ensured by the application design itself as well
 \end{itemize}
 Since the technique performance is ultimately related to the concept of usability, which is not part of this thesis, the main focus lies on the task performance.
 
-\cite{Bowman2002} continues that it is a common misconception that in order to be an effective virtual environment, it should behave and work as close to the real world as possible; interaction should be "natural". \cite{Smith1987} called this naturalistic approach "\textit{Naturalism}" whereas the addition of non-natural methods he simply called "\textit{Magic}". The possibility to scale objects or create them out of thin air, to be able to fly around in space are considered to be magic techniques \citep{Bowman2002}. There are also more simple 2D objects such as drop-downs, pop-up menus or buttons that are already widely spread in our everyday applications that we use on computers and smartphones. \cite{Bowman2002} concludes that although these techniques are less natural and might even require some training, if designed for specific interaction tasks, they can be more efficient and flexible than any natural technique.\newline
-\cite{Rosson2002} looked at immersion a bit different and summarized it as an "all around" experience for the user which requires multi-modal input (e.g. data gloves or speech recognition) and output (e.g. \gls{hmd} or haptic feedback on a device). The degree to which someone fells like actually being "in" this virtual environment is depending on the available inputs and outputs and is often referred to as presence \citep{Rosson2002}.\newline
+\cite{Bowman2002} continues that it is a common misconception that in order to be an effective \gls{ve}, it should behave and work as close to the real world as possible; interaction should be "natural". \cite{Smith1987} called this naturalistic approach "\textit{Naturalism}" whereas the addition of non-natural methods he simply called "\textit{Magic}". The possibility to scale objects or create them out of thin air, to be able to fly around in space are considered to be magic techniques \citep{Bowman2002}. There are also more simple 2D objects such as drop-downs, pop-up menus or buttons that are already widely spread in our everyday applications that we use on computers and smartphones. \cite{Bowman2002} concludes that although these techniques are less natural and might even require some training, if designed for specific interaction tasks, they can be more efficient and flexible than any natural technique.\newline
+\cite{Rosson2002} looked at immersion a bit different and summarized it as an "all around" experience for the user which requires multi-modal input (e.g. data gloves or speech recognition) and output (e.g. \gls{hmd} or haptic feedback on a device). The degree to which someone fells like actually being "in" this \gls{ve} is depending on the available inputs and outputs and is often referred to as presence \citep{Rosson2002}.\newline
 It can be said that if a task feels tedious and difficult to execute in \gls{vr}, it will have a difficult time to keep people interested in it, after all it should help us to become more efficient in our task performance.
 
 
@@ -504,7 +508,7 @@ Although no distinct answer can be given to the second \gls{srq}, in combination
 
 \label{SectionLiteratureReviewSRQ3}
 
-After covering the different methods for user input in \gls{vr} in chapter \ref{SectionLiteratureReviewSRQ1} and the interaction patterns in \gls{vr} in chapter \ref{SectionLiteratureReviewSRQ2}, this chapter concludes the literature research by looking at traditional data visualisation that are used for 2D data and how they have been applied to and enhanced for 3D space in \gls{vr}. After a short introduction to the topic, the two main parts of data visualisation and data manipulation are discussed in more detail, with a focus on the differences between the application in 2D respectively 3D space. Finally, the research covered in this chapter is summarized in the conclusion and will answer the third \gls{srq}.
+After covering the different methods for user input in \gls{vr} in chapter \ref{SectionLiteratureReviewSRQ1} and the interaction patterns in \gls{vr} in chapter \ref{SectionLiteratureReviewSRQ2}, this chapter concludes the literature research by looking at traditional data visualisation that are used for 2D data and how they have been applied to and enhanced for 3D space in \gls{vr}. After a short introduction to the topic, the two main parts of data visualisation and data manipulation/interaction are discussed in more detail, with a focus on the differences between the application in 2D respectively 3D space. Finally, the research covered in this chapter is summarized in the conclusion and will answer the third \gls{srq}.
 \begin{framed}
 	\textit{SRQ 3: Which traditional strategies for visualization and manipulation of 2D data have been applied and enhanced for 3D space in virtual reality?}
 \end{framed}
@@ -527,143 +531,104 @@ With the invention of (multiple) windows on a computer screen in the late 1960s 
 \subsection{Data Presentation}
 
 When we talk about the presentation of data, many will immediately think of Microsoft Excel and the many different charts (e.g. bar chart, line chart, pie chart, scatter plot etc.) that can be created with just a few clicks based on almost any data set. But not only in such mass consumer products, also big \gls{bi} solutions like \cite{TableauSoftware2016} rely on these well known and widely accepted techniques for their visualization of (big) data. \newline
-\cite{Jamieson2007} highlighted that in the current time the focus shifted from producing and storing even larger amounts of data, to actually making use of it, especially since it becomes increasingly difficult to get a meaningful understanding of the data. They further continue that our traditional visualizations methods will come at their limits with the many different forms of (big) data that are produced every day \citep{Jamieson2007}. Also \cite{Sarathy2000} mentioned that with better performing hardware and software, more data can be collected and processed and thus going beyond the ability of humans to understand and comprehend this vast amounts of data with our traditional visualization methods. \cite[p.609]{Donalek2014} summarise this situation with \blockquote{Visualization is the main bridge between the quantitative content of the data and human intuition [...]} and that we arguably can only understand anything that can be visualized in some way. This bears the questions whether \gls{vr} could be the enabling factor to breach the current limitations of 2D visualization.\newline
+\cite{Jamieson2007} highlighted that in the current time the focus shifted from producing and storing even larger amounts of data, to actually making use of it, especially since it becomes increasingly difficult to get a meaningful understanding of the data. They further continue that our traditional visualizations methods will come at their limits with the many different forms of (big) data that are produced every day \citep{Jamieson2007}. Also \cite{Sarathy2000} mentioned that with better performing hardware and software, more data can be collected and processed and thus going beyond the ability of humans to understand and comprehend this vast amounts of data with our traditional visualization methods. \cite[p.609]{Donalek2014} summarize this situation with \blockquote{Visualization is the main bridge between the quantitative content of the data and human intuition [...]} and that we arguably can only understand anything that can be visualized in some way. This bears the questions whether \gls{vr} could be the enabling factor to breach the current limitations of 2D visualization.\newline
 \cite{VanDam2002} argue that with \gls{vr}, considerable advantages for non-human-scale visualizations can be achieved especially when the data should be explored in multiple spatial and temporal levels. To put this theory to a test, \cite{Ware1994} made a trial where the subjects had to look at a randomly organized network of nodes and arcs where two of the nodes where highlighted and they had to say whether these two nodes have a path between them. Based on their results, \cite{Ware1994} could conclude that compared to a 2D graph, with head coupled stereo the understood graphs were three times as large for any given error rate. This gives a strong indication on the potential benefits that can be achieved with the right visualization method in \gls{vr}. \newline
-In order to further analyse the different data presentations, we can distinguish between the traditional visualization methods summarised as 'Traditional Charts' and the specifically for \gls{vr} designed, data-type-focused methods.
+In order to further analyse the different data presentations, we can distinguish between the traditional visualization methods summarized as 'Traditional Charts' and the specifically for \gls{vr} designed, data-type-focused methods.
 
 
 \subsubsection{Traditional Charts}
 
-While any 2D chart can also be visualized in the same way in a virtual environment, it only can become beneficial when the additional space is utilized. \cite{Jamieson2007} give an example where a data value can be represented as a 3D object, such as a box. This reminds of the 3D-like bar and pie charts from Microsoft Excel, except that they would be real 3D objects in three dimensional space instead of on a flat screen.
-
-
-
-
-
-Information visualization has relied on traditional methods, namely data mining techniques. [...] This data is usually visualized using 2D graphs, spread sheets, or quasi-3D structures but using a 2D medium (e.g. desktop monitor or projector). The ability to interact with the data is an advantage that data mining techniques does not easily fulfil, also there is a lack of feedback to the user, in timescales that could be considered useful. [...] Furthermore these methods do not scale well to the large multi-dimensional data sets. New methods are required that utilise the advantages of new technology (e.g. VR).
-\cite{Jamieson2007}
-
-In general, our visualization approach relies on multiple linked three-dimensional scatterplots which are presented and interacted with in a virtual environment, as shown in Figure 1. Each plot shows an arbitrary combination of three data attributes which are recorded per grid point. Time-dependent data is handled by animating the plots. All scatterplots are linked to each other, i.e., updates to a single plot become directly visible in all plots. This concept of linked views is combined with interactive brushing.
-\cite{Hentschel2009}
-
-In a 2D environment (such as a monitor), it makes sense to arrange a scene in a 2D space. But in a virtual reality environment, the user’s location is the focal point of the scene, and there is freedom in the user’s view direction, as the entire sphere of directionality around that point is available. Visibility of the scene from the perspective of the user’s location is vital, so our approach takes advantage of this freedom by using graph layouts on the surface of a sphere, so that all nodes are equally visible to the user. In order to not occlude nodes, edges are routed outside the sphere along more distant control points in a bundled fashion.
-\cite{Kwon2015}
-
-\cite{Kwon2015} specify this more by saying that in a 2D environment/space (like a regular screen) it makes sense to also use 2D objects for the presentation, whereas in a \gls{vr} environment where the viewing direction can be freely chosen by the user, the whole three dimensional space should be utilized. 
-
-TODO: advancement: rings with different speeds and colour?
-\cite{CodeScience2015}
-
+While any 2D chart can also be visualized in the same way in a \gls{ve}, it only can become beneficial when the additional space is utilized. \cite{Jamieson2007} mention the current possibilities of 2D mediums, such as desktop monitors, bring us to the limits of useful interactions and do not scale well anymore with large multi-dimensional data sets, wherefore new methods like \gls{vr} will be required. \cite{Jamieson2007} give an example where a data value can be represented as a 3D object, such as a box. This reminds of the 3D-like bar and pie charts from Microsoft Excel, except that they would be real 3D objects in three dimensional space instead of on a flat screen. \newline
+\cite{Hentschel2009} was looking into creating a three-dimensional scatter plot in \gls{vr} as shown in Figure \ref{fig:interactivebrushing} in chapter \ref{HentschelFigureRef}. Within \gls{vr} it is possible here to make us of all three axis while the time-dependent data is handled with the animation of the scatter plot \citep{Hentschel2009}. While this could also be done on a 2D screen with the rotation of the data, the selection of multiple points is much simpler in \gls{vr} with the use of interactive brushing as mentioned by \cite{Hentschel2009}. \newline
+A somewhat different approach to what we know as the bar charts has been presented by \cite{CodeScience2015} in their attempt to visualize sales data in a tower built from rotating data rings with varying speed that represent different products (as shown in Figure \ref{fig:rotatingringstoweranddetail}). Each ring is not fully closed and has a hole which helps to better compare the different rotational speeds whereas the different colours help to distinguish between the individual rings. In the demonstration of \cite{CodeScience2015}, the user as able to freely navigate (also vertically) around and inside the tower. When a data ring is selected, it expands and shows more detailed information (e.g. the different locations that sell the selected product) which again can be selected to narrow down the selection even further. In order to make use of the additional space in 3D and to present more relevant data together, \cite{CodeScience2015} displays the different information boxes in a circle around the user (as shown in Figure \ref{fig:rotatingringstoweranddetail}) and not just in from of him. This is quite an interesting approach and shows that visualization must not go completely different ways to provide a whole new experience in \gls{vr} for the presentation of data. \newline
+Generally it can be said though that only little research is focussing on the utilization of 2D objects for the 3D space. Also \cite{Kwon2015} said that in a 2D environment/space (like a regular screen) it makes sense to use 2D objects for the presentation, whereas in a \gls{vr} environment where the viewing direction can be freely chosen by the user, the whole three dimensional space should be utilized.
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=14cm]{03_Figures/05_LitReview/Kwon2015_SphericalGraphLayout.png}
-		\caption[2D layouts mapped to a sphere with varying amounts of distortion]{2D layouts mapped to a sphere with varying amounts of distortion:  \citep{Kwon2015}}
-		\label{fig:sphericalgraph}
+		\includegraphics[width=7cm]{03_Figures/05_LitReview/CodeScience2015b.png}
+		\includegraphics[width=7cm]{03_Figures/05_LitReview/CodeScience2015a.png}
+		\caption[Outside view on tower built from rotating data rings with varying speed and detail view from a single ring with multiple data displays in \gls{vr}]{Outside view on tower built from rotating data rings with varying speed (1) and detail view from a single ring with multiple data displays (2) in \gls{vr} \citep{CodeScience2015}}
+		\label{fig:rotatingringstoweranddetail}
 	\end{center}
 \end{figure}
-
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=14cm]{03_Figures/05_LitReview/CodeScience2015.png}
-		\caption[Rotating data rings with varying speed in VR]{Rotating data rings with varying speed in VR \citep{CodeScience2015}}
-		\label{fig:rotatingrings}
-	\end{center}
-\end{figure}
-
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=14cm]{03_Figures/05_LitReview/CodeScience2015a.png}
-		\caption[Detail view from a single rotating ring with multiple data displays]{Detail view from a single rotating ring with multiple data displays \citep{CodeScience2015}}
-		\label{fig:rotatingringsdetail}
-	\end{center}
-\end{figure}
-
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=14cm]{03_Figures/05_LitReview/CodeScience2015b.png}
-		\caption[Outside view on tower built from rotating data rings with varying speed in VR]{Outside view on tower built from rotating data rings with varying speed in VR \citep{CodeScience2015}}
-		\label{fig:rotatingringstower}
-	\end{center}
-\end{figure}
-
 
 
 \subsubsection{Data-type-focused Presentation}
 
-TODO: country maps with cantons (colour, shape, size), or grey-scale citymap with coloured houses (SimCity?)
-TODO: advancement: unknown, no massive changes required?
-TODO: Data-Forest!
-
-Data with dimensionalities higher than three can be visualized by using multiple characteristics of the virtual objects. Examples include
-Size (e.g. large, medium, small)
-Shape (e.g. triangle, square, pentagon)
-Color (e.g. red, purple, blue)
-Texture (photographic images can be "painted" onto objects)
-Position (X, Y, and Z)
-Orientation (roll, pitch, yaw)
-Behavior (spinning, bouncing, blinking, breathing, etc.)
-Sound (chiming, singing, buzzing, etc.)
-\cite{Stone1994}
-
-Using our approach up to eight different parameters can be visualized by any one data tree. This number can be achieved by matching the physical properties of the tree (i.e. trunk and crown) to different parameters within the data set. The eight different parameters are listed below,
-• position of the tree within the VE • height of trunk • width of trunk • colour of trunk • transparency value of the trunk • size of crown • colour of crown • transparency value of crown
-\cite{Jamieson2007}
-
-Stock Market Data: Therefore it is possible to match the movement of share prices with the changing shape/growth of the forest. An example of this can be seen in Figure 5.
-\cite{Jamieson2007}
-
-A dynamic forest will allow for the use of time variant information. A data tree has been chosen due to the fact that it is a simple object that people are familiar with. People can relate to making decisions on the size and shape of a tree relative to another.
-\cite{Jamieson2007}
-
+In contrast to the traditional chart-like presentations that can be used for almost any kind of data, the "data-type-focused" ones are specifically tailored to the individual type of information and might not be effectively re-usable for others. As soon as there are more than three dimensions for the data, a new kind of visualisation has to be applied. \cite{Stone1994} provide some examples for characteristics of virtual objects that can be applied to:
+\begin{itemize}[noitemsep,nolistsep]
+	\item Size (e.g. large, medium, small)
+	\item Shape (e.g. triangle, square, pentagon)
+	\item Colour (e.g. red, purple, blue)
+	\item Texture (photographic images can be "painted" onto objects)
+	\item Position (X, Y, and Z)
+	\item Orientation (roll, pitch, yaw)
+	\item Behaviour (spinning, bouncing, blinking, breathing, etc.)
+	\item Sound (chiming, singing, buzzing, etc.)
+\end{itemize}
+Upon combining them, it will become possible to also visualize data that has many more dimensions than just three in a ways that is not as abstract as introducing a fourth or fifth dimension as it is done in OLAP data cubes. \cite{Jamieson2007} applied this concept for their implementation of a 'data forest' that is made of individual data trees which represents different parameters of one data set as physical properties of the tree (i.e. trunk and crown). \cite{Jamieson2007} decided for the use of data trees since it is a simple object that people also are quite familiar with and thus can more easily make decision based on the size and shape of a tree relative to others. In specific, \cite{Jamieson2007} used the following eight parameters for the visualization:
+\begin{itemize}[noitemsep,nolistsep]
+	\item Position of the tree within the VE \textit{(Position)}
+	\item Height of trunk \textit{(Size)}
+	\item Width of trunk \textit{(Size)}
+	\item Colour of trunk \textit{(Colour)}
+	\item Transparency value of the trunk \textit{(Colour)}
+	\item Size of crown \textit{(Size)}
+	\item Colour of crown  \textit{(Colour)}
+	\item Transparency value of crown  \textit{(Colour)}
+\end{itemize}
+By referring back to the list of characteristics from \cite{Stone1994}, the eight parameters focus on \textit{Position, Size and Colour} while the idea of the data forest itself focuses on \textit{Shape}. An example of the visualized data forest can be seen in Figure \ref{fig:dataforest}.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=7cm]{03_Figures/05_LitReview/Jamieson2007_DataTree.png}
 		\includegraphics[width=7cm]{03_Figures/05_LitReview/Jamieson2007_DataTreeOverview.png}
 		\caption[Navigation and Overview mode in a Data Forest]{Navigation (1) and Overview (2) mode in a Data Forest \citep{Jamieson2007}}
-		\label{fig:datatrees}
+		\label{fig:dataforest}
 	\end{center}
-\end{figure} 
-
-SphereViz interface: The 3D interface is designed for virtual reality (VR) environments. It presents a collection of image thumbnails in a virtual sphere as outlined in Figure 1. The position of a thumbnail in the sphere is determined by a number of parameters. These parameters either describe image properties such as total intensity, color proportions, etc, or characterize the image content.
-\cite{Soldati2007}
-
+\end{figure}
+The factor of time can also be applied by animating the forest and observing how the individual trees change their size and colour over time. \cite{Jamieson2007} further indicate that their data forest could also be applied to stock market data where the movement of share prices can be linked to the shape and growth of the forest. \newline
+A very similar approach to this, although not in \gls{vr}, has been applied in the city building simulation PC Game "Cities: Skylines", published by \cite{Paradox2014}, where certain info views such as the fire safety has been directly visually applied to the city. Figure \ref{fig:citiesskylinesfiresafety} shows how this looks like when the houses are coloured depending on their relative fire safety. This presentation technique could also be applied in \gls{vr} without many changes, especially since \cite{Google2016a} has released a \gls{vr}-ready version of Google Earth in November 2016.
+\begin{figure}[b]
+	\begin{center}
+		\includegraphics[width=10cm]{03_Figures/05_LitReview/ParadoxWiki2014_CitiesSkylines.png}
+		\caption[Fire Safety Info View in Cities: Skylines]{Fire Safety Info View in Cities: Skylines \citep{Paradox2014}}
+		\label{fig:citiesskylinesfiresafety}
+	\end{center}
+\end{figure} \newline
+\cite{Soldati2007} see the available 3D space more as a sphere around the user where information can be presented. For this, they created the 'SphereViz interface' for \gls{vr} that presents a collection of image thumbnails on this virtual sphere where the position is determined based on image properties such as total intensity, colour proportions or characterizations of the image content \citep{Soldati2007}. The visualized objects are further characterized by size, scale, and distance, which plays an important role for the goal of allowing the user to perceive the information in natural scale \citep{Soldati2007}. SphereViz heavily focuses on the benefits of spatial visualisation to build image clusters in a user friendly way and thus also provides more intuitive techniques for evaluation and searching tasks as well as for just browsing through the data.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=7cm]{03_Figures/05_LitReview/Soldati2007_SphereViz.png}
 		\caption[Schematic view of SphereViz where parameters influence the position of data objects]{Schematic view of SphereViz where parameters (ellipsoids) influence the position of data objects (rectangles) \citep{Soldati2007}}
 		\label{fig:sphereviz}
 	\end{center}
-\end{figure} 
+\end{figure} \newline
+Figure \ref{fig:sphereviz} shows a schematic view of SphereViz where two parameters influence the position of a set of data objects. \newline
+\cite{Kwon2015} also built on the idea of a virtual sphere with the benefit of having all nodes on it equally visible to the user. The relation between the nodes are indicated with edges that are however routed outside of the sphere in order to not block the view on the nodes themselves \citep{Kwon2015}. Figure \ref{fig:sphericalgraph} shows three different approaches with varying amounts of distortion.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/05_LitReview/Kwon2015_SphericalGraphLayout.png}
+		\caption[2D layouts mapped to a sphere with varying amounts of distortion]{2D layouts mapped to a sphere with varying amounts of distortion:  \citep{Kwon2015}}
+		\label{fig:sphericalgraph}
+	\end{center}
+\end{figure} \newline
+It can be seen that it very much depends on what kind of that shall be visualized in order to find the method that brings the most benefit to the viewers. While the sphere is a more generic approach that is ideal for clustering data, the the presentation with familiar 3D objects seems to be more natural and thus easier to understand for inexperienced users. In the next chapter, the focus lies on manipulating and interacting with the presented data.
 
-SphereViz benefits from the advanced spatial visualisation and interaction methods provided by Virtual Reality. Spatial visualisation allows presenting clusters of images in a very user friendly way, spatial interaction is used for evaluation and searching tasks. VR increases the legibility of large datasets and provides more intuitive techniques for browsing through the data.
-\cite{Soldati2007}
-
-Visualized data objects are characterized by three attributes: size, scale, and distance. They play an important role for a better understanding of the displayed data in particular because the objects are perceived in "natural scale".
-\cite{Soldati2007}
 
 %-----------------------------------
 %	SUBSECTION 3
 %-----------------------------------
 
-\subsection{Data Manipulation}
+\subsection{Data Manipulation and Interaction}
 
-TODO: Data manipulation
-TODO: Rename to something like "Work with data"?
+As already said by \cite{Stone1994}, people don't usually visualize data just for the visualisation's sake. It is at least as important what the goal of the visualization is and what the user should be able to do with it, i.e. how to move it around, twist it, shake it, change its colour mapping, expand it, rotate it, shrink it or slice and dice it \citep{Stone1994}. The direct manipulation of graphical objects has been in University Research since 1960, in Corporate Research since 1970 and in Commercial Products since 1980 \citep{Myers1998}. This shows that it was important from the beginning to be able to manipulate the data. \citet[p.410]{Stone1994} emphasized that: \blockquote{A visualization goal is to simplify the analysis of large-quantity, numerical data by rendering the data as an image that can be intuitively manipulated.} \cite{Stone1994} further continue to define three important characteristics that \gls{vr} has in this regard:
+\begin{itemize}[noitemsep,nolistsep]
+	\item \gls{vr} exhibits high interactivity - the user's actions and the caused reactions are tightly coupled together
+	\item \gls{vr} support embodiment - the user is represented  in the same spatial framework as the data
+	\item The \gls{vr} representation is spatial in nature - all virtual objects are placed in a spatial framework
+\end{itemize}
 
-"Direct Manipulation of Graphical Objects" since 1960 in University Research, since 1970 in Corporate Research and since 1980 in Commercial Products.
-\cite{Myers1998}
 
-A visualization goal is to simplify the analysis of large-quantity, numerical data by rendering the data as an image that can be intuitively manipulated.
-\cite{Stone1994}
 
-I see VRs as having three important characteristics: First, VRs exhibit high interactivity - there is a tight coupling between the user's actions and the feedback generated by those actions. Second, they support embodiment: some sort of representation of the user is in the same spatial framework as the data. Third, the VR representation is spatial in nature; virtual objects are situated in a spatial framework
-\cite{Stone1994}
-
-Second, visualization is entwined with manipulation. We don't just want to look at data, we want to move around it, twist it, shake it, change its color mapping, expand it, rotate it, shrink it, or slice and dice it.
-\cite{Stone1994}
 
 VR allows us to create Virtual Environments (VEs) in which we can render our 3D objects representing our data. The advantage that these VEs have over traditional approaches is that they allows us to be immersed within the data. We can use methods to examine the different features of the data that are more intuitive to us. An example of this is the ability to track the users head position so that we can appear to look around object, this is how as humans we are familiar with examining objects of interest, rather than moving a mouse. In a totally immersive virtual environment we can use body movement to walk around objects or put our head inside virtual representation of our data. Also within an immersive environment it is possible to map the users hand position in the real world to a virtual hand in the VE, therefore allowing the user to manipulate virtual objects.
 \cite{Jamieson2007}
@@ -689,6 +654,9 @@ Taking the Visual Information-Seeking Mantra into account [9] the current applic
 \cite{Soldati2007}
 
 The analysis of time-dependent simulation data is a demanding task, both in terms of computing power and time. Interactive analysis using multiple linked views has been shown to be one possible solution to this problem. However, there are two significant short- comings when limited to a standard desktop-based setup: First, complex spatial relationships are hard to understand using only 2D projections of the data. [...]
+\cite{Hentschel2009}
+
+In general, our visualization approach relies on multiple linked three-dimensional scatterplots which are presented and interacted with in a virtual environment, as shown in Figure 1. Each plot shows an arbitrary combination of three data attributes which are recorded per grid point. Time-dependent data is handled by animating the plots. All scatterplots are linked to each other, i.e., updates to a single plot become directly visible in all plots. This concept of linked views is combined with interactive brushing.
 \cite{Hentschel2009}
 
 Traditionally, researchers look at 3D volume renderings on desktop computer monitors or larger displays, which lack the more realistic visual stimuli found in more advanced displays, such as stereoscopic 3D graphics and motion parallax due to head tracking. Thus, it may be more difficult for the user to judge the size, shape, or depth of the structures in the volume data. Judgments of this sort are required not only for general understanding, but also for performing interactive tasks such as segmentation of a dataset. Conducting such tasks with traditional displays, therefore, may result in slower performance and/or erroneous interpretation.
