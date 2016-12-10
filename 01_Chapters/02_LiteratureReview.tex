@@ -537,13 +537,9 @@ In order to further analyse the different data presentations, we can distinguish
 \subsubsection{Traditional Charts}
 
 While any 2D chart can also be visualized in the same way in a virtual environment, it only can become beneficial when the additional space is utilized. \cite{Jamieson2007} mention the current possibilities of 2D mediums, such as desktop monitors, bring us to the limits of useful interactions and do not scale well anymore with large multi-dimensional data sets, wherefore new methods like \gls{vr} will be required. \cite{Jamieson2007} give an example where a data value can be represented as a 3D object, such as a box. This reminds of the 3D-like bar and pie charts from Microsoft Excel, except that they would be real 3D objects in three dimensional space instead of on a flat screen. \newline
-\cite{Hentschel2009} was looking into creating a three-dimensional scatter plot in \gls{vr} as shown in Figure \ref{fig:interactivebrushing} in chapter \ref{HentschelFigureRef}. Compared to traditional 2D visualization, it is possible here to make us of all three axis while the time-dependent data is handled with the animation of the scatter plot \citep{Hentschel2009}.
+\cite{Hentschel2009} was looking into creating a three-dimensional scatter plot in \gls{vr} as shown in Figure \ref{fig:interactivebrushing} in chapter \ref{HentschelFigureRef}. Within \gls{vr} it is possible here to make us of all three axis while the time-dependent data is handled with the animation of the scatter plot \citep{Hentschel2009}. While this could also be done on a 2D screen with the rotation of the data, the selection of multiple points is much simpler in \gls{vr} with the use of interactive brushing as mentioned by \cite{Hentschel2009}.
 
 
-
-
-In general, our visualization approach relies on multiple linked three-dimensional scatterplots which are presented and interacted with in a virtual environment, as shown in Figure 1. Each plot shows an arbitrary combination of three data attributes which are recorded per grid point. Time-dependent data is handled by animating the plots. All scatterplots are linked to each other, i.e., updates to a single plot become directly visible in all plots. This concept of linked views is combined with interactive brushing.
-\cite{Hentschel2009}
 
 In a 2D environment (such as a monitor), it makes sense to arrange a scene in a 2D space. But in a virtual reality environment, the user’s location is the focal point of the scene, and there is freedom in the user’s view direction, as the entire sphere of directionality around that point is available. Visibility of the scene from the perspective of the user’s location is vital, so our approach takes advantage of this freedom by using graph layouts on the surface of a sphere, so that all nodes are equally visible to the user. In order to not occlude nodes, edges are routed outside the sphere along more distant control points in a bundled fashion.
 \cite{Kwon2015}
@@ -688,6 +684,9 @@ Taking the Visual Information-Seeking Mantra into account [9] the current applic
 \cite{Soldati2007}
 
 The analysis of time-dependent simulation data is a demanding task, both in terms of computing power and time. Interactive analysis using multiple linked views has been shown to be one possible solution to this problem. However, there are two significant short- comings when limited to a standard desktop-based setup: First, complex spatial relationships are hard to understand using only 2D projections of the data. [...]
+\cite{Hentschel2009}
+
+In general, our visualization approach relies on multiple linked three-dimensional scatterplots which are presented and interacted with in a virtual environment, as shown in Figure 1. Each plot shows an arbitrary combination of three data attributes which are recorded per grid point. Time-dependent data is handled by animating the plots. All scatterplots are linked to each other, i.e., updates to a single plot become directly visible in all plots. This concept of linked views is combined with interactive brushing.
 \cite{Hentschel2009}
 
 Traditionally, researchers look at 3D volume renderings on desktop computer monitors or larger displays, which lack the more realistic visual stimuli found in more advanced displays, such as stereoscopic 3D graphics and motion parallax due to head tracking. Thus, it may be more difficult for the user to judge the size, shape, or depth of the structures in the volume data. Judgments of this sort are required not only for general understanding, but also for performing interactive tasks such as segmentation of a dataset. Conducting such tasks with traditional displays, therefore, may result in slower performance and/or erroneous interpretation.
