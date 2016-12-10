@@ -563,7 +563,7 @@ In contrast to the traditional chart-like presentations that can be used for alm
 	\item Behaviour (spinning, bouncing, blinking, breathing, etc.)
 	\item Sound (chiming, singing, buzzing, etc.)
 \end{itemize}
-Upon combining them, it will become possible to also visualize data that has many more dimensions than just three in a ways that is not as abstract as introducing a fourth or fifth dimension as it is done in OLAP data cubes. \cite{Jamieson2007} applied this concept for their implementation of a 'data forest' that is made of individual data trees which represents different parameters of one data set as physical properties of the tree (i.e. trunk and crown). In specific, \cite{Jamieson2007} used the following eight parameters:
+Upon combining them, it will become possible to also visualize data that has many more dimensions than just three in a ways that is not as abstract as introducing a fourth or fifth dimension as it is done in OLAP data cubes. \cite{Jamieson2007} applied this concept for their implementation of a 'data forest' that is made of individual data trees which represents different parameters of one data set as physical properties of the tree (i.e. trunk and crown). \cite{Jamieson2007} decided for the use of data trees since it is a simple object that people also are quite familiar with and thus can more easily make decision based on the size and shape of a tree relative to others. In specific, \cite{Jamieson2007} used the following eight parameters for the visualization:
 \begin{itemize}[noitemsep,nolistsep]
 	\item Position of the tree within the VE \textit{(Position)}
 	\item Height of trunk \textit{(Size)}
@@ -574,15 +574,7 @@ Upon combining them, it will become possible to also visualize data that has man
 	\item Colour of crown  \textit{(Colour)}
 	\item Transparency value of crown  \textit{(Colour)}
 \end{itemize}
-By referring back to the list of characteristics from \cite{Stone1994}, the eight parameters focus on \textit{Position, Size and Colour} while the idea of the data forest itself focuses on \textit{Shape}. The visualized data forest can be seen in Figure \ref{fig:dataforest}.
-
-
-Stock Market Data: Therefore it is possible to match the movement of share prices with the changing shape/growth of the forest. An example of this can be seen in Figure 5.
-\cite{Jamieson2007}
-
-A dynamic forest will allow for the use of time variant information. A data tree has been chosen due to the fact that it is a simple object that people are familiar with. People can relate to making decisions on the size and shape of a tree relative to another.
-\cite{Jamieson2007}
-
+By referring back to the list of characteristics from \cite{Stone1994}, the eight parameters focus on \textit{Position, Size and Colour} while the idea of the data forest itself focuses on \textit{Shape}. An example of the visualized data forest can be seen in Figure \ref{fig:dataforest}.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=7cm]{03_Figures/05_LitReview/Jamieson2007_DataTree.png}
@@ -590,7 +582,11 @@ A dynamic forest will allow for the use of time variant information. A data tree
 		\caption[Navigation and Overview mode in a Data Forest]{Navigation (1) and Overview (2) mode in a Data Forest \citep{Jamieson2007}}
 		\label{fig:dataforest}
 	\end{center}
-\end{figure} 
+\end{figure}
+The factor of time can also be applied by animating the forest and observing how the individual trees change their size and colour over time. \cite{Jamieson2007} further indicate that their data forest could also be applied to stock market data where the movement of share prices can be linked to the shape and growth of the forest. \newline
+
+
+
 
 SphereViz interface: The 3D interface is designed for virtual reality (\gls{vr}) environments. It presents a collection of image thumbnails in a virtual sphere as outlined in Figure 1. The position of a thumbnail in the sphere is determined by a number of parameters. These parameters either describe image properties such as total intensity, color proportions, etc, or characterize the image content.
 \cite{Soldati2007}
