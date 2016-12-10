@@ -552,26 +552,30 @@ Generally it can be said though that only little research is focussing on the ut
 
 \subsubsection{Data-type-focused Presentation}
 
-In contrast to the traditional chart-like presentations that can be used for almost any kind of data, the "data-type-focused" ones are specifically tailored to the individual type of information and might not be effectively re-usable for others. \newline
+In contrast to the traditional chart-like presentations that can be used for almost any kind of data, the "data-type-focused" ones are specifically tailored to the individual type of information and might not be effectively re-usable for others. As soon as there are more than three dimensions for the data, a new kind of visualisation has to be applied. \cite{Stone1994} provide some examples for characteristics of virtual objects that can be applied to:
+\begin{itemize}[noitemsep,nolistsep]
+	\item Size (e.g. large, medium, small)
+	\item Shape (e.g. triangle, square, pentagon)
+	\item Colour (e.g. red, purple, blue)
+	\item Texture (photographic images can be "painted" onto objects)
+	\item Position (X, Y, and Z)
+	\item Orientation (roll, pitch, yaw)
+	\item Behaviour (spinning, bouncing, blinking, breathing, etc.)
+	\item Sound (chiming, singing, buzzing, etc.)
+\end{itemize}
+Upon combining them, it will become possible to also visualize data that has many more dimensions than just three in a ways that is not as abstract as introducing a fourth or fifth dimension as it is done in OLAP data cubes. \cite{Jamieson2007} applied this concept for their implementation of a 'data forest' that is made of individual data trees which represents different parameters of one data set as physical properties of the tree (i.e. trunk and crown). In specific, \cite{Jamieson2007} used the following eight parameters:
+\begin{itemize}[noitemsep,nolistsep]
+	\item Position of the tree within the VE
+	\item Height of trunk
+	\item Width of trunk
+	\item Colour of trunk
+	\item Transparency value of the trunk
+	\item Size of crown
+	\item Colour of crown
+	\item Transparency value of crown
+\end{itemize}
 
 
-
-TODO: advancement: unknown, no massive changes required?
-TODO: Data-Forest!
-
-Data with dimensionalities higher than three can be visualized by using multiple characteristics of the virtual objects. Examples include
-Size (e.g. large, medium, small)
-Shape (e.g. triangle, square, pentagon)
-Color (e.g. red, purple, blue)
-Texture (photographic images can be "painted" onto objects)
-Position (X, Y, and Z)
-Orientation (roll, pitch, yaw)
-Behavior (spinning, bouncing, blinking, breathing, etc.)
-Sound (chiming, singing, buzzing, etc.)
-\cite{Stone1994}
-
-Using our approach up to eight different parameters can be visualized by any one data tree. This number can be achieved by matching the physical properties of the tree (i.e. trunk and crown) to different parameters within the data set. The eight different parameters are listed below,
-• position of the tree within the VE • height of trunk • width of trunk • colour of trunk • transparency value of the trunk • size of crown • colour of crown • transparency value of crown
 \cite{Jamieson2007}
 
 Stock Market Data: Therefore it is possible to match the movement of share prices with the changing shape/growth of the forest. An example of this can be seen in Figure 5.
