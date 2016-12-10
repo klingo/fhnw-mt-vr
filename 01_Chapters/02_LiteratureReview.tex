@@ -537,22 +537,13 @@ In order to further analyse the different data presentations, we can distinguish
 \subsubsection{Traditional Charts}
 
 While any 2D chart can also be visualized in the same way in a virtual environment, it only can become beneficial when the additional space is utilized. \cite{Jamieson2007} mention the current possibilities of 2D mediums, such as desktop monitors, bring us to the limits of useful interactions and do not scale well anymore with large multi-dimensional data sets, wherefore new methods like \gls{vr} will be required. \cite{Jamieson2007} give an example where a data value can be represented as a 3D object, such as a box. This reminds of the 3D-like bar and pie charts from Microsoft Excel, except that they would be real 3D objects in three dimensional space instead of on a flat screen. \newline
-\cite{Hentschel2009} was looking into creating a three-dimensional scatter plot in \gls{vr} as shown in Figure \ref{fig:interactivebrushing} in chapter \ref{HentschelFigureRef}. Within \gls{vr} it is possible here to make us of all three axis while the time-dependent data is handled with the animation of the scatter plot \citep{Hentschel2009}. While this could also be done on a 2D screen with the rotation of the data, the selection of multiple points is much simpler in \gls{vr} with the use of interactive brushing as mentioned by \cite{Hentschel2009}.
+\cite{Hentschel2009} was looking into creating a three-dimensional scatter plot in \gls{vr} as shown in Figure \ref{fig:interactivebrushing} in chapter \ref{HentschelFigureRef}. Within \gls{vr} it is possible here to make us of all three axis while the time-dependent data is handled with the animation of the scatter plot \citep{Hentschel2009}. While this could also be done on a 2D screen with the rotation of the data, the selection of multiple points is much simpler in \gls{vr} with the use of interactive brushing as mentioned by \cite{Hentschel2009}. \newline
 
 
 
-In a 2D environment (such as a monitor), it makes sense to arrange a scene in a 2D space. But in a virtual reality environment, the user’s location is the focal point of the scene, and there is freedom in the user’s view direction, as the entire sphere of directionality around that point is available. Visibility of the scene from the perspective of the user’s location is vital, so our approach takes advantage of this freedom by using graph layouts on the surface of a sphere, so that all nodes are equally visible to the user. In order to not occlude nodes, edges are routed outside the sphere along more distant control points in a bundled fashion.
-\cite{Kwon2015}
 
-\cite{Kwon2015} specify this more by saying that in a 2D environment/space (like a regular screen) it makes sense to also use 2D objects for the presentation, whereas in a \gls{vr} environment where the viewing direction can be freely chosen by the user, the whole three dimensional space should be utilized. 
 
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=14cm]{03_Figures/05_LitReview/Kwon2015_SphericalGraphLayout.png}
-		\caption[2D layouts mapped to a sphere with varying amounts of distortion]{2D layouts mapped to a sphere with varying amounts of distortion:  \citep{Kwon2015}}
-		\label{fig:sphericalgraph}
-	\end{center}
-\end{figure}
+
 
 
 TODO: advancement: rings with different speeds and colour?
@@ -583,6 +574,30 @@ TODO: advancement: rings with different speeds and colour?
 		\label{fig:rotatingringstower}
 	\end{center}
 \end{figure}
+
+
+
+
+
+
+
+
+\cite{Kwon2015} said that in a 2D environment/space (like a regular screen) it makes sense to also use 2D objects for the presentation, whereas in a \gls{vr} environment where the viewing direction can be freely chosen by the user, the whole three dimensional space should be utilized.
+
+
+In a 2D environment (such as a monitor), it makes sense to arrange a scene in a 2D space. But in a virtual reality environment, the user’s location is the focal point of the scene, and there is freedom in the user’s view direction, as the entire sphere of directionality around that point is available. Visibility of the scene from the perspective of the user’s location is vital, so our approach takes advantage of this freedom by using graph layouts on the surface of a sphere, so that all nodes are equally visible to the user. In order to not occlude nodes, edges are routed outside the sphere along more distant control points in a bundled fashion.
+\cite{Kwon2015}
+
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/05_LitReview/Kwon2015_SphericalGraphLayout.png}
+		\caption[2D layouts mapped to a sphere with varying amounts of distortion]{2D layouts mapped to a sphere with varying amounts of distortion:  \citep{Kwon2015}}
+		\label{fig:sphericalgraph}
+	\end{center}
+\end{figure}
+
+
 
 
 
