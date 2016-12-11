@@ -649,62 +649,18 @@ TODO: Rewrite the "end" here!
 For the SphereViz application (see figure \ref{fig:sphereviz}), \cite{Soldati2007} decided to allow the user to simply grab the parameter handles on the sphere and to move them around to see the immediate effects this has on the position of the individual data objects and thus giving valuable feedback to the user. When some data objects (i.e. thumbnails) are hidden behind others, \cite{Soldati2007} believe that it provides the best experience to let him walk around them to bring them in focus instead of bothering about more input devices. One more feature is the \gls{wim} that represents the whole scene and allows for a second dynamic perspective where also direct manipulations can be done \citep{Soldati2007}.
 
 
-%-----------------------------------
-%	SUBSECTION 6
-%-----------------------------------
-
-\subsection{Data Visualizer iViz}
-
-
-%-----------------------------------
-%	SUBSECTION 7
-%-----------------------------------
-
-\subsection{Other Applications}
-
-A very similar approach to the Data Forest, although not in \gls{vr}, has been applied in the city building simulation PC Game "Cities: Skylines", published by \cite{Paradox2014}, where certain info views such as the fire safety has been directly visually applied to the city. Figure \ref{fig:citiesskylinesfiresafety} shows how this looks like when the houses are coloured depending on their relative fire safety. This presentation technique could also be applied in \gls{vr} without many changes, especially since \cite{Google2016a} has released a \gls{vr}-ready version of Google Earth in November 2016.
-\begin{figure}[b]
-	\begin{center}
-		\includegraphics[width=10cm]{03_Figures/05_LitReview/ParadoxWiki2014_CitiesSkylines.png}
-		\caption[Fire Safety Info View in Cities: Skylines]{Fire Safety Info View in Cities: Skylines \citep{Paradox2014}}
-		\label{fig:citiesskylinesfiresafety}
-	\end{center}
-\end{figure}
-
-
-
-
-%-----------------------------------
-%	SUBSECTION 3
-%-----------------------------------
-
-\subsection{Data Manipulation and Interaction}
-
-
-
-
-
-
 We see a great potential in using VR for visual exploration of multi-dimensional data sets and in particular in SphereViz. Amongst others driven by the game industry, we expect VR technology to evolve significantly within the next 10 to 15 years. VR will allow users to look at and interact with large datasets in new ways.
 \cite{Soldati2007}
 
 Taking the Visual Information-Seeking Mantra into account [9] the current application covers the zoom and filter and the details on demand part. In future versions we plan to extend the WIM to give the overview of all available data.
 \cite{Soldati2007}
 
-The analysis of time-dependent simulation data is a demanding task, both in terms of computing power and time. Interactive analysis using multiple linked views has been shown to be one possible solution to this problem. However, there are two significant short- comings when limited to a standard desktop-based setup: First, complex spatial relationships are hard to understand using only 2D projections of the data. [...]
-\cite{Hentschel2009}
 
-In general, our visualization approach relies on multiple linked three-dimensional scatterplots which are presented and interacted with in a virtual environment, as shown in Figure 1. Each plot shows an arbitrary combination of three data attributes which are recorded per grid point. Time-dependent data is handled by animating the plots. All scatterplots are linked to each other, i.e., updates to a single plot become directly visible in all plots. This concept of linked views is combined with interactive brushing.
-\cite{Hentschel2009}
+%-----------------------------------
+%	SUBSECTION 6
+%-----------------------------------
 
-Traditionally, researchers look at 3D volume renderings on desktop computer monitors or larger displays, which lack the more realistic visual stimuli found in more advanced displays, such as stereoscopic 3D graphics and motion parallax due to head tracking. Thus, it may be more difficult for the user to judge the size, shape, or depth of the structures in the volume data. Judgments of this sort are required not only for general understanding, but also for performing interactive tasks such as segmentation of a dataset. Conducting such tasks with traditional displays, therefore, may result in slower performance and/or erroneous interpretation.
-\cite{Laha2012}
-
-We conducted a controlled empirical study in which we studied the independent and combined effects of three components of immersion (head tracking, FOR, and stereoscopic rendering) on the analysis of two different volume-visualized microscopic computed tomography (micro-CT) datasets. We found significant positive effects of these components of immersion, but the results also show that the effects are dependent on how the components are combined and on the type of analysis task.
-\cite{Laha2012}
-
-We found that most of the benefits of high immersion for analyzing volume data are positive. Of the three components of immersion that we evaluated in our controlled study, FOR had the most positive effects on the widest range of tasks. However, levels of immersion have differential effects on different tasks. We observed the most positive effects of immersion for tasks involving visually and spatially complex search for features in the volume datasets. General descriptive tasks showed mixed effects of immersion. Users showed mixed preferences for the different levels of immersion. They felt that stereoscopic vision made it easier to understand features of a volume dataset, and head-based rendering provided greater ease of obtaining the desired view they wanted and of exploring the datasets in general.
-\cite{Laha2012}
+\subsection{Data Visualizer iViz}
 
 VR has been shown to lead to better discovery in domains that whose primary dimensions are spatial.
 \cite{Donalek2014}
@@ -724,6 +680,49 @@ VR has been shown to lead to better discovery in domains that whose primary dime
 		\label{fig:iviz}
 	\end{center}
 \end{figure}
+
+
+
+%-----------------------------------
+%	SUBSECTION 7
+%-----------------------------------
+
+\subsection{Other Applications}
+
+A very similar approach to the Data Forest, although not in \gls{vr}, has been applied in the city building simulation PC Game "Cities: Skylines", published by \cite{Paradox2014}, where certain info views such as the fire safety has been directly visually applied to the city. Figure \ref{fig:citiesskylinesfiresafety} shows how this looks like when the houses are coloured depending on their relative fire safety. This presentation technique could also be applied in \gls{vr} without many changes, especially since \cite{Google2016a} has released a \gls{vr}-ready version of Google Earth in November 2016.
+\begin{figure}[b]
+	\begin{center}
+		\includegraphics[width=10cm]{03_Figures/05_LitReview/ParadoxWiki2014_CitiesSkylines.png}
+		\caption[Fire Safety Info View in Cities: Skylines]{Fire Safety Info View in Cities: Skylines \citep{Paradox2014}}
+		\label{fig:citiesskylinesfiresafety}
+	\end{center}
+\end{figure}
+
+
+The analysis of time-dependent simulation data is a demanding task, both in terms of computing power and time. Interactive analysis using multiple linked views has been shown to be one possible solution to this problem. However, there are two significant short- comings when limited to a standard desktop-based setup: First, complex spatial relationships are hard to understand using only 2D projections of the data. [...]
+\cite{Hentschel2009}
+
+In general, our visualization approach relies on multiple linked three-dimensional scatterplots which are presented and interacted with in a virtual environment, as shown in Figure 1. Each plot shows an arbitrary combination of three data attributes which are recorded per grid point. Time-dependent data is handled by animating the plots. All scatterplots are linked to each other, i.e., updates to a single plot become directly visible in all plots. This concept of linked views is combined with interactive brushing.
+\cite{Hentschel2009}
+
+
+
+%-----------------------------------
+%	SUBSECTION 3
+%-----------------------------------
+
+\subsection{Data Manipulation and Interaction}
+
+
+
+Traditionally, researchers look at 3D volume renderings on desktop computer monitors or larger displays, which lack the more realistic visual stimuli found in more advanced displays, such as stereoscopic 3D graphics and motion parallax due to head tracking. Thus, it may be more difficult for the user to judge the size, shape, or depth of the structures in the volume data. Judgments of this sort are required not only for general understanding, but also for performing interactive tasks such as segmentation of a dataset. Conducting such tasks with traditional displays, therefore, may result in slower performance and/or erroneous interpretation.
+\cite{Laha2012}
+
+We conducted a controlled empirical study in which we studied the independent and combined effects of three components of immersion (head tracking, FOR, and stereoscopic rendering) on the analysis of two different volume-visualized microscopic computed tomography (micro-CT) datasets. We found significant positive effects of these components of immersion, but the results also show that the effects are dependent on how the components are combined and on the type of analysis task.
+\cite{Laha2012}
+
+We found that most of the benefits of high immersion for analyzing volume data are positive. Of the three components of immersion that we evaluated in our controlled study, FOR had the most positive effects on the widest range of tasks. However, levels of immersion have differential effects on different tasks. We observed the most positive effects of immersion for tasks involving visually and spatially complex search for features in the volume datasets. General descriptive tasks showed mixed effects of immersion. Users showed mixed preferences for the different levels of immersion. They felt that stereoscopic vision made it easier to understand features of a volume dataset, and head-based rendering provided greater ease of obtaining the desired view they wanted and of exploring the datasets in general.
+\cite{Laha2012}
 
 
 In this project, our objective is to lower the barriers to entry for exploratory analysis of complex scientific data by leveraging the Oculus Rift to provide intuitive interactions and efficient navigation in an immersive 3D environment
