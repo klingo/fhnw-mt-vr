@@ -508,7 +508,7 @@ Although no distinct answer can be given to the second \gls{srq}, in combination
 
 \label{SectionLiteratureReviewSRQ3}
 
-After covering the different methods for user input in \gls{vr} in chapter \ref{SectionLiteratureReviewSRQ1} and the interaction patterns in \gls{vr} in chapter \ref{SectionLiteratureReviewSRQ2}, this chapter concludes the literature research by looking at traditional data visualisation that are used for 2D data and how they have been applied to and enhanced for 3D space in \gls{vr}. After a short introduction to the topic, the two main parts of data visualisation and data manipulation/interaction are discussed in more detail, with a focus on the differences between the application in 2D respectively 3D space. Finally, the research covered in this chapter is summarized in the conclusion and will answer the third \gls{srq}.
+After covering the different methods for user input in \gls{vr} in chapter \ref{SectionLiteratureReviewSRQ1} and the interaction patterns in \gls{vr} in chapter \ref{SectionLiteratureReviewSRQ2}, this chapter concludes the literature research by looking at traditional data visualisation that are used for 2D data and how they have been applied to and enhanced for 3D space in \gls{vr}. After a short introduction to the topic with some theoretical background, several VR applications are analysed with a focus on data visualisation and data manipulation/interaction. Finally, the research covered in this chapter is summarized in the conclusion and will answer the third \gls{srq}.
 \begin{framed}
 	\textit{SRQ 3: Which traditional strategies for visualization and manipulation of 2D data have been applied and enhanced for 3D space in virtual reality?}
 \end{framed}
@@ -521,16 +521,28 @@ After covering the different methods for user input in \gls{vr} in chapter \ref{
 \subsection{Introduction}
 
 With the invention of (multiple) windows on a computer screen in the late 1960s and the first spreadsheet (VisiCalc) developed in the late 1970s, the era for the visualization of data had just begun \citep{Myers1998}. Although the first \gls{hmd} was already invented in 1960 by Morton Heilig, it was only used for non-interactive film without any motion tracking \citep{vrs2015}. The actual availability for the public of such devices was not possible until the early 1990s although they still were rather expensive or did not fulfil the consumers expectations rendering them a flow (e.g. Nintendo Virtual Boy) \citep{vrs2015}. \cite{Ribarsky1994} highlighted that complicated manipulations of data will be simplified as \gls{vr} can provide a more natural interface between human and computer. He further continues that with \gls{vr} more of our senses are engaged than with regular 2D displays and thus can provide an opportunity to combine them \citep{Ribarsky1994}. \cite{Jamieson2007} further confirm the increased effectiveness and more natural and intuitive view on objects that use a 3D approach as it represents how humans view objects. \newline
-\citet[p.411]{Stone1994} emphasized that: \blockquote{Visualization is more of a technique than a task. That is, people don't usually visualize data just for the hell of it.} They further conclude that due to the different goals for the visualization (e.g. testing a theory or understanding the data set), it makes it difficult on a general level to discuss the problems with how the visualization should be supported \citep{Stone1994}. This highlights the importance of the right type of visualization depending on the data itself and the goal that shall be reached. For a better understanding, the following chapter will focus on different approaches and techniques for the presentation of data.
+\citet[p.411]{Stone1994} emphasized that: \blockquote{Visualization is more of a technique than a task. That is, people don't usually visualize data just for the hell of it.} They further conclude that due to the different goals for the visualization (e.g. testing a theory or understanding the data set), it makes it difficult on a general level to discuss the problems with how the visualization should be supported \citep{Stone1994}. This highlights the importance of the right type of visualization depending on the data itself and the goal that shall be reached. For a better understanding, the following chapter will focus on some more theoretical background before different applications are analysed in more detail.
 
 
-\subsection{Theory}
+\subsection{Theory (to be changed)}
+
+When we talk about the presentation of data, many will immediately think of Microsoft Excel and the many different charts (e.g. bar chart, line chart, pie chart, scatter plot etc.) that can be created with just a few clicks based on almost any data set. But not only in such mass consumer products, also big \gls{bi} solutions like \cite{TableauSoftware2016} rely on these well known and widely accepted techniques for their visualization of (big) data. \newline
+\cite{Jamieson2007} highlighted that in the current time the focus shifted from producing and storing even larger amounts of data, to actually making use of it, especially since it becomes increasingly difficult to get a meaningful understanding of the data. They further continue that our traditional visualizations methods will come at their limits with the many different forms of (big) data that are produced every day \citep{Jamieson2007}. Also \cite{Sarathy2000} mentioned that with better performing hardware and software, more data can be collected and processed and thus going beyond the ability of humans to understand and comprehend this vast amounts of data with our traditional visualization methods. \cite[p.609]{Donalek2014} summarize this situation with \blockquote{Visualization is the main bridge between the quantitative content of the data and human intuition [...]} and that we arguably can only understand anything that can be visualized in some way. This bears the questions whether \gls{vr} could be the enabling factor to breach the current limitations of 2D visualization.\newline
+\cite{VanDam2002} argue that with \gls{vr}, considerable advantages for non-human-scale visualizations can be achieved especially when the data should be explored in multiple spatial and temporal levels. To put this theory to a test, \cite{Ware1994} made a trial where the subjects had to look at a randomly organized network of nodes and arcs where two of the nodes where highlighted and they had to say whether these two nodes have a path between them. Based on their results, \cite{Ware1994} could conclude that compared to a 2D graph, with head coupled stereo the understood graphs were three times as large for any given error rate. This gives a strong indication on the potential benefits that can be achieved with the right visualization method in \gls{vr}. \newline
+In order to further analyse the different data presentations, we can distinguish between the traditional visualization methods summarized as 'Traditional Charts' and the specifically for \gls{vr} designed, data-type-focused methods.
+
+
+\subsection{Traditional Charts}
+
 
 
 \subsection{Data Forest}
 
 
 \subsection{SphereViz}
+
+
+\subsection{Data Visualizer iViz}
 
 
 \subsection{Rotating Data Rings}
@@ -545,10 +557,7 @@ With the invention of (multiple) windows on a computer screen in the late 1960s 
 
 \subsection{Data Presentation}
 
-When we talk about the presentation of data, many will immediately think of Microsoft Excel and the many different charts (e.g. bar chart, line chart, pie chart, scatter plot etc.) that can be created with just a few clicks based on almost any data set. But not only in such mass consumer products, also big \gls{bi} solutions like \cite{TableauSoftware2016} rely on these well known and widely accepted techniques for their visualization of (big) data. \newline
-\cite{Jamieson2007} highlighted that in the current time the focus shifted from producing and storing even larger amounts of data, to actually making use of it, especially since it becomes increasingly difficult to get a meaningful understanding of the data. They further continue that our traditional visualizations methods will come at their limits with the many different forms of (big) data that are produced every day \citep{Jamieson2007}. Also \cite{Sarathy2000} mentioned that with better performing hardware and software, more data can be collected and processed and thus going beyond the ability of humans to understand and comprehend this vast amounts of data with our traditional visualization methods. \cite[p.609]{Donalek2014} summarize this situation with \blockquote{Visualization is the main bridge between the quantitative content of the data and human intuition [...]} and that we arguably can only understand anything that can be visualized in some way. This bears the questions whether \gls{vr} could be the enabling factor to breach the current limitations of 2D visualization.\newline
-\cite{VanDam2002} argue that with \gls{vr}, considerable advantages for non-human-scale visualizations can be achieved especially when the data should be explored in multiple spatial and temporal levels. To put this theory to a test, \cite{Ware1994} made a trial where the subjects had to look at a randomly organized network of nodes and arcs where two of the nodes where highlighted and they had to say whether these two nodes have a path between them. Based on their results, \cite{Ware1994} could conclude that compared to a 2D graph, with head coupled stereo the understood graphs were three times as large for any given error rate. This gives a strong indication on the potential benefits that can be achieved with the right visualization method in \gls{vr}. \newline
-In order to further analyse the different data presentations, we can distinguish between the traditional visualization methods summarized as 'Traditional Charts' and the specifically for \gls{vr} designed, data-type-focused methods.
+
 
 
 \subsubsection{Traditional Charts}
