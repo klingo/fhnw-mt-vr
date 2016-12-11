@@ -524,6 +524,10 @@ With the invention of (multiple) windows on a computer screen in the late 1960s 
 \citet[p.411]{Stone1994} emphasized that: \blockquote{Visualization is more of a technique than a task. That is, people don't usually visualize data just for the hell of it.} They further conclude that due to the different goals for the visualization (e.g. testing a theory or understanding the data set), it makes it difficult on a general level to discuss the problems with how the visualization should be supported \citep{Stone1994}. This highlights the importance of the right type of visualization depending on the data itself and the goal that shall be reached. For a better understanding, the following chapter will focus on some more theoretical background before different applications are analysed in more detail.
 
 
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
 \subsection{Theory (title to be changed)}
 
 When we talk about the presentation of data, many will immediately think of Microsoft Excel and the many different charts (e.g. bar chart, line chart, pie chart, scatter plot etc.) that can be created with just a few clicks based on almost any data set. But not only in such mass consumer products, also big \gls{bi} solutions like \cite{TableauSoftware2016} rely on these well known and widely accepted techniques for their visualization of (big) data. \newline
@@ -531,36 +535,20 @@ When we talk about the presentation of data, many will immediately think of Micr
 \cite{VanDam2002} argue that with \gls{vr}, considerable advantages for non-human-scale visualizations can be achieved especially when the data should be explored in multiple spatial and temporal levels. To put this theory to a test, \cite{Ware1994} made a trial where the subjects had to look at a randomly organized network of nodes and arcs where two of the nodes where highlighted and they had to say whether these two nodes have a path between them. Based on their results, \cite{Ware1994} could conclude that compared to a 2D graph, with head coupled stereo the understood graphs were three times as large for any given error rate. This gives a strong indication on the potential benefits that can be achieved with the right visualization method in \gls{vr}. \newline
 In order to further analyse the different data presentations, we can distinguish between the traditional visualization methods summarized as 'Traditional Charts' and the specifically for \gls{vr} designed, data-type-focused methods.
 
-
-\subsection{Traditional Charts}
-
-
-
-\subsection{Data Forest}
-
-
-\subsection{SphereViz}
-
-
-\subsection{Data Visualizer iViz}
-
-
-\subsection{Rotating Data Rings}
-
-
-\subsection{Other Applications}
+As already said by \cite{Stone1994}, people don't usually visualize data just for the visualisation's sake. It is at least as important what the goal of the visualization is and what the user should be able to do with it, i.e. how to move it around, twist it, shake it, change its colour mapping, expand it, rotate it, shrink it or slice and dice it \citep{Stone1994}. The direct manipulation of graphical objects has been in University Research since 1960, in Corporate Research since 1970 and in Commercial Products since 1980 \citep{Myers1998}. This shows that it was important from the beginning to be able to manipulate the data. Also \citet[p.410]{Stone1994} emphasized that: \blockquote{A visualization goal is to simplify the analysis of large-quantity, numerical data by rendering the data as an image that can be intuitively manipulated.} \cite{Stone1994} further continue to define three important characteristics that \gls{vr} has in this regard:
+\begin{itemize}[noitemsep,nolistsep]
+	\item \gls{vr} exhibits high interactivity (the user's actions and the caused reactions are tightly coupled together)
+	\item \gls{vr} support embodiment (the user is represented  in the same spatial framework as the data)
+	\item The \gls{vr} representation is spatial in nature (all virtual objects are placed in a spatial framework)
+\end{itemize}
+The first two characteristics give a clear indication how important it is that the user feels immersed inside the presented data and that his interactions with it are also updated visually. \cite{Jamieson2007} also mentions the importance of \gls{ve} allowing us to feel immersed within the 3D objects that represent the data. While the tracking of the users head position is an important start, \cite{Jamieson2007} define a totally immersive \gls{ve} as one where body movement is used to walk around and the users hand (real world) position is accurately mapped to the \gls{ve} to manipulate virtual objects. \newline
 
 
 %-----------------------------------
-%	SUBSECTION 2
+%	SUBSECTION 3
 %-----------------------------------
 
-\subsection{Data Presentation}
-
-
-
-
-\subsubsection{Traditional Charts}
+\subsection{Traditional Charts / Rotating Data Rings}
 
 While any 2D chart can also be visualized in the same way in a \gls{ve}, it only can become beneficial when the additional space is utilized. \cite{Jamieson2007} mention the current possibilities of 2D mediums, such as desktop monitors, bring us to the limits of useful interactions and do not scale well anymore with large multi-dimensional data sets, wherefore new methods like \gls{vr} will be required. \cite{Jamieson2007} give an example where a data value can be represented as a 3D object, such as a box. This reminds of the 3D-like bar and pie charts from Microsoft Excel, except that they would be real 3D objects in three dimensional space instead of on a flat screen. \newline
 \cite{Hentschel2009} was looking into creating a three-dimensional scatter plot in \gls{vr} as shown in Figure \ref{fig:interactivebrushing} in chapter \ref{HentschelFigureRef}. Within \gls{vr} it is possible here to make us of all three axis while the time-dependent data is handled with the animation of the scatter plot \citep{Hentschel2009}. While this could also be done on a 2D screen with the rotation of the data, the selection of multiple points is much simpler in \gls{vr} with the use of interactive brushing as mentioned by \cite{Hentschel2009}. \newline
@@ -576,7 +564,11 @@ Generally it can be said though that only little research is focussing on the ut
 \end{figure}
 
 
-\subsubsection{Data-type-focused Presentation}
+%-----------------------------------
+%	SUBSECTION 4
+%-----------------------------------
+
+\subsection{Data Forest}
 
 In contrast to the traditional chart-like presentations that can be used for almost any kind of data, the "data-type-focused" ones are specifically tailored to the individual type of information and might not be effectively re-usable for others. As soon as there are more than three dimensions for the data, a new kind of visualisation has to be applied. \cite{Stone1994} provide some examples for characteristics of virtual objects that can be applied to:
 \begin{itemize}[noitemsep,nolistsep]
@@ -617,7 +609,17 @@ A very similar approach to this, although not in \gls{vr}, has been applied in t
 		\caption[Fire Safety Info View in Cities: Skylines]{Fire Safety Info View in Cities: Skylines \citep{Paradox2014}}
 		\label{fig:citiesskylinesfiresafety}
 	\end{center}
-\end{figure} \newline
+\end{figure}
+
+In their implementation of the data forest (see Figure \ref{fig:dataforest}), \cite{Jamieson2007} decided to take the approach of "exposing the roots" of the data tree as a way to implement the "drill down" functionality. This is an elegant way as it fits together with the mood that is set with the data forest and thus also feels more natural to use.
+
+
+%-----------------------------------
+%	SUBSECTION 5
+%-----------------------------------
+
+\subsection{SphereViz}
+
 \cite{Soldati2007} see the available 3D space more as a sphere around the user where information can be presented. For this, they created the 'SphereViz interface' for \gls{vr} that presents a collection of image thumbnails on this virtual sphere where the position is determined based on image properties such as total intensity, colour proportions or characterizations of the image content \citep{Soldati2007}. The visualized objects are further characterized by size, scale, and distance, which plays an important role for the goal of allowing the user to perceive the information in natural scale \citep{Soldati2007}. SphereViz heavily focuses on the benefits of spatial visualisation to build image clusters in a user friendly way and thus also provides more intuitive techniques for evaluation and searching tasks as well as for just browsing through the data.
 \begin{figure}[h]
 	\begin{center}
@@ -637,6 +639,27 @@ Figure \ref{fig:sphereviz} shows a schematic view of SphereViz where two paramet
 \end{figure} \newline
 It can be seen that it very much depends on what kind of that shall be visualized in order to find the method that brings the most benefit to the viewers. While the sphere is a more generic approach that is ideal for clustering data, the the presentation with familiar 3D objects seems to be more natural and thus easier to understand for inexperienced users. In the next chapter, the focus lies on manipulating and interacting with the presented data.
 
+TODO: Rewrite the "end" here!
+
+For the SphereViz application (see figure \ref{fig:sphereviz}), \cite{Soldati2007} decided to allow the user to simply grab the parameter handles on the sphere and to move them around to see the immediate effects this has on the position of the individual data objects and thus giving valuable feedback to the user. When some data objects (i.e. thumbnails) are hidden behind others, \cite{Soldati2007} believe that it provides the best experience to let him walk around them to bring them in focus instead of bothering about more input devices. One more feature is the \gls{vim} that represents the whole scene and allows for a second dynamic perspective where also direct manipulations can be done \citep{Soldati2007}.
+
+
+%-----------------------------------
+%	SUBSECTION 6
+%-----------------------------------
+
+\subsection{Data Visualizer iViz}
+
+
+%-----------------------------------
+%	SUBSECTION 7
+%-----------------------------------
+
+\subsection{Other Applications}
+
+
+
+
 
 %-----------------------------------
 %	SUBSECTION 3
@@ -644,15 +667,9 @@ It can be seen that it very much depends on what kind of that shall be visualize
 
 \subsection{Data Manipulation and Interaction}
 
-As already said by \cite{Stone1994}, people don't usually visualize data just for the visualisation's sake. It is at least as important what the goal of the visualization is and what the user should be able to do with it, i.e. how to move it around, twist it, shake it, change its colour mapping, expand it, rotate it, shrink it or slice and dice it \citep{Stone1994}. The direct manipulation of graphical objects has been in University Research since 1960, in Corporate Research since 1970 and in Commercial Products since 1980 \citep{Myers1998}. This shows that it was important from the beginning to be able to manipulate the data. Also \citet[p.410]{Stone1994} emphasized that: \blockquote{A visualization goal is to simplify the analysis of large-quantity, numerical data by rendering the data as an image that can be intuitively manipulated.} \cite{Stone1994} further continue to define three important characteristics that \gls{vr} has in this regard:
-\begin{itemize}[noitemsep,nolistsep]
-	\item \gls{vr} exhibits high interactivity (the user's actions and the caused reactions are tightly coupled together)
-	\item \gls{vr} support embodiment (the user is represented  in the same spatial framework as the data)
-	\item The \gls{vr} representation is spatial in nature (all virtual objects are placed in a spatial framework)
-\end{itemize}
-The first two characteristics give a clear indication how important it is that the user feels immersed inside the presented data and that his interactions with it are also updated visually. \cite{Jamieson2007} also mentions the importance of \gls{ve} allowing us to feel immersed within the 3D objects that represent the data. While the tracking of the users head position is an important start, \cite{Jamieson2007} define a totally immersive \gls{ve} as one where body movement is used to walk around and the users hand (real world) position is accurately mapped to the \gls{ve} to manipulate virtual objects. \newline
-In their implementation of the data forest (see Figure \ref{fig:dataforest}), \cite{Jamieson2007} decided to take the approach of "exposing the roots" of the data tree as a way to implement the "drill down" functionality. This is an elegant way as it fits together with the mood that is set with the data forest and thus also feels more natural to use. \newline
-For the SphereViz application (see figure \ref{fig:sphereviz}), \cite{Soldati2007} decided to allow the user to simply grab the parameter handles on the sphere and to move them around to see the immediate effects this has on the position of the individual data objects and thus giving valuable feedback to the user. When some data objects (i.e. thumbnails) are hidden behind others, \cite{Soldati2007} believe that it provides the best experience to let him walk around them to bring them in focus instead of bothering about more input devices. One more feature is the \gls{vim} that represents the whole scene and allows for a second dynamic perspective where also direct manipulations can be done \citep{Soldati2007}.
+
+
+
 
 
 We see a great potential in using VR for visual exploration of multi-dimensional data sets and in particular in SphereViz. Amongst others driven by the game industry, we expect VR technology to evolve significantly within the next 10 to 15 years. VR will allow users to look at and interact with large datasets in new ways.
