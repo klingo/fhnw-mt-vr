@@ -651,13 +651,7 @@ In terms of data manipulation, \cite{Soldati2007} decided to allow the user to s
 
 \subsection{Data Visualizer iViz}
 
-\cite{Donalek2014} focused on how effective data visualization can look like in the era of big data. They stated that \gls{vr} has already shown that it leads to better discovery when the primary (data) dimensions are spatial, and that the more dimensions can be visualized effectively, the higher the chances are to recognize potentially interesting patterns \citep{Donalek2014}. Their initial attempts were with the OpenSim based virtual world called 'vCalltech' that allowed \cite{Donalek2014} to easily visualize around $10^{4}$ - $10^{5}$ data objects.
-
-
-n the OpenSim based vW, vCaltech, we used the so-called region modules, custom codes
-that can greatly accelerate
-visualization and allow to easily visualize ~ 104 – 105 data objects
-
+\cite{Donalek2014} focused on how effective data visualization can look like in the era of big data. They stated that \gls{vr} has already shown that it leads to better discovery when the primary (data) dimensions are spatial, and that the more dimensions can be visualized effectively, the higher the chances are to recognize potentially interesting patterns \citep{Donalek2014}. Their initial attempts were with the OpenSim based virtual world called 'vCalltech' that allowed \cite{Donalek2014} to easily visualize around $10^{4}$ - $10^{5}$ data objects. Figure \ref{fig:caltechsim} shows such a visualization with 'vCallTech' where different parameter values are mapped to the XYZ axis, the data point shapes, sizes, colours and also transparencies, allowing for a representation of an 8-dimensional data visualisation \citep{Donalek2014}.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/05_LitReview/Donalek2014_Caltech.png}
@@ -666,12 +660,7 @@ visualization and allow to easily visualize ~ 104 – 105 data objects
 	\end{center}
 \end{figure}
 
-Different data parameter values are mapped into the displayed XYZ, data point shapes, sizes, colors, and transparencies, effectively representing an 8-dimensional data visualization.
-\cite{Donalek2014}
-
-While “off the shelf” VWs have several advantantages, they are not optimized for an efficient rendering of massive data sets, have relatively limited scripting functionalities, and require use of separate browsers.
-\cite{Donalek2014}
-
+Soon, \cite{Donalek2014} realised that while \gls{ots} products have multiple advantages, they often are not fully optimised for an efficient rendering of big data sets and only provide limited functionalities for customized scripting. With their own Unity-based implementation called 'iViz', \cite{Donalek2014} also added a new collaborative feature which allows for a multi-user visual data exploration where each user not only has his own viewpoint but can also broadcast his view to a shared view accessible to all users. \cite{Donalek2014} also further improved the performance to be able to rapidly visualize more than $10^{5}$ - $10^{6}$ data points, as also shown in Figure \ref{fig:iviz}. Their user interface for 'iViz' allows to easily change the mapping of individual data parameters to the graphical dimensions (i.e. XYZ position, colour, shape, size, ...) which should improve the data exploration as clusters and outliers might become more obvious based on the chosen mapping \citep{Donalek2014}. This allows for a very flexible and powerful way to visually explore data and discover new patterns.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/05_LitReview/Donalek2014_iViz.png}
@@ -679,14 +668,6 @@ While “off the shelf” VWs have several advantantages, they are not optimized
 		\label{fig:iviz}
 	\end{center}
 \end{figure}
-
-We can already easily and rapidly visualize 105 to 106 data points (Fig. 2), which is comparable to other state of the art visualization tools.
-
-We added a new feature for a collaborative, multi-user visual data exploration. In addition to the standard mode of each user having their own viewpoint and navigating through the data independently, we added a broadcasting function where users can have a shared view associated with one user who
-\cite{Donalek2014}
-
-The user interface for iViz enables the user to easily select and shuffle which data parameters are mapped to which graphical “axis” (XYZ positions, colors, shapes, sizes, transparency, textures, etc.), in order to determine the optimal mapping choice for a given scientific application, e.g., clustering of different object classes, a search for outliers, etc. Patterns that are not discernible in one mapping of data dimensions to display “axes” sometimes become obvious with a different mapping. This flexibility enables a more powerful visual data exploration and discovery
-\cite{Donalek2014}
 
 
 
