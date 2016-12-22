@@ -562,7 +562,7 @@ This leads to the first VR application that is focusing on a more traditional wa
 %	SUBSECTION 3
 %-----------------------------------
 
-\subsection{Traditional Charts / Rotating Data Rings}
+\subsection{Rotating Data Rings}
 
 While any 2D chart can also be visualized in the same way in a \gls{ve}, it only can become beneficial when the additional space is utilized. \cite{Jamieson2007} mention the current possibilities of 2D mediums, such as desktop monitors, bring us to the limits of useful interactions and do not scale well anymore with large multi-dimensional data sets, wherefore new methods like \gls{vr} will be required. \cite{Jamieson2007} give an example where a data value can be represented as a 3D object, such as a box. This reminds of the 3D-like bar and pie charts from Microsoft Excel, except that they would be real 3D objects in three dimensional space instead of on a flat screen. \newline
 \cite{Hentschel2009} was looking into creating a three-dimensional scatter plot in \gls{vr} as shown in Figure \ref{fig:interactivebrushing} in chapter \ref{HentschelFigureRef}. Within \gls{vr} it is possible here to make us of all three axis while the time-dependent data is handled with the animation of the scatter plot \citep{Hentschel2009}. While this could also be done on a 2D screen with the rotation of the data, the selection of multiple points is much simpler in \gls{vr} with the use of interactive brushing as mentioned by \cite{Hentschel2009}. \newline
@@ -582,9 +582,60 @@ Generally it can be said though that only little research is focussing on the ut
 %	SUBSECTION 4
 %-----------------------------------
 
+\subsection{SphereViz}
+
+\cite{Soldati2007} see the available 3D space more as a sphere around the user where information can be presented. For this, they created the 'SphereViz interface' for \gls{vr} that presents a collection of image thumbnails on this virtual sphere where the position is determined based on image properties such as total intensity, colour proportions or characterizations of the image content \citep{Soldati2007}. The visualized objects are further characterized by size, scale, and distance, which plays an important role for the goal of allowing the user to perceive the information in natural scale \citep{Soldati2007}. SphereViz heavily focuses on the benefits of spatial visualisation to build image clusters in a user friendly way and thus also provides more intuitive techniques for evaluation and searching tasks as well as for just browsing through the data.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=7cm]{03_Figures/05_LitReview/Soldati2007_SphereViz.png}
+		\caption[Schematic view of SphereViz where parameters influence the position of data objects]{Schematic view of SphereViz where parameters (ellipsoids) influence the position of data objects (rectangles) \citep{Soldati2007}}
+		\label{fig:sphereviz}
+	\end{center}
+\end{figure} \newline
+Figure \ref{fig:sphereviz} shows a schematic view of SphereViz where two parameters influence the position of a set of data objects. \newline
+\cite{Kwon2015} also built on the idea of a virtual sphere with the benefit of having all nodes on it equally visible to the user. The relation between the nodes are indicated with edges that are however routed outside of the sphere in order to not block the view on the nodes themselves \citep{Kwon2015}. Figure \ref{fig:sphericalgraph} shows three different approaches with varying amounts of distortion that give an indication how the connections are put outside the users direct view to not interfere with the usability.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/05_LitReview/Kwon2015_SphericalGraphLayout.png}
+		\caption[2D layouts mapped to a sphere with varying amounts of distortion]{2D layouts mapped to a sphere with varying amounts of distortion:  \citep{Kwon2015}}
+		\label{fig:sphericalgraph}
+	\end{center}
+\end{figure} \newline
+In terms of data manipulation, \cite{Soldati2007} decided to allow the user to simply grab the parameter handles on the sphere and to move them around to see the immediate effects this has on the position of the individual data objects and thus giving valuable feedback to the user. When some data objects (i.e. thumbnails) are hidden behind others, \cite{Soldati2007} believe that it provides the best experience to let him walk around them to bring them in focus instead of bothering about more input devices. One more feature is the \gls{wim}, a small-scale representation of the whole scene that allows for a second, dynamic perspective where also direct manipulations can be done \citep{Soldati2007}. By taking the \gls{vism} into acount, \cite{Soldati2007} already covered the \textit{zoom}, \textit{filter} and \textit{details in demand} feature with \gls{wim} and planned to later extend it with the possibility for an \textit{overview} of all available data. \cite{Soldati2007} see great potential in using \gls{vr} for visually exploring multi-dimensional data sets (particularly with their SphereViz) and expect that in the next 10 to 15 years \gls{vr} will allow for completely new ways to look at and interact with large data sets.
+
+
+%-----------------------------------
+%	SUBSECTION 5
+%-----------------------------------
+
+\subsection{Data Visualizer iViz}
+
+\cite{Donalek2014} focused on how effective data visualization can look like in the era of big data. They stated that \gls{vr} has already shown that it leads to better discovery when the primary (data) dimensions are spatial, and that the more dimensions can be visualized effectively, the higher the chances are to recognize potentially interesting patterns \citep{Donalek2014}. Their initial attempts were with the OpenSim based virtual world called 'vCalltech' that allowed \cite{Donalek2014} to easily visualize around $10^{4}$ - $10^{5}$ data objects. Figure \ref{fig:caltechsim} shows such a visualization with 'vCallTech' where different parameter values are mapped to the XYZ axis, the data point shapes, sizes, colours and also transparencies, allowing for a representation of an 8-dimensional data visualisation \citep{Donalek2014}.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/05_LitReview/Donalek2014_Caltech.png}
+		\caption[Data visualization experiments in the OpenSim-based virtual world vCaltech]{Data visualization experiments in the OpenSim-based virtual world vCaltech \citep{Donalek2014}}
+		\label{fig:caltechsim}
+	\end{center}
+\end{figure}
+
+Soon, \cite{Donalek2014} realised that while \gls{ots} products have multiple advantages, they often are not fully optimised for an efficient rendering of big data sets and only provide limited functionalities for customized scripting. With their own Unity-based implementation called 'iViz', \cite{Donalek2014} also added a new collaborative feature which allows for a multi-user visual data exploration where each user not only has his own viewpoint but can also broadcast his view to a shared view accessible to all users. \cite{Donalek2014} also further improved the performance to be able to rapidly visualize more than $10^{5}$ - $10^{6}$ data points, as also shown in Figure \ref{fig:iviz}. Their user interface for 'iViz' allows to easily change the mapping of individual data parameters to the graphical dimensions (i.e. XYZ position, colour, shape, size, ...) which should improve the data exploration as clusters and outliers might become more obvious based on the chosen mapping \citep{Donalek2014}. Although this allows for a very flexible and powerful way to visually explore data and discover new patterns, there is no direct interaction with the data possible.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/05_LitReview/Donalek2014_iViz.png}
+		\caption[Example of an interactive user interface for the Unity-based data visualizer, iViz]{Example of an interactive user interface for the Unity-based data visualizer, iViz \citep{Donalek2014}}
+		\label{fig:iviz}
+	\end{center}
+\end{figure}
+
+
+%-----------------------------------
+%	SUBSECTION 6
+%-----------------------------------
+
 \subsection{Data Forest}
 
-In contrast to the traditional chart-like presentations that can be used for almost any kind of data, the "data-type-focused" ones are specifically tailored to the individual type of information and might not be effectively re-usable for others. As soon as there are more than three dimensions for the data, a new kind of visualisation has to be applied. \cite{Stone1994} provide some examples for characteristics of virtual objects that can be applied to:
+In contrast to the more traditional chart-like presentations that can be used for almost any kind of data, the "data-type-focused" ones are specifically tailored to the individual type of information and might not be effectively re-usable for others. As soon as there are more than three dimensions for the data, a new kind of visualisation has to be applied. \cite{Stone1994} provide some examples for characteristics of virtual objects that can be applied to:
 \begin{itemize}[noitemsep,nolistsep]
 	\item Size (e.g. large, medium, small)
 	\item Shape (e.g. triangle, square, pentagon)
@@ -617,58 +668,6 @@ By referring back to the list of characteristics from \cite{Stone1994}, the eigh
 \end{figure}
 The factor of time can also be applied by animating the forest and observing how the individual trees change their size and colour over time. For the implementation of the "drill down" functionality, \cite{Jamieson2007} decided to take the approach of "exposing the roots" of the data tree to get access to the underlying data. This is an elegant way as it fits together with the mood that is set with the data forest and thus also feels more natural to use. \newline
 \cite{Jamieson2007} further indicate that their data forest could also be applied to stock market data where the movement of share prices can be linked to the shape and growth of the forest.
-
-
-%-----------------------------------
-%	SUBSECTION 5
-%-----------------------------------
-
-\subsection{SphereViz}
-
-\cite{Soldati2007} see the available 3D space more as a sphere around the user where information can be presented. For this, they created the 'SphereViz interface' for \gls{vr} that presents a collection of image thumbnails on this virtual sphere where the position is determined based on image properties such as total intensity, colour proportions or characterizations of the image content \citep{Soldati2007}. The visualized objects are further characterized by size, scale, and distance, which plays an important role for the goal of allowing the user to perceive the information in natural scale \citep{Soldati2007}. SphereViz heavily focuses on the benefits of spatial visualisation to build image clusters in a user friendly way and thus also provides more intuitive techniques for evaluation and searching tasks as well as for just browsing through the data.
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=7cm]{03_Figures/05_LitReview/Soldati2007_SphereViz.png}
-		\caption[Schematic view of SphereViz where parameters influence the position of data objects]{Schematic view of SphereViz where parameters (ellipsoids) influence the position of data objects (rectangles) \citep{Soldati2007}}
-		\label{fig:sphereviz}
-	\end{center}
-\end{figure} \newline
-Figure \ref{fig:sphereviz} shows a schematic view of SphereViz where two parameters influence the position of a set of data objects. \newline
-\cite{Kwon2015} also built on the idea of a virtual sphere with the benefit of having all nodes on it equally visible to the user. The relation between the nodes are indicated with edges that are however routed outside of the sphere in order to not block the view on the nodes themselves \citep{Kwon2015}. Figure \ref{fig:sphericalgraph} shows three different approaches with varying amounts of distortion that give an indication how the connections are put outside the users direct view to not interfere with the usability.
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=14cm]{03_Figures/05_LitReview/Kwon2015_SphericalGraphLayout.png}
-		\caption[2D layouts mapped to a sphere with varying amounts of distortion]{2D layouts mapped to a sphere with varying amounts of distortion:  \citep{Kwon2015}}
-		\label{fig:sphericalgraph}
-	\end{center}
-\end{figure} \newline
-In terms of data manipulation, \cite{Soldati2007} decided to allow the user to simply grab the parameter handles on the sphere and to move them around to see the immediate effects this has on the position of the individual data objects and thus giving valuable feedback to the user. When some data objects (i.e. thumbnails) are hidden behind others, \cite{Soldati2007} believe that it provides the best experience to let him walk around them to bring them in focus instead of bothering about more input devices. One more feature is the \gls{wim}, a small-scale representation of the whole scene that allows for a second, dynamic perspective where also direct manipulations can be done \citep{Soldati2007}. By taking the \gls{vism} into acount, \cite{Soldati2007} already covered the \textit{zoom}, \textit{filter} and \textit{details in demand} feature with \gls{wim} and planned to later extend it with the possibility for an \textit{overview} of all available data. \cite{Soldati2007} see great potential in using \gls{vr} for visually exploring multi-dimensional data sets (particularly with their SphereViz) and expect that in the next 10 to 15 years \gls{vr} will allow for completely new ways to look at and interact with large data sets.
-
-
-%-----------------------------------
-%	SUBSECTION 6
-%-----------------------------------
-
-\subsection{Data Visualizer iViz}
-
-\cite{Donalek2014} focused on how effective data visualization can look like in the era of big data. They stated that \gls{vr} has already shown that it leads to better discovery when the primary (data) dimensions are spatial, and that the more dimensions can be visualized effectively, the higher the chances are to recognize potentially interesting patterns \citep{Donalek2014}. Their initial attempts were with the OpenSim based virtual world called 'vCalltech' that allowed \cite{Donalek2014} to easily visualize around $10^{4}$ - $10^{5}$ data objects. Figure \ref{fig:caltechsim} shows such a visualization with 'vCallTech' where different parameter values are mapped to the XYZ axis, the data point shapes, sizes, colours and also transparencies, allowing for a representation of an 8-dimensional data visualisation \citep{Donalek2014}.
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=14cm]{03_Figures/05_LitReview/Donalek2014_Caltech.png}
-		\caption[Data visualization experiments in the OpenSim-based virtual world vCaltech]{Data visualization experiments in the OpenSim-based virtual world vCaltech \citep{Donalek2014}}
-		\label{fig:caltechsim}
-	\end{center}
-\end{figure}
-
-Soon, \cite{Donalek2014} realised that while \gls{ots} products have multiple advantages, they often are not fully optimised for an efficient rendering of big data sets and only provide limited functionalities for customized scripting. With their own Unity-based implementation called 'iViz', \cite{Donalek2014} also added a new collaborative feature which allows for a multi-user visual data exploration where each user not only has his own viewpoint but can also broadcast his view to a shared view accessible to all users. \cite{Donalek2014} also further improved the performance to be able to rapidly visualize more than $10^{5}$ - $10^{6}$ data points, as also shown in Figure \ref{fig:iviz}. Their user interface for 'iViz' allows to easily change the mapping of individual data parameters to the graphical dimensions (i.e. XYZ position, colour, shape, size, ...) which should improve the data exploration as clusters and outliers might become more obvious based on the chosen mapping \citep{Donalek2014}. Although this allows for a very flexible and powerful way to visually explore data and discover new patterns, there is no direct interaction with the data possible.
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=14cm]{03_Figures/05_LitReview/Donalek2014_iViz.png}
-		\caption[Example of an interactive user interface for the Unity-based data visualizer, iViz]{Example of an interactive user interface for the Unity-based data visualizer, iViz \citep{Donalek2014}}
-		\label{fig:iviz}
-	\end{center}
-\end{figure}
-
 
 
 %-----------------------------------
