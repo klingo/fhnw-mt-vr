@@ -2,9 +2,9 @@
 %	CHAPTER - SUGGESTION
 %----------------------------------------------------------------------------------------
 
-\chapter{Suggestion} % Main chapter title
+\chapter{Suggestion}
 
-\label{ChapterSuggestion} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+\label{ChapterSuggestion}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 1
@@ -12,8 +12,7 @@
 
 \section{Introduction}
 
-The in chapter \ref{DSRCycle} discussed \gls{dsr} cycle from \cite{Vaishnavi2008} and \cite{Hevner2010} defines \textit{Suggestion} as the next step after \textit{Awareness of Problem}. \newline
-\cite{Vaishnavi2008} define the \textit{Suggestion} phase as a creative step in which new functionality is envisioned to form a tentative design for the development of the prototype. \cite{Vaishnavi2008} further specifies the output as a constructed theory that addresses the identified problem, which can include new ideas and concepts, new methods, and new models that in the end shall be validated with the development of the prototype. \newline
+The in chapter \ref{DSRCycle} discussed \gls{dsr} cycle from \cite{Vaishnavi2008} and \cite{Hevner2010} defines \textit{Suggestion} as the next step after \textit{Awareness of Problem}. \cite{Vaishnavi2008} define the \textit{Suggestion} phase as a creative step in which new functionality is envisioned to form a tentative design for the development of the prototype. \cite{Vaishnavi2008} further specifies the output as a constructed theory that addresses the identified problem, which can include new ideas and concepts, new methods, and new models that in the end shall be validated with the development of the prototype. \newline
 In a first step, the end goals of the design are defined. Then the individual states of presentation (e.g. an overview and detail view) are defined as well as the navigation between them. As the third step, the visualisation of the individual states are defined before finally the interaction patterns (action/reaction) can be mapped to them.
 
 
@@ -23,12 +22,7 @@ In a first step, the end goals of the design are defined. Then the individual st
 
 \section{Goals of the Design}
 
-In order to define the goals of the Design, both the specific characteristics of \gls{vr} itself and the to be visualised data has to be considered. While the \gls{vr}-specific
-
-
-In order to define the \glspl{sdg}, the characteristics of the data-set that ultimately should be visualised has to be looked at.
-
-
+In order to define the goals of the Design, both the specific characteristics of \gls{vr} itself and the to be visualised data has to be considered. In this thesis, the coals are defined either as \glspl{mdg} for the more overarching goals, or as \glspl{sdg} which are focussing more on specific areas. In the following two sub-chapters, these characteristics are discussed in more detail and the individual goals defined.
 
 
 %-----------------------------------
@@ -36,14 +30,21 @@ In order to define the \glspl{sdg}, the characteristics of the data-set that ult
 %-----------------------------------
 \subsection{\gls{vr}-specific Goals}
 
-As a high level guideline for the Design, the three important characteristics of VR, as defined by \cite{Stone1994} and discussed in chapter \ref{SubSectionVisualisationManipulation}, are seen as an integral part of the design. These characteristics can be summarized in: Action/Reaction, Immersion and Spatial. Based on this, the first \glspl{mdg} can be derived:
+The goals that are derived from \gls{vr} itself, are more high-level since they can be applied to any \gls{vr} application independent of what its goal is. Therefore, the three important characteristics of VR as defined by \cite{Stone1994} and discussed in chapter \ref{SubSectionVisualisationManipulation}, are considered as an integral part of the design. These characteristics can be summarized in the following keywords: Action/Reaction, Immersion and Spatial. Based on these, the first \glspl{mdg} from a \gls{vr} perspective can be derived:
 \begin{itemize}[noitemsep,nolistsep]
-	\item \gls{mdg} 1: High interactivity with tightly coupled actions/reactions (i.e. no slow animations, no timed events, or any other change in scenery without a trigger from the user)
-	\item \gls{mdg} 2: The user is part of the \gls{ve} and thus is able to 'travel' around the visualisations (i.e. no outside view, or third-person \gls{pov})
-	\item \gls{mdg} 3: The design is intended for \gls{vr} and thus in full 3D and not just a two-dimensional representation
+	\item \textbf{\gls{mdg} 1:} High interactivity with tightly coupled actions/reactions \newline
+		\textit{Example: No slow animations, no timed events, or any other change in scenery without a trigger from the user}
+	\item \textbf{\gls{mdg} 2:} The user is part of the \gls{ve} and thus is able to 'travel' around the visualisations \newline
+		\textit{Example: Movement at free will, and no outside view, or third-person \gls{pov}}
+	\item \textbf{\gls{mdg} 3:} The design is intended for \gls{vr} and thus in full 3D \newline
+		\textit{Example: No flattened two-dimensional representation in 3D space}
 \end{itemize}
-
-
+In addition to the above characteristics, another goal has to be that the design should not rely on very specific \gls{vr}-hardware, but rather define them in a more abstract way as to what the individual hardware items should be capable of. Since this topic is only important for the \gls{vr} input devices and potentially the \gls{hmd} but not the visualisation itself, it is considered as a \gls{sdg}.
+\begin{itemize}[noitemsep,nolistsep]
+	\item \textbf{\gls{sdg} 1:} The design is independent of specific \gls{vr} hardware \newline
+	\textit{Example: No direct references to specific hardware, but rather what the hardware has to be capable of (requirements)}
+\end{itemize}
+From a \gls{vr} perspective, these are all goals that are set for the design. The main aspects of the design is depending on what data is used and thus is discussed in the following chapter.
 
 
 %-----------------------------------
@@ -53,6 +54,13 @@ As a high level guideline for the Design, the three important characteristics of
 \subsection{Data-specific Goals}
 
 tbd
+
+
+Furthermore, relating to the \gls{vism} which is discussed in chapter \ref{SubSectionVISM}, 
+mantra: Overview first, zoom and filter, then details-on-demand
+
+They further conclude that due to the different goals for the visualization (e.g. testing a theory or understanding the data set), it makes it difficult on a general level to discuss the problems with how the visualization should be supported \citep{Stone1994}.
+
 
 - Goal of the Design (multi-month view, compare data, visual relative evaluation (colour)
 
