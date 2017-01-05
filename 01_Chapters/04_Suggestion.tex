@@ -13,7 +13,7 @@
 \section{Introduction}
 
 The in chapter \ref{DSRCycle} discussed \gls{dsr} cycle from \cite{Vaishnavi2008} and \cite{Hevner2010} defines \textit{Suggestion} as the next step after \textit{Awareness of Problem}. \cite{Vaishnavi2008} define the \textit{Suggestion} phase as a creative step in which new functionality is envisioned to form a tentative design for the development of the prototype. \cite{Vaishnavi2008} further specifies the output as a constructed theory that addresses the identified problem, which can include new ideas and concepts, new methods, and new models that in the end shall be validated with the development of the prototype. \newline
-In a first step, the end goals of the design are defined. Then the individual states of presentation (e.g. an overview and detail view) are defined as well as the navigation between them. As the third step, the visualisation of the individual states are defined before finally the interaction patterns (action/reaction) can be mapped to them.
+In a first step, the end goals of the design are defined. Then the individual views of presentation (e.g. an overview and detail view) are defined as well as the navigation between them. As the third step, the visualisation of the individual views are defined before finally the interaction patterns (action/reaction) can be mapped to them.
 
 
 %----------------------------------------------------------------------------------------
@@ -22,7 +22,7 @@ In a first step, the end goals of the design are defined. Then the individual st
 
 \section{Goals of the Design}
 
-In order to define the goals of the Design, both the specific characteristics of \gls{vr} itself and the to be visualised data has to be considered. In this thesis, the coals are defined either as \glspl{mdg} for the more overarching goals, or as \glspl{sdg} which are focussing more on specific areas. In the following two sub-chapters, these characteristics are discussed in more detail and the individual goals defined.
+In order to define the goals of the design, both the specific characteristics of \gls{vr} itself and the to be visualised data have to be considered. In this thesis, the goals are defined either as \glspl{mdg} for the more overarching goals, or as \glspl{sdg} which are focussing rather on specific areas. In the following two sub-chapters, these characteristics are discussed in more detail and the individual goals are defined.
 
 
 %-----------------------------------
@@ -30,7 +30,7 @@ In order to define the goals of the Design, both the specific characteristics of
 %-----------------------------------
 \subsection{\gls{vr}-specific Goals}
 
-The goals that are derived from \gls{vr} itself, are more high-level since they can be applied to any \gls{vr} application independent of what its goal is. Therefore, the three important characteristics of VR as defined by \cite{Stone1994} and discussed in chapter \ref{SubSectionVisualisationManipulation}, are considered as an integral part of the design. These characteristics can be summarized in the following keywords: Action/Reaction, Immersion and Spatial. Based on these, the first \glspl{mdg} from a \gls{vr} perspective can be derived:
+The goals that are derived from \gls{vr} itself, are more high-level since they can be applied to any \gls{vr} application independent of what its purpose is. Therefore, the three important characteristics of \gls{vr} as defined by \cite{Stone1994} and discussed in chapter \ref{SubSectionVisualisationManipulation} are considered as an integral part of the design. These characteristics can be summarized in the following three keywords: Action/Reaction, Immersion and Spatial. Based on these, the first \glspl{mdg} from a \gls{vr} perspective can be derived and further described with examples:
 \begin{itemize}[noitemsep,nolistsep]
 	\item \textbf{\gls{mdg} 1:} High interactivity with tightly coupled actions/reactions \newline
 		\textit{Example: No slow animations, no timed events, or any other change in scenery without a trigger from the user}
@@ -39,12 +39,12 @@ The goals that are derived from \gls{vr} itself, are more high-level since they 
 	\item \textbf{\gls{mdg} 3:} The design is intended for \gls{vr} and thus in full 3D \newline
 		\textit{Example: No flattened two-dimensional representation in 3D space}
 \end{itemize}
-In addition to the above characteristics, another goal has to be that the design should not rely on very specific \gls{vr}-hardware, but rather define them in a more abstract way as to what the individual hardware items should be capable of. Since this topic is only important for the \gls{vr} input devices and potentially the \gls{hmd} but not the visualisation itself, it is considered as a \gls{sdg}.
+In addition to the above characteristics, another goal has to be that the design should not rely on specific \gls{vr}-hardware, but rather define them in a more abstract way as to what the individual hardware items should be capable of. Since this topic is only important for the \gls{vr} input devices and potentially the \gls{hmd} but not the visualisation itself, it is considered as a \gls{sdg}.
 \begin{itemize}[noitemsep,nolistsep]
 	\item \textbf{\gls{sdg} 1:} The design is independent of specific \gls{vr} hardware \newline
 	\textit{Example: No direct references to specific hardware, but rather what the hardware has to be capable of (requirements)}
 \end{itemize}
-From a \gls{vr} perspective, these are all goals that are set for the design. The main aspects of the design is depending on what data is used and thus is discussed in the following chapter.
+From a \gls{vr} perspective, the important areas can all be covered with the above defined goals. The main aspects of the design are depending on what data is used and thus is discussed in the following sub-chapter.
 
 
 %-----------------------------------
@@ -53,7 +53,10 @@ From a \gls{vr} perspective, these are all goals that are set for the design. Th
 
 \subsection{Data-specific Goals}
 
-tbd
+The data set that is used for this thesis is shown in Appendix \ref{AppendixA} and contains information about categorized financial expenses of one year. The focus for the data-specific goals is put on this specific data-set and might only partially be applicable to other data sets.
+
+	
+Based on this, ...
 
 
 Furthermore, relating to the \gls{vism} which is discussed in chapter \ref{SubSectionVISM}, 
@@ -84,7 +87,7 @@ VR allows us to create Virtual Environments (VEs) in which we can render our 3D 
 %	SECTION 3
 %----------------------------------------------------------------------------------------
 
-\section{State Definition and Navigation Map}
+\section{View Definition and Navigation Map}
 
 
 - Navigation Map / "Screen-Flow"
@@ -94,7 +97,7 @@ VR allows us to create Virtual Environments (VEs) in which we can render our 3D 
 %	SECTION 4
 %----------------------------------------------------------------------------------------
 
-\section{Visualisation of States and Data}
+\section{Visualisation of Views and Data}
 
 - Exact Presentation of Data (how look like?)
 
