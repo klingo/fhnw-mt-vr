@@ -125,6 +125,8 @@
 \usepackage[table]{xcolor} %allows to color cells of a table
 \usepackage{hhline} %allows for partial lines in tables in combination with xcolor
 \usepackage[autostyle]{csquotes} %allows for context sensitive quotations
+\usepackage{pdflscape} %allows for individual landscape pages in otherwise portrait document
+\usepackage{longtable} %allows for longer tables across multiple pages
 
 % have global counters for tables and figures
 \counterwithout{figure}{chapter}
