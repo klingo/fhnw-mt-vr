@@ -8,7 +8,9 @@
 
 \addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
 
-\begin{footnotesize}
+\newgeometry{left=1cm,bottom=1cm,right=1cm,top=1cm}
+
+\begin{tiny}
 \begin{center}
 %\resizebox{\textwidth}{!}{%
 \begin{longtable}{lllllllll}
@@ -754,5 +756,7 @@
 	\label{tbl:catfinancialdata}
 \end{longtable}%
 \end{center}
-\end{footnotesize}
+\end{tiny}
 \end{landscape}
+
+\restoregeometry
