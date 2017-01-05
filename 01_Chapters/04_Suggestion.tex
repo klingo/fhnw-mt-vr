@@ -56,7 +56,21 @@ From a \gls{vr} perspective, the important areas can all be covered with the abo
 The data set that is used as the 'categorized financial data' is shown in Appendix \ref{AppendixA}. It consists of eight columns that contain information about transactions, such as \textit{Date}, \textit{Recipient / Order issuer}, \textit{Currency} and \textit{Amount}, and the two most important ones: \textit{Main category} and \textit{Subcategory}. A complete overview of these is presented below:
 
 \begin{longtable}{ | p{6cm} | p{8cm} |}
-	
+	\hline
+		\textbf{Main category} & \textbf{Subcategory} \\
+	\hline
+	\endfirsthead % Line(s) to appear as head of the table on the first page
+	\multicolumn{2}{c}%
+	{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+	\hline
+	\textbf{Main category} & \textbf{Subcategory} \\
+	\hline
+	\endhead % Line(s) to appear at top of every page (except first)
+	\hline
+	\multicolumn{2}{r}{\textit{Continued on next page}} \\
+	\endfoot % Last line(s) to appear at the bottom of every page (except last)
+	\hline
+	\endlastfoot % Last line(s) to appear at the end of the table
 \end{longtable}
 	
 \begin{table}[t]
