@@ -13,7 +13,7 @@
 \section{Introduction}
 
 The in chapter \ref{DSRCycle} discussed \gls{dsr} cycle from \cite{Vaishnavi2008} and \cite{Hevner2010} defines \textit{Suggestion} as the next step after \textit{Awareness of Problem}. \cite{Vaishnavi2008} define the \textit{Suggestion} phase as a creative step in which new functionality is envisioned to form a tentative design for the development of the prototype. \cite{Vaishnavi2008} further specifies the output as a constructed theory that addresses the identified problem, which can include new ideas and concepts, new methods, and new models that in the end shall be validated with the development of the prototype. \newline
-In a first step, the end goals of the design are defined. Then the individual views of presentation (e.g. an overview and detail view) are defined as well as the navigation between them. As the third step, the visualisation of the individual views are defined before finally the interaction patterns (action/reaction) can be mapped to them.
+In a first step, the end goals of the design are defined which will be relevant for the evaluation in chapter \ref{ChapterEvaluation}. Then the individual views of presentation (e.g. an overview and detail view) are defined as well as the navigation between them. As the third step, the visualisation of the individual views are defined before finally the interaction patterns (action/reaction) can be mapped to them. Building up on this, the \textit{Development} phase will then be discussed in chapter \ref{ChapterDevelopment}.
 
 
 %----------------------------------------------------------------------------------------
@@ -22,8 +22,11 @@ In a first step, the end goals of the design are defined. Then the individual vi
 
 \section{Goals of the Design}
 
-In order to define the goals of the design, both the specific characteristics of \gls{vr} itself and the to be visualised data have to be considered. In this thesis, the goals are defined either as \glspl{mdg} for the more overarching goals, or as \glspl{sdg} which are focussing rather on specific areas. In the following two sub-chapters, these characteristics are discussed in more detail and the individual goals are defined.
-
+In order to define the goals of the design, the specific characteristics of \gls{vr} itself and the to be visualised data have to be considered. In this thesis, the goals are defined either as \glspl{mdg} for the more overarching goals, or as \glspl{sdg} which are focussing rather on specific areas. In the following sub-chapters, these characteristics are discussed in more detail and the individual goals are defined over the three main categories: \gls{vr}, data, and visualisation.
+\newcounter{MainDesignGoalCounter} % Create two new counters
+\newcounter{SubDesignGoalCounter}
+\stepcounter{MainDesignGoalCounter} % Increas both values from 0 to 1
+\stepcounter{SubDesignGoalCounter}
 
 %-----------------------------------
 %	SUBSECTION 1
@@ -32,17 +35,21 @@ In order to define the goals of the design, both the specific characteristics of
 
 The goals that are derived from \gls{vr} itself, are more high-level since they can be applied to any \gls{vr} application independent of what its purpose is. Therefore, the three important characteristics of \gls{vr} as defined by \cite{Stone1994} and discussed in chapter \ref{SubSectionVisualisationManipulation} are considered as an integral part of the design. These characteristics can be summarized in the following three keywords: Action/Reaction, Immersion and Spatial. Based on these, the first \glspl{mdg} from a \gls{vr} perspective can be derived and further described with examples:
 \begin{itemize}[noitemsep,nolistsep]
-	\item \textbf{\gls{mdg} 1:} High interactivity with tightly coupled actions/reactions \newline
+	\item \textbf{\gls{mdg} \arabic{MainDesignGoalCounter}:} High interactivity with tightly coupled actions/reactions \newline
 		\textit{Example: No slow animations, no timed events, or any other change in scenery without a trigger from the user}
-	\item \textbf{\gls{mdg} 2:} The user is part of the \gls{ve} and thus is able to 'travel' around the visualisations \newline
+		\stepcounter{MainDesignGoalCounter}
+	\item \textbf{\gls{mdg} \arabic{MainDesignGoalCounter}:} The user is part of the \gls{ve} and thus is able to 'travel' around the visualisations \newline
 		\textit{Example: Movement at free will, and no outside view, or third-person \gls{pov}}
-	\item \textbf{\gls{mdg} 3:} The design is intended for \gls{vr} and thus in full 3D \newline
+		\stepcounter{MainDesignGoalCounter}
+	\item \textbf{\gls{mdg} \arabic{MainDesignGoalCounter}:} The design is intended for \gls{vr} and thus in full 3D \newline
 		\textit{Example: No flattened two-dimensional representation in 3D space}
+		\stepcounter{MainDesignGoalCounter}
 \end{itemize}
 In addition to the above characteristics, another goal has to be that the design should not rely on specific \gls{vr}-hardware, but rather define them in a more abstract way as to what the individual hardware items should be capable of. Since this topic is only important for the \gls{vr} input devices and potentially the \gls{hmd} but not the visualisation itself, it is considered as a \gls{sdg}.
 \begin{itemize}[noitemsep,nolistsep]
-	\item \textbf{\gls{sdg} 1:} The design is independent of specific \gls{vr} hardware \newline
-	\textit{Example: No direct references to specific hardware, but rather what the hardware has to be capable of (requirements)}
+	\item \textbf{\gls{sdg} \arabic{SubDesignGoalCounter}:} The design is independent of specific \gls{vr} hardware \newline
+		\textit{Example: No direct references to specific hardware, but rather what the hardware has to be capable of (requirements)}
+		\stepcounter{SubDesignGoalCounter}
 \end{itemize}
 From a \gls{vr} perspective, the important areas can all be covered with the above defined goals. The main aspects of the design are depending on what data is used and thus is discussed in the following sub-chapter.
 
@@ -53,34 +60,53 @@ From a \gls{vr} perspective, the important areas can all be covered with the abo
 
 \subsection{Data-specific Goals}
 
-The data set that is used for this thesis is shown in Appendix \ref{AppendixA} and contains information about categorized financial expenses of one year. The focus for the data-specific goals is put on this specific data-set and might only partially be applicable to other data sets.
-
-	
-Based on this, ...
-
-
-Furthermore, relating to the \gls{vism} which is discussed in chapter \ref{SubSectionVISM}, 
-mantra: Overview first, zoom and filter, then details-on-demand
-
-They further conclude that due to the different goals for the visualization (e.g. testing a theory or understanding the data set), it makes it difficult on a general level to discuss the problems with how the visualization should be supported \citep{Stone1994}.
-
-
-- Goal of the Design (multi-month view, compare data, visual relative evaluation (colour)
-
-As a high level guideline for the \textit{Suggestion}, the three important characteristics of VR, defined by \cite{Stone1994} and discussed in chapter \ref{SubSectionVisualisationManipulation}, are seen as an integral part of the design. They can be summarized in: Action/Reaction, Immersion, and Spatial. \newline
+The data set that is used for this thesis is shown in Appendix \ref{AppendixA} and contains information about categorized financial expenses of one year. The focus for the data-specific goals is put on this specific data-set and might only partially be applicable to other data sets. Since the goal of this thesis is to enhance the current interaction with the data, the presentation should provide \textbf{at least} the same amount of information to the user.
+\begin{itemize}[noitemsep,nolistsep]
+	\item \textbf{\gls{mdg} \arabic{MainDesignGoalCounter}:} The design provides at least the same information as  existing applications \newline
+		\textit{Example: View on individual months or the whole year, summed-up expenses based on their category, or easy comparison of different categories (based on total amount)}
+		\stepcounter{MainDesignGoalCounter}
+\end{itemize}
+In order to provided an added value to the user, further quality of life features such as direct access to the underlying transactions, the filtering of individual categories, or the display of a (spending) trend are considered. They support the main functionality of data exploration by rendering certain tasks easier and more convenient for the user. Due to this supporting aspect, this is considered as a \gls{sdg}.
+\begin{itemize}[noitemsep,nolistsep]
+	\item \textbf{\gls{sdg} \arabic{SubDesignGoalCounter}:} The design includes new quality-of-life features \newline
+	\textit{Example: Direct access to underlying transactions, filtering of individual (sub-)categories, or the display of a (spending) trend-line}
+	\stepcounter{SubDesignGoalCounter}
+\end{itemize}
 
 
+%-----------------------------------
+%	SUBSECTION 3
+%-----------------------------------
+
+\subsection{Visualisation Goals}
+
+The \gls{vism} from \cite{Shneiderman2005} (see chapter \ref{SubSectionVISM}) has proven to be a solid base design principle whenever the to be executed work is focussed on finding information. This matches the situation of analysing ones financial expenses very well and thus is seen as one of the \gls{mdg} from a visualisation perspective.
+\begin{itemize}[noitemsep,nolistsep]
+	\item \textbf{\gls{mdg} \arabic{MainDesignGoalCounter}:} The design follows the \gls{vism} \newline
+		\textit{Overview first, zoom and filter, then details-on-demand}
+		\stepcounter{MainDesignGoalCounter}
+\end{itemize}
+In addition, the design should also include the improvements from \gls{vism} 2.0 by adhering to the seven main tasks as defined by \cite{Stauffer2016} and shown in Figure \ref{fig:vism2}. The three support tasks (i.e. History, Extract, and Collaboration) are not considered to be relevant for the prototype since they are only support tasks and thus not relevant for the main functionality. They however could become relevant for future research in this area. Since version 2.0 is an enhancement to the existing mantra, it is deemed as a \gls{sdg}.
+\begin{itemize}[noitemsep,nolistsep]
+	\item \textbf{\gls{sdg} \arabic{SubDesignGoalCounter}:} The design adheres to the seven main tasks of \gls{vism} 2.0 \newline
+		\textit{Main Tasks: Overview, Zoom In, Zoom Out, Filtering, Relate, Details, and Multi View}
+		\stepcounter{SubDesignGoalCounter}
+\end{itemize}
+
+% For the "conclusion", we have to remove "1" from the counter again:
+\addtocounter{MainDesignGoalCounter}{-1}
+\addtocounter{SubDesignGoalCounter}{-1}
+% -------------------------------------------
 
 
-VR allows us to create Virtual Environments (VEs) in which we can render our 3D objects representing our data. The advantage that these VEs have over traditional approaches is that they allows us to be immersed within the data. We can use methods to examine the different features of the data that are more intuitive to us. An example of this is the ability to track the users head position so that we can appear to look around object, this is how as humans we are familiar with examining objects of interest, rather than moving a mouse. In a totally immersive virtual environment we can use body movement to walk around objects or put our head inside virtual representation of our data. Also within an immersive environment it is possible to map the users hand position in the real world to a virtual hand in the VE, therefore allowing the user to manipulate virtual objects.
-\cite{Jamieson2007}
---> IMMERSION
---> HEAD TRACKING
---> BODY MOVEMENT
---> ACCURATE HAND TRACKING
---> DATA MANIPULATION BY HAND
+%-----------------------------------
+%	SUBSECTION 4
+%-----------------------------------
 
+\subsection{Conclusion}
 
+With this, all goals that are relevant for the design have been covered and summarized into \arabic{MainDesignGoalCounter} \glspl{mdg} and \arabic{SubDesignGoalCounter} \glspl{sdg}. They will be primarily relevant for the other chapters of the \textit{Suggestion} phase, but also for the \textit{Development} and \textit{Evaluation} phase. \newline
+The next chapter focuses on the definition of the individual views that are available, and how the navigation in between them is defined.
 
 
 %----------------------------------------------------------------------------------------
@@ -89,8 +115,130 @@ VR allows us to create Virtual Environments (VEs) in which we can render our 3D 
 
 \section{View Definition and Navigation Map}
 
+\newcounter{ViewCounter} % Create a new counter
+\stepcounter{ViewCounter} % Increase value from 0 to 1
 
-- Navigation Map / "Screen-Flow"
+In a first step, the different individual views are defined, before a navigation map can be defined that shows what transitions can be possible from one view to another.
+
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+
+\subsection{View Definition}
+
+As defined in \gls{mdg} 5 and \gls{sdg} 3, the \gls{vism} respectively the \gls{vism} 2.0 is part of the core design principle for the prototype of this thesis. \cite{Shneiderman1996} defined the following mantra as the fundamental visual design guideline:
+\begin{framed}
+	\textit{Overview first, zoom and filter, then details-on-demand}
+\end{framed}
+This mantra already clearly distinguishes between to main views: overview and detail. By looking at the \textit{Overview} perspective in regards to the financial expenses, this either could be a summary of the current year, or a bit more detailed the summary of the current month, or even just a 'blank page' where the first entry point has to be chosen from. The last interpretation goes in the direction of what \cite{Neil2006} claimed to be one of the big downfalls of \gls{vism}, that a user might already know what data he wants to see and thus does not want to start on an overview and then dig down to the details. Due to the increased available space in \gls{vr}, it however becomes possible to fulfil all of these demands by presenting all three options next to each other. This also relates to the idea of the \textit{Multi View} which is one of the seven main tasks of \gls{vism} 2.0 as defined by \cite{Stauffer2016}. This allows to define the first three views:
+\begin{itemize}[noitemsep,nolistsep]
+	\item \textbf{View \arabic{ViewCounter}:} Overview of (current) year
+	\stepcounter{ViewCounter}
+	\item \textbf{View \arabic{ViewCounter}:} Overview of (current) month
+	\stepcounter{ViewCounter}
+	\item \textbf{View \arabic{ViewCounter}:} Selection of different month/year
+	\stepcounter{ViewCounter}
+\end{itemize}
+The next main task from \gls{vism} 2.0 which is also part of the original mantra is about \textit{Filtering}, which in this (data) context can be applied to the different main and subcategories as shown in Table \ref{tbl:financialcategories} in Chapter \ref{ChapterIntroduction}. To further adhere to the \textit{Multi View} task, the filtering is put in an additional view to not interfere with the actual data visualisation.
+\begin{itemize}[noitemsep,nolistsep]
+	\item \textbf{View \arabic{ViewCounter}:} Filtering of main and subcategories
+	\stepcounter{ViewCounter}
+\end{itemize}
+
+Continuing the main tasks from \gls{vism} 2.0, we come to \textit{Details} which for the data set that is used in this thesis is a single individual financial transaction. This additional view provides all detailed information about the transaction, from date over amount and recipient to the categories. Since it however is not directly possible to go from a grouped view into a single transaction, an intermediate view that lists all transactions has to be added.
+\begin{itemize}[noitemsep,nolistsep]
+	\item \textbf{View \arabic{ViewCounter}:} Overview of filtered financial transactions
+	\stepcounter{ViewCounter}
+	\item \textbf{View \arabic{ViewCounter}:} Details of a single financial transaction
+	\stepcounter{ViewCounter}
+\end{itemize}
+
+
+% For the "conclusion", we have to remove "1" from the counter again:
+\addtocounter{ViewCounter}{-1}
+% -------------------------------------------
+
+This concludes all the relevant views for the design. This is also in correspondence with \gls{mdg} 4 that states that \textbf{at least} the same functionality has to be provided as it is done in current 2D applications. \newline
+In the next step, the navigation between them are defined which covers the \textit{Relate}, \textit{Zoom In} and \textit{Zoom Out} tasks from the \gls{vism} 2.0.
+
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
+\subsection{Navigation Map}
+
+After the definition of all views, the navigation in between them has to be defined. The base principle for the definition is again the \gls{vism} to make sure it is possible to navigate from the overview into the detail view. Figure \ref{fig:navigationmap} shows the proposed navigation map with all previously defined views. The four green views (1, 2, 5, and 6) are considered the main views where actual data is presented, whereas the two blue views (3 and 4) are considered the supporting views that do not display any actual data, but rather help with the navigation between the main screens. The green arrows indicate the main navigation flow, whereas the orange ones can provide shortcuts directly from the main views themselves. With these additional flows, the \gls{sdg} 2 is also covered to provide additional quality of life features. \newline
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/07_Suggestion/NavigationMap.png}
+		\caption{Navigation Map of Design Suggestion}
+		\label{fig:navigationmap}
+	\end{center}
+\end{figure}
+
+For a better understanding, in Table \ref{tbl:navigationmap} each navigation flow is explained in more detail.
+\begin{longtable}{ | p{2.5cm} | p{11.5cm} |}
+	\hline
+	\textbf{Flow} & \textbf{Description} \\
+	\hline
+	\endfirsthead % Line(s) to appear as head of the table on the first page
+	\multicolumn{2}{c}%
+	{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+	\hline
+	\textbf{Flow} & \textbf{Description} \\
+	\hline
+	\endhead % Line(s) to appear at top of every page (except first)
+	\hline
+	\multicolumn{2}{r}{\textit{Continued on next page}} \\
+	\endfoot % Last line(s) to appear at the bottom of every page (except last)
+	\endlastfoot % Last line(s) to appear at the end of the table
+	\hline
+	View 1 \textrightarrow{} 2 &
+	\textbf{From} Year OVERVIEW \textbf{to} Month OVERVIEW \newline
+	This supporting flow allows the selection of a specific month, directly from the display of the year overview and thus can be seen as shortcut over view flow 3 \textrightarrow{} 5. \\
+	\hline
+	View 2 \textrightarrow{} 5 &
+	\textbf{From} Month OVERVIEW \textbf{to} Fin. Transactions OVERVIEW \newline
+	The second supporting flow enables the selection of an individual day, directly from the display of the month to apply an additional filter on view 5. \\
+	\hline
+	View 3 \textrightarrow{} 1 \newline
+	View 3 \textrightarrow{} 2 &
+	\textbf{From} Month/Year SELECTION \textbf{to} Year OVERVIEW \newline
+	\textbf{From} Month/Year SELECTION \textbf{to} Month OVERVIEW \newline
+	With the selection of a different month/year, the displayed data in the month/year overview will be updated accordingly. \\
+	\hline
+	View 3 \textrightarrow{} 5 &
+	\textbf{From} Month/Year SELECTION \textbf{to} Fin. Transactions OVERVIEW \newline
+	With the selection of a different month/year, the list of financial transactions is also updated to reflect the new selection. \\
+	\hline
+	View 4 \textrightarrow{} 1 \newline
+	View 4 \textrightarrow{} 2 &
+	\textbf{From} Categories FILTERING \textbf{to} Year OVERVIEW \newline
+	\textbf{From} Categories FILTERING \textbf{to} Month OVERVIEW \newline
+	By changing the categories filter, the displayed data in the month/year overview is updated based on the new filter. \\
+	\hline
+	View 4 \textrightarrow{} 5 &
+	\textbf{From} Categories FILTERING \textbf{to} Fin. Transactions OVERVIEW \newline
+	By changing the categories filter, the list of financial transactions is also updated to reflect the new filter selection. \\
+	\hline
+	View 5 \textrightarrow{} 6 &
+	\textbf{From} Fin. Transactions OVERVIEW \textbf{to} Fin. Transaction DETAIL \newline
+	By selecting a single transaction from the list, the corresponding detail information are shown. \\
+	\hline
+	\caption{Explanation of the different flows in the navigation map}
+	\label{tbl:navigationmap}
+\end{longtable}
+
+
+%-----------------------------------
+%	SUBSECTION 3
+%-----------------------------------
+
+\subsection{Conclusion}
+
+With the implementation of real \textit{Multi View} in \gls{vr}, the focus of \textit{Zoom In} is limited to the selection of an individual transaction from a list, whereas the \textit{Zoom Out} is not required anymore at all. Furthermore, by updating all main views simultaneously when changing the selection or filter helps to cover the \textit{Relate} task, especially when also additional visualisation clues are in place. These are covered in the next sub-chapter.
 
 
 %----------------------------------------------------------------------------------------
@@ -99,7 +247,73 @@ VR allows us to create Virtual Environments (VEs) in which we can render our 3D 
 
 \section{Visualisation of Views and Data}
 
+As already indicated in the previous chapters, \gls{vr} allows for a lot more space to visualise objects compared to regular 2D space. This opportunity has to be seized and thus the previously defined views can be displayed next to each other, similar to what has been done by \cite{CodeScience2015} and is shown in Figure \ref{fig:rotatingringstoweranddetail} in chapter \ref{SubSectionRotatingDataRings}. The somewhat natural flow from left to right in Figure \ref{fig:navigationmap} can also be applied into the \gls{ve}.  \newline
+The individual views are discussed in the following sub-chapters, followed by a conclusion at the end.
+
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+
+\subsection{View 1: Year Overview}
+
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
+\subsection{View 2: Month Overview}
+
+
+%-----------------------------------
+%	SUBSECTION 3
+%-----------------------------------
+
+\subsection{View 3: Month/Year Selection}
+
+
+
+%-----------------------------------
+%	SUBSECTION 4
+%-----------------------------------
+
+\subsection{View 4: Categories Filtering}
+
+Since the filtering for the categories is applied on the selected data (compared to the month selection that 'resets' the selected data), it should be always in front of the user for easy access. While this could be done in some kind of pop-up menu or similar, \cite{Bowman2002} reminds us that these techniques are far less natural and could require some training for the user, especially when it is not clear that such a pop-up menu exists and how it can be displayed. Instead, and also in accordance with \gls{mdg} 3, the filtering is intended for \gls{vr} and thus should also be done in 3D. The main categories that are listed in Table \ref{tbl:financialcategories} already have some icons assigned to them in the UBS e-Banking, and are shown more detailed in Figure \ref{fig:categoriesicons}. \newline
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=6cm]{03_Figures/07_Suggestion/UBSAG2016_CategoriesIcons.png}
+		\caption[Mapping of icons to categories in UBS e-banking demo]{Mapping of icons to categories in UBS e-banking demo \citep{UBSAG2016}}
+		\label{fig:categoriesicons}
+	\end{center}
+\end{figure}
+In relation to the research done by \cite{Jamieson2007} that showed the effectiveness of familiar 3D objects for \gls{vr}, these icons can also be represented as 3D objects on a table or similar in front of the user. Depending on whether a certain category/object is enabled for the filtering, its colour can change from e.g. green (enabled) to red (disabled), similar to how this is done by \cite{LeapMotion2016} in their demo 'Geometric' as shown in Figure \ref{fig:leapmotiongeometric} where the right-most button is active (yellow) and the other two are inactive (grey).
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/07_Suggestion/LeapMotion2016_Geometric.png}
+		\caption[Different button states in Leap Motion demo 'Geometric']{Different button states in Leap Motion demo 'Geometric' \citep{LeapMotion2016}}
+		\label{fig:leapmotiongeometric}
+	\end{center}
+\end{figure}
+
+
+%-----------------------------------
+%	SUBSECTION 5
+%-----------------------------------
+
+\subsection{View 5: Financial Transactions Overview}
+
+
+%-----------------------------------
+%	SUBSECTION 6
+%-----------------------------------
+
+\subsection{View 6: Financial Transaction Detail}
+
 - Exact Presentation of Data (how look like?)
+
+
+Relate (view relationships)
 
 
 %----------------------------------------------------------------------------------------
@@ -110,7 +324,8 @@ VR allows us to create Virtual Environments (VEs) in which we can render our 3D 
 
 - Action/Reaction (Interaction)
 
-
+MDG 1: High interactivitiy
+MDG 2: VE, travel around
 
 
 %----------------------------------------------------------------------------------------
@@ -119,7 +334,7 @@ VR allows us to create Virtual Environments (VEs) in which we can render our 3D 
 
 \section{Conclusion}
 
-
+SDG 1: hardware independent
 
 %% IDEA FOR PROTOTYPE
 
