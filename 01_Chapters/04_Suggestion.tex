@@ -97,7 +97,16 @@ In addition, the design should also include the improvements from \gls{vism} 2.0
 \addtocounter{MainDesignGoalCounter}{-1}
 \addtocounter{SubDesignGoalCounter}{-1}
 % -------------------------------------------
-With this, all goals that are relevant for the design have been covered and summarized into \arabic{MainDesignGoalCounter} \glspl{mdg} and \arabic{SubDesignGoalCounter} \glspl{sdg}. The next chapter focuses on the definition of the individual views that are available, and how the navigation in between them is defined.
+
+
+%-----------------------------------
+%	SUBSECTION 4
+%-----------------------------------
+
+\subsection{Conclusion}
+
+With this, all goals that are relevant for the design have been covered and summarized into \arabic{MainDesignGoalCounter} \glspl{mdg} and \arabic{SubDesignGoalCounter} \glspl{sdg}. They will be primarily relevant for the other chapters of the \textit{Suggestion} phase, but also for the \textit{Development} and \textit{Evaluation} phase. \newline
+The next chapter focuses on the definition of the individual views that are available, and how the navigation in between them is defined.
 
 
 %----------------------------------------------------------------------------------------
@@ -118,7 +127,7 @@ In a first step, the different individual views are defined, before a navigation
 
 \subsection{View Definition}
 
-\cite{Shneiderman1996} defined the following mantra as the fundamental visual design guideline:
+As defined in \gls{mdg} 5 and \gls{sdg} 3, the \gls{vism} respectively the \gls{vism} 2.0 is part of the core design principle for the prototype of this thesis. \cite{Shneiderman1996} defined the following mantra as the fundamental visual design guideline:
 \begin{framed}
 	\textit{Overview first, zoom and filter, then details-on-demand}
 \end{framed}
@@ -136,6 +145,7 @@ The next main task from \gls{vism} 2.0 which is also part of the original mantra
 	\item \textbf{View \arabic{ViewCounter}:} Filtering of main and subcategories
 	\stepcounter{ViewCounter}
 \end{itemize}
+
 Continuing the main tasks from \gls{vism} 2.0, we come to \textit{Details} which for the data set that is used in this thesis is a single individual financial transaction. This additional view provides all detailed information about the transaction, from date over amount and recipient to the categories. Since it however is not directly possible to go from a grouped view into a single transaction, an intermediate view that lists all transactions has to be added.
 \begin{itemize}[noitemsep,nolistsep]
 	\item \textbf{View \arabic{ViewCounter}:} Overview of filtered financial transactions
@@ -148,7 +158,9 @@ Continuing the main tasks from \gls{vism} 2.0, we come to \textit{Details} which
 % For the "conclusion", we have to remove "1" from the counter again:
 \addtocounter{ViewCounter}{-1}
 % -------------------------------------------
-This concludes all the relevant views for the design. In the next step, the navigation between them are defined which covers the \textit{Relate}, \textit{Zoom In} and \textit{Zoom Out} tasks from the \gls{vism} 2.0.
+
+This concludes all the relevant views for the design. This is also in correspondence with \gls{mdg} 4 that states that \textbf{at least} the same functionality has to be provided as it is done in current 2D applications. \newline
+In the next step, the navigation between them are defined which covers the \textit{Relate}, \textit{Zoom In} and \textit{Zoom Out} tasks from the \gls{vism} 2.0.
 
 
 %-----------------------------------
@@ -157,7 +169,7 @@ This concludes all the relevant views for the design. In the next step, the navi
 
 \subsection{Navigation Map}
 
-After the definition of all views, the navigation in between them has to be defined. The base principle for the definition is again the \gls{vism} to make sure it is possible to navigate from the overview into the detail view. Figure \ref{fig:navigationmap} shows the proposed navigation map with all previously defined views. The four green views (1, 2, 5, and 6) are considered the main views where actual data is presented, whereas the two blue views (3 and 4) are considered the supporting views that do not display any actual data, but rather help with the navigation between the main screens. The green arrows indicate the main navigation flow, whereas the orange ones can provide shortcuts directly from the main views themselves. \newline
+After the definition of all views, the navigation in between them has to be defined. The base principle for the definition is again the \gls{vism} to make sure it is possible to navigate from the overview into the detail view. Figure \ref{fig:navigationmap} shows the proposed navigation map with all previously defined views. The four green views (1, 2, 5, and 6) are considered the main views where actual data is presented, whereas the two blue views (3 and 4) are considered the supporting views that do not display any actual data, but rather help with the navigation between the main screens. The green arrows indicate the main navigation flow, whereas the orange ones can provide shortcuts directly from the main views themselves. With these additional flows, the \gls{sdg} 2 is also covered to provide additional quality of life features. \newline
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/07_Suggestion/NavigationMap.png}
@@ -231,6 +243,8 @@ With the implementation of real \textit{Multi View} in \gls{vr}, the focus of \t
 As already indicated in the previous chapters, \gls{vr} allows for a lot more space to visualise objects compared to regular 2D space. This opportunity has to be seized and thus the previously defined views can be displayed next to each other, similar to what has been done by \cite{CodeScience2015} and is shown in Figure \ref{fig:rotatingringstoweranddetail} in chapter \ref{SubSectionRotatingDataRings}.
 
 
+MDG3: intended for VR, thus 3D
+
 %-----------------------------------
 %	SUBSECTION 1
 %-----------------------------------
@@ -287,7 +301,8 @@ Relate (view relationships)
 
 - Action/Reaction (Interaction)
 
-
+MDG 1: High interactivitiy
+MDG 2: VE, travel around
 
 
 %----------------------------------------------------------------------------------------
@@ -296,7 +311,7 @@ Relate (view relationships)
 
 \section{Conclusion}
 
-
+SDG 1: hardware independent
 
 %% IDEA FOR PROTOTYPE
 
