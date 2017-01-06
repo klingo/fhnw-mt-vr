@@ -37,15 +37,19 @@ The goals that are derived from \gls{vr} itself, are more high-level since they 
 \begin{itemize}[noitemsep,nolistsep]
 	\item \textbf{\gls{mdg} \arabic{MainDesignGoalCounter}:} High interactivity with tightly coupled actions/reactions \newline
 		\textit{Example: No slow animations, no timed events, or any other change in scenery without a trigger from the user}
+		\stepcounter{MainDesignGoalCounter}
 	\item \textbf{\gls{mdg} \arabic{MainDesignGoalCounter}:} The user is part of the \gls{ve} and thus is able to 'travel' around the visualisations \newline
 		\textit{Example: Movement at free will, and no outside view, or third-person \gls{pov}}
+		\stepcounter{MainDesignGoalCounter}
 	\item \textbf{\gls{mdg} \arabic{MainDesignGoalCounter}:} The design is intended for \gls{vr} and thus in full 3D \newline
 		\textit{Example: No flattened two-dimensional representation in 3D space}
+		\stepcounter{MainDesignGoalCounter}
 \end{itemize}
 In addition to the above characteristics, another goal has to be that the design should not rely on specific \gls{vr}-hardware, but rather define them in a more abstract way as to what the individual hardware items should be capable of. Since this topic is only important for the \gls{vr} input devices and potentially the \gls{hmd} but not the visualisation itself, it is considered as a \gls{sdg}.
 \begin{itemize}[noitemsep,nolistsep]
-	\item \textbf{\gls{sdg} 1:} The design is independent of specific \gls{vr} hardware \newline
-	\textit{Example: No direct references to specific hardware, but rather what the hardware has to be capable of (requirements)}
+	\item \textbf{\gls{sdg} \arabic{SubDesignGoalCounter}:} The design is independent of specific \gls{vr} hardware \newline
+		\textit{Example: No direct references to specific hardware, but rather what the hardware has to be capable of (requirements)}
+		\stepcounter{SubDesignGoalCounter}
 \end{itemize}
 From a \gls{vr} perspective, the important areas can all be covered with the above defined goals. The main aspects of the design are depending on what data is used and thus is discussed in the following sub-chapter.
 
@@ -58,8 +62,9 @@ From a \gls{vr} perspective, the important areas can all be covered with the abo
 
 The data set that is used for this thesis is shown in Appendix \ref{AppendixA} and contains information about categorized financial expenses of one year. The focus for the data-specific goals is put on this specific data-set and might only partially be applicable to other data sets. Since the goal of this thesis is to enhance the current interaction with the data, the presentation should provide \textbf{at least} the same amount of information to the user.
 \begin{itemize}[noitemsep,nolistsep]
-	\item \textbf{\gls{mdg} 4:} Provide at least the same information as already existing \newline
-	\textit{Example: View on individual months or the whole year, summed-up expenses based on their category, or easy comparison of different categories (based on total amount)}
+	\item \textbf{\gls{mdg} \arabic{MainDesignGoalCounter}:} Provide at least the same information as already existing \newline
+		\textit{Example: View on individual months or the whole year, summed-up expenses based on their category, or easy comparison of different categories (based on total amount)}
+		\stepcounter{MainDesignGoalCounter}
 \end{itemize}
 
 
@@ -77,13 +82,15 @@ The data set that is used for this thesis is shown in Appendix \ref{AppendixA} a
 
 In terms of the visualisation, the design has to adhere to the \gls{vism} from \cite{Shneiderman2005}, that has shown to be a solid base design principle.
 \begin{itemize}[noitemsep,nolistsep]
-	\item \textbf{\gls{mdg} 5:} Follow the \gls{vism} \newline
-	\textit{Overview first, zoom and filter, then details-on-demand}
+	\item \textbf{\gls{mdg} \arabic{MainDesignGoalCounter}:} Follow the \gls{vism} \newline
+		\textit{Overview first, zoom and filter, then details-on-demand}
+		\stepcounter{MainDesignGoalCounter}
 \end{itemize}
 In addition, the design should also include the improvements from \gls{vism} 2.0 by adhering to the seven main tasks as defined by \cite{Stauffer2016} and shown in Figure \ref{fig:vism2} in chapter \ref{SubSectionVISM}. The three support tasks (i.e. History, Extract, and Collaboration) are not considered for the prototype as like their name indicates, they are only support tasks and thus not relevant for the main functionality. Since version 2.0 is an enhancement to the existing mantra, it is deemed as a \gls{sdg}.
 \begin{itemize}[noitemsep,nolistsep]
-	\item \textbf{\gls{sdg} 2:} Adhere to the seven main tasks of \gls{vism} 2.0 \newline
-	\textit{Main Tasks: Overview, Zoom In, Zoom Out, Filtering, Relate, Details, and Multi View}
+	\item \textbf{\gls{sdg} \arabic{SubDesignGoalCounter}:} Adhere to the seven main tasks of \gls{vism} 2.0 \newline
+		\textit{Main Tasks: Overview, Zoom In, Zoom Out, Filtering, Relate, Details, and Multi View}
+		\stepcounter{SubDesignGoalCounter}
 \end{itemize}
 
 
