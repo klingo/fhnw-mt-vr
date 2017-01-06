@@ -23,7 +23,10 @@ In a first step, the end goals of the design are defined which will be relevant 
 \section{Goals of the Design}
 
 In order to define the goals of the design, the specific characteristics of \gls{vr} itself and the to be visualised data have to be considered. In this thesis, the goals are defined either as \glspl{mdg} for the more overarching goals, or as \glspl{sdg} which are focussing rather on specific areas. In the following sub-chapters, these characteristics are discussed in more detail and the individual goals are defined over the three main categories: \gls{vr}, data, and visualisation.
-
+\newcounter{MainDesignGoalCounter} % Create two new counters
+\newcounter{SubDesignGoalCounter}
+\stepcounter{MainDesignGoalCounter} % Increas both values from 0 to 1
+\stepcounter{SubDesignGoalCounter}
 
 %-----------------------------------
 %	SUBSECTION 1
@@ -32,11 +35,11 @@ In order to define the goals of the design, the specific characteristics of \gls
 
 The goals that are derived from \gls{vr} itself, are more high-level since they can be applied to any \gls{vr} application independent of what its purpose is. Therefore, the three important characteristics of \gls{vr} as defined by \cite{Stone1994} and discussed in chapter \ref{SubSectionVisualisationManipulation} are considered as an integral part of the design. These characteristics can be summarized in the following three keywords: Action/Reaction, Immersion and Spatial. Based on these, the first \glspl{mdg} from a \gls{vr} perspective can be derived and further described with examples:
 \begin{itemize}[noitemsep,nolistsep]
-	\item \textbf{\gls{mdg} 1:} High interactivity with tightly coupled actions/reactions \newline
+	\item \textbf{\gls{mdg} \arabic{MainDesignGoalCounter}:} High interactivity with tightly coupled actions/reactions \newline
 		\textit{Example: No slow animations, no timed events, or any other change in scenery without a trigger from the user}
-	\item \textbf{\gls{mdg} 2:} The user is part of the \gls{ve} and thus is able to 'travel' around the visualisations \newline
+	\item \textbf{\gls{mdg} \arabic{MainDesignGoalCounter}:} The user is part of the \gls{ve} and thus is able to 'travel' around the visualisations \newline
 		\textit{Example: Movement at free will, and no outside view, or third-person \gls{pov}}
-	\item \textbf{\gls{mdg} 3:} The design is intended for \gls{vr} and thus in full 3D \newline
+	\item \textbf{\gls{mdg} \arabic{MainDesignGoalCounter}:} The design is intended for \gls{vr} and thus in full 3D \newline
 		\textit{Example: No flattened two-dimensional representation in 3D space}
 \end{itemize}
 In addition to the above characteristics, another goal has to be that the design should not rely on specific \gls{vr}-hardware, but rather define them in a more abstract way as to what the individual hardware items should be capable of. Since this topic is only important for the \gls{vr} input devices and potentially the \gls{hmd} but not the visualisation itself, it is considered as a \gls{sdg}.
@@ -74,7 +77,7 @@ The data set that is used for this thesis is shown in Appendix \ref{AppendixA} a
 
 In terms of the visualisation, the design has to adhere to the \gls{vism} from \cite{Shneiderman2005}, that has shown to be a solid base design principle.
 \begin{itemize}[noitemsep,nolistsep]
-	\item \textbf{\gls{mdg} 4:} Follow the \gls{vism} \newline
+	\item \textbf{\gls{mdg} 5:} Follow the \gls{vism} \newline
 	\textit{Overview first, zoom and filter, then details-on-demand}
 \end{itemize}
 In addition, the design should also include the improvements from \gls{vism} 2.0 by adhering to the seven main tasks as defined by \cite{Stauffer2016} and shown in Figure \ref{fig:vism2} in chapter \ref{SubSectionVISM}. The three support tasks (i.e. History, Extract, and Collaboration) are not considered for the prototype as like their name indicates, they are only support tasks and thus not relevant for the main functionality. Since version 2.0 is an enhancement to the existing mantra, it is deemed as a \gls{sdg}.
