@@ -165,7 +165,36 @@ After the definition of all views, the navigation in between them has to be defi
 		\label{fig:navigationmap}
 	\end{center}
 \end{figure}
-In Table XX, each navigation flow is explained in more detail, for a better understanding.
+In Table \ref{tbl:navigationmap}, each navigation flow is explained in more detail, for a better understanding.
+
+
+\begin{longtable}{ | p{5cm} | p{9cm} |}
+	\hline
+	\textbf{Flow} & \textbf{Description} \\
+	\hline
+	\endfirsthead % Line(s) to appear as head of the table on the first page
+	\multicolumn{2}{c}%
+	{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+	\hline
+	\textbf{Flow} & \textbf{Description} \\
+	\hline
+	\endhead % Line(s) to appear at top of every page (except first)
+	\hline
+	\multicolumn{2}{r}{\textit{Continued on next page}} \\
+	\endfoot % Last line(s) to appear at the bottom of every page (except last)
+	\endlastfoot % Last line(s) to appear at the end of the table
+	\hline
+	View 3 --> 1 &
+	Long time ag, there was ... \\
+	\hline
+	\caption{Explanation of the different flows in the navigation map}
+	\label{tbl:navigationmap}
+\end{longtable}
+
+
+
+
+
 
 Relate (view relationships)
 
