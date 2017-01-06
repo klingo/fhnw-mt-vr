@@ -109,6 +109,15 @@ With this, all goals that are relevant for the design have been covered and summ
 \newcounter{ViewCounter} % Create a new counter
 \stepcounter{ViewCounter} % Increase value from 0 to 1
 
+In a first step, the different individual views are defined, before a navigation map can be defined that shows what transitions can be possible from one view to another.
+
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+
+\subsection{View Definition}
+
 \cite{Shneiderman1996} defined the following mantra as the fundamental visual design guideline:
 \begin{framed}
 	\textit{Overview first, zoom and filter, then details-on-demand}
@@ -127,11 +136,17 @@ The next main task from \gls{vism} 2.0 which is also part of the original mantra
 	\item \textbf{View \arabic{ViewCounter}:} Filtering of main and subcategories
 	\stepcounter{ViewCounter}
 \end{itemize}
-Continuing the main tasks from \gls{vism} 2.0, we come to \textit{Details} which for the data set that is used in this thesis is a single individual financial transaction. This additional view provides all detailed information about the transaction.
+Continuing the main tasks from \gls{vism} 2.0, we come to \textit{Details} which for the data set that is used in this thesis is a single individual financial transaction. This additional view provides all detailed information about the transaction, from date over amount and recipient to the categories.
 \begin{itemize}[noitemsep,nolistsep]
 	\item \textbf{View \arabic{ViewCounter}:} Details of a single financial transaction
 	\stepcounter{ViewCounter}
 \end{itemize}
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
+\subsection{Navigation Map}
 
 Relate (view relationships)
 
