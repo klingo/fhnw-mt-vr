@@ -106,13 +106,25 @@ With this, all goals that are relevant for the design have been covered and summ
 
 \section{View Definition and Navigation Map}
 
+\newcounter{ViewCounter} % Create a new counter
+\stepcounter{ViewCounter} % Increase value from 0 to 1
+
 \cite{Shneiderman1996} defined the following mantra as the fundamental visual design guideline:
 \begin{framed}
 	\textit{Overview first, zoom and filter, then details-on-demand}
 \end{framed}
-This mantra already clearly distinguishes between to main views: overview and detail. By looking at the \textit{Overview} perspective in regards to the financial expenses, this either could be a summary of the current year, or a bit more detailed the summary of the current month, or even just a 'blank page' where the first entry point has to be chosen from. The last interpretation goes in the direction of what \cite{Neil2006} claimed to be one of the big downfalls of \gls{vism}, that a user might already know what data he wants to see and thus does not want to start on an overview and then dig down to the details.
+This mantra already clearly distinguishes between to main views: overview and detail. By looking at the \textit{Overview} perspective in regards to the financial expenses, this either could be a summary of the current year, or a bit more detailed the summary of the current month, or even just a 'blank page' where the first entry point has to be chosen from. The last interpretation goes in the direction of what \cite{Neil2006} claimed to be one of the big downfalls of \gls{vism}, that a user might already know what data he wants to see and thus does not want to start on an overview and then dig down to the details. Due to the increased available space in \gls{vr}, it however becomes possible to fulfil all of these demands by presenting all three options next to each other. This also relates to the idea of the \textit{Multi View} which is one of the seven main tasks of \gls{vism} 2.0 as defined by \cite{Stauffer2016}.
 
 
+
+\begin{itemize}[noitemsep,nolistsep]
+	\item \textbf{View \arabic{ViewCounter}:} Overview of (current) year
+	\stepcounter{ViewCounter}
+	\item \textbf{View \arabic{ViewCounter}:} Overview of (current) month
+	\stepcounter{ViewCounter}
+	\item \textbf{View \arabic{ViewCounter}:} Selection of different month/year
+	\stepcounter{ViewCounter}
+\end{itemize}
 
 - Navigation Map / "Screen-Flow"
 
