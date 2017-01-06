@@ -97,7 +97,7 @@ In addition, the design should also include the improvements from \gls{vism} 2.0
 \addtocounter{MainDesignGoalCounter}{-1}
 \addtocounter{SubDesignGoalCounter}{-1}
 % -------------------------------------------
-With this, all goals that are relevant for the design have been covered and summarized into \arabic{MainDesignGoalCounter} \glspl{mdg} and \arabic{SubDesignGoalCounter} \glspl{sdg}.
+With this, all goals that are relevant for the design have been covered and summarized into \arabic{MainDesignGoalCounter} \glspl{mdg} and \arabic{SubDesignGoalCounter} \glspl{sdg}. The next chapter focuses on the definition of the individual views that are available, and how the navigation in between them is defined.
 
 
 %----------------------------------------------------------------------------------------
@@ -105,6 +105,13 @@ With this, all goals that are relevant for the design have been covered and summ
 %----------------------------------------------------------------------------------------
 
 \section{View Definition and Navigation Map}
+
+\cite{Shneiderman1996} defined the following mantra as the fundamental visual design guideline:
+\begin{framed}
+	\textit{Overview first, zoom and filter, then details-on-demand}
+\end{framed}
+This mantra already clearly distinguishes between to main views: overview and detail. By looking at the \textit{Overview} perspective in regards to the financial expenses, this either could be a summary of the current year, or a bit more detailed the summary of the current month, or even just a 'blank page' where the first entry point has to be chosen from. The last interpretation goes in the direction of what \cite{Neil2006} claimed to be one of the big downfalls of \gls{vism}, that a user might already know what data he wants to see and thus does not want to start on an overview and then dig down to the details.
+
 
 
 - Navigation Map / "Screen-Flow"
