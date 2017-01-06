@@ -166,8 +166,8 @@ After the definition of all views, the navigation in between them has to be defi
 	\end{center}
 \end{figure}
 
-In Table \ref{tbl:navigationmap}, each navigation flow is explained in more detail, for a better understanding.
-\begin{longtable}{ | p{5cm} | p{9cm} |}
+For a better understanding, in Table \ref{tbl:navigationmap} each navigation flow is explained in more detail.
+\begin{longtable}{ | p{2.5cm} | p{9cm} |}
 	\hline
 	\textbf{Flow} & \textbf{Description} \\
 	\hline
@@ -183,8 +183,41 @@ In Table \ref{tbl:navigationmap}, each navigation flow is explained in more deta
 	\endfoot % Last line(s) to appear at the bottom of every page (except last)
 	\endlastfoot % Last line(s) to appear at the end of the table
 	\hline
+	View 1 \textrightarrow{} 2 &
+	\textbf{From} Year OVERVIEW \textbf{to} Month OVERVIEW \newline
+	tbd \\
+	\hline
+	View 2 \textrightarrow{} 5 &
+	\textbf{From} Month OVERVIEW \textbf{to} Fin. Transactions OVERVIEW \newline
+	tbd \\
+	\hline
 	View 3 \textrightarrow{} 1 &
-	Long time ag, there was ... \\
+	\textbf{From} Month/Year SELECTION \textbf{to} Year OVERVIEW \newline
+	tbd \\
+	\hline
+	View 3 \textrightarrow{} 2 &
+	\textbf{From} Month/Year SELECTION \textbf{to} Month OVERVIEW \newline
+	tbd \\
+	\hline
+	View 3 \textrightarrow{} 5 &
+	\textbf{From} Month/Year SELECTION \textbf{to} Fin. Transactions OVERVIEW \newline
+	tbd \\
+	\hline
+	View 4 \textrightarrow{} 1 &
+	\textbf{From} Categories FILTERING \textbf{to} Year OVERVIEW \newline
+	tbd \\
+	\hline
+	View 4 \textrightarrow{} 2 &
+	\textbf{From} Categories FILTERING \textbf{to} Month OVERVIEW \newline
+	tbd \\
+	\hline
+	View 4 \textrightarrow{} 5 &
+	\textbf{From} Categories FILTERING \textbf{to} Fin. Transactions OVERVIEW \newline
+	tbd \\
+	\hline
+	View 5 \textrightarrow{} 6 &
+	\textbf{From} Fin. Transactions OVERVIEW \textbf{to} Fin. Transaction DETAIL \newline
+	tbd \\
 	\hline
 	\caption{Explanation of the different flows in the navigation map}
 	\label{tbl:navigationmap}
