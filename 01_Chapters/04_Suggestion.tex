@@ -383,13 +383,16 @@ The \textit{Selection} pattern is undeniably the most important one since the co
 \end{figure}
 
 \textbf{Path 1: View 3 \textrightarrow View 1} \newline
-When selecting a different year, this will trigger an update on the Year Overview, where now all data for the selected year will be displayed.
+When selecting a different year, this will trigger an update on the Year Overview where now all data for the selected year will be displayed.
 
 \textbf{Path 2: View 3 \textrightarrow View 2} \newline
+When selecting a different month, this will trigger an update on the Month Overview to only show the corresponding data. Should only a different year be selected, then this view will be cleared as first a month selection has to happen.
 
 \textbf{Path 3: View 3 \textrightarrow View 5} \newline
+Independent of whether the month and/or year selection was changed, the list of financial transactions will always be updated accordingly. It therefore can either display all transactions from a whole year, or from a single month only.
 
 \textbf{Path 4: View 1 \textrightarrow View 2} \newline
+From within the Year Overview it is also possible to trigger a month change by selecting one of the 'bars' in the chart.
 
 \textbf{Path 5: View 2 \textrightarrow View 5} \newline
 
