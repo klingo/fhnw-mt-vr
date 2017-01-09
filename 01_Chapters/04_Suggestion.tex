@@ -373,7 +373,7 @@ The simplest interaction pattern is \textit{Travel}. In accordance with \gls{mdg
 
 \subsection{Selection}
 
-The \textit{Selection} pattern is undeniably the most important one since the core activity is data exploration. For a better understanding, Figure \ref{fig:interactionmap} gives an overview of all views and their interaction paths that have been numbered.
+The \textit{Selection} pattern is undeniably the most important one since the core activity is data exploration. For a better understanding, Figure \ref{fig:interactionmap} gives an overview of all views and their interaction paths that have been numbered. The following list will give some more detailed information on what exactly happens on the different interaction paths.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/07_Suggestion/InteractionMap.png}
@@ -381,7 +381,6 @@ The \textit{Selection} pattern is undeniably the most important one since the co
 		\label{fig:interactionmap}
 	\end{center}
 \end{figure}
-The following list will give some more detailed information on what exactly happens on the different interaction paths.
 
 \textbf{Path 1: View 3 \textrightarrow View 1} \newline
 When selecting a different year, this will trigger an update on the Year Overview where now all data for the selected year will be displayed.
@@ -409,7 +408,6 @@ Again, the list of transactions will be updated by applying this additional (dat
 
 \textbf{Path 9: View 5 \textrightarrow View 6} \newline
 The final path is triggered when a single transaction is selected from the list in view 5. This path is also triggered whenever the list is updated and will cause the view to be cleared.
-
 
 
 
