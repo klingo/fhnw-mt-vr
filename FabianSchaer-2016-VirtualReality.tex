@@ -30,6 +30,7 @@
 
 \makeglossaries
 
+% Declare the unicode character for the 'degree' sign
 \DeclareUnicodeCharacter{B0}{\textdegree}
 
 \begin{document}
@@ -147,20 +148,20 @@
 %   of the term or \glspl{term} for the plural form of the term.
 %----------------------------------------------------------------------------------------
 
-\newglossaryentry{Java}{
-    name={Java},
-    description={\blindtext}
-}
+%\newglossaryentry{Java}{
+%    name={Java},
+%    description={\blindtext}
+%}
 
-\newglossaryentry{Oracle}{
-    name={Oracle},
-    description={\blindtext}
-}
+%\newglossaryentry{Oracle}{
+%    name={Oracle},
+%    description={\blindtext}
+%}
 
-\newglossaryentry{Microsoft}{
-    name={Microsoft},
-    description={\blindtext}
-}
+%\newglossaryentry{Microsoft}{
+%    name={Microsoft},
+%    description={\blindtext}
+%}
 
 
 %----------------------------------------------------------------------------------------
@@ -211,7 +212,9 @@
 %----------------------------------------------------------------------------------------
 
 \fillingPage{
-	This page intentionally left blank
+	\begin{center}
+		This page intentionally left blank
+	\end{center}
 }
 
 \clearpage % Start a new page
@@ -230,11 +233,11 @@
 %	FOREWORD / ACKNOWLEDGEMENTS (optional)
 %----------------------------------------------------------------------------------------
 
-\ackPage{
-    The acknowledgements and the people to thank go here, don't forget to include your project advisor\ldots
-}
+%\ackPage{
+%    The acknowledgements and the people to thank go here, don't forget to include your project advisor\ldots
+%}
 
-\clearpage % Start a new page
+%\clearpage % Start a new page
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
@@ -293,8 +296,8 @@
 %	GLOSSARY (if appropriate)
 %----------------------------------------------------------------------------------------
 
-\fillingPage{} 
-\listOfGlossary
+ \fillingPage{} 
+ \listOfGlossary
 
 %----------------------------------------------------------------------------------------
 %	ABBREVIATIONS (if appropriate)
@@ -303,16 +306,16 @@
 \fillingPage{} 
 \listOfAbbreviation
 
-%%----------------------------------------------------------------------------------------
-%%	LIST OF FIGURES (optional)
-%%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	LIST OF FIGURES (optional)
+%----------------------------------------------------------------------------------------
 
 \fillingPage{} 
 \listOfFigures
 
-%%----------------------------------------------------------------------------------------
-%%	LIST OF TABLES (optional)
-%%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	LIST OF TABLES (optional)
+%----------------------------------------------------------------------------------------
 
 \fillingPage{} 
 \listOfTables

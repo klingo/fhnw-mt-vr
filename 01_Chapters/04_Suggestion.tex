@@ -12,8 +12,11 @@
 
 \section{Introduction}
 
-The in chapter \ref{DSRCycle} discussed \gls{dsr} cycle from \cite{Vaishnavi2008} and \cite{Hevner2010} defines \textit{Suggestion} as the next step after \textit{Awareness of Problem}. \cite{Vaishnavi2008} define the \textit{Suggestion} phase as a creative step in which new functionality is envisioned to form a tentative design for the development of the prototype. \cite{Vaishnavi2008} further specifies the output as a constructed theory that addresses the identified problem, which can include new ideas and concepts, new methods, and new models that in the end shall be validated with the development of the prototype. \newline
-In a first step, the end goals of the design are defined which will be relevant for the evaluation in chapter \ref{ChapterEvaluation}. Then the individual views of presentation (e.g. an overview and detail view) are defined as well as the navigation between them. As the third step, the visualisation of the individual views are defined before finally the interaction patterns (action/reaction) can be mapped to them. Building up on this, the \textit{Development} phase will then be discussed in chapter \ref{ChapterDevelopment}.
+The in chapter \ref{DSRCycle} discussed \gls{dsr} cycle from \cite{Vaishnavi2008} and \cite{Hevner2010} defines \textit{Suggestion} as the next step after \textit{Awareness of Problem}. \cite{Vaishnavi2008} define the \textit{Suggestion} phase as a creative step in which new functionality is envisioned to form a tentative design for the development of the prototype. \cite{Vaishnavi2008} further specifies the output as a constructed theory that addresses the identified problem, which can include new ideas and concepts, new methods, and new models that in the end shall be validated with the development of the prototype. In a first step, the end goals of the design are defined which will be relevant for the evaluation in chapter \ref{ChapterEvaluation}. Then the individual views of presentation (e.g. an overview and detail view) are defined as well as the navigation between them. As the third step, the visualisation of the individual views are defined before finally the interaction patterns (action/reaction) can be mapped to them. With this information, it will be possible to give an answer to the fourth \gls{srq}:\newline
+\begin{framed}
+ 	\textit{\gls{srq} 4: What added value can be created by bringing this into virtual reality, compared to the traditional 2D approach?}
+\end{framed}
+Building up on this, the \textit{Development} phase will then be discussed in chapter \ref{ChapterDevelopment}.
 
 
 %----------------------------------------------------------------------------------------
@@ -248,7 +251,7 @@ With the implementation of real \textit{Multi View} in \gls{vr}, the focus of \t
 \section{Visualisation of Views and Data}
 
 As already indicated in the previous chapters, \gls{vr} allows for a lot more space to visualise objects compared to regular 2D space. This opportunity has to be seized and thus the previously defined views can be displayed next to each other, similar to what has been done by \cite{CodeScience2015} and is shown in Figure \ref{fig:rotatingringstoweranddetail} in chapter \ref{SubSectionRotatingDataRings}. The somewhat natural flow from left to right in Figure \ref{fig:navigationmap} can also be applied into the \gls{ve}.  \newline
-The individual views are discussed in the following sub-chapters, followed by a conclusion at the end.
+The individual views are discussed in the following sub-chapters with a conclusion at the end.
 
 
 %-----------------------------------
@@ -257,12 +260,35 @@ The individual views are discussed in the following sub-chapters, followed by a 
 
 \subsection{View 1: Year Overview}
 
+This view should give the user an impression about the changes in the financial expenses over the course of a whole year. Since the data set is more logically structured than the example data that has been used by \cite{Jamieson2007} for their implementation of a 'Data Forest', it would only provide limited usability. Their approach could make sense when the individual transactions were shown as trees in a forest. While this would provide a new insight in the distribution of all expenses, it does not give an easy to understand view on the (financial) situation of the year as a total, especially since the transactions are also categorized. \newline
+Alternatively, a more traditional approach can be chosen where the data is visualised in ways that are well-known to most people, such as a line or bar chart. \cite{Drouhard2015} emphasized that a full transition to a 3D environment can be difficult wherefore the focus should be rather put on the question how 2D interactions can be brought into 3D space in the most effective way. Since this overview will only contain little information (i.e. an amount sum per month), the potential problems with scaling of large data as indicated by \cite{Jamieson2007} can be neglected in this scenario. Such a traditional visualisation solution also is beneficial for first-time users as they immediately see something familiar that they can relate to. \newline
+To allow a more diverse manipulation of the individual month (objects), the bar chart provides more possibilities compared to a line chart that has only single points. In the vertical axis, the summarized totals are displayed, whereas in the horizontal axis the individual months are listed. As an additional information to the user, a 'plan-value' line can also be shown to more easily indicate in which months the spendings are above/below the planned expenses. By changing the colours of the individual bars, this information can be brought to the users attention much more effectively. Figure \ref{fig:view1chart} shows exemplary how such a chart could look like in 2D, where the red values indicate the amounts above the planned value.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/07_Suggestion/View1_YearOverview.png}
+		\caption{Exemplary visualisation of View 1: Year Overview}
+		\label{fig:view1chart}
+	\end{center}
+\end{figure}
+If also a specific month has been selected, it can be visually highlighted in this view to keep all of them synchronized. This is in accordance with the findings of \cite{Hentschel2009}, which showed that multiple linked views can be a very good solution for the interactive analysis of time-dependent data, like it is the case here.
+
 
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
 
 \subsection{View 2: Month Overview}
+
+The second view is similar to the first one as it also shows a temporal overview of the expenses. This time however for a single month, where the horizontal axis shows the individual days of that month. Since now on a much smaller scale, depending on the category there potentially are only very few transactions or even only a single one like for the monthly rent. This makes the visualisation of an average line like in View 1 (Year Overview) not very useful and a different approach has to be found. \newline
+Alternatively, a cumulative chart where the amounts of the previous days are always added to the future days as well, could make much more sense. This would then also again allow to show an average line (of the other months) to indicate from which day onwards the average spending has been exceeded. The same colouring approach like in the previous view can be applied to give an easy to see visual cue about the situation. Figure \ref{fig:view2chart}  again shows exemplary how such a chart could look like in 2D.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/07_Suggestion/View2_MonthOverview.png}
+		\caption{Exemplary visualisation of View 2: Month Overview}
+		\label{fig:view2chart}
+	\end{center}
+\end{figure}
+Like in the previous view, when an individual day is selected for the filtered list of transactions (View 5), the selection is also done visually on this chart.
 
 
 %-----------------------------------
@@ -271,7 +297,14 @@ The individual views are discussed in the following sub-chapters, followed by a 
 
 \subsection{View 3: Month/Year Selection}
 
-
+The first support view does not really display any data-related information, but can primarily be seen as a 'date picker' view that supports the selection of individual months and years. It should be held as simple as possible to avoid any unnecessary interaction steps but still allows the user to intuitively select the desired time-frame. Figure \ref{fig:view3chart} shows exemplary how such a selection view could look like. In this example, the current date is somewhere in August, due to which the future months of the year 2016 are not selectable. The currently selected year (and month) is highlighted in green colour.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=10cm]{03_Figures/07_Suggestion/View3_MonthYearSelection.png}
+		\caption{Exemplary visualisation of View 3: Month/Year Selection}
+		\label{fig:view3chart}
+	\end{center}
+\end{figure}
 
 %-----------------------------------
 %	SUBSECTION 4
@@ -279,7 +312,7 @@ The individual views are discussed in the following sub-chapters, followed by a 
 
 \subsection{View 4: Categories Filtering}
 
-Since the filtering for the categories is applied on the selected data (compared to the month selection that 'resets' the selected data), it should be always in front of the user for easy access. While this could be done in some kind of pop-up menu or similar, \cite{Bowman2002} reminds us that these techniques are far less natural and could require some training for the user, especially when it is not clear that such a pop-up menu exists and how it can be displayed. Instead, and also in accordance with \gls{mdg} 3, the filtering is intended for \gls{vr} and thus should also be done in 3D. The main categories that are listed in Table \ref{tbl:financialcategories} already have some icons assigned to them in the UBS e-Banking, and are shown more detailed in Figure \ref{fig:categoriesicons}. \newline
+Since the filtering for the categories is applied on the selected data (compared to the month selection that 'resets' the selected data), it should be always in front of the user for easy access. While this could be done in some kind of pop-up menu or similar, \cite{Bowman2002} reminds us that these techniques are far less natural and could require some training for the user, especially when it is not clear that such a pop-up menu exists and how it can be displayed. Instead, and also in accordance with \gls{mdg} 3, the filtering is intended for \gls{vr} and thus should also be done in 3D. The main categories that are listed in Table \ref{tbl:financialcategories} already have some icons assigned to them in the UBS e-Banking, and are shown more detailed in Figure \ref{fig:categoriesicons}.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=6cm]{03_Figures/07_Suggestion/UBSAG2016_CategoriesIcons.png}
@@ -287,7 +320,7 @@ Since the filtering for the categories is applied on the selected data (compared
 		\label{fig:categoriesicons}
 	\end{center}
 \end{figure}
-In relation to the research done by \cite{Jamieson2007} that showed the effectiveness of familiar 3D objects for \gls{vr}, these icons can also be represented as 3D objects on a table or similar in front of the user. Depending on whether a certain category/object is enabled for the filtering, its colour can change from e.g. green (enabled) to red (disabled), similar to how this is done by \cite{LeapMotion2016} in their demo 'Geometric' as shown in Figure \ref{fig:leapmotiongeometric} where the right-most button is active (yellow) and the other two are inactive (grey).
+In relation to the research done by \cite{Jamieson2007} that showed the effectiveness of familiar 3D objects for \gls{vr}, these icons can also be represented as 3D objects on a table or similar in front of the user. Depending on whether a certain category/object is enabled for the filtering, its colour can change from e.g. green (enabled) to grey (disabled), similar to how this is done by \cite{LeapMotion2016} in their demo 'Geometric' as shown in Figure \ref{fig:leapmotiongeometric} where the right-most button is active (yellow) and the other two are inactive (grey).
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/07_Suggestion/LeapMotion2016_Geometric.png}
@@ -303,6 +336,9 @@ In relation to the research done by \cite{Jamieson2007} that showed the effectiv
 
 \subsection{View 5: Financial Transactions Overview}
 
+Although this fifth view is defined as an 'overview', it already provides rather detailed information about the individual transactions. At this point, the user is interested in the raw data due to which the use of 3D objects will be very limited. 
+
+TODO: Complete this explanation
 
 %-----------------------------------
 %	SUBSECTION 6
@@ -310,10 +346,8 @@ In relation to the research done by \cite{Jamieson2007} that showed the effectiv
 
 \subsection{View 6: Financial Transaction Detail}
 
-- Exact Presentation of Data (how look like?)
-
-
-Relate (view relationships)
+On the lowest level, the details about one single financial transaction is displayed. Similar to the detailed data in the 'Rotating Data Rings' implementation of \cite{CodeScience2015} shown in Figure \ref{fig:rotatingringstoweranddetail}, the pure raw data will be presented in this view in the structure of a simple grid. \newline
+By referring back to the main task 'Relate' from the \gls{vism} 2.0, with the highlighted entries in the other views, a clear link to the relationship of this single entry can be drawn to the month overview and the year overview.
 
 
 %----------------------------------------------------------------------------------------
@@ -322,10 +356,73 @@ Relate (view relationships)
 
 \section{Mapping of Interaction Patterns}
 
-- Action/Reaction (Interaction)
+After the definition of the individual views, the interaction patterns can be mapped to them. As discussed in Chapter \ref{SubSectionInteractionPatterns}, there are three main types of interaction patterns: Travel, Selection, and Manipulation. As defined in \gls{mdg} 1, high interactivity is one of the main design goals for this artefact, which will be a key component in the following sub-chapters when the three interaction pattern types are discussed in more detail. This design goal is also heavily linked to the concept of 'multiple linked views' of \cite{Hentschel2009} which has proven to be very useful when dealing with temporal data.
 
-MDG 1: High interactivitiy
-MDG 2: VE, travel around
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+
+\subsection{Travel}
+
+The simplest interaction pattern is \textit{Travel}. In accordance with \gls{mdg} 2 which states that the user us part of the \gls{ve} and thus us able to 'travel' around the visualisation, theoretically any kind of locomotion would be applicable. Due to the fact, that the different views are presented around or in front of the user and they are only of very limited number, there is no direct need for any kind of teleportation functionality. While a 'seated' \gls{vr} experience is more limited, it does not prevent the user from viewing all relevant views. A 'room-scale' experience on the other hand provides some more freedom especially in terms of 'Zoom In' and 'Zoom Out' as the user can walk closer or further away from it.
+
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
+\subsection{Selection}
+
+The \textit{Selection} pattern is undeniably the most important one since the core activity is data exploration. For a better understanding, Figure \ref{fig:interactionmap} gives an overview of all views and their interaction paths that have been numbered. The following list will give some more detailed information on what exactly happens on the different interaction paths.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/07_Suggestion/InteractionMap.png}
+		\caption[Interaction Map of Design Suggestion]{Interaction Map of Design Suggestion (based on Figure \ref{fig:navigationmap})}
+		\label{fig:interactionmap}
+	\end{center}
+\end{figure}
+
+\textbf{Path 1: View 3 \textrightarrow View 1} \newline
+When selecting a different year, this will trigger an update on the Year Overview where now all data for the selected year will be displayed.
+
+\textbf{Path 2: View 3 \textrightarrow View 2} \newline
+When selecting a different month, this will trigger an update on the Month Overview to only show the corresponding data. Should only a different year be selected, then this view will be cleared as first a month selection has to happen.
+
+\textbf{Path 3: View 3 \textrightarrow View 5} \newline
+Independent of whether the month and/or year selection was changed, the list of financial transactions will always be updated accordingly. It therefore can either display all transactions from a whole year, or from a single month only. This will also trigger Path 9 as any previously selected single transaction will be cleared from the view.
+
+\textbf{Path 4: View 1 \textrightarrow View 2} \newline
+From within the Year Overview it is also possible to trigger a month change by selecting one of the 'bars' in the chart. In addition to that, it will also trigger the net interaction path (no. 5) and also updates the currently selected month in View 3 (not visualized in Figure \ref{fig:interactionmap}).
+
+\textbf{Path 5: View 2 \textrightarrow View 5} \newline
+Similar to Path 4, it is also possible to select the 'bar' of a single day to trigger an update on the list of financial transactions. This path can also be indirectly triggered when a month is selected in the Year Overview. This will also trigger Path 9 as any previously selected single transaction will be cleared from the view.
+
+\textbf{Path 6: View 4 \textrightarrow View 1} \newline
+Compared to Path 1, this is an additional (data) filter that is applied on the selected data set from View 3. Individual categories can be enabled and disabled. \textit{Note: A change in View 4 will always trigger all three interaction paths: 6, 7 and 8.}
+
+\textbf{Path 7: View 4 \textrightarrow View 2} \newline
+Very similar to Path 6, this is an additional (data) filter that is applied on the selected data set from View 3. \textit{Note: A change in View 4 will always trigger all three interaction paths: 6, 7 and 8.}
+
+\textbf{Path 8: View 4 \textrightarrow View 3} \newline
+Again, the list of transactions will be updated by applying this additional (data) filter. This will also trigger Path 9 as any previously selected single transaction will be cleared from the view. \textit{Note: A change in View 4 will always trigger all three interaction paths: 6, 7 and 8.}
+
+\textbf{Path 9: View 5 \textrightarrow View 6} \newline
+The final path is triggered when a single transaction is selected from the list in view 5. This path is also triggered whenever the list is updated and will cause the view to be cleared.
+
+
+
+%-----------------------------------
+%	SUBSECTION 3
+%-----------------------------------
+
+\subsection{Manipulation}
+
+\textit{Manipulation} of the underlying data set itself is not possible in this design. However, there is one direct manipulation possibility for 3D objects in one of the views.
+
+\textbf{View 4: Categories Filtering} \newline
+As defined before, the different categories are visualised as three-dimensional objects that refer to the category icons from Figure \ref{fig:categoriesicons}. Interacting with these objects allows a manipulation of their state (on/off) as well as the corresponding state colour (on = green, off = grey).
+
+All other views solely make use of \textit{Selection} and do not have any applicable \textit{Manipulation} patterns.
 
 
 %----------------------------------------------------------------------------------------
@@ -334,22 +431,6 @@ MDG 2: VE, travel around
 
 \section{Conclusion}
 
-SDG 1: hardware independent
-
-%% IDEA FOR PROTOTYPE
-
-- Start with a small table on which a house etc is visualized. floating above is year (+month)
-- Each object represents one category from the financial expenses.
-- maybe size indicates the overall amount?
-- The colours depends on the difference between my planned expenses (or average expenses) and the actual expenses. less = green, about the same = yellow-(green-)ish, slightly above = orange, above = red.
-- By clicking on one of the objects, it gets highlighted and a line-chart appears showing the expenses
-   A) show individual transactions for the given month up until the threshold
-   B) show individual months until the threshold (+forecast?)
-- show multiple lines for the different sub-categories (enable/disable) plus the total
-- clicking on an entry of the line chart displays details about transaction (amount, location), or the month (amount) in an overlay
-- switching between single-month and year view by... using the touchpad (up/down clicks)
-- navigating through months/years by... a using the touchpad! (left/right clicks)
-- resetting the view to start by... clicking on the select button
-
-- maybe outside as rotating rings: the individual bank accounts?
-
+In this chapter, the Design Suggestion has been defined with design goals, the navigation map, the visualisation of views and data, and the mapping of interaction patterns. Furthermore, the whole design is done hardware independent in order to comply with \gls{sdg} 1. \newline
+To answer \gls{srq} 4 that asks for the added value that can be created by bringing this functionality into virtual reality, several (theoretical) benefits have been found, although they can only be confirmed upon developing and evaluation the prototype application. One major advantage can be the multiple linked views that provide easier viewing access to all relevant data as well as the advanced filtering by categories which can be done intuitively with customized 3D objects. Furthermore, the supporting views are not visualised on eye-height and thus do not prevent a clear view on the relevant data. \newline
+In order to evaluate this design, the next chapter describes the \textit{Development} of the prototype which is based on this \textit{Suggestion}.
