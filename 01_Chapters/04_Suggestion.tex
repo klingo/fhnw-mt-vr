@@ -267,6 +267,7 @@ To allow a more diverse manipulation of the individual month (objects), the bar 
 		\label{fig:view1chart}
 	\end{center}
 \end{figure}
+If also a specific month has been selected, it can be visually highlighted in this view to keep all of them synchronized. This is in accordance with the findings of \cite{Hentschel2009}, which showed that multiple linked views can be a very good solution for the interactive analysis of time-dependent data, like it is the case here.
 
 
 %-----------------------------------
@@ -286,13 +287,14 @@ Alternatively, a cumulative chart where the amounts of the previous days are alw
 \end{figure}
 
 
+
 %-----------------------------------
 %	SUBSECTION 3
 %-----------------------------------
 
 \subsection{View 3: Month/Year Selection}
 
-The first support view does not really display any data-related information, but can primarily be seen as a 'date picker' view that supports the selection of individual months and years. It should be held as simple as possible to avoid any unnecessary interaction steps but still allows the user to intuitively select the desired time-frame. Figure \ref{fig:view3chart} shows exemplary how such a selection view could look like. In this example the current date is somewhere in August, due to which the future months of the year 2016 are not selectable. The current selection is highlighted in green colour.
+The first support view does not really display any data-related information, but can primarily be seen as a 'date picker' view that supports the selection of individual months and years. It should be held as simple as possible to avoid any unnecessary interaction steps but still allows the user to intuitively select the desired time-frame. Figure \ref{fig:view3chart} shows exemplary how such a selection view could look like. In this example, the current date is somewhere in August, due to which the future months of the year 2016 are not selectable. The currently selected year (and month) is highlighted in green colour.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=10cm]{03_Figures/07_Suggestion/View3_MonthYearSelection.png}
@@ -331,6 +333,9 @@ In relation to the research done by \cite{Jamieson2007} that showed the effectiv
 
 \subsection{View 5: Financial Transactions Overview}
 
+Although this fifth view is defined as an 'overview', it already provides rather detailed information about the individual transactions. At this point, the user is interested in the raw data due to which the use of 3D objects will be very limited. 
+
+TODO: Complete this explanation
 
 %-----------------------------------
 %	SUBSECTION 6
@@ -338,7 +343,10 @@ In relation to the research done by \cite{Jamieson2007} that showed the effectiv
 
 \subsection{View 6: Financial Transaction Detail}
 
+On the lowest level, the details about one single financial transaction is displayed. Similar to the detailed data in the 'Rotating Data Rings' implementation of \cite{CodeScience2015} shown in Figure \ref{fig:rotatingringstoweranddetail}, the pure raw data will be presented in this view.
 - Exact Presentation of Data (how look like?)
+
+\cite{CodeScience2015}
 
 
 Relate (view relationships)
