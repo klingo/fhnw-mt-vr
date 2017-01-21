@@ -378,30 +378,27 @@ The \textit{Selection} pattern is undeniably the most important one since the co
 \end{figure}
 
 \textbf{Path 1: View 3 \textrightarrow View 1} \newline
-When selecting a different year, this will trigger an update on the Year Overview where now all data for the selected year will be displayed.
+When selecting a different year, this will trigger an update on the Year Overview where now all data for the selected year will be displayed. Any filter applied in view 4 will also influence the final data that is displayed.
 
 \textbf{Path 2: View 3 \textrightarrow View 2} \newline
-When selecting a different month, this will trigger an update on the Month Overview to only show the corresponding data. Should only a different year be selected, then this view will be cleared as first a month selection has to happen.
+When selecting a different year, this will trigger a clear of the Month Overview, as first a specific month needs to be selected again from the Year Overview.
 
-\textbf{Path 3: View 3 \textrightarrow View 5} \newline
-Independent of whether the month and/or year selection was changed, the list of financial transactions will always be updated accordingly. It therefore can either display all transactions from a whole year, or from a single month only. This will also trigger Path 9 as any previously selected single transaction will be cleared from the view.
+\textbf{Path 3: View 1 \textrightarrow View 2} \newline
+From within the Year Overview it is also possible to trigger a month change by selecting one of the 'bars' in the chart. In addition to that, it will also trigger the next interaction path (no. 4) and update the list of financial transactions that are displayed.
 
-\textbf{Path 4: View 1 \textrightarrow View 2} \newline
-From within the Year Overview it is also possible to trigger a month change by selecting one of the 'bars' in the chart. In addition to that, it will also trigger the net interaction path (no. 5) and also updates the currently selected month in View 3 (not visualized in Figure \ref{fig:interactionmap}).
+\textbf{Path 4: View 2 \textrightarrow View 5} \newline
+Similar to Path 3, it is also possible to select the 'bar' of a single day to trigger an update on the list of financial transactions. This path can also be indirectly triggered when a month is selected in the Year Overview. This will also trigger Path 8 as any previously selected single transaction will be cleared from the view.
 
-\textbf{Path 5: View 2 \textrightarrow View 5} \newline
-Similar to Path 4, it is also possible to select the 'bar' of a single day to trigger an update on the list of financial transactions. This path can also be indirectly triggered when a month is selected in the Year Overview. This will also trigger Path 9 as any previously selected single transaction will be cleared from the view.
+\textbf{Path 5: View 4 \textrightarrow View 1} \newline
+Compared to Path 1, this is an additional (data) filter that is applied on the selected data set from View 3. Individual categories can be enabled and disabled. \textit{Note: A change in View 4 will always trigger all three interaction paths: 5, 6, and 7.}
 
-\textbf{Path 6: View 4 \textrightarrow View 1} \newline
-Compared to Path 1, this is an additional (data) filter that is applied on the selected data set from View 3. Individual categories can be enabled and disabled. \textit{Note: A change in View 4 will always trigger all three interaction paths: 6, 7 and 8.}
+\textbf{Path 6: View 4 \textrightarrow View 2} \newline
+Very similar to Path 5, this is an additional (data) filter that is applied on the selected data set from View 3. \textit{Note: A change in View 4 will always trigger all three interaction paths: 5, 6, and 7.}
 
-\textbf{Path 7: View 4 \textrightarrow View 2} \newline
-Very similar to Path 6, this is an additional (data) filter that is applied on the selected data set from View 3. \textit{Note: A change in View 4 will always trigger all three interaction paths: 6, 7 and 8.}
+\textbf{Path 7: View 4 \textrightarrow View 3} \newline
+Again, the list of transactions will be updated by applying this additional (data) filter. This will also trigger Path 8 as any previously selected single transaction will be cleared from the view. \textit{Note: A change in View 4 will always trigger all three interaction paths: 5, 6, and 7.}
 
-\textbf{Path 8: View 4 \textrightarrow View 3} \newline
-Again, the list of transactions will be updated by applying this additional (data) filter. This will also trigger Path 9 as any previously selected single transaction will be cleared from the view. \textit{Note: A change in View 4 will always trigger all three interaction paths: 6, 7 and 8.}
-
-\textbf{Path 9: View 5 \textrightarrow View 6} \newline
+\textbf{Path 8: View 5 \textrightarrow View 6} \newline
 The final path is triggered when a single transaction is selected from the list in view 5. This path is also triggered whenever the list is updated and will cause the view to be cleared.
 
 
