@@ -75,7 +75,7 @@ All used software for the development of the \gls{vr} prototype is summarised an
 
 
 \subsubsection{Game Engine}
-At the foundation, \cite{Unity2016} multi-platform game engine and development toolkit 'Unity 3D' is used. It offers the option to not only develop 2D applications, but also 3D applications that can be run in \gls{vr}.
+At the foundation, \cite{Unity2016} multi-platform game engine and development toolkit 'Unity 3D' is used. It offers the option to not only develop 2D applications, but also 3D applications that can be run in \gls{vr}. It is used for the actual design of the \gls{ve} and the configuration of 3D objects.
 
 \textbf{Software:} Unity 3D \newline
 \textbf{Version:} 5.5.0f3 \newline
@@ -85,7 +85,7 @@ At the foundation, \cite{Unity2016} multi-platform game engine and development t
 \subsubsection{Game Engine Plugins}
 For the integration of the \gls{sdk} to access the specific methods and functions of the HTC Vive, the SteamVR plugin for Unity is used \citep{Valve2016a}. In addition to this, \gls{vrtk} will be used as a toolkit to rely on 'standardised' ways for certain \gls{vr}-specific interactions and functions in Unity 3D \citep{Sysdia2017}. Even though the HTC Vive has been chosen for the hardware part, due to the usage of the SteamVR plugin and the \gls{vrtk}, only little to none changes should be required in order to have the prototype application also run other supported hardware such as the Oculus Rift, since both of them support multiple \glspl{hmd}.
 
-\textbf{Software:} SteamVR Pluginy \newline
+\textbf{Software:} SteamVR Plugin \newline
 \textbf{Version:} 1.1.1 \newline
 \textbf{Link:} \url{https://www.assetstore.unity3d.com/en/#!/content/32647}
 
@@ -96,7 +96,7 @@ For the integration of the \gls{sdk} to access the specific methods and function
 
 
 \subsubsection{\gls{ide}}
-Complementary, Visual Studio Community 2015 from \cite{Microsoft2015} is used for the development of the Unity Scripts in the programming language C\#.
+Visual Studio Community 2015 from \cite{Microsoft2015} is used for the development of the Unity Scripts in the programming language C\#. These scripts handle and manage the whole \gls{ve} by triggering interactions of the 3D objects defined and placed in Unity 3D.
 
 \textbf{Software:} Microsoft Visual Studio Community \newline
 \textbf{Version:} 2015 \newline
@@ -105,7 +105,7 @@ Complementary, Visual Studio Community 2015 from \cite{Microsoft2015} is used fo
 
 \subsubsection{3D Graphics}
 
-\cite{Blender2016}
+Finally, for the design of custom 3D models as representations of the category icons as shown in Figure \ref{fig:categoriesicons} in Chapter \ref{SubSectionCategoriesFiltering}, the  open-source 3D computer graphics software Blender is used \citep{Blender2016}.
 
 \textbf{Software:} Blender \newline
 \textbf{Version:} 2.78a \newline
