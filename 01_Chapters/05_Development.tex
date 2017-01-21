@@ -12,40 +12,45 @@
 
 \section{Introduction}
 
-The \textit{Development} phase, as defined by \cite{Vaishnavi2008} and \cite{Hevner2010}, comes after the \textit{Suggestion} of a design and focuses on the further development and implementation of the design. The outcome of this chapter is the requirement for the subsequent \textit{Evaluation} chapter. This is a crucial step in answering \gls{srq} 4 since the to be achieved benefits over the traditional approaches have only been of theoretical nature so far, but are not tested for their feasibility yet. \cite{Vaishnavi2008} see different techniques on how the implementation can look like, depending on the to be constructed artifact. For this thesis, the development of a prototype application in \gls{vr} has been chosen. In a first step, the
-
-Development. The Tentative Design is further developed and implemented in this phase. Elaboration of the Tentative Design into complete design requires creative effort. The techniques for implementation will of course vary, depending on the artifact to be constructed. An algorithm may require construction of a formal proof. An expert system embodying novel assumptions about human cognition in an area of interest will require software development, probably using a high-level package or tool. The implementation itself can be very pedestrian and need not involve novelty beyond the state-of-practice for the given artifact; the novelty is primarily in the design, not the construction of the artifact.
-\cite{Vaishnavi2008}
+The \textit{Development} phase, as defined by \cite{Vaishnavi2008} and \cite{Hevner2010}, comes after the \textit{Suggestion} of a design and focuses on the further development and implementation of the design. The outcome of this chapter is the requirement for the subsequent \textit{Evaluation} chapter. This is a crucial step in answering \gls{srq} 4 since the to be achieved benefits over the traditional approaches have only been of theoretical nature so far, but are not tested for their feasibility yet. \cite{Vaishnavi2008} see different techniques on how the implementation can look like, depending on the to be constructed artifact. For this thesis, the development of a prototype application in \gls{vr} has been chosen. In a first step, the technical setup is defined, before the architecture and data model for the prototype are discussed. Following that, the actual implementation of the different views and navigations are covered with a conclusion at the end. \newline
+Building up on this, the \textit{Evaluation} phase will then be discussed in chapter \ref{ChapterEvaluation}.
 
 
-The in chapter \ref{DSRCycle} discussed \gls{dsr} cycle from \cite{Vaishnavi2008} and \cite{Hevner2010} defines \textit{Suggestion} as the next step after \textit{Awareness of Problem}. \cite{Vaishnavi2008} define the \textit{Suggestion} phase as a creative step in which new functionality is envisioned to form a tentative design for the development of the prototype. \cite{Vaishnavi2008} further specifies the output as a constructed theory that addresses the identified problem, which can include new ideas and concepts, new methods, and new models that in the end shall be validated with the development of the prototype. In a first step, the end goals of the design are defined which will be relevant for the evaluation in chapter \ref{ChapterEvaluation}. Then the individual views of presentation (e.g. an overview and detail view) are defined as well as the navigation between them. As the third step, the visualisation of the individual views are defined before finally the interaction patterns (action/reaction) can be mapped to them. With this information, it will be possible to give an answer to the fourth \gls{srq}:
-\begin{framed}
-	\textit{\gls{srq} 4: \srqfourtext}
-\end{framed}
-Building up on this, the \textit{Development} phase will then be discussed in chapter \ref{ChapterDevelopment}.
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
 
+\section{Architecture}
+
+TODO: Hardware selection still has to be covered!
+
+HTC Vive (HMD, 2 Lighthouse, 2 Gesture Controllers)
+Unity 3D 5.5.0f3		\cite{Unity2016}
+SteamVR Plugin 1.1.1		\cite{Valve2016a}
+VRTK - SteamVR Unity Toolkit 3.0.0			\cite{Sysdia2017}
+Blender 2.78a		\cite{Blender2016}
 
 
 TODO:
-1. architecture
-2. data model
-3. technical setup
+2. technical setup
 - version overview of SW and plugin (development environment)
-- https://vrtoolkit.readme.io/#
+- https://vrtoolkit.readme.io/
+3. architecture
+4. data model
 - explain the whole setup, how to get everything up and running
-4. implementation of views and navigation
+5. implementation of views and navigation
 - Code Structure?
 - (Unity) Object Design
 - (Unity) Script Design
 - Important Code Snippets?
 - Screenshots
-
+6. Conclusion
 
 
 
 
 %----------------------------------------------------------------------------------------
-%	SECTION 2
+%	SECTION 3
 %----------------------------------------------------------------------------------------
 
 \section{Technical Setup}
@@ -57,6 +62,7 @@ Unity 3D 5.5.0f3		\cite{Unity2016}
 SteamVR Plugin 1.1.1		\cite{Valve2016a}
 VRTK - SteamVR Unity Toolkit 3.0.0			\cite{Sysdia2017}
 Blender 2.78a		\cite{Blender2016}
+
 
 %----------------------------------------------------------------------------------------
 %	SECTION 3
