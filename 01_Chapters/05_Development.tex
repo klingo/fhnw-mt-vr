@@ -155,12 +155,23 @@ One of the main challenges is to get reasonable performance while working with a
 \lstset{style=sharpc}
 
 \begin{lstlisting}[frame=single]  % Start your code-block
-for i:=maxint to 0 do
-begin
-{ do nothing }
-end;
-Write('Case insensitive ');
-Write('Pascal keywords.');
+    public DataView GetDataView(int year, int month = 0) {
+    // Create the key, such as: 2016-9
+    string key = year.ToString() + "-" + month.ToString();
+    
+    DataTable dataTable;
+    DataView dataView = null;
+    
+    // Check if entry for that key exists
+    // if no dataView was found, log error
+    if (dataTableDict.TryGetValue(key, out dataTable) == false) {
+    Logger.LogError("No DataTable found in DataTableManager for key = [" + key + "]");
+    } else {
+    dataView = new DataView(dataTable);
+    }
+    
+    return dataView;
+    }
 \end{lstlisting}
 
 big challenge with large data saet and multiplse ways of filtering (year, month, day, multiple categories)
