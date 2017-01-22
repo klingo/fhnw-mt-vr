@@ -149,30 +149,9 @@ Figure \ref{fig:steamvrselected} shows the general architecture of the Steam VR 
 
 \subsection{Data Model}
 
-One of the main challenges is to get reasonable performance while working with a not so small data set (600+ entries as shown in Appendix \ref{AppendixA}) that can be filtered not only by year/month/day but also by several different categories atop of that. In order to not always filter through the whole data set, it will be split up in smaller parts that contain only data for a specific month in a specific year. While reading in the CSV file, multiple instances of the \textit{[System.Data.DataTable]} class are created and stored with the unique key \textit{[$<$year$>$-$<$month$>$]} in a \textit{[System.Collections.Generic.Dictionary]} which is the C\# equivalent of a HashMap in Java. For the filtering of the DataTable, the \textit{[System.Data.DataView]} class is used which itself does not store data but represents a connected view of a DataTable. \newline
+One of the main challenges is to get reasonable performance while working with a not so small data set (600+ entries as shown in Appendix \ref{AppendixA}) that can be filtered not only by year/month/day but also by several different categories atop of that. In order to not always filter through the whole data set, it will be split up in smaller parts that contain only data for a specific month in a specific year. While reading in the CSV file, multiple instances of the \textit{[System.Data.DataTable]} class are created and stored with the unique key \textit{[$<$year$>$-$<$month$>$]} in a \textit{[System.Collections.Generic.Dictionary]} which is the C\# equivalent of a HashMap in Java. For the filtering of the DataTable, the \textit{[System.Data.DataView]} class is used which itself does not store data but represents a connected view of a DataTable. While this already helps with the performance, as soon as the category filtering comes in place it still is relatively slow as all twelve months need to be updated. \newline
+To at least partially address this problem, a caching of the filtered data for the bar charts and table has been considered. For this, another unique key had to be defined in the form of \textit{[$<$year$>$-$<$month$>$-$<$day$>$-$<$binaryCategory$>$]}. The "binaryCategory" is a binary state representation of all categories where each one of them is either a '0' (inactive) or a '1' (active).
 
-\lstdefinestyle{sharpc}{language=[Sharp]C, frame=lr, rulecolor=\color{blue!80!black}}
-\lstset{style=sharpc}
-
-\begin{lstlisting}
-    public DataView GetDataView(int year, int month = 0) {
-    // Create the key, such as: 2016-9
-    string key = year.ToString() + "-" + month.ToString();
-    
-    DataTable dataTable;
-    DataView dataView = null;
-    
-    // Check if entry for that key exists
-    // if no dataView was found, log error
-    if (dataTableDict.TryGetValue(key, out dataTable) == false) {
-    Logger.LogError("No DataTable found in DataTableManager for key = [" + key + "]");
-    } else {
-    dataView = new DataView(dataTable);
-    }
-    
-    return dataView;
-    }
-\end{lstlisting}
 
 big challenge with large data saet and multiplse ways of filtering (year, month, day, multiple categories)
 caching had to be implemented
