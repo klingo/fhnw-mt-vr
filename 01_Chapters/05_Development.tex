@@ -6,6 +6,30 @@
 
 \label{ChapterDevelopment}
 
+\definecolor{bluekeywords}{rgb}{0,0,1}
+\definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{redstrings}{rgb}{0.64,0.08,0.08}
+\definecolor{xmlcomments}{rgb}{0.5,0.5,0.5}
+\definecolor{types}{rgb}{0.17,0.57,0.68}
+
+\lstset{language=[Sharp]C,
+	captionpos=b,
+	%numbers=left, %Nummerierung
+	%numberstyle=\tiny, % kleine Zeilennummern
+	frame=lines, % Oberhalb und unterhalb des Listings ist eine Linie
+	showspaces=false,
+	showtabs=false,
+	breaklines=true,
+	showstringspaces=false,
+	breakatwhitespace=true,
+	escapeinside={(*@}{@*)},
+	commentstyle=\color{greencomments},
+	morekeywords={partial, var, value, get, set},
+	keywordstyle=\color{bluekeywords},
+	stringstyle=\color{redstrings},
+	basicstyle=\ttfamily\small,
+}
+
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
@@ -156,12 +180,14 @@ To at least partially address this problem, a caching of the filtered data for t
 	\item 2016-3-0-11111111111 \textit{(single month selected and all categories active)}
 	\item 2016-8-27-11100010101 \textit{(selection of a specific day with different category states)}
 \end{itemize}
-With eleven categories, over 2'048 different combinations can be made across them. If this is considered for a whole year (365 days) there are a staggering amount of 747'520 different key-combinations, which makes it impractical to try to pre-cache every single combination.
+With eleven categories, over 2'048 different combinations can be made across them. If this is considered for a whole year (365 days) there are a staggering amount of 747'520 different key-combinations, which makes it impractical to try to pre-cache every single combination. Due to this an on-demand cache is implemented to at least massively reduce the loading times of previously selected combinations.
 
-
-big challenge with large data saet and multiplse ways of filtering (year, month, day, multiple categories)
-caching had to be implemented
-unique keys
+\begin{lstlisting}[caption=a test for a C$^\sharp$ code, label=lst:test]
+public Dictionary<string, DataTable> dataTableDict;
+private Dictionary<string, float[]> chartValuesDict;
+private Dictionary<string, string[]> chartLabelsDict;
+private Dictionary<string, List<string[]>> tableRowsDict;
+\end{lstlisting}
 
 
 %-----------------------------------
