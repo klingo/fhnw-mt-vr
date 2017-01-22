@@ -150,13 +150,15 @@ Figure \ref{fig:steamvrselected} shows the general architecture of the Steam VR 
 \subsection{Data Model}
 
 One of the main challenges is to get reasonable performance while working with a not so small data set (600+ entries as shown in Appendix \ref{AppendixA}) that can be filtered not only by year/month/day but also by several different categories atop of that. In order to not always filter through the whole data set, it will be split up in smaller parts that contain only data for a specific month in a specific year. While reading in the CSV file, multiple instances of the \textit{[System.Data.DataTable]} class are created and stored with the unique key \textit{[$<$year$>$-$<$month$>$]} in a \textit{[System.Collections.Generic.Dictionary]} which is the C\# equivalent of a HashMap in Java. For the filtering of the DataTable, the \textit{[System.Data.DataView]} class is used which itself does not store data but represents a connected view of a DataTable. While this already helps with the performance, as soon as the category filtering comes in place it still is relatively slow as all twelve months need to be updated. \newline
-To at least partially address this problem, a caching of the filtered data for the bar charts and table has been considered. For this, another unique key had to be defined in the form of \textit{[$<$year$>$-$<$month$>$-$<$day$>$-$<$binaryCategory$>$]}. The "binaryCategory" is a binary state representation of all categories where each one of them is either a '0' (inactive) or a '1' (active). Following are some example to indicate how certain situations can be represented:
+To at least partially address this problem, a caching of the filtered data for the bar charts and table has been considered. For this, another unique key had to be defined in the form of \textit{[$<$year$>$-$<$month$>$-$<$day$>$-$<$binaryCategory$>$]}. The "binaryCategory" is a binary state representation of all \textbf{eleven} categories where each one of them is either represented as a '0' (inactive) or a '1' (active). Following are some example to indicate how certain situations can be represented:
 \begin{itemize}[noitemsep,nolistsep]
-	\item 2016-8-27-11100010101 - \textit{selection down to a specific day}
-	\item 2016-0-0-00000000000 - \textit{only year selected and all categories inactive}
-	\item 2016-3-0-11111111111 - \textit{sing emonth selected and all categories active}
+	\item 2016-0-0-00000000000 \textit{(only year selected and all categories inactive)}
+	\item 2016-3-0-11111111111 \textit{(single month selected and all categories active)}
+	\item 2016-8-27-11100010101 \textit{(selection of a specific day with different category states)}
 \end{itemize}
+With eleven categories, over 2'048 different combinations can be made. If this is considered for a whole year there are a staggering amount of 747'520 different key-combinations, which makes it impractical to pre-cache every single combination. 
 
+impractical
 
 big challenge with large data saet and multiplse ways of filtering (year, month, day, multiple categories)
 caching had to be implemented
