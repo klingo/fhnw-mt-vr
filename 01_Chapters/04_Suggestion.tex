@@ -140,7 +140,7 @@ This mantra already clearly distinguishes between to main views: overview and de
 	\stepcounter{ViewCounter}
 	\item \textbf{View \arabic{ViewCounter}:} Overview of (current) month
 	\stepcounter{ViewCounter}
-	\item \textbf{View \arabic{ViewCounter}:} Selection of different month/year
+	\item \textbf{View \arabic{ViewCounter}:} Selection of different year
 	\stepcounter{ViewCounter}
 \end{itemize}
 The next main task from \gls{vism} 2.0 which is also part of the original mantra is about \textit{Filtering}, which in this (data) context can be applied to the different main categories as shown in Table \ref{tbl:financialcategories} in Chapter \ref{ChapterIntroduction}. To further adhere to the \textit{Multi View} task, the filtering is put in an additional view to not interfere with the actual data visualisation.
@@ -172,7 +172,7 @@ In the next step, the navigation between them are defined which covers the \text
 
 \subsection{Navigation Map}
 
-After the definition of all views, the navigation in between them has to be defined. The base principle for the definition is again the \gls{vism} to make sure it is possible to navigate from the overview into the detail view. Figure \ref{fig:navigationmap} shows the proposed navigation map with all previously defined views. The four green views (1, 2, 5, and 6) are considered the main views where actual data is presented, whereas the two blue views (3 and 4) are considered the supporting views that do not display any actual data, but rather help with the navigation between the main screens. The green arrows indicate the main navigation flow, whereas the orange ones can provide shortcuts directly from the main views themselves. With these additional flows, the \gls{sdg} 2 is also covered to provide additional quality of life features. \newline
+After the definition of all views, the navigation in between them has to be defined. The base principle for the definition is again the \gls{vism} to make sure it is possible to navigate from the overview into the detail view. Figure \ref{fig:navigationmap} shows the proposed navigation map with all previously defined views. The four green views (1, 2, 5, and 6) are considered the main views where actual data is presented, whereas the two blue views (3 and 4) are considered the supporting views that do not display any actual data, but rather help with the navigation between the main screens. The green arrows indicate the main navigation flow, whereas the blue ones are more influential flows in terms of  altering the green views. With these additional flows, the \gls{sdg} 2 is also covered to provide additional quality of life features. \newline
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/07_Suggestion/NavigationMap.png}
@@ -200,21 +200,17 @@ For a better understanding, in Table \ref{tbl:navigationmap} each navigation flo
 	\hline
 	View 1 \textrightarrow{} 2 &
 	\textbf{From} Year OVERVIEW \textbf{to} Month OVERVIEW \newline
-	This supporting flow allows the selection of a specific month, directly from the display of the year overview and thus can be seen as shortcut over view flow 3 \textrightarrow{} 5. \\
+	This main navigation flow allows the selection of a specific month, directly from the display of the year overview to update the month overview. \\
 	\hline
 	View 2 \textrightarrow{} 5 &
 	\textbf{From} Month OVERVIEW \textbf{to} Fin. Transactions OVERVIEW \newline
-	The second supporting flow enables the selection of an individual day, directly from the display of the month to apply an additional filter on view 5. \\
+	The second main navigation flow enables the selection of an individual day, directly from the display of the month to apply an additional filter on view 5. \\
 	\hline
 	View 3 \textrightarrow{} 1 \newline
 	View 3 \textrightarrow{} 2 &
-	\textbf{From} Month/Year SELECTION \textbf{to} Year OVERVIEW \newline
-	\textbf{From} Month/Year SELECTION \textbf{to} Month OVERVIEW \newline
-	With the selection of a different month/year, the displayed data in the month/year overview will be updated accordingly. \\
-	\hline
-	View 3 \textrightarrow{} 5 &
-	\textbf{From} Month/Year SELECTION \textbf{to} Fin. Transactions OVERVIEW \newline
-	With the selection of a different month/year, the list of financial transactions is also updated to reflect the new selection. \\
+	\textbf{From} Year SELECTION \textbf{to} Year OVERVIEW \newline
+	\textbf{From} Year SELECTION \textbf{to} Month OVERVIEW \newline
+	With the selection of a different year, the displayed data in the month/year overview will be updated accordingly. \\
 	\hline
 	View 4 \textrightarrow{} 1 \newline
 	View 4 \textrightarrow{} 2 &
@@ -280,7 +276,7 @@ If also a specific month has been selected, it can be visually highlighted in th
 \subsection{View 2: Month Overview}
 
 The second view is similar to the first one as it also shows a temporal overview of the expenses. This time however for a single month, where the horizontal axis shows the individual days of that month. Since now on a much smaller scale, depending on the category there potentially are only very few transactions or even only a single one like for the monthly rent. This makes the visualisation of an average line like in View 1 (Year Overview) not very useful and a different approach has to be found. \newline
-Alternatively, a cumulative chart where the amounts of the previous days are always added to the future days as well, could make much more sense. This would then also again allow to show an average line (of the other months) to indicate from which day onwards the average spending has been exceeded. The same colouring approach like in the previous view can be applied to give an easy to see visual cue about the situation. Figure \ref{fig:view2chart}  again shows exemplary how such a chart could look like in 2D.
+Alternatively, a cumulative chart where the amounts of the previous days are always added to the future days as well, could make much more sense. This would then also again allow to show an average line (of the other months) to indicate from which day onwards the average spending has been exceeded. The same colouring approach like in the previous view can be applied to give an easy to see visual cue about the situation. Figure \ref{fig:view2chart} again shows exemplary how such a chart could look like in 2D.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/07_Suggestion/View2_MonthOverview.png}
@@ -295,13 +291,13 @@ Like in the previous view, when an individual day is selected for the filtered l
 %	SUBSECTION 3
 %-----------------------------------
 
-\subsection{View 3: Month/Year Selection}
+\subsection{View 3: Year Selection}
 
-The first support view does not really display any data-related information, but can primarily be seen as a 'date picker' view that supports the selection of individual months and years. It should be held as simple as possible to avoid any unnecessary interaction steps but still allows the user to intuitively select the desired time-frame. Figure \ref{fig:view3chart} shows exemplary how such a selection view could look like. In this example, the current date is somewhere in August, due to which the future months of the year 2016 are not selectable. The currently selected year (and month) is highlighted in green colour.
+The first support view does not really display any data-related information, but can primarily be seen as a 'date picker' view that supports the selection of individual years. It should be held as simple as possible to avoid any unnecessary interaction steps but still allows the user to intuitively select the desired high-level time-frame. Figure \ref{fig:view3chart} shows exemplary how such a selection view could look like. In this example, the currently selected year is 2016, highlighted in green colour.
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=10cm]{03_Figures/07_Suggestion/View3_MonthYearSelection.png}
-		\caption{Exemplary visualisation of View 3: Month/Year Selection}
+		\includegraphics[width=6cm]{03_Figures/07_Suggestion/View3_YearSelection.png}
+		\caption{Exemplary visualisation of View 3: Year Selection}
 		\label{fig:view3chart}
 	\end{center}
 \end{figure}
@@ -312,7 +308,9 @@ The first support view does not really display any data-related information, but
 
 \subsection{View 4: Categories Filtering}
 
-Since the filtering for the categories is applied on the selected data (compared to the month selection that 'resets' the selected data), it should be always in front of the user for easy access. While this could be done in some kind of pop-up menu or similar, \cite{Bowman2002} reminds us that these techniques are far less natural and could require some training for the user, especially when it is not clear that such a pop-up menu exists and how it can be displayed. Instead, and also in accordance with \gls{mdg} 3, the filtering is intended for \gls{vr} and thus should also be done in 3D. The main categories that are listed in Table \ref{tbl:financialcategories} already have some icons assigned to them in the UBS e-Banking, and are shown more detailed in Figure \ref{fig:categoriesicons}.
+\label{SubSectionCategoriesFiltering}
+
+Since the filtering for the categories is applied on the selected data (compared to changing the month/year selection which 'resets' the currently selected data), it should be always in front of the user for easy access. While this could be done in some kind of pop-up menu or similar, \cite{Bowman2002} reminds us that these techniques are far less natural and could require some training for the user, especially when it is not clear that such a pop-up menu exists and how it can be displayed. Instead, and also in accordance with \gls{mdg} 3, the filtering is intended for \gls{vr} and thus should also be done in 3D. The main categories that are listed in Table \ref{tbl:financialcategories} already have some icons assigned to them in the UBS e-Banking, and are shown more detailed in Figure \ref{fig:categoriesicons}. The sub-categories will not be considered for this view as their number is too high for an easy-to-understand visualisation, as well as the amount of transactions will further decrease the more low-level filtering is possible.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=6cm]{03_Figures/07_Suggestion/UBSAG2016_CategoriesIcons.png}
@@ -336,9 +334,8 @@ In relation to the research done by \cite{Jamieson2007} that showed the effectiv
 
 \subsection{View 5: Financial Transactions Overview}
 
-Although this fifth view is defined as an 'overview', it already provides rather detailed information about the individual transactions. At this point, the user is interested in the raw data due to which the use of 3D objects will be very limited. 
+Although this fifth view is defined as an 'overview', it already provides rather detailed information about the individual transactions. At this point, the user is interested in the raw data due to which the use of 3D objects will be very limited. This view has to provide enough information to understand what the individual transactions were about, but still only show as little as necessary to not overcomplicate the data table. Absolutely necessary are the date of the transaction, the amount and currency, the recipient and presumably also the category to which it belongs. This can also help the user to directly see which additional filters he might have to apply to narrow down his explorative research in the way he wants to. For a more detailed view on a single transaction, where all other information can be displayed, view 6 will be the place to navigate to.
 
-TODO: Complete this explanation
 
 %-----------------------------------
 %	SUBSECTION 6
@@ -346,7 +343,7 @@ TODO: Complete this explanation
 
 \subsection{View 6: Financial Transaction Detail}
 
-On the lowest level, the details about one single financial transaction is displayed. Similar to the detailed data in the 'Rotating Data Rings' implementation of \cite{CodeScience2015} shown in Figure \ref{fig:rotatingringstoweranddetail}, the pure raw data will be presented in this view in the structure of a simple grid. \newline
+On the lowest level, the details about one single financial transaction are displayed. Additional information such as the booking text, the account name/number from which the payment was made, or also the subcategory can be displayed. Similar to the detailed data in the 'Rotating Data Rings' implementation of \cite{CodeScience2015} shown in Figure \ref{fig:rotatingringstoweranddetail}, the pure raw data will be presented in this view in the structure of a simple grid. \newline
 By referring back to the main task 'Relate' from the \gls{vism} 2.0, with the highlighted entries in the other views, a clear link to the relationship of this single entry can be drawn to the month overview and the year overview.
 
 
@@ -383,30 +380,27 @@ The \textit{Selection} pattern is undeniably the most important one since the co
 \end{figure}
 
 \textbf{Path 1: View 3 \textrightarrow View 1} \newline
-When selecting a different year, this will trigger an update on the Year Overview where now all data for the selected year will be displayed.
+When selecting a different year, this will trigger an update on the Year Overview where now all data for the selected year will be displayed. Any filter applied in view 4 will also influence the final data that is displayed.
 
 \textbf{Path 2: View 3 \textrightarrow View 2} \newline
-When selecting a different month, this will trigger an update on the Month Overview to only show the corresponding data. Should only a different year be selected, then this view will be cleared as first a month selection has to happen.
+When selecting a different year, this will trigger a clear of the Month Overview, as first a specific month needs to be selected again from the Year Overview.
 
-\textbf{Path 3: View 3 \textrightarrow View 5} \newline
-Independent of whether the month and/or year selection was changed, the list of financial transactions will always be updated accordingly. It therefore can either display all transactions from a whole year, or from a single month only. This will also trigger Path 9 as any previously selected single transaction will be cleared from the view.
+\textbf{Path 3: View 1 \textrightarrow View 2} \newline
+From within the Year Overview it is also possible to trigger a month change by selecting one of the 'bars' in the chart. In addition to that, it will also trigger the next interaction path (no. 4) and update the list of financial transactions that are displayed.
 
-\textbf{Path 4: View 1 \textrightarrow View 2} \newline
-From within the Year Overview it is also possible to trigger a month change by selecting one of the 'bars' in the chart. In addition to that, it will also trigger the net interaction path (no. 5) and also updates the currently selected month in View 3 (not visualized in Figure \ref{fig:interactionmap}).
+\textbf{Path 4: View 2 \textrightarrow View 5} \newline
+Similar to Path 3, it is also possible to select the 'bar' of a single day to trigger an update on the list of financial transactions. This path can also be indirectly triggered when a month is selected in the Year Overview. This will also trigger Path 8 as any previously selected single transaction will be cleared from the view.
 
-\textbf{Path 5: View 2 \textrightarrow View 5} \newline
-Similar to Path 4, it is also possible to select the 'bar' of a single day to trigger an update on the list of financial transactions. This path can also be indirectly triggered when a month is selected in the Year Overview. This will also trigger Path 9 as any previously selected single transaction will be cleared from the view.
+\textbf{Path 5: View 4 \textrightarrow View 1} \newline
+Compared to Path 1, this is an additional (data) filter that is applied on the selected data set from View 3. Individual categories can be enabled and disabled. \textit{Note: A change in View 4 will always trigger all three interaction paths: 5, 6, and 7.}
 
-\textbf{Path 6: View 4 \textrightarrow View 1} \newline
-Compared to Path 1, this is an additional (data) filter that is applied on the selected data set from View 3. Individual categories can be enabled and disabled. \textit{Note: A change in View 4 will always trigger all three interaction paths: 6, 7 and 8.}
+\textbf{Path 6: View 4 \textrightarrow View 2} \newline
+Very similar to Path 5, this is an additional (data) filter that is applied on the selected data set from View 3. \textit{Note: A change in View 4 will always trigger all three interaction paths: 5, 6, and 7.}
 
-\textbf{Path 7: View 4 \textrightarrow View 2} \newline
-Very similar to Path 6, this is an additional (data) filter that is applied on the selected data set from View 3. \textit{Note: A change in View 4 will always trigger all three interaction paths: 6, 7 and 8.}
+\textbf{Path 7: View 4 \textrightarrow View 3} \newline
+Again, the list of transactions will be updated by applying this additional (data) filter. This will also trigger Path 8 as any previously selected single transaction will be cleared from the view. \textit{Note: A change in View 4 will always trigger all three interaction paths: 5, 6, and 7.}
 
-\textbf{Path 8: View 4 \textrightarrow View 3} \newline
-Again, the list of transactions will be updated by applying this additional (data) filter. This will also trigger Path 9 as any previously selected single transaction will be cleared from the view. \textit{Note: A change in View 4 will always trigger all three interaction paths: 6, 7 and 8.}
-
-\textbf{Path 9: View 5 \textrightarrow View 6} \newline
+\textbf{Path 8: View 5 \textrightarrow View 6} \newline
 The final path is triggered when a single transaction is selected from the list in view 5. This path is also triggered whenever the list is updated and will cause the view to be cleared.
 
 
@@ -417,8 +411,7 @@ The final path is triggered when a single transaction is selected from the list 
 
 \subsection{Manipulation}
 
-\textit{Manipulation} of the underlying data set itself is not possible in this design. However, there is one direct manipulation possibility for 3D objects in one of the views.
-
+Direct \textit{Manipulation} of the underlying data set itself is not possible in this design, as it focuses on the explorative aspect. However, there is a direct manipulation possibility for 3D objects in one of the views.
 \textbf{View 4: Categories Filtering} \newline
 As defined before, the different categories are visualised as three-dimensional objects that refer to the category icons from Figure \ref{fig:categoriesicons}. Interacting with these objects allows a manipulation of their state (on/off) as well as the corresponding state colour (on = green, off = grey).
 
@@ -431,6 +424,5 @@ All other views solely make use of \textit{Selection} and do not have any applic
 
 \section{Conclusion}
 
-In this chapter, the Design Suggestion has been defined with design goals, the navigation map, the visualisation of views and data, and the mapping of interaction patterns. Furthermore, the whole design is done hardware independent in order to comply with \gls{sdg} 1. \newline
-To answer \gls{srq} 4 that asks for the added value that can be created by bringing this functionality into virtual reality, several (theoretical) benefits have been found, although they can only be confirmed upon developing and evaluation the prototype application. One major advantage can be the multiple linked views that provide easier viewing access to all relevant data as well as the advanced filtering by categories which can be done intuitively with customized 3D objects. Furthermore, the supporting views are not visualised on eye-height and thus do not prevent a clear view on the relevant data. \newline
+In this chapter, the Design Suggestion has been defined with design goals, the navigation map, the visualisation of views and data, and the mapping of interaction patterns. Furthermore, the whole design is done hardware independent in order to comply with \gls{sdg} 1. To answer \gls{srq} 4 that asks for the added value that can be created by bringing this functionality into virtual reality, several (theoretical) benefits have been found, although they can only be confirmed upon developing and evaluation the prototype application. One major advantage can be the multiple linked views that provide easier viewing access to all relevant data as well as the advanced filtering by categories which can be done intuitively with customized 3D objects. Furthermore, the supporting views are kept to a minimum and should never prevent a clear view on the relevant data. \newline
 In order to evaluate this design, the next chapter describes the \textit{Development} of the prototype which is based on this \textit{Suggestion}.
