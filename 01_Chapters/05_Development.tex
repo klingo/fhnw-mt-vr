@@ -182,7 +182,6 @@ To at least partially address this problem, a caching of the filtered data for t
 	\item 2016-8-27-11100010101 \textit{(selection of a specific day with different category states)}
 \end{itemize}
 With eleven categories, over 2'048 different combinations can be made across them. If this is considered for a whole year (365 days) there are a staggering amount of 747'520 different key-combinations, which makes it impractical to try to pre-cache every single combination. Due to this an on-demand cache is implemented to at least massively reduce the loading times of previously selected combinations. Listing \ref{lst:csharpdictionarydefinition} shows all definition for the different containers that hold the information during runtime.
-
 \begin{lstlisting}[caption={Dictionary }, label={lst:csharpdictionarydefinition}]
 public Dictionary<string, DataTable> dataTableDict;
 private Dictionary<string, float[]> chartValuesDict;
