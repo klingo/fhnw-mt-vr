@@ -90,7 +90,6 @@ It can be concluded, that the 'Gesture Controllers' have the highest fit, and al
 This combination of input methods are best met with the HTC Vive (\url{https://www.vive.com/}) that was unveiled by HTC in early 2016. The bundle consists of a \gls{hmd}, two gesture controllers (as explained in Chapter \ref{SubSubSectionGestureControllers}) and two so called 'Lighthouses' (as explained in Chapter \ref{360MotionTracking}) that when set up in opposite corner allow for a full motion tracking.
 
 
-
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
@@ -182,15 +181,22 @@ To at least partially address this problem, a caching of the filtered data for t
 	\item 2016-3-0-11111111111 \textit{(single month selected and all categories active)}
 	\item 2016-8-27-11100010101 \textit{(selection of a specific day with different category states)}
 \end{itemize}
-With eleven categories, over 2'048 different combinations can be made across them. If this is considered for a whole year (365 days) there are a staggering amount of 747'520 different key-combinations, which makes it impractical to try to pre-cache every single combination. Due to this an on-demand cache is implemented to at least massively reduce the loading times of previously selected combinations.
+With eleven categories, over 2'048 different combinations can be made across them. If this is considered for a whole year (365 days) there are a staggering amount of 747'520 different key-combinations, which makes it impractical to try to pre-cache every single combination. Due to this an on-demand cache is implemented to at least massively reduce the loading times of previously selected combinations. See Listing \ref{lst:csharpdictionarydefinition} .s.df.sdf.
 
-\begin{lstlisting}[caption=a test for a C$^\sharp$ code, label=lst:test]
+\begin{lstlisting}[caption={Dictionary }, label={lst:csharpdictionarydefinition}]
 public Dictionary<string, DataTable> dataTableDict;
 private Dictionary<string, float[]> chartValuesDict;
 private Dictionary<string, string[]> chartLabelsDict;
 private Dictionary<string, List<string[]>> tableRowsDict;
 \end{lstlisting}
 
+
+\begin{lstlisting}[caption={Dictionary }, label={lst:csharpdictionarydefinition}]
+public Dictionary<string, DataTable> dataTableDict;
+private Dictionary<string, float[]> chartValuesDict;
+private Dictionary<string, string[]> chartLabelsDict;
+private Dictionary<string, List<string[]>> tableRowsDict;
+\end{lstlisting}
 
 %-----------------------------------
 %	SUBSECTION 3
