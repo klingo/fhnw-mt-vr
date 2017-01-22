@@ -181,7 +181,7 @@ To at least partially address this problem, a caching of the filtered data for t
 	\item 2016-3-0-11111111111 \textit{(single month selected and all categories active)}
 	\item 2016-8-27-11100010101 \textit{(selection of a specific day with different category states)}
 \end{itemize}
-With eleven categories, over 2'048 different combinations can be made across them. If this is considered for a whole year (365 days) there are a staggering amount of 747'520 different key-combinations, which makes it impractical to try to pre-cache every single combination. Due to this an on-demand cache is implemented to at least massively reduce the loading times of previously selected combinations. Listing \ref{lst:csharpdictionarydefinition} shows all definitions for the different containers that hold the information during runtime. \textit{dataTableDict} stores the different \textit{DataTable}s per month, \textit{chartValuesDict} and \textit{chartLabelsDict} contain the labels and values for all bar charts with their long unique key, and finally \textit{tableRowsDict} which helds the information for the table again with the long unique key.
+With eleven categories, over 2'048 different combinations can be made across them. If this is considered for a whole year (365 days) there are a staggering amount of 747'520 different key-combinations, which makes it impractical to try to pre-cache every single combination. Due to this an on-demand cache is implemented to at least massively reduce the loading times of previously selected combinations. Listing \ref{lst:csharpdictionarydefinition} shows all definitions for the different containers that hold the information during runtime. \textit{dataTableDict} stores the different \textit{DataTable}s per month, \textit{chartValuesDict} and \textit{chartLabelsDict} contain the labels and values for all bar charts with their long unique key, and finally \textit{tableRowsDict} which helds the information for the table again with the long unique key. All these attributes are defined in the \textit{DataViewManager.cs} class that is referenced in the \textit{SceneManager.cs} class which is a Singleton instance and thus is guaranteed to only exist once in runtime and is also always accessible from any other script.
 \begin{lstlisting}[caption={Dictionary definitions for data storage during runtime}, label={lst:csharpdictionarydefinition}]
 public Dictionary<string, DataTable> dataTableDict;
 private Dictionary<string, float[]> chartValuesDict;
@@ -300,8 +300,50 @@ It is important to have an effective and clean code structure that reflects the 
 \subsection{Views / UI}
 
 
+
+%-----------------------------------
+%	SUBSUBSECTION 1
+%-----------------------------------
+\subsubsection{View 1: Year Overview}
+
 Purpose of view:
 
+
+%-----------------------------------
+%	SUBSUBSECTION 2
+%-----------------------------------
+\subsubsection{View 2: Month Overview}
+
+Purpose of view:
+
+
+%-----------------------------------
+%	SUBSUBSECTION 3
+%-----------------------------------
+\subsubsection{View 3: Year Selection}
+
+Purpose of view:
+
+%-----------------------------------
+%	SUBSUBSECTION 4
+%-----------------------------------
+\subsubsection{View 4: Categories Filtering}
+
+Purpose of view:
+
+%-----------------------------------
+%	SUBSUBSECTION 5
+%-----------------------------------
+\subsubsection{View 5: Fin. Transactions Overview}
+
+Purpose of view:
+
+%-----------------------------------
+%	SUBSUBSECTION 6
+%-----------------------------------
+\subsubsection{View 6: Fin. Transaction Details}
+
+Purpose of view:
 
 
 %-----------------------------------
