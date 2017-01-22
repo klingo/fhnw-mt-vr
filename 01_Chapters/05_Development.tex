@@ -149,12 +149,7 @@ Figure \ref{fig:steamvrselected} shows the general architecture of the Steam VR 
 
 \subsection{Data Model}
 
-One of the main challenges is to get reasonable performance while working with a not so small data set (600+ entries as shown in Appendix \ref{AppendixA}) that can be filtered not only by year/month/day but also by several different categories atop of that. In order to not always filter through the whole data set, it will be split up in smaller parts that contain only data for a specific month in a specific year. While reading in the CSV file, multiple instances of the \textit{System.Data.DataTable} class are created and stored with the unique key \textit{\<year\>-\<month\>} in a \textit{System.Collections.Generic.Dictionary} which is the C\# equivalent of a HashMap in Java.
-
-
-Represents a databindable, customized view of a DataTable for sorting, filtering, searching, editing, and navigation. The DataView does not store data, but instead represents a connected view of its corresponding DataTable.
-
-https://msdn.microsoft.com/en-us/library/system.data.datatable
+One of the main challenges is to get reasonable performance while working with a not so small data set (600+ entries as shown in Appendix \ref{AppendixA}) that can be filtered not only by year/month/day but also by several different categories atop of that. In order to not always filter through the whole data set, it will be split up in smaller parts that contain only data for a specific month in a specific year. While reading in the CSV file, multiple instances of the \textit{[System.Data.DataTable]} class are created and stored with the unique key \textit{[$<$year$>$-$<$month$>$]} in a \textit{[System.Collections.Generic.Dictionary]} which is the C\# equivalent of a HashMap in Java. For the filtering of the DataTable, the \textit{[System.Data.DataView]} class is used which itself does not store data but represents a connected view of a DataTable. \newline
 
 big challenge with large data saet and multiplse ways of filtering (year, month, day, multiple categories)
 caching had to be implemented
