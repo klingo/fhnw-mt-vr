@@ -531,7 +531,9 @@ public void AddYearToTable(int year) {
 	\end{center}
 \end{figure}
 
-\textbf{Implementation details:} Each bar of the two charts has the \texttt{ChartBarClick.cs} script attached to it which is responsible for all direct interaction with it. It consists of three methods: \texttt{StartTouching()}, \texttt{StopTouching()}, and \texttt{StartUsing()}. The first to make sure that the bar becomes slightly opaque upon "touching" it and then returns to its normal colour when the "touching" ends. The \texttt{StartUsing} method first checks to which chart this bar belongs, stops any other flashing bars if existing, starts flashing the selected bar, updates the information about the selected month/day in the \texttt{SceneManager.cs} and finally triggers the following method: \texttt{SceneManager.Instance.updateSelection(label);} The \texttt{label} in this case can either be a numeric value of the selected day, or a string value of the selected month.
+\textbf{Implementation details:} Each bar of the two charts has the \texttt{ChartBarClick.cs} script attached to it which is responsible for all direct interaction with it. It consists of three methods: \texttt{StartTouching()}, \texttt{StopTouching()}, and \texttt{StartUsing()}. The first to make sure that the bar becomes slightly opaque upon "touching" it and then returns to its normal colour when the "touching" ends. The \texttt{StartUsing} method first checks to which chart this bar belongs, stops any other flashing bars if existing, starts flashing the selected bar, updates the information about the selected month/day in the \texttt{SceneManager.cs} and finally triggers the following method: \newline
+\texttt{SceneManager.Instance.updateSelection(label);} \newline
+The \texttt{label} in this case can either be a numeric value of the selected day, or a string value of the selected month.
 
 
 
