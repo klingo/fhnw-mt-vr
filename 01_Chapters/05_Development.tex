@@ -480,9 +480,7 @@ The application currently only supports a single CSV file to be read in, but it 
 
 \textbf{Purpose of interaction:} This interaction is automatically triggered upon starting the application in the \texttt{Start()} method of Unity, which is called on that moment when a script is enabled, just before all other methods can be called. Since this method has to be executed as one of the very first things, it is part of the \texttt{SceneManger.cs} class, which is assigned to the same empty GameObject like the SDKManager from \gls{vrtk} is. Due to this it is ensured that it is called immediately and not only when a specific GameObject is "used" for the first time.
 
-\textbf{Implementation details:}
-
-Es war ein mal eine \texttt{testomato} die sehr toll war.
+\textbf{Implementation details:} The application looks for all \texttt{*.csv} files that exist in the root-directory of the application and takes the first one it finds. The information is read and stored in a \texttt{DataTable} out of which a \texttt{DataView} is created that can be sorted by the date of the financial transactions. Based on the sorted list, the first and last date can be read which gives an indication for how many month and year loops need to be done in order to filter and store every single. Since filtering is a resource-intensive task, the filtered views are stored back into DataTables and then put with their unique key (\texttt{[$<$year$>$-$<$month$>$]}) into a Dictionary: \texttt{public Dictionary<string, DataTable> dataTableDict;}. These DataTables are then later used for a better performing sub-filtering on just the individual months data-set.
 
 %-----------------------------------
 %	SUBSUBSECTION 2
