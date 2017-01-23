@@ -478,7 +478,7 @@ More detailed information about the implementation and code design of these is p
 
 The application currently only supports a single CSV file to be read in, but it can be of any name as long as it is located in the projects root folder.
 
-\textbf{Purpose of interaction:} This interaction is automatically triggered upon starting the application in the \textit{Start()} method of Unity, which is called on that moment when a script is enabled, just before all other methods can be called. Since this method has to be executed as one of the very first things, it is part of the \textit{SceneManger.cs} class, which is assigned to the same empty GameObject like the SDKManager from \gls{vrtk} is. Due to this it is ensured that it is called immediately and not only when a specific GameObject is "used" for the first time.
+\textbf{Purpose of interaction:} This interaction is automatically triggered upon starting the application in the \texttt{Start()} method of Unity, which is called on that moment when a script is enabled, just before all other methods can be called. Since this method has to be executed as one of the very first things, it is part of the \texttt{SceneManger.cs} class, which is assigned to the same empty GameObject like the SDKManager from \gls{vrtk} is. Due to this it is ensured that it is called immediately and not only when a specific GameObject is "used" for the first time.
 
 \textbf{Implementation details:}
 
