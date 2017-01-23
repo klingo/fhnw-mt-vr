@@ -551,7 +551,8 @@ public void AddYearToTable(int year) {
 		\label{fig:unityupdateselection}
 	\end{center}
 \end{figure}
-This implementation with a Coroutine that calls a 2nd Thread was necessary to avoid freezing in the whole \gls{ve} for several seconds during the very CPU intensive task of filtering and preparing the datasets. It further mitigates the risk now of potential motion-sickness that could occur in such situations.
+This implementation with a Coroutine that calls a 2nd Thread was necessary to avoid freezing in the whole \gls{ve} for several seconds during the very CPU intensive task of filtering and preparing the datasets. It further mitigates the risk now of potential motion-sickness that could occur in such situations. \newline
+Some additional challenges came up with this approach though, as certain functions are only allowed (by the Unity Game Engine) to be called from the \textbf{Main Thread} and not from a 2nd Thread. This required that the output of these function calls had to be generated before calling the 2nd Thread and then passing them on into it, respectively making it available to it inside the class itself.
 
 
 %-----------------------------------
