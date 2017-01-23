@@ -495,7 +495,7 @@ The application currently only supports a single CSV file to be read in, but it 
 YearTable yearTable = GameObject.FindObjectOfType<YearTable>();
 yearTable.AddYearToTable(currYear);
 \end{lstlisting}
-Inside the \texttt{YearTable.cs} class, the method \texttt{AddYearToTable(int year)} is called which creates a new instance of the GameObject that represents an entry in the table and has been stored as a prefab. This allows to seamlessly create new objects that have the exact same configuration. This new GameObject is then set as a child of the class itself and thus the "frame" where all the rows are hold together. If the list was empty when the new year was added, its colour is changed to indicate that this row has been preselected. All future entries will not have this modification and thus remain with a white background colour. A reference to the \texttt{Image} whose colour was changed has to be stored in the \texttt{SceneManager.cs} class to make sure that when a different year is selected, the \texttt{SceneManager.cs} still remembers which \texttt{Image} was selected before and therefore reset its colour back to white. Listing \ref{lst:csharpyeartable} shows in a simplified way how this logic looks like in the \texttt{YearTable.cs} class.
+Inside the \texttt{YearTable.cs} class, the method \texttt{AddYearToTable(int year)} is called which creates a new instance of the GameObject that represents an entry in the table and has been stored as a prefab. This allows to seamlessly create new objects that have the exact same configuration. This new GameObject is then set as a child of the class itself and thus the "frame" where all the rows are hold together. If the list was empty when the new year was added, its colour is changed to indicate that this row has been preselected. All future entries will not have this modification and thus remain with a white background colour. A reference to the \texttt{Image} whose colour was changed has to be stored in the \texttt{SceneManager.cs} class to make sure that when a different year is selected, the \texttt{SceneManager.cs} still remembers which \texttt{Image} was selected before and therefore reset its colour back to white. Listing \ref{lst:csharpyeartable} shows in a \textbf{simplified} way how this logic looks like in the \texttt{YearTable.cs} class.
 \begin{lstlisting}[caption={YearTable.cs : Simplification of adding a new year to the table}, label={lst:csharpyeartable}]
 public void AddYearToTable(int year) {
   Year newYearRow;
@@ -515,9 +515,6 @@ public void AddYearToTable(int year) {
   yearRows.Add(newYearRow);
 }
 \end{lstlisting}
-
-
-
 
 
 %-----------------------------------
