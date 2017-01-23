@@ -481,7 +481,43 @@ The application currently only supports a single CSV file to be read in, but it 
 \textbf{Purpose of interaction:} This interaction is automatically triggered upon starting the application in the \textit{Start()} method of Unity, which is called on that moment when a script is enabled, just before all other methods can be called. Since this method has to be executed as one of the very first things, it is part of the \textit{SceneManger.cs} class, which is assigned to the same empty GameObject like the SDKManager from \gls{vrtk} is. Due to this it is ensured that it is called immediately and not only when a specific GameObject is "used" for the first time.
 
 \textbf{Implementation details:}
+\begin{lstlisting}[caption={Snapshot of reading and sotring data from CSV}, label={lst:csharpdictionarydefinition}]
+dvManager = DataViewManager.CreateInstance<DataViewManager>();
 
+dataTable = ConvertCSVtoDataTable(csvFilePath);
+dataView = new DataView(dataTable);
+// sort the DataView by Date
+dataView.Sort = "[Date] ASC";
+// save it back to the DataTable
+dataTable = dataView.ToTable();
+Logger.Log(1, dataView.Count + " entries loaded and sorted to DataView!");
+
+// Get the first and last Date from the (sorted) DataTable.
+firstDate = (DateTime)dataTable.Rows[0]["Date"];
+lastDate = (DateTime)dataTable.Rows[dataTable.Rows.Count - 1]["Date"];
+// Create all DataViews in the DataViewManager
+for (int currYear = lastDate.Year; currYear >= firstDate.Year; currYear--) {
+	int startMonth = 1;
+	int endMonth = 12;
+	if (currYear == lastDate.Year) {
+		// only if the current year is the same as the last year, loop until that dates month, otherwise to 12
+		endMonth = lastDate.Month;
+	}
+	if (currYear == firstDate.Year) {
+		// only if the current year is th same as the first year, loop from that month onwards, otherwis from 1
+		startMonth = firstDate.Month;
+	}
+	for (int currMonth = startMonth; currMonth <= endMonth; currMonth++) {
+		dvManager.StoreFilteredDataTable(dataTable, currYear, currMonth);
+	}
+	// Also store a table for the year
+	dvManager.StoreFilteredDataTable(dataTable, currYear);
+
+	// Add the current year to the year selection table
+	YearTable yearTable = GameObject.FindObjectOfType<YearTable>();
+	yearTable.AddYearToTable(currYear);
+}
+\end{lstlisting}
 
 
 %-----------------------------------
