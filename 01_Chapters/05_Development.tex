@@ -6,6 +6,32 @@
 
 \label{ChapterDevelopment}
 
+% ################################################################
+\definecolor{bluekeywords}{rgb}{0,0,1}
+\definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{redstrings}{rgb}{0.64,0.08,0.08}
+\definecolor{xmlcomments}{rgb}{0.5,0.5,0.5}
+\definecolor{types}{rgb}{0.17,0.57,0.68}
+
+\lstset{language=[Sharp]C,
+	captionpos=b,
+	%numbers=left, %Nummerierung
+	%numberstyle=\tiny, % kleine Zeilennummern
+	frame=lines, % Oberhalb und unterhalb des Listings ist eine Linie
+	showspaces=false,
+	showtabs=false,
+	breaklines=true,
+	showstringspaces=false,
+	breakatwhitespace=true,
+	escapeinside={(*@}{@*)},
+	commentstyle=\color{greencomments},
+	morekeywords={partial, var, value, get, set},
+	keywordstyle=\color{bluekeywords},
+	stringstyle=\color{redstrings},
+	basicstyle=\ttfamily\small,
+}
+% ################################################################
+
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
@@ -64,7 +90,6 @@ It can be concluded, that the 'Gesture Controllers' have the highest fit, and al
 This combination of input methods are best met with the HTC Vive (\url{https://www.vive.com/}) that was unveiled by HTC in early 2016. The bundle consists of a \gls{hmd}, two gesture controllers (as explained in Chapter \ref{SubSubSectionGestureControllers}) and two so called 'Lighthouses' (as explained in Chapter \ref{360MotionTracking}) that when set up in opposite corner allow for a full motion tracking.
 
 
-
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
@@ -75,103 +100,429 @@ All used software for the development of the \gls{vr} prototype is summarised an
 
 
 \subsubsection{Game Engine}
-At the foundation, \cite{Unity2016} multi-platform game engine and development toolkit 'Unity 3D' is used. It offers the option to not only develop 2D applications, but also 3D applications that can be run in \gls{vr}. It is used for the actual design of the \gls{ve} and the configuration of 3D objects.
+At the foundation, the multi-platform game engine and development toolkit 'Unity 3D' is used. It offers the option to not only develop 2D, but also 3D applications that can be run in \gls{vr}. It is used for the actual design of the \gls{ve}, and the placement and configuration of 3D objects.
 
 \textbf{Software:} Unity 3D \newline
 \textbf{Version:} 5.5.0f3 \newline
+\textbf{Publisher:} \cite{Unity2016} \newline
 \textbf{Link:} \url{http://unity3d.com/}
 
 
 \subsubsection{Game Engine Plugins}
-For the integration of the \gls{sdk} to access the specific methods and functions of the HTC Vive, the SteamVR plugin for Unity is used \citep{Valve2016a}. In addition to this, \gls{vrtk} will be used as a toolkit to rely on 'standardised' ways for certain \gls{vr}-specific interactions and functions in Unity 3D \citep{Sysdia2017}. Even though the HTC Vive has been chosen for the hardware part, due to the usage of the SteamVR plugin and the \gls{vrtk}, only little to none changes should be required in order to have the prototype application also run other supported hardware such as the Oculus Rift, since both of them support multiple \glspl{hmd}.
+For the integration of the \gls{sdk} to access the specific methods and functions of the HTC Vive, the SteamVR plugin for Unity is used. In addition to this, \gls{vrtk} will be used as a toolkit to rely on 'semi-standardised' ways for certain \gls{vr}-specific interactions and functions in Unity 3D. Even though the HTC Vive has been chosen for the hardware part, due to the usage of the SteamVR plugin and the \gls{vrtk}, only little to none changes should be required in order to have the prototype application also run other supported hardware such as the Oculus Rift, since both of them support multiple \glspl{hmd}.
 
 \textbf{Software:} SteamVR Plugin \newline
 \textbf{Version:} 1.1.1 \newline
+\textbf{Publisher:} \cite{Valve2016a} \newline
 \textbf{Link:} \url{https://www.assetstore.unity3d.com/en/#!/content/32647}
 
 \textbf{Software:} \gls{vrtk} - Virtual Reality Toolkit \newline
 \textbf{Version:} 3.0.0 \newline
+\textbf{Publisher:} \cite{Sysdia2017} \newline
 \textbf{Link:} \url{https://www.assetstore.unity3d.com/en/#!/content/64131} \newline
 \textbf{Link:} \url{https://vrtoolkit.readme.io/}
 
 
 \subsubsection{\gls{ide}}
-Visual Studio Community 2015 from \cite{Microsoft2015} is used for the development of the Unity Scripts in the programming language C\#. These scripts handle and manage the whole \gls{ve} by triggering interactions of the 3D objects defined and placed in Unity 3D.
+Microsoft Visual Studio Community 2015 from  is used for the development of the Unity Scripts in the programming language C\#. These scripts handle and manage the whole \gls{ve} by triggering interactions of the 3D objects defined and placed in Unity 3D.
 
 \textbf{Software:} Microsoft Visual Studio Community \newline
 \textbf{Version:} 2015 \newline
+\textbf{Publisher:} \cite{Microsoft2015} \newline
 \textbf{Link:} \url{https://www.microsoft.com/en-us/download/details.aspx?id=48146}
  
 
 \subsubsection{3D Graphics}
 
-Finally, for the design of custom 3D models as representations of the category icons as shown in Figure \ref{fig:categoriesicons} in Chapter \ref{SubSectionCategoriesFiltering}, the  open-source 3D computer graphics software Blender is used \citep{Blender2016}. The exported models are fully compatible with Unity 3D and can be seamlessly imported and used.
+Finally, for the design of custom 3D models as representations of the category icons as shown in Figure \ref{fig:categoriesicons} in Chapter \ref{SubSectionCategoriesFiltering}, the  open-source 3D computer graphics software Blender is used. The exported models are fully compatible with Unity 3D and can be seamlessly imported and used.
 
 \textbf{Software:} Blender \newline
 \textbf{Version:} 2.78a \newline
+\textbf{Publisher:} \cite{Blender2016} \newline
 \textbf{Link:} \url{https://www.blender.org/}
-
-
-
-
-% USE ONLY IF REMOVED FROM CHAPTER 1 (DELINEATIONS ETC)
-%\begin{figure}[h]
-%	\begin{center}
-%		\includegraphics[width=14cm]{03_Figures/04_Valve/OpenVR_SteamVR_selected.png}
-%		\caption[Steam VR Unity Plugin]{Steam VR Unity Plugin (adopted from \cite{Valve2016})}
-%		\label{fig:steamvrselected}
-%	\end{center}
-%\end{figure}
-
 
 
 %----------------------------------------------------------------------------------------
 %	SECTION 3
 %----------------------------------------------------------------------------------------
 
-\section{Architecture}
+\section{Architecture and Design}
 
-TODO:
-3. architecture
-
-
-
+A key part of the prototype development is the (software) architecture as well as the overall (software) design. In the following sub-chapters, several aspects of the architecture and design are discussed, which includes the general architecture, the data model, and the code structure.
 
 
 %-----------------------------------
 %	SUBSECTION 1
 %-----------------------------------
-\subsection{Subsection 1}
+\subsection{General Architecture}
 
-tbd
+Figure \ref{fig:steamvrselected} shows the general architecture of the Steam VR plugin for Unity 3D and how it acts as a wrapper for multiple different \glspl{hmd} that can be communicated with. The \gls{vrtk} itself then is part of the software itself as its scripts are used for the application and can also be extended to provide additional functionality that is not offered from the base toolkit. The base data set which is available as a .CSV file is accessed from within the software and stored inside multiple different data objects that are discussed in more detail in the following 'Data Model' chapter.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/04_Valve/OpenVR_SteamVR_selected.png}
+		\caption[Steam VR Unity Plugin]{Steam VR Unity Plugin (adopted from \cite{Valve2016})}
+		\label{fig:steamvrselected}
+	\end{center}
+\end{figure}
+
 
 
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
 
-\subsection{Subsection 2}
+\subsection{Data Model}
 
-tbd
+One of the main challenges is to get reasonable performance while working with a not so small data set (600+ entries as shown in Appendix \ref{AppendixA}) that can be filtered not only by year/month/day but also by several different categories atop of that. In order to not always filter through the whole data set, it will be split up in smaller parts that contain only data for a specific month in a specific year. While reading in the CSV file, multiple instances of the \textit{[System.Data.DataTable]} class are created and stored with the unique key \textit{[$<$year$>$-$<$month$>$]} in a \textit{[System.Collections.Generic.Dictionary]} which is the C\# equivalent of a HashMap in Java. For the filtering of the DataTable, the \textit{[System.Data.DataView]} class is used which itself does not store data but represents a connected view of a DataTable. While this already helps with the performance, as soon as the category filtering comes in place it still is relatively slow as all twelve months need to be updated. \newline
+To at least partially address this problem, a caching of the filtered data for the bar charts and table has been considered. For this, another unique key had to be defined in the form of \textit{[$<$year$>$-$<$month$>$-$<$day$>$-$<$binaryCategory$>$]}. The "binaryCategory" is a binary state representation of all \textbf{eleven} categories where each one of them is either represented as a '0' (inactive) or a '1' (active). Following are some example to indicate how certain situations can be represented:
+\begin{itemize}[noitemsep,nolistsep]
+	\item 2016-0-0-00000000000 \textit{(only year selected and all categories inactive)}
+	\item 2016-3-0-11111111111 \textit{(single month selected and all categories active)}
+	\item 2016-8-27-11100010101 \textit{(selection of a specific day with different category states)}
+\end{itemize}
+With eleven categories, over 2'048 different combinations can be made across them. If this is considered for a whole year (365 days) there are a staggering amount of 747'520 different key-combinations, which makes it impractical to try to pre-cache every single combination. Due to this an on-demand cache is implemented to at least massively reduce the loading times of previously selected combinations. Listing \ref{lst:csharpdictionarydefinition} shows all definitions for the different containers that hold the information during runtime. \textit{dataTableDict} stores the different \textit{DataTable}s per month, \textit{chartValuesDict} and \textit{chartLabelsDict} contain the labels and values for all bar charts with their long unique key, and finally \textit{tableRowsDict} which helds the information for the table again with the long unique key. All these attributes are defined in the \textit{DataViewManager.cs} class that is referenced in the \textit{SceneManager.cs} class which is a Singleton instance and thus is guaranteed to only exist once in runtime and is also always accessible from any other script.
+\begin{lstlisting}[caption={Dictionary definitions for data storage during runtime}, label={lst:csharpdictionarydefinition}]
+public Dictionary<string, DataTable> dataTableDict;
+private Dictionary<string, float[]> chartValuesDict;
+private Dictionary<string, string[]> chartLabelsDict;
+private Dictionary<string, List<string[]>> tableRowsDict;
+\end{lstlisting}
+
+
+%-----------------------------------
+%	SUBSECTION 3
+%-----------------------------------
+
+\subsection{Code Structure}
+
+It is important to have an effective and clean code structure that reflects the different layers which all together become the software itself. The following Figure \ref{fig:unitycodestructure} shows the project structure in Unity 3D while Table \ref{tbl:codestructuredesc} explains this in more detail. The structure follows some best practices that are also applied in SteamVR and \gls{vrtk}.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=7cm]{03_Figures/08_Development/CodeStructure.png}
+		\caption{Prototype project structure in Unity 3D}
+		\label{fig:unitycodestructure}
+	\end{center}
+\end{figure}
+
+
+\begin{longtable}{ | p{3cm} | p{11cm} |}
+	\hline
+	\textbf{Folder} & \textbf{Description} \\
+	\hline
+	\endfirsthead % Line(s) to appear as head of the table on the first page
+	\multicolumn{2}{c}%
+	{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+	\hline
+	\textbf{Folder} & \textbf{Description} \\
+	\hline
+	\endhead % Line(s) to appear at top of every page (except first)
+	\hline
+	\multicolumn{2}{r}{\textit{Continued on next page}} \\
+	\endfoot % Last line(s) to appear at the bottom of every page (except last)
+	\endlastfoot % Last line(s) to appear at the end of the table
+	\hline
+		\textbf{Assets} &
+		This is the base-folder which is given by Unity 3D itself. It contains all files that are either required or created by the developer. \\
+	\hline
+		Materials &
+		The Materials folder contains material (*.mat) files that can be applied to 2D/3D objects. \\
+	\hline
+		Models &
+		In this folder, all models created in Blender (*.blend) are stored which can be dragged into the 3D scene. \\
+	\hline
+		\textrightarrow{} Materials &
+		Contains all model-specific material (*.mat) files that are created in Blender. \\
+	\hline
+		Plugins &
+		Additional C\# plugins (*.dll) are put here such as System.Data.dll which allows the processing and manipulation of data files. \\
+	\hline
+		Prefabs &
+		In this folder, fully configured GameObjects can be stored (*.prefab) and instantiated multiple times. All instances inherit the base configuration and changes can be applied to all of them very easily. The individual bars of the bar chart are an example of such a prefab. \\
+	\hline
+		Resources &
+		The base folder for where all additional resources are located. \\
+	\hline
+		\textrightarrow{} CSV &
+		In this sub-folder, the data file (*.csv) which contains the categorized financial expenses is located. \\
+	\hline
+		Scenes &
+		Within one Unity project, there can be multiple scenes (*.unity), which can be seen some kind of broken down parts of bigger applications where multiple different locations are available. In this prototype there is only a single scene used. \\
+	\hline
+		Scripts &
+		The base folder for all C\# scripts (*.cs) that are used. \\
+	\hline
+		\textrightarrow{} Charts &
+		Contains all scripts that are related to the functionality of the bar charts. \\
+	\hline
+		\textrightarrow{} Details &
+		All scripts related to the detail view where all information about a financial transaction are shown. \\
+	\hline
+		\textrightarrow{} Events &
+		Custom events that can be triggered from the gesture controllers are located here. \\
+	\hline
+		\textrightarrow{} GameObjects &
+		Scripts related to specific game objects (e.g. the category icons) are stored in this folder. \\
+	\hline
+		\textrightarrow{} Managers &
+		Contains two manager classes that hold together the whole information of the running scene and the stored/cached data. \\
+	\hline
+		\textrightarrow{} Tables &
+		All scripts that are related to the table which shows a list of financial transactions \\
+	\hline
+		\textrightarrow{} Utilities &
+		All other utility classes such as a unified Debugging/Logging. \\
+	\hline
+		Sprites &
+		In this folder any kind of images (e.g. *.png) are stored that are used within the application, such as the threshold line for the bar charts. \\
+	\hline
+		SteamVR &
+		Here all folders and files from the SteamVR plugin are copied to. It also contains certain prefabs that control the \gls{hmd} and gesture controllers. \\
+	\hline
+		\gls{vrtk} &
+		Similar to the SteamVR folder, all scripts and prefabs from \gls{vrtk} are located under this folder. \\
+	\hline
+	\caption{Explanation of prototype project structure in Unity 3D}
+	\label{tbl:codestructuredesc}
+\end{longtable}
 
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
 %----------------------------------------------------------------------------------------
 
-\section{Data Model}
+\section{Implementation of Views and Interaction}
+
+In this chapter, an overview of all the views and their usage is provided, as well the interactions between them is mentioned.
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\subsection{Views / UI}
+
+The following list of views refers back to the Suggestion chapter where the Navigation Map (Figure \ref{fig:navigationmap}) and Interaction Map (Figure \ref{fig:interactionmap}) are described. For each view a short explanation about its purpose is provided, alongside some design aspects from the development, and a screenshot that shows the view of final prototype application. Figure \ref{fig:unityoverview} gives an overview over the whole scene in Unity 3D where all the different views are arranged almost in a circle around the centre where the user will be spawning.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/08_Development/Unity_Overview.png}
+		\caption{Scene Overview in Unity 3D}
+		\label{fig:unityoverview}
+	\end{center}
+\end{figure}
+
+%-----------------------------------
+%	SUBSUBSECTION 1
+%-----------------------------------
+\subsubsection{View 1: Year Overview}
+
+This is the first view the user will see when he spawns in the \gls{ve}, it is located directly in front of him.
+
+\textbf{Purpose of view:} It provides a comprehensive overview over the situation of the financial expenses. Each category has its own expenses threshold defined which defines on what amount the vertical threshold line is drawn. This can be seen in Figure \ref{fig:unityview1} where the threshold is set to 3'300. If the total expenses of a month exceed the threshold, the amount of the bar above the line is in red colour compared to the rest below the line which is in green colour. This gives a very fast indication to the user in which months more money was spent than planned. When a single month is selected, the corresponding bar starts to flash. This allows for a better visual connection between the two charts than just relying on the label below them, which should increase the effectiveness of the "multiple linked views" concept. The bar chart further only includes the categories (and thresholds) that have been activated in view 3.
+
+\textbf{Possible Interaction:} Selecting a bar to...
+\begin{itemize}[noitemsep,nolistsep]
+	\item see the month overview bar chart (Path 3)
+	\item see a list of all financial transactions for that month (Path 4)
+\end{itemize}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/08_Development/View1_YearOverview.png}
+		\caption{View 1: Year Overview (live in \gls{vr})}
+		\label{fig:unityview1}
+	\end{center}
+\end{figure}
 
 
-TODO:
-4. data model
+%-----------------------------------
+%	SUBSUBSECTION 2
+%-----------------------------------
+\subsubsection{View 2: Month Overview}
+
+To the right of the year overview (View 1), the month overview can be found. It initially is empty until a month is selected in the year overview.
+
+\textbf{Purpose of view:} Contrary to the year overview, the individual days do not indicate their own total amount of expenses, but they rather stack up with all the previous expenses from that month. This gives the unique insight on which day exactly the threshold had been exceeded. This can be seen very nicely in Figure \ref{fig:unityview2} where the threshold of 3'330 was exceeded on June 21st. To not overload the view with too many numbers, they are only shown when there was a change compared to the previous day. Like the month overview, when a single day is selected, the bar starts flashing for an assisted visual connection. Again, this bar chart only includes the categories (and thresholds) that have been activated in view 3.
+
+\textbf{Possible Interaction:} Selecting a bar to...
+\begin{itemize}[noitemsep,nolistsep]
+	\item see a list of all financial transactions for that day (Path 4)
+\end{itemize}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/08_Development/View2_MonthOverview.png}
+		\caption{View 2: Month Overview (live in \gls{vr})}
+		\label{fig:unityview2}
+	\end{center}
+\end{figure}
+
+
+%-----------------------------------
+%	SUBSUBSECTION 3
+%-----------------------------------
+\subsubsection{View 3: Year Selection}
+
+To the left of the year overview (View 1), the year selection screen is shown in a small scrollable window. 
+
+\textbf{Purpose of view:} The purpose of this small window is to allow the user to view the data from different years and not only the most recent one, which is automatically pre-selected. The list is dynamically populated based on the CSV data source and can due to the scrolling functionality show many more than just a handful of years. By changing the selected year, all other data views will be reset and only the year overview gets populated again with the data from the selected year.
+
+\textbf{Possible Interaction:} Selecting a year to...
+\begin{itemize}[noitemsep,nolistsep]
+	\item see the year overview bar chart (Path 1)
+	\item clear the month overview bar chart (Path 2)
+	\item clear the table with financial transactions (Path 4)
+\end{itemize}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/08_Development/View3_YearSelection.png}
+		\caption{View 3: Year Selection (live in \gls{vr})}
+		\label{fig:unityview3}
+	\end{center}
+\end{figure}
+
+
+%-----------------------------------
+%	SUBSUBSECTION 4
+%-----------------------------------
+\subsubsection{View 4: Categories Filtering}
+
+Right in front of the user, a bit below eye sight is some kind of a pedestal on which the eleven category icons from Figure \ref{fig:categoriesicons} are represented as 3D models. 
+
+\textbf{Purpose of view:} Changing the selection of the categories should be as close to the user as possible but still not block his view on all the different charts and tables. Therefore it has been located right in front of him on a bit a lower height. Each icon can be in one of three different states: When the category is inactive and thus not considered for being displayed in any of the charts or table, then the object is represented in \textbf{white colour}. When the category is activated and the corresponding transactions are included in the other views, the object is shown in \textbf{green colour}. Due to the increased computation time when changing the selection, a third state had to be introduced that indicates with \textbf{yellow colour} that this category is currently being processed to either be activated or deactivated.
+
+\textbf{Possible Interaction:} Selecting a category icon to...
+\begin{itemize}[noitemsep,nolistsep]
+	\item apply the filter on the year overview bar chart (Path 5)
+	\item apply the filter on the month overview bar chart (Path 6)
+	\item apply the filter on list of financial transactions (Path 7)
+\end{itemize}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/08_Development/View4_CategoriesFiltering_Loading.png}
+		\caption{View 4: Categories Filtering (live in \gls{vr})}
+		\label{fig:unityview4}
+	\end{center}
+\end{figure}
+
+
+%-----------------------------------
+%	SUBSUBSECTION 5
+%-----------------------------------
+\subsubsection{View 5: Fin. Transactions Overview}
+
+To the right of the month overview (View 2), or opposite the year overview (View 1), the table with the list of financial transactions is positioned.
+
+\textbf{Purpose of view:} This table provides the most important information about the financial transactions. It is not only filtered by the activated category icons from View 3, it also either display all transactions from a whole month (View 2), or if a single day had been selected, then it only displays the transactions from that specific day. The table is sorted by date which should help to have good grasp of the data. If a row has been selected, it is highlighted with blue colour to ensure the connection from the detail view (View 6) to this table can always be made.
+
+\textbf{Possible Interaction:} Selecting a row to...
+\begin{itemize}[noitemsep,nolistsep]
+	\item see the full transaction details (Path 8)
+\end{itemize}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/08_Development/View5_FinTransactionsOverview.png}
+		\caption{View 5: Fin. Transactions Overview (live in \gls{vr})}
+		\label{fig:unityview5}
+	\end{center}
+\end{figure}
+
+
+%-----------------------------------
+%	SUBSUBSECTION 6
+%-----------------------------------
+\subsubsection{View 6: Fin. Transaction Details}
+
+Directly to the right of the table, the detail view is located. It is only displayed if a single transaction has been selected from the table (View 5).
+
+\textbf{Purpose of view:} In addition to the data that had already been shown in the table to the left (View 5), additional information about the transaction is presented here. The account number as well as the account name from which the payment was made are shown, the custom booking text is displayed and also the subcategory which helps to further understand what kind of payment this was exactly. From a navigation point of view, this is the last screen and does not allow for any further navigations.
+
+\textbf{Possible Navigation:} N/A
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/08_Development/View6_FinTransactionDetails.png}
+		\caption{View 6: Fin. Transaction Details (live in \gls{vr})}
+		\label{fig:unityview6}
+	\end{center}
+\end{figure}
+
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+\subsection{Interactions}
+
+Since the different views are rather far away from where the user is spawned, a pointer functionality has been introduced to the gesture controller. This is shown in Figure XXX alongside the button tutorial of the controller which is shown for a limited time in the form of tooltips.
+
+TODO: Create and add figure
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/08_Development/Unity_Pointer_Tutorial.png}
+		\caption{Gesture Controller Pointer and Button Tutorial as Tooltips (live in \gls{vr})}
+		\label{fig:unitypointer}
+	\end{center}
+\end{figure}
+
+By referring back to the Interaction Map in Figure \ref{fig:interactionmap}, four main interactions can be distinguished:
+\begin{itemize}[noitemsep,nolistsep]
+	\item Selecting a year in view 3 (Path 1 and 2)
+	\item Selecting a bar in a bar chart in view 1 or 2 (Path 3 and 4)
+	\item Selecting a category icon in view 4 (Path 5, 6, and 7)
+	\item Selecting a row in the table in view 5 (Path 8)
+\end{itemize}
+More detailed information about the implementation and code design of these is provided in the following sub-chapters.
+
+
+%-----------------------------------
+%	SUBSUBSECTION 1
+%-----------------------------------
+\subsubsection{Selecting a year}
+
+\textbf{Purpose of interaction:}
+
+\textbf{Implementation details:}
+
+
+%-----------------------------------
+%	SUBSUBSECTION 2
+%-----------------------------------
+\subsubsection{Selecting a bar in a bar chart}
+
+\textbf{Purpose of interaction:}
+
+\textbf{Implementation details:}
+
+
+%-----------------------------------
+%	SUBSUBSECTION 3
+%-----------------------------------
+\subsubsection{Selecting a category icon}
+
+\textbf{Purpose of interaction:}
+
+\textbf{Implementation details:}
+
+
+Category Selection - waiting for data load --> coloring!
+\gls{mdg} 1 that requires a high interactivity with tightly coupled actions/reactions.
 
 
 
-%----------------------------------------------------------------------------------------
-%	SECTION 5
-%----------------------------------------------------------------------------------------
+%-----------------------------------
+%	SUBSUBSECTION 4
+%-----------------------------------
+\subsubsection{Selecting a row in the table}
 
-\section{Implementation of Views and Navigation}
+\textbf{Purpose of interaction:}
+
+\textbf{Implementation details:}
+
+
+
+
 
 
 TODO:
@@ -184,12 +535,11 @@ TODO:
 
 
 
-Category Selection - waiting for data load --> coloring!
-\gls{mdg} 1 that requires a high interactivity with tightly coupled actions/reactions.
+
 
 
 %----------------------------------------------------------------------------------------
-%	SECTION 6
+%	SECTION 5
 %----------------------------------------------------------------------------------------
 
 \section{Conclusion}
@@ -198,6 +548,17 @@ Category Selection - waiting for data load --> coloring!
 TODO:
 6. Conclusion
 
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\subsection{Unity 3D}
+
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+\subsection{\gls{vrtk}}
 
 
 %% IDEA FOR PROTOTYPE
