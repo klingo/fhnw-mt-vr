@@ -480,16 +480,26 @@ The application currently only supports a single CSV file to be read in, but it 
 
 \textbf{Purpose of interaction:} This interaction is automatically triggered upon starting the application in the \texttt{Start()} method of Unity, which is called on that moment when a script is enabled, just before all other methods can be called. Since this method has to be executed as one of the very first things, it is part of the \texttt{SceneManger.cs} class, which is assigned to the same empty GameObject like the SDKManager from \gls{vrtk} is. Due to this it is ensured that it is called immediately and not only when a specific GameObject is "used" for the first time.
 
-\textbf{Implementation details:} The application looks for all \texttt{*.csv} files that exist in the root-directory of the application and takes the first one it finds. The information is read and stored in a \texttt{DataTable} out of which a \texttt{DataView} is created that can be sorted by the date of the financial transactions. Based on the sorted list, the first and last date can be read which gives an indication for how many month and year loops need to be done in order to filter and store every single. Since filtering is a resource-intensive task, the filtered views are stored back into DataTables and then put with their unique key (\texttt{[$<$year$>$-$<$month$>$]}) into a Dictionary: \texttt{public Dictionary<string, DataTable> dataTableDict;}. These DataTables are then later used for a better performing sub-filtering on just the individual months data-set.
+\textbf{Implementation details:} The application looks for all \texttt{*.csv} files that exist in the root-directory of the application and takes the first one it finds. The information is read and stored in a \texttt{DataTable} out of which a \texttt{DataView} is created that can be sorted by the date of the financial transactions. Sorting a DataView works based on the name of the corresponding column that has to be defined on the very first row. Based on the sorted list, the first and last date can be read which gives an indication for how many month and year loops need to be done in order to filter and store every single. Within this loop, also the list for the Year Selection view is prepared in the \texttt{YearTable.cs} class. Since filtering is a resource-intensive task, the filtered views are stored back into DataTables and then put with their unique key (\texttt{[$<$year$>$-$<$month$>$]}) into a Dictionary: \texttt{public Dictionary<string, DataTable> dataTableDict;}. These DataTables are then later used for a better performing sub-filtering on just the individual months data-set.
 
 %-----------------------------------
 %	SUBSUBSECTION 2
 %-----------------------------------
 \subsubsection{Selecting a year}
 
-\textbf{Purpose of interaction:}
+\textbf{Purpose of interaction:} Although the latest year from the data-set is automatically pre-selected for viewing and filtering, depending on the size of the data set there might also be data for previous years that the user should be able to look at. With the simple Year Selection view, that is dynamically populated during the CSV import, the user has the possibility to change the year in a very convenient way. See also Figure \ref{fig:unityview3} that shows how the Year Selection view looks like.
 
-\textbf{Implementation details:}
+\textbf{Implementation details:} 
+
+
+\begin{lstlisting}[caption={SceneManager.cs : Adding years to the YearTable}, label={lst:csharpaddingyearstotable}]
+// Add the current year to the year selection table
+YearTable yearTable = GameObject.FindObjectOfType<YearTable>();
+yearTable.AddYearToTable(currYear);
+\end{lstlisting}
+
+
+
 
 
 %-----------------------------------
