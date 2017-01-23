@@ -489,11 +489,44 @@ The application currently only supports a single CSV file to be read in, but it 
 
 \textbf{Purpose of interaction:} Although the latest year from the data-set is automatically pre-selected for viewing and filtering, depending on the size of the data set there might also be data for previous years that the user should be able to look at. With the simple Year Selection view, that is dynamically populated during the CSV import, the user has the possibility to change the year in a very convenient way. See also Figure \ref{fig:unityview3} that shows how the Year Selection view looks like.
 
-\textbf{Implementation details:} As part of the year-loop inside the \texttt{SceneManager.cs} class, the code snippet in Listing \ref{lst:csharpaddingyearstotable} is executed once for every year:
+\textbf{Implementation details:} As part of the year-loop inside the \texttt{SceneManager.cs} class, the code snippet in Listing \ref{lst:csharpaddingyearstotable} is executed once for every year. It looks for a GameObject that has the \texttt{YearTable} script assigned to it, which in this case is the frame of the whole view in which then multiple year objects can be displayed.
 \begin{lstlisting}[caption={SceneManager.cs : Adding years to the YearTable}, label={lst:csharpaddingyearstotable}]
 // Add the current year to the year selection table
 YearTable yearTable = GameObject.FindObjectOfType<YearTable>();
 yearTable.AddYearToTable(currYear);
+\end{lstlisting}
+
+
+
+\begin{lstlisting}[caption={SceneManager.cs : Adding years to the YearTable}, label={lst:csharpyeartable}]
+public class YearTable : MonoBehaviour {
+   public Year yearHolderPrefab;
+   List<Year> yearHolders = new List<Year>();
+   
+   public void AddYearToTable(int year) {
+
+      Year newYearHolder;
+      
+      // Instantiate new Year
+      newYearHolder = Instantiate(yearHolderPrefab);
+
+      newYearHolder.transform.SetParent(transform);
+
+      // Set the label
+      newYearHolder.yearText.text = year.ToString();
+
+      if (yearHolders.Count == 0) {
+         // This is the first year we add, and thus also the pre-selected one
+         Image firstYearImage = newYearHolder.GetComponent<Image>();
+         firstYearImage.color = SceneManager.Instance.selectedRowColor;
+         // store it in the scenemanager so it can be properly de-selected
+         SceneManager.Instance.selectedYearRowImage = firstYearImage;
+      }
+
+      // Finally, add the bar to the list
+      yearHolders.Add(newYearHolder);
+   }
+}
 \end{lstlisting}
 
 
