@@ -560,9 +560,11 @@ Some additional challenges came up with this approach though, as certain functio
 %-----------------------------------
 \subsubsection{Selecting a category icon}
 
-\textbf{Purpose of interaction:}
+\textbf{Purpose of interaction:} This covers one of the main flaws of the traditional solution to represent financial transactions to users: In addition to just displaying the data of a single category, they can be combined in any possible combination  and thus can give an unique insight into ones personal expenses. 
 
-\textbf{Implementation details:}
+\textbf{Implementation details:} When looking at Figure \ref{fig:unityupdateselection} from the previous interaction, the one for selecting a category is almost the same. The only difference is the beginning as the Coroutine is not triggered by the \texttt{updateSelection()} method, but by either \texttt{addGameObjectToCategoryFilter()} or \texttt{removeGameObjectFromCategoryFilter} where a reference to the \texttt{CategoryIconClick.cs} is also passed on (or an ArrayList in case all category icons are de-/selected). To make the user more aware of the fact that a loading process is ongoing, as soon as the Coroutine is started, the corresponding category object is coloured in \textbf{yellow}, as also shown in Figure \ref{fig:unityview4}. When the Coroutine ended, the colour of the category object is either changed to green (activated) or white (deactivated).
+
+
 
 
 Category Selection - waiting for data load --> coloring!
