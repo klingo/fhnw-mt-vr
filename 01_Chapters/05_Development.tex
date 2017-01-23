@@ -489,9 +489,7 @@ The application currently only supports a single CSV file to be read in, but it 
 
 \textbf{Purpose of interaction:} Although the latest year from the data-set is automatically pre-selected for viewing and filtering, depending on the size of the data set there might also be data for previous years that the user should be able to look at. With the simple Year Selection view, that is dynamically populated during the CSV import, the user has the possibility to change the year in a very convenient way. See also Figure \ref{fig:unityview3} that shows how the Year Selection view looks like.
 
-\textbf{Implementation details:} 
-
-
+\textbf{Implementation details:} As part of the year-loop inside the \texttt{SceneManager.cs} class, the code snippet in Listing \ref{lst:csharpaddingyearstotable} is executed once for every year:
 \begin{lstlisting}[caption={SceneManager.cs : Adding years to the YearTable}, label={lst:csharpaddingyearstotable}]
 // Add the current year to the year selection table
 YearTable yearTable = GameObject.FindObjectOfType<YearTable>();
