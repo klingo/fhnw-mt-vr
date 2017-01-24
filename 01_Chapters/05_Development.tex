@@ -575,12 +575,6 @@ Some additional challenges came up with this approach though, as certain functio
 \textbf{Implementation details:} Like the \texttt{CategoryIconClick.cs} for the category objects, or the \texttt{ChartBarClick.cs} for the chart bars, there also is a \texttt{TableRowClick.cs} class for when one of the rows in the table has been selected. Since the \texttt{Row.cs} class that is used to represent the individual rows in the table already has all detail information in it, the \texttt{updateDetailView()} method \texttt{SceneManager.cs} simply has to be called with a reference to itself. After checking that the provided reference is not \texttt{null} (which would cause the DetailView to be hidden), all the details from the row object are extracted and shown in the view.
 
 
-\ref{fig:unityview6}
-
-
-
-
-
 %----------------------------------------------------------------------------------------
 %	SECTION 5
 %----------------------------------------------------------------------------------------
