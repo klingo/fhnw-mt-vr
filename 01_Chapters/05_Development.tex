@@ -570,10 +570,9 @@ Some additional challenges came up with this approach though, as certain functio
 %-----------------------------------
 \subsubsection{Selecting a row in the table}
 
-\textbf{Purpose of interaction:}
+\textbf{Purpose of interaction:} The table with a list of financial transactions already gives a good overview to the user about the individual transactions that happened on the selected month or day. But sometimes this information is still not enough and more details are required. Similar to the approach of \cite{CodeScience2015}, a dedicated view for the detail information is defined. When a row in the table is selected, it is highlighted accordingly so that it at all times is clear from which entry in the table the details are shown now. This is also illustrated in Figure \ref{fig:unityview6}.
 
-
-\textbf{Implementation details:} Like the \texttt{CategoryIconClick.cs} for the category objects, or the \texttt{ChartBarClick.cs} for the chart bars, there also is a \texttt{TableRowClick.cs} class for when one of the rows in the table has been selected.
+\textbf{Implementation details:} Like the \texttt{CategoryIconClick.cs} for the category objects, or the \texttt{ChartBarClick.cs} for the chart bars, there also is a \texttt{TableRowClick.cs} class for when one of the rows in the table has been selected. Since the \texttt{Row.cs} class that is used to represent the individual rows in the table already has all detail information in it, the \texttt{updateDetailView()} method \texttt{SceneManager.cs} simply has to be called with a reference to itself.
 
 
 \ref{fig:unityview6}
