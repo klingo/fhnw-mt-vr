@@ -27,35 +27,20 @@ The evaluation of this prototype is based on the evaluation methods \textit{Test
 \section{Descriptive: Scenarios}
 
 \citet[p.4]{Peffers2012} define the evaluation method of a prototype as: \blockquote{Implementation of an artifact aimed at demonstrating the utility or suitability of the artifact.} They continue that a prototype can help to demonstrate the efficiency of a design, and to show that it works as intended, is useful for its intended purpose, or at least has the potential to be at an expected level of performance \citep{Peffers2012}. For this, a set of detailed scenarios are defined that can demonstrate the utility of the prototype compared to the traditional way of executing the same tasks:
-\begin{itemize}[noitemsep,nolistsep]
+\begin{enumerate}[noitemsep,nolistsep]
 	\item Checking for specific executed payment
 	\item Comparing monthly household expenses with previous year
 	\item Figuring out why the account balance is at zero in the middle of the month
 	\item Exploring the financial impact of a changed living lifestyle
-\end{itemize}
-Excluded from all scenarios are the steps required in order to log in to e-banking or to get an export of the data set for the prototype application. The starting point is either the entry page of e-Banking or the empty, just loaded prototype application. In order to measure the efficiency changes with the prototype, the following metrics are considered:
+\end{enumerate}
+Excluded from all scenarios are the steps required in order to log in to e-banking or to get an export of the data set for the prototype application. The starting point is either the entry page of e-Banking or the just started prototype application. In order to measure the efficiency changes with the prototype, the following metrics are considered:
 \begin{itemize}[noitemsep,nolistsep]
-	\item Number of (interacton) steps to get to desired information
-	\item Required time
+	\item Number of steps to get to desired information
+	\item Exclusivity of presented data
+	\item Comprehensibility
 \end{itemize}
-
-
-metrics: time, interaction-steps
-
-exclude login / data download
-
-
-
-
-
-
-
-Bank account is at zero in the middle of the month - figuring out why
-
-Changed living lifestyle, what is the financial impact?
-
-
-
+While the first metric is of quantitative nature, the other two are qualitative. The exclusivity of the presented data is important in terms of whether only the required information is shown to the user and thus easy to identify, or if much more information is presented and the actually looked for part has to be searched for first. The comprehensibility focuses on how the data is presented and the difficulty to derive an exact answer to the question from it. \newline
+At the current time, only the UBS e-Banking offers an integrated way for categorizing financial transaction on such a detailed level. While other banking solutions also allow to check for specific executed payments (Scenario 1), they lack the capabilities to provide a detailed enough answers to the other scenarios. Due to this, the evaluation is conducted just with the UBS e-Banking, but could be reproduced in future research with other banking solutions as well.
 
 
 %-----------------------------------
