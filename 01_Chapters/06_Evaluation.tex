@@ -215,14 +215,31 @@ tbd
 
 \subsubsection{Prototype Application}
 
-tbd
+The answer to this scenario can be found with only 2-5 interaction steps in the prototype application, depending how spread out the suspicious payments were over the selected month.The visualised flow for this scenario is shown in Figure \ref{fig:scenariothreeeprototype}.
+\begin{enumerate}[noitemsep,nolistsep]
+	\item Toggle-activate all categories (View 4)
+	\item Click on the current month in the Year Overview bar chart (View 1)
+	\item OPTIONAL: Click on a day with a big jump in expenses in the Month Overview bar chart (View 1)
+	\item OPTIONAL: Scroll down the list of transactions if there are too many (View 5)
+	\item OPTIONAL: Click on the suspicious transaction in the List of Transactions (View 5)
+\end{enumerate}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=2.8cm]{03_Figures/08_Development/View4_CategoriesFiltering.png}
+		\includegraphics[width=2.8cm]{03_Figures/08_Development/View4_CategoriesFiltering.png}
+		\includegraphics[width=2.8cm]{03_Figures/08_Development/View1_YearOverview.png}
+		\includegraphics[width=2.8cm]{03_Figures/08_Development/View3_YearSelection.png}
+		\includegraphics[width=2.8cm]{03_Figures/08_Development/View1_YearOverview.png}
+		\caption{Visualised flow of views in prototype for Scenario 2}
+		\label{fig:scenariothreeeprototype}
+	\end{center}
+\end{figure}
 
-
-\textbf{Evaluation:} 
+\textbf{Evaluation:} When all categories are activated, the Month Overview should give a clear indication on which day(s) unexpected high transactions were executed. If it focuses on a single day, it can be selected and then the table shows only this very specific transactions, leading to a medium exclusivity. If it is however more spread out over the whole month, the exclusivity is rather low. From a comprehensibility aspect, the user is still required to go through the list and and find the suspicious transactions by himself.
 \begin{itemize}[noitemsep,nolistsep]
-	\item Min. number of steps: \textbf{}
-	\item Exclusivity: \textbf{}
-	\item Comprehensibility: \textbf{}
+	\item Min. number of steps: \textbf{2 - 5}
+	\item Exclusivity: \textbf{Medium} (with filtered day), \textbf{Low} (without)
+	\item Comprehensibility: \textbf{Medium}
 \end{itemize}
 
 
