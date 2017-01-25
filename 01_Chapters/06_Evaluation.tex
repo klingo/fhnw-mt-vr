@@ -215,7 +215,7 @@ tbd
 
 \subsubsection{Prototype Application}
 
-The answer to this scenario can be found with only 2-5 interaction steps in the prototype application, depending how spread out the suspicious payments were over the selected month.The visualised flow for this scenario is shown in Figure \ref{fig:scenariothreeeprototype}.
+The answer to this scenario can be found with only 2-5 interaction steps in the prototype application, depending how spread out the suspicious payments were over the selected month. The visualised flow for this scenario is shown in Figure \ref{fig:scenariothreeprototype}.
 \begin{enumerate}[noitemsep,nolistsep]
 	\item Toggle-activate all categories (View 4)
 	\item Click on the current month in the Year Overview bar chart (View 1)
@@ -230,8 +230,8 @@ The answer to this scenario can be found with only 2-5 interaction steps in the 
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View1_YearOverview.png}
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View5_FinTransactionsOverview.png}
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View6_FinTransactionDetails.png}
-		\caption{Visualised flow of views in prototype for Scenario 2}
-		\label{fig:scenariothreeeprototype}
+		\caption{Visualised flow of views in prototype for Scenario 3}
+		\label{fig:scenariothreeprototype}
 	\end{center}
 \end{figure}
 
@@ -277,7 +277,7 @@ tbd
 
 \textbf{Scenario title:} \scenfour
 
-\textbf{Exemplary situation:} Since only working part-time now, a user has to pay more close attention to not exceed his smaller monthly budget for groceries, household and entertainment. He wants to see in advance where he currently is at and whether there is some budget left at the end of the month.
+\textbf{Exemplary situation:} Since only working part-time now, a user has to pay more close attention to not exceed his smaller monthly budget for household, personal expenses, entertainment, and his hobbies. He wants to see in advance where he currently is at and whether there is some budget left at the end of the month.
 
 
 %-----------------------------------
@@ -286,13 +286,33 @@ tbd
 
 \subsubsection{Prototype Application}
 
-tbd
+An answer to the fourth scenario can be found with 5-6 interaction steps in the prototype application. The visualised flow for this scenario is shown in Figure \ref{fig:scenariofourprototype}.
+\begin{enumerate}[noitemsep,nolistsep]
+	\item Activate "Household" category (View 4)
+	\item Activate "Personal expenditure" category (View 4)
+	\item Activate "Communication \& media" category (View 4)
+	\item Activate "Leisure time, sport \& hobby" category (View 4)
+	\item Click on the current month in the Year Overview bar chart (View 1)
+	\item OPTIONAL: Scroll down the list of transactions if there are too many (View 5)
+\end{enumerate}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=2.35cm]{03_Figures/08_Development/View4_CategoriesFiltering.png}
+		\includegraphics[width=2.35cm]{03_Figures/08_Development/View4_CategoriesFiltering.png}
+		\includegraphics[width=2.35cm]{03_Figures/08_Development/View4_CategoriesFiltering.png}
+		\includegraphics[width=2.35cm]{03_Figures/08_Development/View4_CategoriesFiltering.png}
+		\includegraphics[width=2.35cm]{03_Figures/08_Development/View1_YearOverview.png}
+		\includegraphics[width=2.35cm]{03_Figures/08_Development/View5_FinTransactionsOverview.png}
+		\caption{Visualised flow of views in prototype for Scenario 4}
+		\label{fig:scenariofourprototype}
+	\end{center}
+\end{figure}
 
-\textbf{Evaluation:} 
+\textbf{Evaluation:} The most interaction steps are spent on activating all relevant categories. Once the current month has been selected in the Year Overview, the Month Overview shows a cumulative chart with all expenses that can give an indication if and by when the threshold line might be reached if not already exceeded. For more details, the Transactions Overview table can be consulted on the right side to see what transaction had already been executed on the account. The exclusivity is only medium since the filtering does not go down to the sub-categories as potentially not the whole main category is relevant for this analysis. For the comprehensibility, again some interpretation is required in order to understand how much budget is left until the end of the month.
 \begin{itemize}[noitemsep,nolistsep]
-	\item Min. number of steps: \textbf{}
-	\item Exclusivity: \textbf{}
-	\item Comprehensibility: \textbf{}
+	\item Min. number of steps: \textbf{5 - 6}
+	\item Exclusivity: \textbf{Medium}
+	\item Comprehensibility: \textbf{Medium}
 \end{itemize}
 
 
