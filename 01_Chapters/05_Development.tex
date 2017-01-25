@@ -524,6 +524,8 @@ public void AddYearToTable(int year) {
 %-----------------------------------
 \subsubsection{Selecting a bar in a bar chart}
 
+\label{SubSubSectionSelectionBar}
+
 \textbf{Purpose of interaction:} By default the user starts with the Year Overview where possible  one or more months have expenses that exceeded the pre-defined threshold. The most intuitive way to then select this specific month (or the specific day in case of the Month Overview) is by actually pointing at it and then selecting it. When a month has been selected, its corresponding Month Overview will be displayed as well as the table is updated with a list of financial transactions. How the selection can look like is shown in Figure \ref{fig:unitybarselection} where the bar that is pointed at gets slightly opaque. If this bar then is actually selected, it starts flashing so it is easily visible for which bar the other views display their data now.
 \begin{figure}[h]
 	\begin{center}
@@ -592,6 +594,8 @@ Continuous Improvement is a crucial part of any software development process, wh
 
 \textbf{Main Purpose:} Functional (Black Box) Testing focuses on executing the artefact interfaces in order to discover failures and identify defects.
 
+
+
 Connect Microsoft Visual Studio 2015 to Unity 3D for Live-Debugging
 
 %-----------------------------------
@@ -601,9 +605,12 @@ Connect Microsoft Visual Studio 2015 to Unity 3D for Live-Debugging
 
 \textbf{Main Purpose:} Structural (White Box) Testing focuses on coverage testing of metrics such as execution paths in the artefact implementation.
 
+One of the most important metrics, especially for \gls{vr} applications is the need to keep a constant high level of \gls{fps} to not induce motion sickness. The HTC Vive has a refresh rate of 90 Hz and therefore can/should display also 90 \gls{fps} to avoid any stutters in the image. In many cases, a high graphical fidelity causes the \gls{fps} to drop the most, which for this prototype application is not of concern with its simple 3D objects and barely any animations. A much bigger limitation however was the Single-Threaded Code Execution as already indicated in Chapter \ref{SubSubSectionSelectionBar}. Since filtering the DataViews and updating the ArrayLists required so much CPU capacity, it caused the \gls{ve} to freeze for several seconds. A solution for this had to be found and implement to pass this structural test. C\#s Coroutines are a first step for the resolution as they enable the flow control to be cooperatively be passed on between the running function and the game engine. This however only partially resolved the problem as "control-passing" must be explicitly programmed and thus does not work if a method from a 3rd party library reserves the whole CPU capacity. Figure \ref{fig:unityupdateselection} illustrates the final solution which also includes multi-threading in order to run the CPU expensive task in a completely separate Thread to not block the game engine, while the Coroutine regularly checks for the completion state of the 2nd Thread.
+
 
 Performance problem
 Coroutine / Multithreading
+
 
 
 
