@@ -48,11 +48,11 @@ Excluded from all scenarios are the steps required in order to log in to e-banki
 		\subitem Medium = Some other data is shown, but clearly distinguishable
 		\subitem Low = Much other data is shown, hard to find the right entry
 	\item Comprehensibility
-		\subitem High = Exact answer is presented
+		\subitem High = Exact answer is directly presented
 		\subitem Medium = Some small interpretation required to have an answer
-		\subitem Low = Only meta data available; answer has to be derived from it
+		\subitem Low = Only meta data available; an answer has to be derived from it
 \end{itemize}
-While the first metric is of quantitative nature, the other two are qualitative. The exclusivity of the presented data is important in terms of whether only the required information is shown to the user and thus easy to identify, or if much more information is presented and the actually looked for part has to be searched for first. The comprehensibility focuses on how the data is presented and the difficulty to derive an exact answer to the question from it. \newline
+While the first metric is of quantitative nature, the other two are qualitative and thus are split into three fuzzy values: High, Medium, Low. The exclusivity of the presented data is important in terms of whether only the required information is shown to the user and thus easy to identify, or if much more information is presented and the actually looked for part has to be searched for first. The comprehensibility focuses on how the data is presented and the difficulty to derive an exact answer to the question from it. \newline
 At the current time, only the UBS e-Banking offers an integrated way for categorizing financial transaction on such a detailed level. While other banking solutions also allow to check for specific executed payments (Scenario 1), they lack the capabilities to provide a detailed enough answers to the other scenarios. Due to this, the evaluation is conducted just with the UBS e-Banking, but could be reproduced in future research with other banking solutions as well.
 
 
@@ -98,7 +98,7 @@ With the prototype application, the answer to this scenario can be found in 3-5 
 
 \begin{itemize}[noitemsep,nolistsep]
 	\item Number of steps: 3-5
-	\item Exclusivity: Low
+	\item Exclusivity: Medium (with filtered day), Low (without)
 	\item Comprehensibility: Medium
 \end{itemize}
 
