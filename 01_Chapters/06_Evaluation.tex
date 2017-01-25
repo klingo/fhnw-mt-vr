@@ -49,7 +49,7 @@ Excluded from all scenarios are the steps required in order to log in to e-banki
 		\subitem Low = Much other data is shown, hard to find the right entry
 	\item Comprehensibility
 		\subitem High = Exact answer is directly presented
-		\subitem Medium = Some small interpretation required to have an answer
+		\subitem Medium = Some interpretation is required to have an answer
 		\subitem Low = Only meta data available; an answer has to be derived from it
 \end{itemize}
 While the first metric is of quantitative nature, the other two are qualitative and thus are split into three fuzzy values: High, Medium, Low. The exclusivity of the presented data is important in terms of whether only the required information is shown to the user and thus easy to identify, or if much more information is presented and the actually looked for part has to be searched for first. The comprehensibility focuses on how the data is presented and the difficulty to derive an exact answer to the question from it. \newline
@@ -124,6 +124,24 @@ tbd
 \subsubsection{Conclusion}
 
 tbd
+
+\begin{table}[t]
+	\begin{center}
+		\begin{tabular}{ | p{3cm} | p{4cm} | p{4cm} | p{3cm} | } 
+			\hline
+			\textbf{Criteria} & \textbf{Prototype} & \textbf{e-banking} & Verdict \\
+			\hline
+				Min. no. of steps: &  &  &  \\
+			\hline
+				Exclusivity: &  &  &  \\
+			\hline
+				Comprehensibility: &  &  &  \\
+			\hline
+		\end{tabular}
+		\caption{Scenario 1: Comparison of prototype and e-banking}
+		\label{tbl:scenarioonecomparison}
+	\end{center}
+\end{table}
 
 
 %-----------------------------------
@@ -219,7 +237,7 @@ The answer to this scenario can be found with only 2-5 interaction steps in the 
 \begin{enumerate}[noitemsep,nolistsep]
 	\item Toggle-activate all categories (View 4)
 	\item Click on the current month in the Year Overview bar chart (View 1)
-	\item OPTIONAL: Click on a day with a big jump in expenses in the Month Overview bar chart (View 1)
+	\item OPTIONAL: Click on a day with a big jump in expenses in the Month Overview bar chart (View 2)
 	\item OPTIONAL: Scroll down the list of transactions if there are too many (View 5)
 	\item OPTIONAL: Click on the suspicious transaction in the List of Transactions (View 5)
 \end{enumerate}
@@ -227,7 +245,7 @@ The answer to this scenario can be found with only 2-5 interaction steps in the 
 	\begin{center}
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View4_CategoriesFiltering.png}
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View1_YearOverview.png}
-		\includegraphics[width=2.8cm]{03_Figures/08_Development/View1_YearOverview.png}
+		\includegraphics[width=2.8cm]{03_Figures/08_Development/View2_MonthOverview.png}
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View5_FinTransactionsOverview.png}
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View6_FinTransactionDetails.png}
 		\caption{Visualised flow of views in prototype for Scenario 3}
