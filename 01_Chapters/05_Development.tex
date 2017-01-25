@@ -32,14 +32,15 @@
 }
 % ################################################################
 
+The \textit{Development} phase, as defined by \cite{Vaishnavi2008} and \cite{Hevner2010}, comes after the \textit{Suggestion} of a design and focuses on the further development and implementation of the design. The outcome of this chapter is the requirement for the subsequent \textit{Evaluation} chapter. 
+
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
 \section{Introduction}
 
-The \textit{Development} phase, as defined by \cite{Vaishnavi2008} and \cite{Hevner2010}, comes after the \textit{Suggestion} of a design and focuses on the further development and implementation of the design. The outcome of this chapter is the requirement for the subsequent \textit{Evaluation} chapter. This is a crucial step in answering \gls{srq} 4 since the to be achieved benefits over the traditional approaches have only been of theoretical nature so far, but are not tested for their feasibility yet. \cite{Vaishnavi2008} see different techniques on how the implementation can look like, depending on the to be constructed artifact. For this thesis, the development of a prototype application in \gls{vr} has been chosen. In a first step, the technical setup is defined, before the architecture and data model for the prototype are discussed. Following that, the actual implementation of the different views and navigations are covered with a conclusion at the end. \newline
-Building up on this, the \textit{Evaluation} phase will then be discussed in chapter \ref{ChapterEvaluation}.
+The \textit{Development} phase is a crucial step in answering \gls{srq} 4 since the to be achieved benefits over the traditional approaches have only been of theoretical nature so far, but are not tested for their feasibility yet. \cite{Vaishnavi2008} see different techniques on how the implementation can look like, depending on the to be constructed artefact. For this thesis, the development of a prototype application in \gls{vr} has been chosen. In a first step, the technical setup is defined, before the architecture and data model for the prototype are discussed. Following that, the actual implementation of the different views and navigations are covered with the continuous improvement principle in mind. At the end of the chapter, a conclusion is made.
 
 
 %----------------------------------------------------------------------------------------
@@ -287,7 +288,7 @@ It is important to have an effective and clean code structure that reflects the 
 
 \section{Implementation of Views and Interaction}
 
-In this chapter, an overview of all the views and their usage is provided, as well the interactions between them is mentioned.
+In this chapter, an overview of all the views and their usage is provided, as well the interactions between them is mentioned. Also, the continuous improvement aspect is covered which includes both black box and white box testing as defined by \cite{Hevner2004} and illustrated in Figure \ref{tbl:designevaluationmethods} in Chapter \ref{EvaluationMethodology}.
 
 %-----------------------------------
 %	SUBSECTION 1
@@ -523,6 +524,8 @@ public void AddYearToTable(int year) {
 %-----------------------------------
 \subsubsection{Selecting a bar in a bar chart}
 
+\label{SubSubSectionSelectionBar}
+
 \textbf{Purpose of interaction:} By default the user starts with the Year Overview where possible  one or more months have expenses that exceeded the pre-defined threshold. The most intuitive way to then select this specific month (or the specific day in case of the Month Overview) is by actually pointing at it and then selecting it. When a month has been selected, its corresponding Month Overview will be displayed as well as the table is updated with a list of financial transactions. How the selection can look like is shown in Figure \ref{fig:unitybarselection} where the bar that is pointed at gets slightly opaque. If this bar then is actually selected, it starts flashing so it is easily visible for which bar the other views display their data now.
 \begin{figure}[h]
 	\begin{center}
@@ -574,6 +577,49 @@ Some additional challenges came up with this approach though, as certain functio
 \textbf{Purpose of interaction:} The table with a list of financial transactions already gives a good overview to the user about the individual transactions that happened on the selected month or day. But sometimes this information is still not enough and more details are required. Similar to the approach of \cite{CodeScience2015}, a dedicated view for the detail information is defined. When a row in the table is selected, it is highlighted accordingly so that it at all times is clear from which entry in the table the details are shown now. This is also illustrated in Figure \ref{fig:unityview6}.
 
 \textbf{Implementation details:} Like the \texttt{CategoryIconClick.cs} for the category objects, or the \texttt{ChartBarClick.cs} for the chart bars, there also is a \texttt{TableRowClick.cs} class for when one of the rows in the table has been selected. Since the \texttt{Row.cs} class that is used to represent the individual rows in the table already has all detail information in it, the \texttt{updateDetailView()} method \texttt{SceneManager.cs} simply has to be called with a reference to itself. After checking that the provided reference is not \texttt{null} (which would cause the DetailView to be hidden), all the details from the row object are extracted and shown in the view.
+
+
+%-----------------------------------
+%	SUBSECTION 3
+%-----------------------------------
+\subsection{Continuous Improvement (Testing)}
+
+Continuous Improvement is a crucial part of any software development process, which is also why it is an integral part of any agile development method. Tightly linked to the it is Continuous Integration, which ensure that the code can be built/compiled at any time and continuously tested for defects or failures. Due to this, the \textit{Functional (Black Box) Testing} and \textit{Structural (White Box) Testing} shown in Table \ref{tbl:designevaluationmethods} are covered during the \textit{Development} phase and not the \textit{Evaluation} phase of the \gls{dsr} cycle. The latter one will primarily focus on detailed scenarios and informed arguments.
+
+
+%-----------------------------------
+%	SUBSUBSECTION 1
+%-----------------------------------
+\subsubsection{Functional (Black Box) Testing}
+
+\textbf{Main Purpose:} Functional (Black Box) Testing focuses on executing the artefact interfaces in order to discover failures and identify defects.
+
+With the option to attach Microsoft Visual Studio to the Unity 3D engine, it allows for real-time debugging of the C\# code. This turned out to be tremendous helpful in the root cause analysis of some bugs and defects that were discovered. The in Chapter \ref{ChapterSuggestion} defined flow and interactions were used as the guideline for the functional testing to ensure a proper implementation. Due to it being tightly coupled to the daily development activities, only little dedicated documentation can be provided. The main focus was rather on the \textit{Structural Testing} as well as the \textit{Scenarios} which are covered during the \textit{Evaluation} phase in Chapter \ref{ChapterEvaluation}.
+
+
+%-----------------------------------
+%	SUBSUBSECTION 2
+%-----------------------------------
+\subsubsection{Structural (White Box) Testing}
+
+\textbf{Main Purpose:} Structural (White Box) Testing focuses on coverage testing of metrics such as execution paths in the artefact implementation.
+
+One of the most important metrics, especially for \gls{vr} applications is the need to keep a constant high level of \gls{fps} to not induce motion sickness. The HTC Vive has a refresh rate of 90 Hz and therefore can/should display also 90 \gls{fps} to avoid any stutters in the image. In many cases, a high graphical fidelity causes the \gls{fps} to drop the most, which for this prototype application is not of concern with its simple 3D objects and barely any animations. A much bigger limitation however was the Single-Threaded Code Execution as already indicated in Chapter \ref{SubSubSectionSelectionBar}. Since filtering the DataViews and updating the ArrayLists required so much CPU capacity, it caused the \gls{ve} to freeze for several seconds. Figure \ref{fig:unityprofilesingle} shows the CPU Usage profiler from Unity itself for this situation with a single thread. Since it even freezes Unity itself, the graph does not reflect the temporal truth. Only in the detail information of the spike it can be seen that the process took more than 4 seconds to be executed and cause over 200 MB for the Garbage Collector to be cleaned up.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/08_Development/CPU_Usage_Singlethreaded.png}
+		\caption{Illustration of updateSelection() workflow}
+		\label{fig:unityprofilesingle}
+	\end{center}
+\end{figure}
+A solution for this had to be found and implement to pass this structural test. C\#s Coroutines are a first step for the resolution as they enable the flow control to be cooperatively be passed on between the running function and the game engine. This however only partially resolved the problem as "control-passing" must be explicitly programmed and thus does not work if a method from a 3rd party library reserves the whole CPU capacity. Figure \ref{fig:unityupdateselection} illustrates the final solution which also includes multi-threading in order to run the CPU expensive task in a completely separate Thread to not block the game engine, while the Coroutine regularly checks for the completion state of the 2nd Thread. Figure \ref{fig:unityprofilemulti} shows the CPU Usage again, but this time with a second thread and a Coroutine running. While there still are some \gls{fps} spikes during the execution (caused by the Coroutine to regularly check for the Thread execution status), they are much less intrusive and never go below 60 \gls{fps}. Since the CPU is not limited anymore, the temporal representation of the graph also is correct now.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=14cm]{03_Figures/08_Development/CPU_Usage_Multithreaded.png}
+		\caption{Illustration of updateSelection() workflow}
+		\label{fig:unityprofilemulti}
+	\end{center}
+\end{figure}
 
 
 %----------------------------------------------------------------------------------------

@@ -4,19 +4,13 @@
 
 \chapter{Introduction} % Main chapter title
 
-\label{ChapterIntroduction} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+\label{ChapterIntroduction}
 
-%----------------------------------------------------------------------------------------
-%	SECTION 1
-%----------------------------------------------------------------------------------------
-
-\section{Introduction}
-
-This master thesis provides on overview of the current state of research regarding the usage of gesture controllers and 360° motion tracking to enhance data interaction in \gls{vr}. The specific data-set that in focus of this thesis, are categorized financial expenses from individuals.
+Technological advancements are of constant nature to us and affect most areas in our lifes. Just twenty years ago, one had to go to a physical branch of a bank to make a simple payment or check the current account balance. Then online banking emerged, soon followed by mobile banking, and the next big advancement might just be waiting ahead of us. This master thesis provides an overview of the current state of research regarding the interaction with, and visualisation of, categorized financial data in virtual reality with the intention to make exploratory analysis more simple and to provide better insights into trends and changes.
 
 With the public release of the Oculus Rift in March 2016 \citep{Oculus2016} and the HTC Vive in April 2016 \citep{Htcvive2016}, \gls{vr} has arrived at the consumer level and is all over the news. Although we only see the first iteration of consumer products, \cite{Gartner2015} predicts that within the next five to ten years, virtual reality will achieve mainstream adoption and enter the so called "Plateau of Productivity". Gesture Control is even a bit ahead of \gls{vr} and its mainstream adoption is already expected in the next two to five years \citep{Gartner2015}. Together with the new \gls{hmd}, also the ways to interact with the virtual world have been massively improved, such as very accurate gesture controllers or full 360° motion tracking, which all are just becoming part of research now. Since these big advancements in hardware happened only very recently, the software part first has to catch up with all the new possibilities that became available. It became very easy to create 3D visualisations, but the big questions remains about why we should do that. \cite{Ware2012} sees clear clear advantages in the conventional two-dimensional techniques with bar charts and scatter plots, since the powerful pattern-finding mechanism of our brain also works in 2D. Furthermore, there are well established and effective (2D) data representations that are also very easy to be included in any kind of two-dimensional medium such as a book or a report \citep{Ware2012}. On the other side, \cite{Ware2012} also points out that we live in a three-dimensional word and interact with it so frequently that our brains got very much used to it. It is also important to understand that ultimately a 2D space is part of 3D space and thus any 2D object can always be flattened out and presented as such in 3D space. This however does not mean, that this always is a good idea. \cite{Kwon2015} stated that in a 2D environment/space (like a regular screen) it makes sense to use 2D objects for the presentation, whereas in a \gls{vr} environment where the viewing direction can be freely chosen by the user, the whole three dimensional space should be utilized. It generally can be said that we are only at the beginning of understanding how to effectively use these new means. Chapter \ref{SectionLiteratureReviewSRQ1} and \ref{SectionLiteratureReviewSRQ2} in the literature review will further discuss these new possibilities.
 
-Simultaneously, we see massive advancements in the functionalities provided by banks to their clients. Contact-less payments and mobile banking are on the rise, and in 2014 UBS AG even won the "Master of Swiss Web" award and two gold medals for their new e-banking platform \citep{UBSAG2014}. But when clients want to look at the financial situation, nothing has changed for a long time in terms of how it is presented to the users: always the same old bar- and pie charts. Figure \ref{fig:ubsspendinganalysis} gives an impression of how exemplary data is visualized on a 2D screen. Many challenges and requirements have to be covered nowadays. Clients want to immediately see and understand their financial situation, they want to be able to make comparisons and see trends. This explorative analysis is currently only possible with limitations, also due to the restriction of only two (real) axis that are possible on a display. \cite{Jamieson2007} see that it becomes increasingly difficult to get a meaningful understanding of the big amount of data that is still presented with traditional methods. They continue that these methods will sooner or later come to their limits and new visualisation methods have to be established \citep{Jamieson2007}. Chapter \ref{SectionLiteratureReviewSRQ3} in the literature review addresses the currently researched methods for data visualization in more detail.
+Simultaneously, we see massive advancements in the functionalities provided by banks to their clients. Contact-less payments and mobile banking are on the rise, and in 2014 UBS AG even won the "Master of Swiss Web" award and two gold medals for their new e-banking platform \citep{UBSAG2014}. But when clients want to look at the financial situation, nothing has changed for a long time in terms of how it is presented to the users: always the same old bar- and pie charts. Figure \ref{fig:ubsspendinganalysis} gives an impression of how exemplary data is visualized on a 2D screen. Many challenges and requirements have to be covered nowadays. Clients want to immediately see and understand their financial situation, they want to be able to make comparisons and see trends. This exploratory analysis is currently only possible with limitations, also due to the restriction of only two (real) axis that are possible on a display. \cite{Jamieson2007} see that it becomes increasingly difficult to get a meaningful understanding of the big amount of data that is still presented with traditional methods. They continue that these methods will sooner or later come to their limits and new visualisation methods have to be established \citep{Jamieson2007}. Chapter \ref{SectionLiteratureReviewSRQ3} in the literature review addresses the currently researched methods for data visualization in more detail.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=7cm]{03_Figures/06_Introduction/UBSAG2016_SpendingAnalysis2.png}
@@ -49,7 +43,6 @@ The focus of this master thesis is on the new possibilities of visualising and i
 	- Multimedia (music, video \& apps) \newline
 	- Newspaper and magazine subscriptions \newline
 	- Radio and television fees \newline
-	- Software \newline
 	- Telephone,  Internet and TV \\
 	\hline
 	Health &
@@ -124,12 +117,13 @@ The focus of this master thesis is on the new possibilities of visualising and i
 	\label{tbl:financialcategories}
 \end{longtable}
 
-Due to the complexity of the data-set and the numerous different (sub-)categories, it can become difficult to keep a good overview, especially when the comparison goes across multiple months for various categories. \newline
+Due to the complexity of the data-set and the numerous different (sub-)categories, it can become difficult to keep a good overview, especially when the comparison goes across multiple months for various categories.
+
 In the following sub-chapters, more background information about the topic is given as well as the definition of the problem statement. Based on this, the thesis statement is proposed and research questions are derived from. Following these, the delineations and limitations are presented before this chapter is closed with the structure of the thesis and a brief overview of the chapters and their correlations.
 
 
 %----------------------------------------------------------------------------------------
-%	SECTION 2
+%	SECTION 1
 %----------------------------------------------------------------------------------------
 
 \section{Background}
@@ -148,7 +142,7 @@ There are different interaction methods (i.e. devices to interact with the \gls{
 
 
 %----------------------------------------------------------------------------------------
-%	SECTION 3
+%	SECTION 2
 %----------------------------------------------------------------------------------------
 
 \section{Problem Statement}
@@ -158,40 +152,29 @@ Even in 2016, the visualisation of data in a nutshell is still looking the same 
 
 
 %----------------------------------------------------------------------------------------
-%	SECTION 4
+%	SECTION 3
 %----------------------------------------------------------------------------------------
 
 \section{Thesis Statement}
 
 %Definition of the Thesis Statement
-\newcommand{\thesisstatementtext}{tbd}
+\newcommand{\thesisstatementtext}{Exploratory analysis of categorized financial data can be enhanced by utilizing new input methods and interaction patterns in virtual reality.}
 
-TODO: Choose one of the thesis statements
+\label{TS}
 
 The thesis statement is as follows:
 \begin{framed}
-	\textit{The interaction with multidimensional data in virtual reality can be enhanced by utilizing gesture controllers and 360° motion tracking.}
-\end{framed} \label{TS}
-
-\begin{framed}
-	\textit{The interaction with categorized financial data can be enhanced by utilizing gesture controllers and 360° motion tracking in virtual reality.}
-\end{framed}
-
-\begin{framed}
-	\textit{The interaction with categorized financial data can be enhanced by utilizing new input methods and interaction patterns in virtual reality.}
+	\textit{\thesisstatementtext}
 \end{framed}
 
 %----------------------------------------------------------------------------------------
-%	SECTION 5
+%	SECTION 4
 %----------------------------------------------------------------------------------------
 
 \section{Research question}
 
-TODO: Remove controllers and 360° info (part of solution?)
-TODO: Choose one of the MRQs
-
 %Definition of the MRQ
-\newcommand{\mrqtext}{tbd}
+\newcommand{\mrqtext}{How can the exploratory analysis of categorized financial data be enhanced by utilizing new input methods and interaction patterns in virtual reality?}
 
 % Definition of the SRQs
 \newcommand{\srqonetext}{Which methods of user input in virtual reality are researched and what are their advantages and disadvantages?}
@@ -202,14 +185,8 @@ TODO: Choose one of the MRQs
 To address the problem statement, research questions are used to break down the research into smaller parts that can be examined individually and allow a view at the nature of the problem from different perspectives. In this chapter, the \gls{mrq} as well as the \glspl{srq} are formulated. \newline
 The main research question, derived from the thesis statement, is:
 \begin{framed}
-	\textit{How can the interaction with multidimensional data in virtual reality be enhanced by utilizing gesture controllers and 360° motion tracking?}
+	\textit{\mrqtext}
 \end{framed} \label{MRQ}
-\begin{framed}
-	\textit{How can the interaction with categorized financial data be enhanced by utilizing gesture controllers and 360° motion tracking in virtual reality?}
-\end{framed}fsrq
-\begin{framed}
-	\textit{How can the interaction with categorized financial data be enhanced by utilizing new input methods and interaction patterns in virtual reality?}
-\end{framed}
 From the \gls{mrq}, the \glspl{srq} can be derived and are defined as follows:
 \begin{framed}
 	\textit{\gls{srq} 1: \srqonetext}
@@ -227,7 +204,7 @@ The first three \glspl{srq} are answered as part of the literature review, where
 
 
 %----------------------------------------------------------------------------------------
-%	SECTION 6
+%	SECTION 5
 %----------------------------------------------------------------------------------------
 
 \section{Research Objective}
@@ -237,24 +214,25 @@ This objective will be addressed by first conducting a literature review on the 
 
 
 %----------------------------------------------------------------------------------------
-%	SECTION 7
+%	SECTION 6
 %----------------------------------------------------------------------------------------
 
 % \section{Short Overview}
 
 
 %----------------------------------------------------------------------------------------
-%	SECTION 8
+%	SECTION 7
 %----------------------------------------------------------------------------------------
 
 \section{Delineations and Limitations}
 
-TODO: Totall re-work this chapter!
-- consumer-available devices
-- no manual construction
-- no psychological aspects
-- no massive user tests
-- not a final product, its a prototype!
+TODO: Totall re-work this chapter! \newline
+- consumer-available devices \newline
+- no manual construction \newline
+- no psychological aspects \newline
+- no massive user tests \newline
+- not a final product, its a prototype! \newline
+- data security etc \newline
 
 
 In this thesis, the focus lies on publicly available consumer \gls{vr} hardware and no own display or input devices will be developed. In regards of the design and implementation of the prototype, the artefact will be implemented in Unity3D 5.5.0 with the SteamVR framework. The decision for this framework is based on the fact that it acts as a consolidation layer for many different \gls{vr} devices (see Figure \ref{fig:steamvr}) and thus should provide the highest chance of re-usability for current and future \gls{vr} hardware. \newline
@@ -271,21 +249,21 @@ TODO: double check if this really is correct here?
 
 
 %----------------------------------------------------------------------------------------
-%	SECTION 9
+%	SECTION 8
 %----------------------------------------------------------------------------------------
 
 % \section{Underlying Assumptions}
 
 
 %----------------------------------------------------------------------------------------
-%	SECTION 10
+%	SECTION 9
 %----------------------------------------------------------------------------------------
 
 % \section{Definition of terms and concepts}
 
 
 %----------------------------------------------------------------------------------------
-%	SECTION 11
+%	SECTION 10
 %----------------------------------------------------------------------------------------
 
 % \section{Significance}
@@ -306,14 +284,13 @@ TODO: double check if this really is correct here?
 
 
 %----------------------------------------------------------------------------------------
-%	SECTION 12
+%	SECTION 11
 %----------------------------------------------------------------------------------------
 
 \section{Thesis structure and brief chapter overviews}
 
-The thesis map in Figure \ref{fig:thesismap} shows the structure of this thesis and the relations of the individual chapters. \newline
-In chapter \ref{ChapterIntroduction}, an introduction on the topic and the research problem is given. From this the thesis statement, research questions and the research objectives are derived. Following in chapter \ref{ChapterLiteratureReview} are the literature review of different methods for user input and interaction patterns in \gls{vr} as well as the enhancement of those. The research methodology follows in chapter \ref{Research Method} where the philosophy, approach and strategy are described. \newline
-\begin{figure}[pt]
+The thesis map in Figure \ref{fig:thesismap} shows the structure of this thesis and the relations of the individual chapters. In chapter \ref{ChapterIntroduction}, an introduction on the topic and the research problem is given. From this the thesis statement, research questions and the research objectives are derived. Following in chapter \ref{ChapterLiteratureReview} are the literature review of different methods for user input and interaction patterns in \gls{vr} as well as the enhancement of those. The research methodology follows in chapter \ref{Research Method} where the philosophy, approach and strategy are described. In chapter \ref{ChapterSuggestion}, the artefact from the \gls{dsr} is proposed, and then developed in chapter \ref{ChapterDevelopment}. Following, chapter \ref{ChapterEvaluation} evaluates the prototype application and answers the \gls{mrq}, before the thesis is concluded in chapter \ref{ChapterConclusion}.
+\begin{figure}[ht]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/06_Introduction/ThesisMap.png}
 		\caption{Thesis Map}
@@ -321,10 +298,9 @@ In chapter \ref{ChapterIntroduction}, an introduction on the topic and the resea
 	\end{center}
 \end{figure}
 
-TODO: UPDATE THIS GRAPHIC!!!
 
 %----------------------------------------------------------------------------------------
-%	SECTION 13
+%	SECTION 12
 %----------------------------------------------------------------------------------------
 
 % \section{Any other institutional requirement not covered here}
