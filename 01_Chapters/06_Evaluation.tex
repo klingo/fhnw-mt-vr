@@ -73,30 +73,29 @@ While not exactly an exploratory scenario, it is a situation that can commonly h
 
 \subsubsection{E-Banking}
 
-
-tbd
-
-go to Expenses (2c)
-set filter (4c)
-opt: scroll
-
-
+With the e-Banking demo of UBS, the information can be found by navigating over two screens, which depending on the amount of transaction can require 2 - 6 mouse clicks to reach the final screen. After navigating to the "Expenses" view, all transactions of the last 30 days are shown by default, giving the user the option to apply a more specific filter or look for the transaction on this bigger list. The visualised flow for this scenario is shown in Figure \ref{fig:scenariooneebanking}.
+\begin{enumerate}[noitemsep,nolistsep]
+	\item Go via "Budget" to "Expenses" (2 clicks)
+	\item OPTIONAL: Set filter for specific date range (4 clicks)
+	\item OPTIONAL: Scroll down the list of transactions if there are too many
+	\item Find the transaction in the list, or not
+\end{enumerate}
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_1_Overview.png}
-		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis.png}
-		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_Filter.png}
+		\includegraphics[width=4.7cm]{03_Figures/09_Evaluation/UBS_1_Overview.png}
+		\includegraphics[width=4.7cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis.png}
+		\includegraphics[width=4.7cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_Filter.png}
 		\caption{Visualised flow of screens in e-Banking demo for Scenario 1}
 		\label{fig:scenariooneebanking}
 	\end{center}
 \end{figure}
 
 
-\textbf{Evaluation:} 
+\textbf{Evaluation:} Due to displaying all transaction of the last 30 days by default, the initial exclusivity of the data is relatively low. If additional filters are applied, the exclusivity can vary between medium and high, depending on how specific it is set. The narrower it is, the more mouse clicks are required. In terms of the comprehensibility of the data, some interpretation is required in order to know whether the transaction did not execute, or if it just has been filtered out.
 \begin{itemize}[noitemsep,nolistsep]
-	\item Min. number of steps: \textbf{}
-	\item Exclusivity: \textbf{}
-	\item Comprehensibility: \textbf{}
+	\item Min. number of steps: \textbf{2 - 6}
+	\item Exclusivity: \textbf{Medium} (additional filters), \textbf{Low} (default filter)
+	\item Comprehensibility: \textbf{Medium}
 \end{itemize}
 
 
@@ -149,11 +148,11 @@ tbd Table \ref{tbl:scenarioonecomparison}
 			\hline
 			\textbf{Metric} & \textbf{E-Banking} & \textbf{Prototype} & \textbf{Verdict} \\
 			\hline
-				Min. no. of steps: &  & 3 - 5 &  \\
+				Min. no. of steps: & 2 - 6 & 3 - 5 &  \\
 			\hline
-				Exclusivity: &  & Medium / Low &  \\
+				Exclusivity: & Medium / Low & Medium / Low &  \\
 			\hline
-				Comprehensibility: &  & Medium &  \\
+				Comprehensibility: & Medium & Medium &  \\
 			\hline
 		\end{tabular}
 		\caption{Scenario 1: Comparison of prototype and e-banking}
