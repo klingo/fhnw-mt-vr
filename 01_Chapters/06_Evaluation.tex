@@ -86,7 +86,7 @@ With the e-Banking demo of UBS, the information can be found by navigating over 
 		\includegraphics[width=4.7cm]{03_Figures/09_Evaluation/UBS_1_Overview.png}
 		\includegraphics[width=4.7cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis.png}
 		\includegraphics[width=4.7cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_Filter.png}
-		\caption{Visualised flow of screens in e-Banking demo for Scenario 1}
+		\caption{Visualised flow of screens in e-banking demo for Scenario 1}
 		\label{fig:scenariooneebanking}
 	\end{center}
 \end{figure}
@@ -193,7 +193,7 @@ Compared to Scenario 1, many more filters need to be applied for this second sce
 		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_FilterCat.png}
 		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_Filter.png}
 		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_Filter.png}
-		\caption{Visualised flow of screens in e-Banking demo for Scenario 2}
+		\caption{Visualised flow of screens in e-banking demo for Scenario 2}
 		\label{fig:scenariotwoebanking}
 	\end{center}
 \end{figure}
@@ -294,11 +294,11 @@ For this scenario, the default filtering for the last 30 days helps to reduce th
 \end{enumerate}
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_1_Overview.png}
-		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_3_AccountTransactions.png}
-		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_3_AccountTransactions.png}
-		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_4_AccountTransactionDetails.png}
-		\caption{Visualised flow of screens in e-Banking demo for Scenario 3}
+		\includegraphics[width=3.5cm]{03_Figures/09_Evaluation/UBS_1_Overview.png}
+		\includegraphics[width=3.5cm]{03_Figures/09_Evaluation/UBS_3_AccountTransactions.png}
+		\includegraphics[width=3.5cm]{03_Figures/09_Evaluation/UBS_3_AccountTransactions.png}
+		\includegraphics[width=3.5cm]{03_Figures/09_Evaluation/UBS_4_AccountTransactionDetails.png}
+		\caption{Visualised flow of screens in e-banking demo for Scenario 3}
 		\label{fig:scenariothreeebanking}
 	\end{center}
 \end{figure}
@@ -389,19 +389,29 @@ TODO Table \ref{tbl:scenariothreecomparison}
 
 \subsubsection{E-Banking}
 
-TODO
+Enabling the filter for the four categories requires some additional steps, as well as the filter for the date range which is required in this situation. The default filter of the last 30 days will provide wrong information about the monthly expenses and thus first has to be adjusted manually. Afterwards, a summary of the expenses for the date range and category selection is presented alongside a list of all transactions within this filter set. The visualised flow for this scenario is shown in Figure \ref{fig:scenariofourebanking}.
+\begin{enumerate}[noitemsep,nolistsep]
+	\item Go via "Budget" to "Expenses" (2 clicks)
+	\item Set filter for the four categories (6 clicks)
+	\item Set filter for specific date range in current year (4 clicks)
+	\item OPTIONAL: Scroll down the list of transactions if there are too many
+\end{enumerate}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=3.5cm]{03_Figures/09_Evaluation/UBS_1_Overview.png}
+		\includegraphics[width=3.5cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis.png}
+		\includegraphics[width=3.5cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_FilterCat.png}
+		\includegraphics[width=3.5cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_Filter.png}
+		\caption{Visualised flow of screens in e-banking demo for Scenario 4}
+		\label{fig:scenariofourebanking}
+	\end{center}
+\end{figure}
 
-expenses (2c)
-filtercat (6c)
-filterrange (4c)
-opt: scroll
-cant go to detail (only change category)
-
-\textbf{Evaluation:} 
+\textbf{Evaluation:} Setting up this many filters requires a lot of interaction steps, but the exclusivity is high since both the categories as well as the date range can be filtered to exactly what is required. The comprehensibility in this case is low since no information about the in the e-banking definable thresholds can be seen in this view. While there is another view in e-banking, explicitly for the budget planning where it can be seen how much of the threshold has already been spent per category, it provides no option at all to then view the corresponding financial transactions. Both screens would need to be checked separately and then with manual effort combined.
 \begin{itemize}[noitemsep,nolistsep]
-	\item Min. number of steps: \textbf{}
-	\item Exclusivity: \textbf{}
-	\item Comprehensibility: \textbf{}
+	\item Min. number of steps: \textbf{12}
+	\item Exclusivity: \textbf{High}
+	\item Comprehensibility: \textbf{Low}
 \end{itemize}
 
 
@@ -433,10 +443,10 @@ An answer to the fourth scenario can be found with 5-6 interaction steps in the 
 	\end{center}
 \end{figure}
 
-\textbf{Evaluation:} The most interaction steps are spent on activating all relevant categories. Once the current month has been selected in the Year Overview, the Month Overview shows a cumulative chart with all expenses that can give an indication if and by when the threshold line might be reached if not already exceeded. For more details, the Transactions Overview table can be consulted on the right side to see what transaction had already been executed on the account. The exclusivity is only medium since the filtering does not go down to the sub-categories as potentially not the whole main category is relevant for this analysis. For the comprehensibility, again some interpretation is required in order to understand how much budget is left until the end of the month.
+\textbf{Evaluation:} The most interaction steps are spent on activating all relevant categories. Once the current month has been selected in the Year Overview, the Month Overview shows a cumulative chart with all expenses that can give an indication if and by when the threshold line might be reached if not already exceeded. For more details, the Transactions Overview table can be consulted on the right side to see what transaction had already been executed on the account. The exclusivity is also high since the categories can be individually toggled and the month selection is also don exclusively. For the comprehensibility, again some interpretation is required in order to understand how much budget is left until the end of the month.
 \begin{itemize}[noitemsep,nolistsep]
 	\item Min. number of steps: \textbf{5 - 6}
-	\item Exclusivity: \textbf{Medium}
+	\item Exclusivity: \textbf{High}
 	\item Comprehensibility: \textbf{Medium}
 \end{itemize}
 
@@ -455,11 +465,11 @@ TODO Table \ref{tbl:scenariofourcomparison}
 			\hline
 			\textbf{Metric} & \textbf{E-Banking} & \textbf{Prototype} & \textbf{Verdict} \\
 			\hline
-			Min. no. of steps: &  & 5 - 6 &  \\
+			Min. no. of steps: & 12 & 5 - 6 & Prototype \\
 			\hline
-			Exclusivity: &  & Medium &  \\
+			Exclusivity: & High & High & equal \\
 			\hline
-			Comprehensibility: &  & Medium &  \\
+			Comprehensibility: & Low & Medium & Prototype \\
 			\hline
 		\end{tabular}
 		\caption{Scenario 4: Comparison of prototype and e-banking}
