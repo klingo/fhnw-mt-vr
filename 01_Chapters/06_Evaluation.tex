@@ -285,40 +285,29 @@ TODO Table \ref{tbl:scenariotwocomparison}
 
 \subsubsection{E-Banking}
 
-
-Compared to Scenario 1, many more filters need to be applied for this second scenario which results in an increased amount of interaction steps to a total of 14 mouse clicks, on the same two screens as before. Since the option to toggle the individual categories are hidden behind an expandable section, an additional click is required. The same applies to the situation when the view is shifted to the previous years when again both start and end date need to be manually adjusted. The visualised flow for this scenario is shown in Figure \ref{fig:scenariooneebanking}.
+For this scenario, the default filtering for the last 30 days helps to reduce the amount of interaction steps. Since also the current balance is always shown, in best case only 1 - 2 mouse clicks are required in order to find the data. Depending on the amount of transactions, additional filtering may be applied, or the list has to be scrolled through to find the suspicious transaction. The visualised flow for this scenario is shown in Figure \ref{fig:scenariothreeebanking}.
 \begin{enumerate}[noitemsep,nolistsep]
-	\item Go via "Budget" to "Expenses" (2 clicks)
-	\item Set filter for the two categories (4 clicks)
-	\item Set filter for specific date range in current year (4 clicks)
-	\item Set filter for specific date range in previous year (4 clicks)
+	\item Select the desired account (1 click)
+	\item OPTIONAL: Set additional filter for specific date/amount range (4 clicks)
+	\item OPTIONAL: Scroll down the list of transactions if there are too many
+	\item OPTIONAL: Click on the suspicious transaction in the list of Transactions (1 click)
 \end{enumerate}
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_1_Overview.png}
-		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis.png}
-		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_FilterCat.png}
-		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_Filter.png}
-		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_Filter.png}
-		\caption{Visualised flow of screens in e-Banking demo for Scenario 2}
+		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_3_AccountTransactions.png}
+		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_3_AccountTransactions.png}
+		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_4_AccountTransactionDetails.png}
+		\caption{Visualised flow of screens in e-Banking demo for Scenario 3}
 		\label{fig:scenariothreeebanking}
 	\end{center}
 \end{figure}
 
-
-
-
-TODO
-
-click on account (1c)
-opt: set filter (4c) (standard, last 30 days)
-opt. detail (1c)
-
-\textbf{Evaluation:} 
+\textbf{Evaluation:} The default filtering helps to directly achieve an average exclusivity of the presented data, whereas with an additional filter it can be narrowed to almost exclusively to the root cause of the unexpected high expenses. The comprehensibility also is very high since the current account balance is shown together with the transaction amount, which makes the understanding of the data much simpler.
 \begin{itemize}[noitemsep,nolistsep]
-	\item Min. number of steps: \textbf{}
-	\item Exclusivity: \textbf{}
-	\item Comprehensibility: \textbf{}
+	\item Min. number of steps: \textbf{1 - 6}
+	\item Exclusivity: \textbf{High} (with filtered day), \textbf{Medium} (without)
+	\item Comprehensibility: \textbf{High}
 \end{itemize}
 
 
@@ -370,11 +359,11 @@ TODO Table \ref{tbl:scenariothreecomparison}
 			\hline
 			\textbf{Metric} & \textbf{E-Banking} & \textbf{Prototype} & \textbf{Verdict} \\
 			\hline
-			Min. no. of steps: &  & 2 - 5 &  \\
+			Min. no. of steps: & 1 - 6 & 2 - 5 & equal \\
 			\hline
-			Exclusivity: &  & Medium / Low &  \\
+			Exclusivity: & High & Medium / Low & E-Banking \\
 			\hline
-			Comprehensibility: &  & Medium &  \\
+			Comprehensibility: & High & Medium & E-Banking \\
 			\hline
 		\end{tabular}
 		\caption{Scenario 3: Comparison of prototype and e-banking}
