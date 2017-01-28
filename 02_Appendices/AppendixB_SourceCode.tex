@@ -33,7 +33,9 @@
 }
 % ################################################################
 
-\lstinputlisting[language=[Sharp]C]{test.cs}
+\newcommand{\includecode}[2][c]{\lstinputlisting[caption=#2, escapechar=, style=custom#1]{#2}<!---->}
+
+\includecode{test.cs}
 
 \begin{lstlisting}[caption={/Assets/Scripts/Charts/Bar.cs}, label={lst:scripts_charts_bar}]
 // The MIT License (MIT)
