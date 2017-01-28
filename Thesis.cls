@@ -45,7 +45,8 @@
 \setlength{\parskip}{2.0ex plus0.5ex minus0.2ex}
 \usepackage{vmargin}
 
-\RequirePackage[utf8]{inputenc} % Allows the use of international characters (e.g. Umlauts)
+%\RequirePackage[utf8]{inputenc} % Allows the use of international characters (e.g. Umlauts)
+\RequirePackage[utf8x]{inputenc}
 
 \newcommand{\missingPackages}{04_Packages} % Define folder with missing packages
 
