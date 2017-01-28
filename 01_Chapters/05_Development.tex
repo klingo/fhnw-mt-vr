@@ -607,7 +607,7 @@ With the option to attach Microsoft Visual Studio to the Unity 3D engine, it all
 One of the most important metrics, especially for \gls{vr} applications is the need to keep a constant high level of \gls{fps} to not induce motion sickness. The HTC Vive has a refresh rate of 90 Hz and therefore can/should display also 90 \gls{fps} to avoid any stutters in the image. In many cases, a high graphical fidelity causes the \gls{fps} to drop the most, which for this prototype application is not of concern with its simple 3D objects and barely any animations. A much bigger limitation however was the Single-Threaded Code Execution as already indicated in Chapter \ref{SubSubSectionSelectionBar}. Since filtering the DataViews and updating the ArrayLists required so much CPU capacity, it caused the \gls{ve} to freeze for several seconds. Figure \ref{fig:unityprofilesingle} shows the CPU Usage profiler from Unity itself for this situation with a single thread. Since it even freezes Unity itself, the graph does not reflect the temporal truth. Only in the detail information of the spike it can be seen that the process took more than 4 seconds to be executed and cause over 200 MB for the Garbage Collector to be cleaned up.
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=14cm]{03_Figures/08_Develoment/CPU_Usage_Singlethreaded.png}
+		\includegraphics[width=14cm]{03_Figures/08_Development/CPU_Usage_Singlethreaded.png}
 		\caption{Unity 3D CPU Usage with single-threaded execution of updateSelection() workflow}
 		\label{fig:unityprofilesingle}
 	\end{center}
