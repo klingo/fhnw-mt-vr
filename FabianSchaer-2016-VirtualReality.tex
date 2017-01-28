@@ -329,12 +329,20 @@
 %	LIST OF LISTINGS (addition)
 %----------------------------------------------------------------------------------------
 
+%\newcommand{\nocontentsline}[3]{}
+%\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+
+%\fillingPage{}
+%\renewcommand\lstlistlistingname{List of Code}
+%\addcontentsline{toc}{chapter}{\lstlistlistingname}
+%\tocless\lstlistoflistings
+
 \newcommand{\nocontentsline}[3]{}
 \newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
 
-\fillingPage{}
-%\renewcommand\lstlistlistingname{List of Code}
-\addcontentsline{toc}{chapter}{\lstlistlistingname}
+\addtotoc{List of Listings}
+\lhead{\emph{List of Listings}} % Set the left side page header to "List of Listings"
+\renewcommand{\lstlistlistingname}{List of Listings}
 \tocless\lstlistoflistings
 
 %----------------------------------------------------------------------------------------
