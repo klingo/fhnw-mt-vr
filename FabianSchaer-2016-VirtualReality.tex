@@ -329,6 +329,9 @@
 %	LIST OF LISTINGS (addition)
 %----------------------------------------------------------------------------------------
 
+% Save current setting
+\let\oldlstlistlistingname=\lstlistlistingname
+
 %\renewcommand\lstlistlistingname{List of Listings}
 %\addcontentsline{toc}{chapter}{\lstlistlistingname}{\lstlistoflistings}
 
@@ -340,6 +343,9 @@
 \lhead{\emph{List of Listings}} % Set the left side page header to "List of Listings"
 \renewcommand{\lstlistlistingname}{List of Listings}
 \tocless\lstlistoflistings
+
+% revert to previous setting
+\let\lstlistlistingname=\oldlstlistlistingname
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES (if appropriate)
