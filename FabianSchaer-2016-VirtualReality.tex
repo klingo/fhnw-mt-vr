@@ -329,23 +329,6 @@
 %	LIST OF LISTINGS (addition)
 %----------------------------------------------------------------------------------------
 
-% Save current setting
-\let\oldlstlistlistingname=\lstlistlistingname
-
-%\renewcommand\lstlistlistingname{List of Listings}
-%\addcontentsline{toc}{chapter}{\lstlistlistingname}{\lstlistoflistings}
-
-%% https://gist.github.com/miho/a7f54e70fae82f78076675619fde7eb6
-\newcommand{\nocontentsline}[3]{}
-\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
-
-\addtotoc{List of Listings}
-\lhead{\emph{List of Listings}} % Set the left side page header to "List of Listings"
-\renewcommand{\lstlistlistingname}{List of Listings}
-\tocless\lstlistoflistings
-
-% revert to previous setting
-\let\lstlistlistingname=\oldlstlistlistingname
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES (if appropriate)
