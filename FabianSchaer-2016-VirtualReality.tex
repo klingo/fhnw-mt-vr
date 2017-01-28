@@ -329,6 +329,9 @@
 %	LIST OF LISTINGS (addition)
 %----------------------------------------------------------------------------------------
 
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+
 \fillingPage{}
 %\renewcommand\lstlistlistingname{List of Code}
 \addcontentsline{toc}{chapter}{\lstlistlistingname}
