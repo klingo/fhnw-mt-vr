@@ -502,7 +502,7 @@
 \newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
 \newcommand\listOfListings{
 	\addtotoc{List of Listings}
-	%\lhead{\emph{List of Listings}} % Set the left side page header to "List of Listings"
+	\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
 	\renewcommand{\lstlistlistingname}{List of Listings}
 	\tocless\lstlistoflistings
 }
