@@ -24,40 +24,8 @@ In the first part of the conclusion, a summary of the research done in this thes
 
 \section{Summary}
 
-Todo
+Beginning with the problem statement that information about the personal financial situation is till presented in the same ways like a decade ago, and that only little research has been made in how to visualize data in \gls{vr}, this thesis proposed a solution approach to close this gap. With the first \gls{srq}, research about the different methods of user input in \gls{vr} was conducted, which showed their individual advantages and disadvantages compared with others. Next, with the second \gls{srq} the focus was on different interaction patterns of \gls{vr} where a classification into \textit{Travel}, \textit{Selection}, and \textit{Manipulation} can be found. The \gls{vism} give some more guidelines in what tasks should be available to the user for an effective information seeking. With the third \gls{srq}, different approaches for the visualisation of data in \gls{vr} have been analysed and a close relation to the type of data could be seen. Alongside the \textit{Suggestion} phase of the \gls{dsr} cycle where a design for a prototype application is proposed, a first part of \gls{srq} is discussed in terms of what the potential benefits can be by bringing the interaction with categorized financial data into \gls{vr}. Building up on that, the \textit{Development} and \textit{Evaluation} phase confirmed the technical feasibility of the proposed design and showed its effectiveness in a set of different scenarios. Since the prototype is much more limited in terms of filtering possibilities, the evaluation is heavily depending on the scenario. With the right focus, the prototype clearly beats the current e-banking solution in terms of effectiveness and comprehensibility. In other cases it is somewhat sub-par to the traditional e-banking solution but still is able to allow for a successful completion of the desired task.
 
-
------------------------------
-
-The purpose of a conclusion is to answer your research question. Begin, with repeating your research question. However, don’t simply reiterate the research question, but integrate an explanation of it into the rest of the section’s discussion.
-
-Then give the conclusions that you draw based on the results of your research (use the key results that are most relevant for answering your research question).
-
-Finally, answer the main question and explain how you have come to this conclusion. Don’t just list the question with the answer below it, but carefully explain it and incorporate it into the rest of the text. Provide the raw observations and don’t interpret.
-
------------------------------
-
-
-The conclusion typically covers the following:
-
-What was learned (this usually comes first)
-What remains to be learned (directions for future research)
-The shortcomings of what was done (evaluation)
-The benefits, advantages, applications, etc. of the research (evaluation)
-Recommendations
-
-
-This basic pattern might help in terms of structure
-
-Start para/mini-section with a summary of what was DONE ("I conducted an analysis of ABC)
-Move into what was FOUND in terms of your analysis ("From this analysis, XYZ became apparent" -- this is also a 'summary')
-Draw out implication 1, implication 2, etc. ("because of XYZ, we can now say PQR which leads to KLM")
-
-THEN
-
-Point to any gaps/problems ("However, we CANNOT say DEF")
-And then to what needs to be done next ("So therefore we should look at GHI")
-I have run out of alphabet.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 3
@@ -65,9 +33,25 @@ I have run out of alphabet.
 
 \section{Findings}
 
-tbd
-TODO: Maybe reflect back to literature and explain why author XYZ was right or wrong with his/her ideas.
-TODO: Answer to Research Questions? Create a new one for the main part?
+While answering the \glspl{srq} and evaluating the design and its implementation in the form of a prototype application, the following strengths of the artefact have been identified:
+\begin{itemize}[]
+	\item The usage of multiple linked views often reduces the minimum required interaction steps to reach a goal considerably. Depending on the scenario only half the steps are required compared to the e-banking solution. This means that it is much simpler to come to the desired answer.
+	\item The double-coloured (red and green) bar charts that visualize the exceeding of the defined thresholds help enormously to get an impression of the situation without having to dive in very deep.
+	\item The bar chart and table are designed very modular and thus have a high reusability for future improvements.
+\end{itemize}
+
+The evaluation however also showed some shortcomings in the design. These weaknesses can be summarized as the following ones:
+\begin{itemize}[]
+	\item Although usually less interaction steps are required in the prototype application, the e-banking solution had similar low numbers when its default date-range filter for the last 30 days could be used. Although a specific month can also be selected in the prototype, in its current implementation it is limited to full calendar months and does not allow to select a range that spans across two or more months.
+	\item The more detailed a query is and the longer the date-range within which it shall be run, the more beneficial is the much more detailed filtering system of e-banking that also supports amount-ranges, booking texts, account filtering etc. Due to the lack of these filters in the prototype, the exclusivity of the presented data usually is comparably worse than in e-banking.
+\end{itemize}
+
+With respect to the thesis statement, it can be said that the level of enhancement is depending on the specific scenario of the exploratory analysis. Due to the multiple linked views, the prototype can show its strengths when the scenario asks for switches in these views, such as comparing one month with another which can be done with just one click in the prototype application whereas in e-banking the selected date-range has to be manually adjusted. Contrary to that, with a very detailed question the prototype comes soon to its limitations as in its current state it only supports a filtering for categories and full years/months/days, but not for individually defined date-ranges or any other criteria such as amount-ranges or account selection. This however does not mean that the answer cannot be found with the prototype as well, it is just not as effective to do so as with other scenarios.
+\begin{framed}
+	\textit{\thesisstatementtext}
+\end{framed}
+
+Based on these results, the thesis statement as defined above, is not rejected.
 
 
 %----------------------------------------------------------------------------------------
@@ -76,12 +60,17 @@ TODO: Answer to Research Questions? Create a new one for the main part?
 
 \section{Future Research}
 
-tbd
-
-
-Include Support Tasks from VISM \newline
-data forest for individual transactions \newline
-select multiple months/days for the list of transactions \newline
-include sub-categories \newline
-speech recognition (e.g. Show me all transactions in the last seven days over CHF 100.) \newline
-evaluate with other banking products  \newline
+With regards to the different \glspl{srq}, future research in the following areas could lead to new knowledge for the academic community and help on further improving the prototype application.
+\begin{itemize}[]
+	\item \textbf{\gls{srq} 1:} As mentioned in the findings, the weaknesses of the prototype application are related to very specific queries that have to be executed. As an alternative to just provide more buttons and input fields in the \gls{ve} with the risk of overloading it, the utilization of \textit{Speech Recognition} integrated in the \gls{vr} application could potentially generate massive improvements. More advanced filtering such as "Show me all transactions over CHF 100 in the last seven days" would become possible.
+	
+	\item \textbf{\gls{srq} 2:} From the \gls{vism} 2.0, only the main tasks were considered for this thesis, whereas the three support tasks \textit{History}, \textit{Extract}, and \textit{Collaboration} were not in focus. Especially the \textit{Collaboration} support task could allow for even better exploratory analysis when the \gls{ve} is shared with additional people. In terms of practical relevance, this could allow to have the client advisor in the same (virtual) room as the client to discuss the financial situation more collaboratively.
+	
+	\item \textbf{\gls{srq} 3:} In the current design, the actual financial transactions are only shown as part of a table. Additional exploratory analysis possibilities could be created by looking into the concept of the 'data forest' again. With a 3D visualisation of the individual transactions, new insights into the data might be found.
+\end{itemize}
+In addition, some other potential areas for future research that are not directly linked to any \glspl{srq} are the following:
+\begin{itemize}[]
+	\item With the current design only a single year/month/day can be active at any given time, whereas for the categories any combination is possible. With the addition of this approach the the temporal selection possibilities, some of the weaknesses as described in the findings could be further mitigated.
+	
+	\item With regards to the evaluation of the prototype, only one e-banking solution could be used for the scenario comparison as no other banking product allowed for such a categorisation of payments and also offered a working demo application. This might change in the future and would allow for a broader evaluation.
+\end{itemize}

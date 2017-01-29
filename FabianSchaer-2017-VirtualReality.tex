@@ -82,7 +82,7 @@
 
 % Your name
 % Citation command \authorName
-\authors{Fabian \textsc{Schär}}
+\authors{Fabian Ernst \textsc{Schär}}
 %-------------------------------------------------
 
 % Your URL
@@ -196,6 +196,7 @@
 \newacronym{sdk}{SDK}{Software Development Kit}
 \newacronym{ide}{IDE}{Integrated Development Environment}
 \newacronym{fps}{FPS}{Frames Per Second}
+\newacronym{is}{IS}{Information System}
 
 
 % PDF meta-data
@@ -229,9 +230,21 @@
 %----------------------------------------------------------------------------------------
 
 \abstractPage{
-    The Thesis Abstract is written here (and usually kept to just this page)\ldots
-    
-    http://blogs.lse.ac.uk/impactofsocialsciences/2011/06/20/essential-guide-writing-good-abstracts/
+	
+	\chapter*{Abstract}
+	
+	Checking in on your current financial situation has never been easier with the introduction of e-banking and especially mobile banking. Their representation of the data about financial transactions however has barely even changed in the last decade and still relies on the same old pie-charts and tables. With the increased performance of recent virtual reality devices, a whole new set of possibilities open up to make use of the new three-dimensional space. This master thesis presents the feasibility of enhancing the traditional exploratory analysis of categorized financial transactions with a new, generally available virtual reality device, tailored interaction patterns, and new visualisation approaches.
+	
+	three fundamental interaction patterns: travel, selection, and manipulation
+	vism 2.0 defines seven main tasks
+	
+	
+The research in this master thesis discovered that autonomous navigation requires three fundamental components in order to work. First, the robot must be location-aware. The robot must then be able to sense its surroundings to gain knowledge about the environment. Finally, the robot needs artificial intelligence to recognize and interpret the information, using such data to derive control commands. With the exception of the artificial intelligence component, Google Project Tango includes all the necessary features such as motion tracking, area learning and depth perception. The validation of the provided features is an integral part of this master thesis. The quality, accuracy and reliability of the Google Project Tango system was therefore assessed and discussed. It was proven,, that the accuracy of the motion tracking component is only high and stable if the tests are conducted under laboratory conditions. For ad-hoc applications, the results fluctuate between sufficient and poor. However, the depth perception capability was found to be quite accurate within the official operation range, although the quality was not sufficient in terms of the resolution of the measurement. Overall, the current release of Google Project Tango is still relatively unstable and not very reliable for serious, productive applications.\newline
+\textbf{SOURCE: Danny Micha Meier (2016)}
+
+The examination of artificial intelligence methods is limited to a small set of applicable approaches, which can sufficiently address the uncertainties of Google Project Tango. The combination of A* as an offline path planning algorithm, together with a fuzzy logic controller to control and steer the robot's motion and a costmap-based approach for collision avoidance and detour planning, was shown to be the most promising. More complete motion planning algorithms - such as Vector Field Histogram and the Dynamic Window Approach - were also reviewed, and further in-depth examination of these is recommended for future work.\newline
+\textbf{SOURCE: Danny Micha Meier (2016)}
+
 }
 
 \clearpage % Start a new page
@@ -303,8 +316,8 @@
 %	GLOSSARY (if appropriate)
 %----------------------------------------------------------------------------------------
 
- \fillingPage{} 
- \listOfGlossary
+%\fillingPage{} 
+%\listOfGlossary
 
 %----------------------------------------------------------------------------------------
 %	ABBREVIATIONS (if appropriate)
@@ -331,18 +344,8 @@
 %	LIST OF LISTINGS (addition)
 %----------------------------------------------------------------------------------------
 
-%\renewcommand\lstlistlistingname{List of Listings}
-%\addcontentsline{toc}{chapter}{\lstlistlistingname}{\lstlistoflistings}
-
-%% https://gist.github.com/miho/a7f54e70fae82f78076675619fde7eb6
-\newcommand{\nocontentsline}[3]{}
-\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
-
-\addtotoc{List of Listings}
-%\lhead{\emph{List of Listings}} % Set the left side page header to "List of Listings"
-\renewcommand{\lstlistlistingname}{List of Listings}
-\tocless\lstlistoflistings
-
+\fillingPage{} 
+\listOfListings
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES (if appropriate)
@@ -354,10 +357,10 @@
 % Uncomment the lines as you write the Appendices
 
 \fillingPage{} 
-\include{02_Appendices/AppendixA_FinacialData}
+%\include{02_Appendices/AppendixA_FinacialData}
 
 \fillingPage{} 
-\include{02_Appendices/AppendixB_SourceCode}
+%\include{02_Appendices/AppendixB_SourceCode}
 
 %\fillingPage{} 
 %\include{02_Appendices/AppendixC}

@@ -493,6 +493,22 @@
     }\end{spacing}
 }
 %----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	CUSTOM: LIST OF LISTINGS DESIGN (added by Fabian Schaer)
+%----------------------------------------------------------------------------------------
+% https://gist.github.com/miho/a7f54e70fae82f78076675619fde7eb6
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+\newcommand\listOfListings{
+	\btypeout{List of Listings}
+	\addtotoc{List of Listings}
+	\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+	\renewcommand{\lstlistlistingname}{List of Listings}
+	\tocless\lstlistoflistings
+}
+%----------------------------------------------------------------------------------------
+
 %\newcommand\listconstants{Physical Constants}
 %\usepackage{longtable}
 %\newcommand\listofconstants[2]{
