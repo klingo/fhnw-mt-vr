@@ -22,6 +22,8 @@
 *.out
 *.synctex.gz
 *.glsdefs
+*.lol
 FabianSchaer-2016-VirtualReality.pdf
+FabianSchaer-2017-VirtualReality.pdf
 .DS_Store
 /Scripts/*
