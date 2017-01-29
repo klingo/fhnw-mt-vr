@@ -24,3 +24,4 @@
 *.glsdefs
 FabianSchaer-2016-VirtualReality.pdf
 .DS_Store
+/Scripts/*

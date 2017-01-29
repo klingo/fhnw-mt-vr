@@ -230,6 +230,8 @@
 
 \abstractPage{
     The Thesis Abstract is written here (and usually kept to just this page)\ldots
+    
+    http://blogs.lse.ac.uk/impactofsocialsciences/2011/06/20/essential-guide-writing-good-abstracts/
 }
 
 \clearpage % Start a new page
@@ -329,8 +331,18 @@
 %	LIST OF LISTINGS (addition)
 %----------------------------------------------------------------------------------------
 
-\fillingPage{} 
-\lstlistoflistings
+%\renewcommand\lstlistlistingname{List of Listings}
+%\addcontentsline{toc}{chapter}{\lstlistlistingname}{\lstlistoflistings}
+
+%% https://gist.github.com/miho/a7f54e70fae82f78076675619fde7eb6
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+
+\addtotoc{List of Listings}
+%\lhead{\emph{List of Listings}} % Set the left side page header to "List of Listings"
+\renewcommand{\lstlistlistingname}{List of Listings}
+\tocless\lstlistoflistings
+
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES (if appropriate)
@@ -341,11 +353,11 @@
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-%\fillingPage{} 
-%\include{02_Appendices/AppendixA_FinacialData}
+\fillingPage{} 
+\include{02_Appendices/AppendixA_FinacialData}
 
-%\fillingPage{} 
-%\include{02_Appendices/AppendixB_SourceCode}
+\fillingPage{} 
+\include{02_Appendices/AppendixB_SourceCode}
 
 %\fillingPage{} 
 %\include{02_Appendices/AppendixC}

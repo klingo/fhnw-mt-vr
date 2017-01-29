@@ -513,7 +513,7 @@ public void AddYearToTable(int year) {
      // store in scenemanager for proper de-selection later
      SceneManager.Instance.selectedYearRowImg = firstYearImg;
   }
-  // Add the bar to the list
+  // Add the year to the list
   yearRows.Add(newYearRow);
 }
 \end{lstlisting}
@@ -608,7 +608,7 @@ One of the most important metrics, especially for \gls{vr} applications is the n
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/08_Development/CPU_Usage_Singlethreaded.png}
-		\caption{Illustration of updateSelection() workflow}
+		\caption{Unity 3D CPU Usage with single-threaded execution of updateSelection() workflow}
 		\label{fig:unityprofilesingle}
 	\end{center}
 \end{figure}
@@ -616,7 +616,7 @@ A solution for this had to be found and implement to pass this structural test. 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/08_Development/CPU_Usage_Multithreaded.png}
-		\caption{Illustration of updateSelection() workflow}
+		\caption{Unity 3D CPU Usage with multi-threaded execution of updateSelection() workflow}
 		\label{fig:unityprofilemulti}
 	\end{center}
 \end{figure}
