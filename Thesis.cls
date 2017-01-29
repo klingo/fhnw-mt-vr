@@ -501,6 +501,7 @@
 \newcommand{\nocontentsline}[3]{}
 \newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
 \newcommand\listOfListings{
+	\btypeout{List of Listings}
 	\addtotoc{List of Listings}
 	\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
 	\renewcommand{\lstlistlistingname}{List of Listings}
