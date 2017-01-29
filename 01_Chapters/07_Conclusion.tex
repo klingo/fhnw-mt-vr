@@ -35,14 +35,15 @@ Beginning with the problem statement that information about the personal financi
 
 While answering the \glspl{srq} and evaluating the design and its implementation in the form of a prototype application, the following strengths of the artefact have been identified:
 \begin{itemize}[]
-	\item TODO: aaa
-	\item TODO: bbb
+	\item TODO: less minimum no of steps, sometimes only 50\%
+	\item TODO: multiple linked views reduce interactoin steps
+	\item modularity of bar charts and tables, reusability
 \end{itemize}
 
 The evaluation however also showed some shortcomings in the design. These weaknesses can be summarized as the following ones:
 \begin{itemize}[]
-	\item TODO: aaa
-	\item TODO: bbb
+	\item: Although usually less interaction steps are required in the prototype application, the e-banking solution had similar low numbers when its default date-range filter for the last 30 days could be used. Although a specific month can also be selected in the prototype, in its current implementation it is limited to full calendar months and does not allow to select a range that spans across two or more months.
+	\item The more detailed a query is and the longer the date-range within which it shall be run, the more beneficial is the much more detailed filtering system of e-banking that also supports amount-ranges, booking texts, account filtering etc. Due to the lack of these filters in the prototype, the exclusivity of the presented data usually is comparably worse than in e-banking.
 \end{itemize}
 
 With respect to the thesis statement, it can be said that the level of enhancement is depending on the specific scenario of the exploratory analysis. Due to the multiple linked views, the prototype can show its strengths when the scenario asks for switches in these views, such as comparing one month with another which can be done with just one click in the prototype application whereas in e-banking the selected date-range has to be manually adjusted. Contrary to that, with a very detailed question the prototype comes soon to its limitations as in its current state it only supports a filtering for categories and full years/months/days, but not for individually defined date-ranges or any other criteria such as amount-ranges or account selection. This however does not mean that the answer cannot be found with the prototype as well, it is just not as effective to do so as with other scenarios.
