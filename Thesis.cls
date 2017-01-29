@@ -493,6 +493,25 @@
     }\end{spacing}
 }
 %----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	CUSTOM: LIST OF LISTINGS DESIGN (added by Fabian Schaer)
+%----------------------------------------------------------------------------------------
+% https://gist.github.com/miho/a7f54e70fae82f78076675619fde7eb6
+\newcommand\listOfListings{
+
+
+	
+	\newcommand{\nocontentsline}[3]{}
+	\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+	
+	\addtotoc{List of Listings}
+	%\lhead{\emph{List of Listings}} % Set the left side page header to "List of Listings"
+	\renewcommand{\lstlistlistingname}{List of Listings}
+	\tocless\lstlistoflistings
+}
+%----------------------------------------------------------------------------------------
+
 %\newcommand\listconstants{Physical Constants}
 %\usepackage{longtable}
 %\newcommand\listofconstants[2]{
