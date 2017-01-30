@@ -146,12 +146,12 @@
 \usepackage[pdfpagemode={UseOutlines},bookmarks=true,bookmarksopen=true,
    bookmarksopenlevel=0,bookmarksnumbered=true,hypertexnames=false,
    colorlinks=false,linkcolor={black},citecolor={black},urlcolor={black},
-   pdfstartview={FitV},unicode,breaklinks=true]{hyperref}
+   pdfstartview={FitV},unicode,breaklinks=true,hidelinks]{hyperref}
 \pdfstringdefDisableCommands{
    \let\\\space
 }
 
-% add "hidelinks" to the \usepackage above to completely hide all markings also on the PDF
+% TODO: add "hidelinks" to the \usepackage above to completely hide all markings also on the PDF
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS

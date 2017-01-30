@@ -231,20 +231,15 @@
 
 \abstractPage{
 	
-	\chapter*{Abstract}
+	{\huge \textbf{Abstract}} \newline
 	
-	Checking in on your current financial situation has never been easier with the introduction of e-banking and especially mobile banking. Their representation of the data about financial transactions however has barely even changed in the last decade and still relies on the same old pie-charts and tables. With the increased performance of recent virtual reality devices, a whole new set of possibilities open up to make use of the new three-dimensional space. This master thesis presents the feasibility of enhancing the traditional exploratory analysis of categorized financial transactions with a new, generally available virtual reality device, tailored interaction patterns, and new visualisation approaches.
+	Checking in on your current financial situation has never been easier with the introduction of e-banking and especially mobile banking. Their representation of the data about financial transactions however has barely even changed in the last decade and still relies on the same old pie-charts and tables. With the increased performance of recent virtual reality devices, a whole new set of possibilities open up to make use of the three-dimensional space. This master thesis presents the feasibility of enhancing the traditional exploratory analysis of categorized financial transactions with a generally available virtual reality device and tailored state-of-the-art interaction patterns and visualisation approaches.
 	
-	three fundamental interaction patterns: travel, selection, and manipulation
-	vism 2.0 defines seven main tasks
+	The research in this thesis discovered three fundamental classifications of interaction patterns on which most of the scientific work with virtual reality is based on: Travel, Selection, and Manipulation. While 'Travel' focuses on the movement and viewing inside the virtual environment, 'Selection' is about how the user can choose an object to later interact with, which then is part of 'Manipulation'. Different input methods such as gesture controllers or full-body tracking all have their own strengths and weaknesses towards certain interaction patterns. With the Visual Information Seeking Mantra 2.0, seven main and three supporting tasks for an effective way to find information have been defined. Research towards data visualisation in virtual reality showed that both approaches from classic 2D representations can be successfully ported to virtual reality, but also virtual reality specific approaches such as a data forest proved their usefulness.
 	
+	The concept of multiple linked views is a core part of the design suggestion and makes use of the additional space that is available in a virtual environment compared to a classic 2D screen. The different views have been defined with a clear interaction flow in mind and matching interaction patterns are assigned to them. The development of the artefact in form of a prototype application in Unity 3D confirmed the feasibility of the design and showed additional challenges in terms of performance and usability.
 	
-The research in this master thesis discovered that autonomous navigation requires three fundamental components in order to work. First, the robot must be location-aware. The robot must then be able to sense its surroundings to gain knowledge about the environment. Finally, the robot needs artificial intelligence to recognize and interpret the information, using such data to derive control commands. With the exception of the artificial intelligence component, Google Project Tango includes all the necessary features such as motion tracking, area learning and depth perception. The validation of the provided features is an integral part of this master thesis. The quality, accuracy and reliability of the Google Project Tango system was therefore assessed and discussed. It was proven,, that the accuracy of the motion tracking component is only high and stable if the tests are conducted under laboratory conditions. For ad-hoc applications, the results fluctuate between sufficient and poor. However, the depth perception capability was found to be quite accurate within the official operation range, although the quality was not sufficient in terms of the resolution of the measurement. Overall, the current release of Google Project Tango is still relatively unstable and not very reliable for serious, productive applications.\newline
-\textbf{SOURCE: Danny Micha Meier (2016)}
-
-The examination of artificial intelligence methods is limited to a small set of applicable approaches, which can sufficiently address the uncertainties of Google Project Tango. The combination of A* as an offline path planning algorithm, together with a fuzzy logic controller to control and steer the robot's motion and a costmap-based approach for collision avoidance and detour planning, was shown to be the most promising. More complete motion planning algorithms - such as Vector Field Histogram and the Dynamic Window Approach - were also reviewed, and further in-depth examination of these is recommended for future work.\newline
-\textbf{SOURCE: Danny Micha Meier (2016)}
-
+	The evaluation of the prototype application has been conducted with a set of real-world scenarios that require an exploratory analysis of the financial data, and was compared with a current e-banking solution. It could be shown that the multiple linked views bring a major benefit in terms of an efficient and more intuitive interaction with the data. With increasing complexity of the analysis scenario however, the limited filtering options of the artefact were only sub-par to the existing e-banking solution. Further improvements to tackle these weaknesses were also reviewed and more detailed examination of these is recommended for future research.
 }
 
 \clearpage % Start a new page
@@ -357,9 +352,9 @@ The examination of artificial intelligence methods is limited to a small set of 
 % Uncomment the lines as you write the Appendices
 
 \fillingPage{} 
-%\include{02_Appendices/AppendixA_FinacialData}
+\include{02_Appendices/AppendixA_FinacialData}
 
-\fillingPage{} 
+%\fillingPage{} 
 %\include{02_Appendices/AppendixB_SourceCode}
 
 %\fillingPage{} 
