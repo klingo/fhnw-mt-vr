@@ -146,7 +146,7 @@
 \usepackage[pdfpagemode={UseOutlines},bookmarks=true,bookmarksopen=true,
    bookmarksopenlevel=0,bookmarksnumbered=true,hypertexnames=false,
    colorlinks=false,linkcolor={black},citecolor={black},urlcolor={black},
-   pdfstartview={FitV},unicode,breaklinks=true]{hyperref}
+   pdfstartview={FitV},unicode,breaklinks=true,hidelinks]{hyperref}
 \pdfstringdefDisableCommands{
    \let\\\space
 }
