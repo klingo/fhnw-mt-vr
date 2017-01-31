@@ -60,22 +60,23 @@ The technical setup chapter gives a description and explanation for the selectio
 The in the literature review discussed different methods for user input as part of \gls{srq} 2 have been summarized in Table \ref{tbl:methodscomparison}. For the selection of the right \gls{vr} device, this conclusion was considered for the evaluation. While for the \textit{Travel} aspect only three methods (including the option for no travel at all) have been discussed:
 
 \textbf{No travelling option:}
-By looking at \gls{mdg} 2 that defines the user to be part of the \gls{ve} and thus is able to 'travel' around the visualisations, the third option would violate this design goal and thus is no viable option.
+By looking at \gls{mdg} 2 that defines the user to be part of the \gls{ve} and thus is able to 'travel' around the visualisations, this option would violate this design goal and thus is no viable option.
 
 \textbf{Full Body Tracking:}
-While it allows for free movement within \gls{ve}, it is lacking accuracy and only works from one angle. This can be effectively used if a static display in one direction is used which updates the data that it displays. With an implementation of the 'multiples linked views' concept however, one angle will not be enough anymore.
+While it allows for free movement within \gls{ve}, it is lacking accuracy and only works from one angle. This can be effectively used if a static display in one direction is used which updates the data that it displays. With an implementation of the 'multiples linked views' concept that are located around the user, one angle however will not be enough.
 
 \textbf{360° Motion Tracking:}
 Compared to 'Full Body Tracking', the '360° Motion Tracking' provides much better accuracy and allows for spatial positioning in all three axis, which strongly supports \gls{mdg} 2.
 
 
-This leads to a first conclusion for '360° Motion Tracking' which is the only methods for \textit{Travel} that fulfils all requirements of the design goals. For \textit{Selection} (and \textit{Manipulation}), some more methods had been discussed:
+This leads to a first conclusion for '360° Motion Tracking' which is the only methods for \textit{Travel} that fulfils all requirements of the design goals. \newline
+For \textit{Selection} (and \textit{Manipulation}), some more methods had been discussed:
 
 \textbf{No selection/manipulation option:}
 The option for no input method cannot be considered as the application would then provide no interaction at all and thus violate \gls{mdg} 1 that requires a high interactivity with tightly coupled actions/reactions.
 
 \textbf{Hand Gestures:}
-While 'Hand Gestures' offer a very high familiarity, they have a limited tracking area and become less accurate with faster movements. Although the latter is not of that importance, the limited tracking area can become problematic with the different views, especially since the supporting views are placed in the centre of where the user is looking at.
+While 'Hand Gestures' offer a very high familiarity, they have a limited tracking area and become less accurate with faster hand movements. Although the latter is not of that importance, the limited tracking area can become problematic with the different views, especially since the supporting views are not directly placed in the centre of where the user is looking at.
 
 \textbf{Gesture Controllers:}
 Compared to 'Hand Gestures', they bring the benefit of high accuracy and the unambiguous mapping of interactions to the individual buttons of the controller. This supports the design which heavily relies on executing accurate \textit{Selection} patterns. Their disadvantage of requiring an additional physical device (the controller itself) can be neglected for this prototype as there are no constraints in that area.
@@ -84,7 +85,7 @@ Compared to 'Hand Gestures', they bring the benefit of high accuracy and the una
 This methods requires a silent area and good pronunciation of one of the supported official languages, as dialects can be quite problematic. While it allows for some very interesting, more complex queries such as "Show me all transactions in the last seven days over CHF 100.", it rather can be seen as a supportive input method, but not as the main input method.
 
 \textbf{Physical Placement of Objects:}
-While the 'Physical Placement of Objects' would be the most realistic and immersive option, it can be considered as to expensive and also too difficult to build as for this design goal not only some buttons and knobs would need to be built, but also fully dynamic charts and tables.
+While the 'Physical Placement of Objects' would be the most realistic and immersive option, it can be considered as too expensive and also too difficult to build for this design as not only some buttons and knobs would need to be built, but also fully dynamic charts and tables.
 
 
 It can be concluded, that the 'Gesture Controllers' have the highest fit, and also work very well together with the '360° Motion Tracking'. Speech Recognition can provide some interesting support-functionalities that should be looked at in future research. \newline
@@ -97,7 +98,7 @@ This combination of input methods are best met with the HTC Vive (\url{https://w
 
 \subsection{Software}
 
-All used software for the development of the \gls{vr} prototype is summarised and described in the following sub-chapters.
+All used software for the development of the \gls{vr} prototype are summarized and described in the following sub-chapters.
 
 
 \subsubsection{Game Engine}
@@ -110,7 +111,7 @@ At the foundation, the multi-platform game engine and development toolkit 'Unity
 
 
 \subsubsection{Game Engine Plugins}
-For the integration of the \gls{sdk} to access the specific methods and functions of the HTC Vive, the SteamVR plugin for Unity is used. In addition to this, \gls{vrtk} will be used as a toolkit to rely on 'semi-standardised' ways for certain \gls{vr}-specific interactions and functions in Unity 3D. Even though the HTC Vive has been chosen for the hardware part, due to the usage of the SteamVR plugin and the \gls{vrtk}, only little to none changes should be required in order to have the prototype application also run other supported hardware such as the Oculus Rift, since both of them support multiple \glspl{hmd}.
+For the integration of the \gls{sdk} to access the specific methods and functions of the HTC Vive, the SteamVR plugin for Unity is used. In addition to this, \gls{vrtk} will be used as a toolkit to rely on 'semi-standardized' ways for certain \gls{vr}-specific interactions and functions in Unity 3D. Even though the HTC Vive has been chosen for the hardware part, due to the usage of the SteamVR plugin and the \gls{vrtk}, only little to no changes should be required in order to have the prototype application also run with other supported hardware such as the Oculus Rift, since both of them support multiple \glspl{hmd}.
 
 \textbf{Software:} SteamVR Plugin \newline
 \textbf{Version:} 1.1.1 \newline
@@ -125,7 +126,7 @@ For the integration of the \gls{sdk} to access the specific methods and function
 
 
 \subsubsection{\gls{ide}}
-Microsoft Visual Studio Community 2015 from  is used for the development of the Unity Scripts in the programming language C\#. These scripts handle and manage the whole \gls{ve} by triggering interactions of the 3D objects defined and placed in Unity 3D.
+Microsoft Visual Studio Community 2015 is used for the development of the Unity Scripts in the programming language C\#. These scripts handle and manage the whole \gls{ve} by triggering interactions of the 3D objects that are defined and placed in Unity 3D.
 
 \textbf{Software:} Microsoft Visual Studio Community \newline
 \textbf{Version:} 2015 \newline
@@ -135,7 +136,7 @@ Microsoft Visual Studio Community 2015 from  is used for the development of the 
 
 \subsubsection{3D Graphics}
 
-Finally, for the design of custom 3D models as representations of the category icons as shown in Figure \ref{fig:categoriesicons} in Chapter \ref{SubSectionCategoriesFiltering}, the  open-source 3D computer graphics software Blender is used. The exported models are fully compatible with Unity 3D and can be seamlessly imported and used.
+Finally, for the design of custom 3D models for the representation of the category icons as shown in Figure \ref{fig:categoriesicons} in Chapter \ref{SubSectionCategoriesFiltering}, the  open-source 3D computer graphics software Blender is used. The exported models are fully compatible with Unity 3D and can be seamlessly imported and used.
 
 \textbf{Software:} Blender \newline
 \textbf{Version:} 2.78a \newline
@@ -157,7 +158,7 @@ A key part of the prototype development is the (software) architecture as well a
 %-----------------------------------
 \subsection{General Architecture}
 
-Figure \ref{fig:steamvrselected} shows the general architecture of the Steam VR plugin for Unity 3D and how it acts as a wrapper for multiple different \glspl{hmd} that can be communicated with. The \gls{vrtk} itself then is part of the software itself as its scripts are used for the application and can also be extended to provide additional functionality that is not offered from the base toolkit. The base data set which is available as a .CSV file is accessed from within the software and stored inside multiple different data objects that are discussed in more detail in the following 'Data Model' chapter.
+Figure \ref{fig:steamvrselected} shows the general architecture of the Steam VR plugin for Unity 3D and how it acts as a wrapper for multiple different \glspl{hmd} that can be communicated with. The \gls{vrtk} itself then is part of the software as its scripts are used for the application and can also be extended to provide additional functionality that is not offered from the base toolkit. The base data set which is available as a .CSV file (see Appendix \ref{AppendixA}) is accessed from within the software and stored inside multiple different data objects that are discussed in more detail in the following 'Data Model' chapter.
 
 \begin{figure}[h]
 	\begin{center}
@@ -175,14 +176,13 @@ Figure \ref{fig:steamvrselected} shows the general architecture of the Steam VR 
 
 \subsection{Data Model}
 
-One of the main challenges is to get reasonable performance while working with a not so small data set (600+ entries as shown in Appendix \ref{AppendixA}) that can be filtered not only by year/month/day but also by several different categories atop of that. In order to not always filter through the whole data set, it will be split up in smaller parts that contain only data for a specific month in a specific year. While reading in the CSV file, multiple instances of the \texttt{[System.Data.DataTable]} class are created and stored with the unique key \texttt{[$<$year$>$-$<$month$>$]} in a \texttt{[System.Collections.Generic.Dictionary]} which is the C\# equivalent of a HashMap in Java. For the filtering of the DataTable, the \texttt{[System.Data.DataView]} class is used which itself does not store data but represents a connected view of a DataTable. While this already helps with the performance, as soon as the category filtering comes in place it still is relatively slow as all twelve months need to be updated. \newline
-To at least partially address this problem, a caching of the filtered data for the bar charts and table has been considered. For this, another unique key had to be defined in the form of \texttt{[$<$year$>$-$<$month$>$-$<$day$>$-$<$binaryCategory$>$]}. The \texttt{binaryCategory} is a binary state representation of all \textbf{eleven} categories where each one of them is either represented as a '0' (inactive) or a '1' (active). Following are some example to indicate how certain situations can be represented:
+One of the main challenges is to get reasonable performance while working with a not so small data set (600+ entries as shown in Appendix \ref{AppendixA}) that can be filtered not only by year/month/day but also by several different categories atop of that. In order to not always filter through the whole data set, it will be split up in smaller parts that contain only data for a specific month in a specific year. While reading in the CSV file, multiple instances of the \texttt{[System.Data.DataTable]} class are created and stored with the unique key \texttt{[$<$year$>$-$<$month$>$]} in a \texttt{[System.Collections.Generic.Dictionary]} which is the C\# equivalent of a HashMap in Java. For the filtering of the DataTable, the \texttt{[System.Data.DataView]} class is used which itself does not store data but represents a connected view of a DataTable. While this already helps with the performance, as soon as the category filtering comes in place it still is relatively slow as all twelve months need to be updated. To at least partially address this problem, a caching of the filtered data for the bar charts and table has been considered. For this, another unique key had to be defined in the form of \texttt{[$<$year$>$-$<$month$>$-$<$day$>$-$<$binaryCategory$>$]}. The \texttt{binaryCategory} is a binary state representation of all \textbf{eleven} categories where each one of them is either represented as a '0' (inactive) or a '1' (active). Following are some example to indicate how certain situations can be represented:
 \begin{itemize}[noitemsep,nolistsep]
 	\item \texttt{2016-0-0-00000000000} \textit{(only year selected and all categories inactive)}
 	\item \texttt{2016-3-0-11111111111} \textit{(single month selected and all categories active)}
 	\item \texttt{2016-8-27-11100010101} \textit{(selection of a specific day with different category states)}
 \end{itemize}
-With eleven categories, over 2'048 different combinations can be made across them. If this is considered for a whole year (365 days) there are a staggering amount of 747'520 different key-combinations, which makes it impractical to try to pre-cache every single combination. Due to this an on-demand cache is implemented to at least massively reduce the loading times of previously selected combinations. Listing \ref{lst:csharpdictionarydefinition} shows all definitions for the different containers that hold the information during runtime. \texttt{dataTableDict} stores the different \texttt{DataTable}s per month, \texttt{chartValuesDict} and \texttt{chartLabelsDict} contain the labels and values for all bar charts with their long unique key, and finally \texttt{tableRowsDict} which helds the information for the table again with the long unique key. All these attributes are defined in the \texttt{DataViewManager.cs} class that is referenced in the \texttt{SceneManager.cs} class which is a Singleton instance and thus is guaranteed to only exist once in runtime and is also always accessible from any other script.
+With eleven categories, over 2'048 different combinations can be made across them. If this is considered for a whole year (365 days) there are a staggering amount of 747'520 different key-combinations, which makes it impractical to try to pre-cache every single combination. Due to this, an on-demand cache is implemented to at least massively reduce the loading times of previously selected combinations. Listing \ref{lst:csharpdictionarydefinition} shows all definitions for the different containers that hold the information during runtime. \texttt{dataTableDict} stores the different \texttt{DataTable}s per month, \texttt{chartValuesDict} and \texttt{chartLabelsDict} contain the labels and values for all bar charts with their long unique key, and finally \texttt{tableRowsDict} which holds the information for the table again with the long unique key. All these attributes are defined in the \texttt{DataViewManager.cs} class that is referenced in the \texttt{SceneManager.cs} class which is a Singleton instance and thus is guaranteed to only exist once in runtime and is also always accessible from any other script.
 \begin{lstlisting}[caption={Dictionary definitions for data storage during runtime}, label={lst:csharpdictionarydefinition}]
 public Dictionary<string, DataTable> dataTableDict;
 private Dictionary<string, float[]> chartValuesDict;
@@ -295,7 +295,7 @@ In this chapter, an overview of all the views and their usage is provided, as we
 %-----------------------------------
 \subsection{Views / UI}
 
-The following list of views refers back to the Suggestion chapter where the Navigation Map (Figure \ref{fig:navigationmap}) and Interaction Map (Figure \ref{fig:interactionmap}) are described. For each view a short explanation about its purpose is provided, alongside some design aspects from the development, and a screenshot that shows the view of final prototype application. Figure \ref{fig:unityoverview} gives an overview over the whole scene in Unity 3D where all the different views are arranged almost in a circle around the centre where the user will be spawning.
+The following list of views refers back to the Suggestion chapter where the Navigation Map (Figure \ref{fig:navigationmap}) and Interaction Map (Figure \ref{fig:interactionmap}) are described. For each view a short explanation about its purpose is provided, alongside some design aspects from the development, and a screenshot that shows the view of final prototype application. Figure \ref{fig:unityoverview} gives an overview over the whole scene in Unity 3D where all the different views are arranged almost in a circle around the centre where the user will be placed upon loading the scene.
 
 \begin{figure}[h]
 	\begin{center}
@@ -310,7 +310,7 @@ The following list of views refers back to the Suggestion chapter where the Navi
 %-----------------------------------
 \subsubsection{View 1: Year Overview}
 
-This is the first view the user will see when he spawns in the \gls{ve}, it is located directly in front of him.
+This is the first view the user will see when he enters the \gls{ve}, it is located directly in front of him.
 
 \textbf{Purpose of view:} It provides a comprehensive overview over the situation of the financial expenses. Each category has its own expenses threshold defined which defines on what amount the vertical threshold line is drawn. This can be seen in Figure \ref{fig:unityview1} where the threshold is set to 3'300. If the total expenses of a month exceed the threshold, the amount of the bar above the line is in red colour compared to the rest below the line which is in green colour. This gives a very fast indication to the user in which months more money was spent than planned. When a single month is selected, the corresponding bar starts to flash. This allows for a better visual connection between the two charts than just relying on the label below them, which should increase the effectiveness of the "multiple linked views" concept. The bar chart further only includes the categories (and thresholds) that have been activated in view 3.
 
@@ -320,7 +320,7 @@ This is the first view the user will see when he spawns in the \gls{ve}, it is l
 	\item see a list of all financial transactions for that month (Path 4)
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[t]
 	\begin{center}
 		\includegraphics[width=12cm]{03_Figures/08_Development/View1_YearOverview.png}
 		\caption{View 1: Year Overview (live in \gls{vr})}
@@ -336,14 +336,14 @@ This is the first view the user will see when he spawns in the \gls{ve}, it is l
 
 To the right of the year overview (View 1), the month overview can be found. It initially is empty until a month is selected in the year overview.
 
-\textbf{Purpose of view:} Contrary to the year overview, the individual days do not indicate their own total amount of expenses, but they rather stack up with all the previous expenses from that month. This gives the unique insight on which day exactly the threshold had been exceeded. This can be seen very nicely in Figure \ref{fig:unityview2} where the threshold of 3'330 was exceeded on June 21st. To not overload the view with too many numbers, they are only shown when there was a change compared to the previous day. Like the month overview, when a single day is selected, the bar starts flashing for an assisted visual connection. Again, this bar chart only includes the categories (and thresholds) that have been activated in view 3.
+\textbf{Purpose of view:} Contrary to the year overview, the individual days do not indicate their own total amount of expenses, but they rather stack up with all the previous expenses from that month. This gives the unique insight on which day exactly the threshold had been exceeded. This can be seen very nicely in Figure \ref{fig:unityview2} where the threshold of 3'330 was exceeded on June 21st. To not overload the view with too many numbers, they are only shown when there was a change compared to the previous day. Like the month overview, when a single day is selected, the bar starts flashing for an assisted visual connection. Again, this bar chart only includes the categories (and thresholds) that have been activated in View 3.
 
 \textbf{Possible Interaction:} Selecting a bar to...
 \begin{itemize}[noitemsep,nolistsep]
 	\item see a list of all financial transactions for that day (Path 4)
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[t]
 	\begin{center}
 		\includegraphics[width=12cm]{03_Figures/08_Development/View2_MonthOverview.png}
 		\caption{View 2: Month Overview (live in \gls{vr})}
@@ -368,7 +368,7 @@ To the left of the year overview (View 1), the year selection screen is shown in
 	\item clear the table with financial transactions (Path 4)
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[t]
 	\begin{center}
 		\includegraphics[width=12cm]{03_Figures/08_Development/View3_YearSelection.png}
 		\caption{View 3: Year Selection (live in \gls{vr})}
@@ -382,10 +382,10 @@ To the left of the year overview (View 1), the year selection screen is shown in
 %-----------------------------------
 \subsubsection{View 4: Categories Filtering}
 
-Right in front of the user, a bit below eye sight is some kind of a pedestal on which the eleven category icons from Figure \ref{fig:categoriesicons} are represented as 3D models. 
+Right in front of the user, a bit below eye sight is some type of a pedestal on which the eleven category icons from Figure \ref{fig:categoriesicons} are represented as 3D models. 
 
 \textbf{Purpose of view:} Changing the selection of the categories should be as close to the user as possible but still not block his view on all the different charts and tables. Therefore it has been located right in front of him on a bit a lower height. Each category object can be in one of three different states: When the category is inactive and thus not considered for being displayed in any of the charts or table, then the object is represented in \textbf{white colour}. When the category is activated and the corresponding transactions are included in the other views, the object is shown in \textbf{green colour}. Due to the increased computation time when changing the selection, a third state had to be introduced that indicates with \textbf{yellow colour} that this category is currently being processed to either be activated or deactivated. \newline
-Special about this view is that the GameObject which represent the categories first had to be all created by hand in Blender, a free and open-source 3D computer graphics software. The final models (\texttt{*.blend}) can directly be imported into Unity and are fully accessible in terms of used materials, individual objects, or if existing also animations.
+Special about this view is that the GameObject which represent the categories first had to be all created by hand in Blender, a free and open-source 3D computer graphics software. The final models (\texttt{*.blend}) can directly be imported into Unity and are fully accessible in terms of used materials, individual object-parts, or if existing also animations.
 
 \textbf{Possible Interaction:} Selecting a category icon to...
 \begin{itemize}[noitemsep,nolistsep]
@@ -394,7 +394,7 @@ Special about this view is that the GameObject which represent the categories fi
 	\item apply the filter on list of financial transactions (Path 7)
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[t]
 	\begin{center}
 		\includegraphics[width=12cm]{03_Figures/08_Development/View4_CategoriesFiltering_Loading.png}
 		\caption{View 4: Categories Filtering (live in \gls{vr})}
@@ -417,7 +417,7 @@ To the right of the month overview (View 2), or opposite the year overview (View
 	\item see the full transaction details (Path 8)
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[t]
 	\begin{center}
 		\includegraphics[width=12cm]{03_Figures/08_Development/View5_FinTransactionsOverview.png}
 		\caption{View 5: Fin. Transactions Overview (live in \gls{vr})}
@@ -451,9 +451,9 @@ Directly to the right of the table, the detail view is located. It is only displ
 %-----------------------------------
 \subsection{Interactions}
 
-The gesture controllers themselves provide three different means of interaction with the \gls{ve}. In order to familiarize the user with these in an immersive way, upon loading the prototype application, tooltips indicate on the visualised controller which buttons us used for what. These tooltips remain visible for a limited amount of time and then disappear to not become too distractive for experienced users. Figure \ref{fig:unitypointertooltips} shows on the left side how this tooltips look like. \newline
-Since the different views are rather far away from where the user is spawned, a pointer functionality has been introduced to the gesture controllers. By pressing the touchpad the pointer becomes visible and can be used as a form of an extended hand. With it, all selection functionalities can be triggered which are described in more details below. Figure \ref{fig:unitypointertooltips} shows on the right side how this pointer looks like and also how it collides with any 3D objects in the \gls{ve}.
-\begin{figure}[h]
+The gesture controllers themselves provide three different means of interaction with the \gls{ve}. In order to familiarize the user with these in an immersive way, upon loading the prototype application, tooltips indicate on the visualized controller which buttons us used for what. These tooltips remain visible for a limited amount of time and then disappear to not become too distractive for experienced users. Figure \ref{fig:unitypointertooltips} shows on the left side how this tooltips look like. \newline
+Since the different views are rather far away from where the user is position upon starting the application, a pointer functionality has been introduced to the gesture controllers. By pressing the touchpad, the pointer becomes visible and can be used as a form of an extended hand. With it, all selection functionalities can be triggered which are described in more details below. Figure \ref{fig:unitypointertooltips} shows on the right side how this pointer looks like and also how it collides with any 3D objects in the \gls{ve}.
+\begin{figure}[t]
 	\begin{center}
 		\includegraphics[width=7cm]{03_Figures/08_Development/Controller_Tooltips.png}
 		\includegraphics[width=7cm]{03_Figures/08_Development/Controller_Pointer.png}
@@ -497,7 +497,7 @@ The application currently only supports a single CSV file to be read in, but it 
 YearTable yearTable = GameObject.FindObjectOfType<YearTable>();
 yearTable.AddYearToTable(currYear);
 \end{lstlisting}
-Inside the \texttt{YearTable.cs} class, the method \texttt{AddYearToTable(int year)} is called which creates a new instance of the GameObject that represents an entry in the table and has been stored as a prefab. This allows to seamlessly create new objects that have the exact same configuration, and it further reduces the memory load since only instances are created and not complete new objects. This new GameObject is then set as a child of the class itself and thus the "frame" where all the rows are hold together. If the list was empty when the new year was added, its colour is changed to indicate that this row has been preselected. All future entries will not have this modification and thus remain with a white background colour. A reference to the \texttt{Image} whose colour was changed has to be stored in the \texttt{SceneManager.cs} class to make sure that when a different year is selected, the \texttt{SceneManager.cs} still remembers which \texttt{Image} was selected before and therefore reset its colour back to white. Listing \ref{lst:csharpyeartable} shows in a \textbf{simplified} way how this logic looks like in the \texttt{YearTable.cs} class.
+Inside the \texttt{YearTable.cs} class, the method \texttt{AddYearToTable(int year)} is called which creates a new instance of the GameObject that represents an entry in the table and has been stored as a prefab. This allows to seamlessly create new objects that have the exact same configuration, and it further reduces the memory load since only instances are created and not complete new objects. This new GameObject is then set as a child of the class itself and thus the "frame" where all the rows are held together. If the list was empty when the new year was added, its colour is changed to indicate that this row has been preselected. All future entries will not have this modification and thus remain with a white background colour. A reference to the \texttt{Image} whose colour was changed has to be stored in the \texttt{SceneManager.cs} class to make sure that when a different year is selected, the \texttt{SceneManager.cs} still remembers which \texttt{Image} was selected before and therefore reset its colour back to white. Listing \ref{lst:csharpyeartable} shows in a \textbf{simplified} way how this logic looks like in the \texttt{YearTable.cs} class.
 \begin{lstlisting}[caption={YearTable.cs : Simplification of adding a new year to the table}, label={lst:csharpyeartable}]
 public void AddYearToTable(int year) {
   Year newYearRow;
@@ -526,8 +526,8 @@ public void AddYearToTable(int year) {
 
 \label{SubSubSectionSelectionBar}
 
-\textbf{Purpose of interaction:} By default the user starts with the Year Overview where possible  one or more months have expenses that exceeded the pre-defined threshold. The most intuitive way to then select this specific month (or the specific day in case of the Month Overview) is by actually pointing at it and then selecting it. When a month has been selected, its corresponding Month Overview will be displayed as well as the table is updated with a list of financial transactions. How the selection can look like is shown in Figure \ref{fig:unitybarselection} where the bar that is pointed at gets slightly opaque. If this bar then is actually selected, it starts flashing so it is easily visible for which bar the other views display their data now.
-\begin{figure}[h]
+\textbf{Purpose of interaction:} By default the user starts with the Year Overview where potentially one or more months have expenses that exceed the pre-defined threshold. The most intuitive way to then select this specific month (or the specific day in case of the Month Overview) is by actually pointing at it and then selecting it. When a month has been selected, its corresponding Month Overview will be displayed as well as the table is updated with a list of financial transactions. How the selection can look like is shown in Figure \ref{fig:unitybarselection} where the bar that is pointed at gets slightly opaque. If this bar then is actually selected, it starts flashing so it is easily visible for which bar the other views display their data now.
+\begin{figure}[t]
 	\begin{center}
 		\includegraphics[width=12cm]{03_Figures/08_Development/Bar_Selection.png}
 		\caption{Selecting a bar with the Gesture Controller Pointer (live in \gls{vr})}
@@ -535,29 +535,7 @@ public void AddYearToTable(int year) {
 	\end{center}
 \end{figure}
 
-\textbf{Implementation details:} Each bar of the two charts has the \texttt{ChartBarClick.cs} script attached to it which is responsible for all direct interaction with it. It consists of three methods: \texttt{StartTouching()}, \texttt{StopTouching()}, and \texttt{StartUsing()}. The first two are to make sure that the bar becomes slightly opaque upon "touching" it and then returns to its normal colour when the "touching" ends. The \texttt{StartUsing} method first checks to which chart this bar belongs, stops any other flashing bars if existing, starts flashing the selected bar, updates the information about the selected month/day in the \texttt{SceneManager.cs} and finally triggers the following method: \newline
-\texttt{SceneManager.Instance.updateSelection(label);} The \texttt{label} in this case can either be a numeric value of the selected day (e.g. "5"), or a string value of the selected month (e.g. "May"). The steps that are executed as part of the \texttt{updateSelection()} are rather complicated. Figure \ref{fig:unityupdateselection} should help to illustrate what exactly happens alongside the below high-level description.
-\begin{enumerate}[noitemsep,nolistsep]
-	\item When clicking on a bar, the \texttt{ChartBarClick.cs} calls the \texttt{updateSelection()} method from the \texttt{SceneManager.cs} class
-	\item This first resets the DetailView with \texttt{updateDetailView(null);}
-	\item Then it starts a Coroutine (i.e. flow control is cooperatively passed between itself and the game engine)
-	\item The Coroutine opens a 2nd Thread for the CPU intensive work to not not block the GameEngine and prevent the \gls{ve} from freezing for a few seconds
-	\item The 2nd Thread filters all data, updates the ArrayLists and caches the results
-	\item Meanwhile, the Coroutine checks if the Thread is still running and gives temporary flow control to the GameEngine
-	\item When the Thread has ended, the Coroutine continues with \texttt{updateBarCharts();}
-	\item Then, also the table is updated with \texttt{updateTable();}
-	\item Both methods now use the cached data that had been created by the \texttt{ThreadedWork()}
-\end{enumerate}
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=15cm]{03_Figures/08_Development/UpdateSelection.png}
-		\caption{Illustration of updateSelection() workflow}
-		\label{fig:unityupdateselection}
-	\end{center}
-\end{figure}
-This implementation with a Coroutine that calls a 2nd Thread was necessary to avoid freezing in the whole \gls{ve} for several seconds during the very CPU intensive task of filtering and preparing the datasets. It further mitigates the risk now of potential motion-sickness that could occur in such situations. \newline
-Some additional challenges came up with this approach though, as certain functions are only allowed (by the Unity Game Engine) to be called from the \textbf{Main Thread} and not from a 2nd Thread. This required that the output of these function calls had to be generated before calling the 2nd Thread and then passing them on into it, respectively making it available to it inside the class itself.
-
+\textbf{Implementation details:} Each bar of the two charts has the \texttt{ChartBarClick.cs} script attached to it which is responsible for all direct interaction with it. It consists of three methods: \texttt{StartTouching()}, \texttt{StopTouching()}, and \texttt{StartUsing()}. The first two are to make sure that the bar becomes slightly opaque upon "touching" it and then returns to its normal colour when the "touching" ends. The \texttt{StartUsing} method first checks to which chart this bar belongs, stops any other flashing bars if existing, starts flashing the selected bar, updates the information about the selected month/day in the \texttt{SceneManager.cs} and finally triggers the method to update all corresponding views based on the selection (either a month or a day).
 
 %-----------------------------------
 %	SUBSUBSECTION 4
@@ -566,7 +544,7 @@ Some additional challenges came up with this approach though, as certain functio
 
 \textbf{Purpose of interaction:} This covers one of the main flaws of the traditional solution to represent financial transactions to users: In addition to just displaying the data of a single category, they can be combined in any possible combination  and thus can give an unique insight into ones personal expenses. 
 
-\textbf{Implementation details:} When looking at Figure \ref{fig:unityupdateselection} from the previous interaction, the one for selecting a category is almost the same. The only difference is the beginning as the Coroutine is not triggered by the \texttt{updateSelection()} method, but by either \texttt{addGameObjectToCategoryFilter()} or \texttt{removeGameObjectFromCategoryFilter()} where a reference to the \texttt{CategoryIconClick.cs} is also passed on (or an ArrayList in case all category icons are de-/selected). To make the user more aware of the fact that a loading process is ongoing, as soon as the Coroutine is started, the corresponding category object is coloured in \textbf{yellow}, as also shown in Figure \ref{fig:unityview4}. When the Coroutine ended, the colour of the category object is either changed to green (activated) or white (deactivated). The decision for this was made in accordance to \gls{mdg} 1 which requires a high interactivity with tightly coupled actions/reactions. While the updated data is only shown in a very short amount of time after it had been cashed, this third state at least gives immediate feedback to the user that his input was registered and something is going on.
+\textbf{Implementation details:} When looking at Figure \ref{fig:unityupdateselection} from the previous interaction, the one for selecting a category is almost the same. The only difference is the beginning as the Coroutine is not triggered by the \texttt{updateSelection()} method, but by either \texttt{addGameObjectToCategoryFilter()} or \texttt{removeGameObjectFromCategoryFilter()} where a reference to the \texttt{CategoryIconClick.cs} is also passed on (or an ArrayList in case all category icons are de-/selected). To make the user more aware of the fact that a loading process is ongoing, as soon as the Coroutine is started, the corresponding category object is coloured in \textbf{yellow}, as also shown in Figure \ref{fig:unityview4}. When the Coroutine ended, the colour of the category object is either changed to \textbf{green} (activated) or \textbf{white} (deactivated). The decision for this was made in accordance to \gls{mdg} 1 which requires a high interactivity with tightly coupled actions/reactions. While the updated data is only shown in a very short amount of time after it had been cashed, this third state at least gives immediate feedback to the user that his input was registered and something is going on.
 
 
 %-----------------------------------
@@ -584,7 +562,7 @@ Some additional challenges came up with this approach though, as certain functio
 %-----------------------------------
 \subsection{Continuous Improvement (Testing)}
 
-Continuous Improvement is a crucial part of any software development process, which is also why it is an integral part of any agile development method. Tightly linked to the it is Continuous Integration, which ensure that the code can be built/compiled at any time and continuously tested for defects or failures. Due to this, the \textit{Functional (Black Box) Testing} and \textit{Structural (White Box) Testing} shown in Table \ref{tbl:designevaluationmethods} are covered during the \textit{Development} phase and not the \textit{Evaluation} phase of the \gls{dsr} cycle. The latter one will primarily focus on detailed scenarios and informed arguments.
+Continuous Improvement is a crucial part of any software development process, which is also why it is an integral part of any agile development method. Tightly linked to the it is Continuous Integration, which ensures that the code can be built/compiled at any time and is continuously tested for defects or failures. Due to this, the \textit{Functional (Black Box) Testing} and \textit{Structural (White Box) Testing} shown in Table \ref{tbl:designevaluationmethods} are covered during the \textit{Development} phase and not the \textit{Evaluation} phase of the \gls{dsr} cycle. The latter one will primarily focus on descriptive evaluation.
 
 
 %-----------------------------------
@@ -594,7 +572,7 @@ Continuous Improvement is a crucial part of any software development process, wh
 
 \textbf{Main Purpose:} Functional (Black Box) Testing focuses on executing the artefact interfaces in order to discover failures and identify defects.
 
-With the option to attach Microsoft Visual Studio to the Unity 3D engine, it allows for real-time debugging of the C\# code. This turned out to be tremendous helpful in the root cause analysis of some bugs and defects that were discovered. The in Chapter \ref{ChapterSuggestion} defined flow and interactions were used as the guideline for the functional testing to ensure a proper implementation. Due to it being tightly coupled to the daily development activities, only little dedicated documentation can be provided. The main focus was rather on the \textit{Structural Testing} as well as the \textit{Scenarios} which are covered during the \textit{Evaluation} phase in Chapter \ref{ChapterEvaluation}.
+With the option to attach Microsoft Visual Studio to the Unity 3D engine, it allows for real-time debugging of the C\# code. This turned out to be tremendously helpful in the root cause analysis of some bugs and defects that were discovered. The in Chapter \ref{ChapterSuggestion} defined flows and interactions were used as the guideline for the functional testing to ensure a proper implementation. Due to it being tightly coupled to the daily development activities, this was a constant part of every implementation step. The main focus of the overall evaluation however was put on the \textit{Structural Testing} as well as the \textit{Scenarios} which are covered during the \textit{Evaluation} phase in Chapter \ref{ChapterEvaluation}.
 
 
 %-----------------------------------
@@ -604,18 +582,39 @@ With the option to attach Microsoft Visual Studio to the Unity 3D engine, it all
 
 \textbf{Main Purpose:} Structural (White Box) Testing focuses on coverage testing of metrics such as execution paths in the artefact implementation.
 
-One of the most important metrics, especially for \gls{vr} applications is the need to keep a constant high level of \gls{fps} to not induce motion sickness. The HTC Vive has a refresh rate of 90 Hz and therefore can/should display also 90 \gls{fps} to avoid any stutters in the image. In many cases, a high graphical fidelity causes the \gls{fps} to drop the most, which for this prototype application is not of concern with its simple 3D objects and barely any animations. A much bigger limitation however was the Single-Threaded Code Execution as already indicated in Chapter \ref{SubSubSectionSelectionBar}. Since filtering the DataViews and updating the ArrayLists required so much CPU capacity, it caused the \gls{ve} to freeze for several seconds. Figure \ref{fig:unityprofilesingle} shows the CPU Usage profiler from Unity itself for this situation with a single thread. Since it even freezes Unity itself, the graph does not reflect the temporal truth. Only in the detail information of the spike it can be seen that the process took more than 4 seconds to be executed and cause over 200 MB for the Garbage Collector to be cleaned up.
-\begin{figure}[h]
+One of the most important metrics, especially for \gls{vr} applications is the need to keep a constant high level of \gls{fps} to not induce motion sickness. The HTC Vive has a refresh rate of 90 Hz and therefore can/should display also 90 \gls{fps} to avoid any stutters in the image. In many cases, a high graphical fidelity causes the \gls{fps} to drop the most, which for this prototype application is not of concern with its simple 3D objects and barely any animations. A much bigger limitation however was the Single-Threaded Code Execution as already indicated in Chapter \ref{SubSubSectionSelectionBar}. Since filtering the DataViews and updating the ArrayLists required so much CPU capacity, it caused the \gls{ve} to freeze for several seconds. Figure \ref{fig:unityprofilesingle} shows the CPU Usage profiler from Unity itself for this situation with a single thread.
+\begin{figure}[b]
 	\begin{center}
-		\includegraphics[width=14cm]{03_Figures/08_Development/CPU_Usage_Singlethreaded.png}
+		\includegraphics[width=15cm]{03_Figures/08_Development/CPU_Usage_Singlethreaded.png}
 		\caption{Unity 3D CPU Usage with single-threaded execution of updateSelection() workflow}
 		\label{fig:unityprofilesingle}
 	\end{center}
 \end{figure}
-A solution for this had to be found and implement to pass this structural test. C\#s Coroutines are a first step for the resolution as they enable the flow control to be cooperatively be passed on between the running function and the game engine. This however only partially resolved the problem as "control-passing" must be explicitly programmed and thus does not work if a method from a 3rd party library reserves the whole CPU capacity. Figure \ref{fig:unityupdateselection} illustrates the final solution which also includes multi-threading in order to run the CPU expensive task in a completely separate Thread to not block the game engine, while the Coroutine regularly checks for the completion state of the 2nd Thread. Figure \ref{fig:unityprofilemulti} shows the CPU Usage again, but this time with a second thread and a Coroutine running. While there still are some \gls{fps} spikes during the execution (caused by the Coroutine to regularly check for the Thread execution status), they are much less intrusive and never go below 60 \gls{fps}. Since the CPU is not limited anymore, the temporal representation of the graph also is correct now.
+Since it even freezes Unity itself, the graph does not reflect the temporal truth. Only in the detail information of the spike it can be seen that the process took more than 4 seconds (4'212.2 ms) to be executed and caused over 200 MB for the Garbage Collector to be cleaned up. A solution for this had to be found and implemented in order to pass this structural test. C\#s Coroutines are a first step towards the resolution as they enable the flow control to be cooperatively passed on between the running function and the game engine. This however only partially resolves the problem as "control-passing" must be explicitly programmed and thus does not work if a method from a 3rd party library reserves the whole CPU capacity.\newline
+When the \texttt{StartUsing} method is called by selecting one of the chart bars, it first checks to which chart this bar belongs, stops any other flashing bars if existing, starts flashing the selected bar, updates the information about the selected month/day in the \texttt{SceneManager.cs} and then finally triggers the \texttt{updateSelection(label)} in said method: The \texttt{label} in this case can either be a numeric value of the selected day (e.g. "5"), or a string value of the selected month (e.g. "May"). The steps that are executed as part of the \texttt{updateSelection()} method are rather complicated. Figure \ref{fig:unityupdateselection} illustrates the final solution which also includes multi-threading in order to run the CPU expensive task in a completely separate Thread to not block the game engine, while the Coroutine regularly checks for the completion state of the 2nd Thread. Following is a description of the individual steps that happen as part of this solution.
+\begin{enumerate}[noitemsep,nolistsep]
+	\item When clicking on a bar, the \texttt{ChartBarClick.cs} calls the \texttt{updateSelection()} method from the \texttt{SceneManager.cs} class
+	\item This first resets the DetailView with \texttt{updateDetailView(null);}
+	\item Then it starts a Coroutine (i.e. flow control is cooperatively passed between itself and the game engine)
+	\item The Coroutine opens a 2nd Thread for the CPU intensive work to not not block the GameEngine and prevent the \gls{ve} from freezing for a few seconds
+	\item The 2nd Thread filters all data, updates the ArrayLists and caches the results
+	\item Meanwhile, the Coroutine checks if the Thread is still running and gives temporary flow control to the GameEngine
+	\item When the Thread has ended, the Coroutine continues with \texttt{updateBarCharts();}
+	\item Then, also the table is updated with \texttt{updateTable();}
+	\item Both methods now use the cached data that had been created by the \texttt{ThreadedWork()}
+\end{enumerate}
+\begin{figure}[t]
+	\begin{center}
+		\includegraphics[width=15cm]{03_Figures/08_Development/UpdateSelection.png}
+		\caption{Illustration of updateSelection() workflow}
+		\label{fig:unityupdateselection}
+	\end{center}
+\end{figure}
+This implementation with a Coroutine that calls a 2nd Thread was necessary in order to avoid freezing the whole \gls{ve} for several seconds during the very CPU intensive task of filtering and preparing the datasets. It further mitigates the risk of potential motion-sickness that could occur in such situations. Figure \ref{fig:unityprofilemulti} shows the CPU Usage again, but this time with the second thread and a Coroutine running. While there still are some \gls{fps} spikes during the execution (caused by the Coroutine to regularly check for the Thread execution status), they are much less intrusive and never go below 60 \gls{fps}. Since the CPU is not limited anymore, the temporal representation of the graph also is correct now. \newline
+Some additional challenges came up with this approach though, as certain functions are only allowed (by the Unity Game Engine) to be called from the \textbf{Main Thread} and not from a 2nd Thread. This required that the output of these function calls had to be generated before calling the 2nd Thread and then passing them on into it, respectively making it available to it inside the class itself.
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=14cm]{03_Figures/08_Development/CPU_Usage_Multithreaded.png}
+		\includegraphics[width=15cm]{03_Figures/08_Development/CPU_Usage_Multithreaded.png}
 		\caption{Unity 3D CPU Usage with multi-threaded execution of updateSelection() workflow}
 		\label{fig:unityprofilemulti}
 	\end{center}
@@ -644,7 +643,7 @@ While familiar with the programming language Java, C\# was not too difficult to 
 	\item Additional core-features from .NET have to be manually added by enabling the corresponding \texttt{*.dll}
 	\item Getter and Setter methods are not explicitly required as they are Auto-Implemented Properties
 \end{itemize}
-A much bigger challenge than C\# however was Unity 3D itself as this was absolutely new. Online tutorials for development with \gls{vr} existed, but mostly were for much older versions of Unity and thus no longer applicable. Especially since in Unity 3D version 5.4 native support for OpenVR was provided that would simplify man programming tasks that had to be tediously done in version 5.3 and earlier. This sooner or later lead to the discovery of \gls{vrtk}.
+A much bigger challenge than C\# however was Unity 3D itself as this was absolutely new. Online tutorials for development with \gls{vr} existed, but mostly were for much older versions of Unity and thus no longer applicable. Especially since in Unity 3D version 5.4 native support for OpenVR was provided that would simplify many programming tasks that had to be tediously done in version 5.3 and earlier. This sooner or later lead to the discovery of \gls{vrtk}.
 
 
 %-----------------------------------
@@ -652,7 +651,7 @@ A much bigger challenge than C\# however was Unity 3D itself as this was absolut
 %-----------------------------------
 \subsection{\gls{vrtk}}
 
-\gls{vrtk} massively simplifies the development of \gls{vr} applications in Unity 3D. It is a collection of useful scripts and concepts that help building \gls{vr} applications. There is an excellent documentation available and toolkit is shipped with a big selection of example scenes that can be loaded into Unity 3D and then explored, executed, and also modified. For all these example also explanatory Youtube videos exist that further elaborate on the individual scripts can be used. With the help of this toolkit, a solid knowledge foundation about \gls{vr} development can be built in a very short amount of time. Since locomotion and the basic object interaction is already covered by \gls{vrtk}, this allows to focus more on the trickier parts of the application where the more complex logic has to be implemented. It can be said that without \gls{vrtk} the prototype would be of much simpler nature.
+\gls{vrtk} massively simplifies the development of \gls{vr} applications in Unity 3D. It is a collection of useful scripts and concepts that help building \gls{vr} applications. There is an excellent documentation available and the toolkit is shipped with a big selection of example scenes that can be loaded into Unity 3D and then explored, executed, and also modified. For all of these example also explanatory Youtube videos exist that further elaborate on the individual scripts that can be used. With the help of this toolkit, a solid knowledge foundation about \gls{vr} development can be built in a very short amount of time. Since locomotion and the basic object interaction is already covered by \gls{vrtk}, this allows to focus more on the trickier parts of the application where the more complex logic has to be implemented. It can be said that without \gls{vrtk} the prototype would not provide the same level of interaction possibilities.
 
 
 %-----------------------------------
@@ -660,7 +659,7 @@ A much bigger challenge than C\# however was Unity 3D itself as this was absolut
 %-----------------------------------
 \subsection{Blender}
 
-The biggest challenge from an artistic point of view was the design of the individual category objects. Blender could convince with is open-source approach, the good available documentation, and its big community that actively supports the resolution of problems from many other users in forums, videos or blog posts. Due to the lack of any own experience with 3D modelling, the challenge was on one hand to keep the category objects as simple as possible, but on the other hand to make them detailed enough that it is clear for an end user what it represents (in relation to the category icons in Figure \ref{fig:categoriesicons}).
+The biggest challenge from an artistic point of view was the design of the individual category objects. Blender could convince with is open-source approach, the good available documentation, and its big community that actively supports the resolution of problems from many other users in forums, videos or blog posts. Due to the lack of any own experience with 3D modelling, the challenge was on one hand to keep the category objects as simple as possible, but on the other hand to make them detailed enough that it is clear for an end user what it represents, in relation to the category icons in Figure \ref{fig:categoriesicons}.
 
 
 %-----------------------------------
@@ -668,7 +667,7 @@ The biggest challenge from an artistic point of view was the design of the indiv
 %-----------------------------------
 \subsection{Open Points}
 
-Some minor points were not completely implement in this prototype application. Since these are not part of the core functionality and would primarily bring additional usability enhancements, their priority was deemed as not very high. They might become more relevant for possible future research in this area. Some of these points are therefore listed here: \newline
+Some minor points were not completely implemented in this prototype application. Since these are not part of the core functionality and would primarily bring additional usability enhancements, their priority was deemed as not very high. They might become more relevant for possible future research in this area. Some of these points are therefore listed here: \newline
 When the scene is initially loaded, both bar charts and the table are shown, although they do not contain any data. It had been considered to always hide them when no data is available to be shown. Another point was the height of the pedestal on which the category objects are placed. Since the application does not evaluate the height of the \gls{hmd}, there is no adjustment possible for taller/smaller people or for a seated/standing experience. Finally, on a more technical side, instead of using \texttt{Object.Destroy()} when a (table) row, or (bar chart) bar is no longer used, a \texttt{PoolManager} could be implemented that made sure that the no longer used objects are "parked" in a special pool and then re-used when necessary. The lack of such a \texttt{PoolManager} could potentially become a problem if the application is running for an extensive amount of time and many selection changes are made.
 
 

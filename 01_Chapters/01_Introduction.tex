@@ -6,11 +6,11 @@
 
 \label{ChapterIntroduction}
 
-Technological advancements are of constant nature to us and affect most areas in our lifes. Just twenty years ago, one had to go to a physical branch of a bank to make a simple payment or check the current account balance. Then online banking emerged, soon followed by mobile banking, and the next big advancement might just be waiting ahead of us. This master thesis provides an overview of the current state of research regarding the interaction with, and visualisation of, categorized financial data in virtual reality with the intention to make exploratory analysis more simple and to provide better insights into trends and changes.
+Technological advancements are of constant nature to us and affect most areas in our lifes. Just twenty years ago, one had to go to a physical branch of a bank to make a simple payment or check the current account balance. Then online banking emerged, soon followed by mobile banking, and the next big advancement might just be waiting ahead of us in the form of \gls{vr}. This master thesis provides an overview of the current state of research regarding the interaction with, and visualisation of, categorized financial data in virtual reality with the intention to make exploratory analysis more simple and to provide better insights into trends and changes.
 
-With the public release of the Oculus Rift in March 2016 \citep{Oculus2016} and the HTC Vive in April 2016 \citep{Htcvive2016}, \gls{vr} has arrived at the consumer level and is all over the news. Although we only see the first iteration of consumer products, \cite{Gartner2015} predicts that within the next five to ten years, \gls{vr} will achieve mainstream adoption and enter the so called "Plateau of Productivity". Gesture Control is even a bit ahead of \gls{vr} and its mainstream adoption is already expected in the next two to five years \citep{Gartner2015}. Together with the new \glspl{hmd}, also the ways to interact with the \gls{ve} have been massively improved, such as very accurate gesture controllers or full 360° motion tracking, which all are just getting on the focus of research now. Since these big advancements in hardware happened only very recently, the software part first has to catch up with all the new possibilities that became available. It is very easy now to create 3D visualisations, but the big questions remains about why we should do that. \cite{Ware2012} sees clear clear advantages in the conventional two-dimensional techniques with bar charts and scatter plots, since the powerful pattern-finding mechanism of our brain also works in 2D. Furthermore, there are well established and effective (2D) data representations that are also very easy to be included in any kind of two-dimensional medium such as a book or a report \citep{Ware2012}. On the other side, \cite{Ware2012} also points out that we live in a three-dimensional word and interact with it so frequently that our brains got very much used to it. It is also important to understand that ultimately a 2D space is part of 3D space and thus any two-dimensional object can always be flattened out and presented as such in 3D space. This however does not mean, that this always is a good idea. \cite{Kwon2015} stated that in a 2D environment/space (like a regular screen) it makes sense to use 2D objects for the presentation, whereas in a \gls{vr} environment where the viewing direction can be freely chosen by the user, the whole three-dimensional space should be utilized. It generally can be said that we are only at the beginning of understanding how to effectively use these new means. Chapter \ref{SectionLiteratureReviewSRQ1} and \ref{SectionLiteratureReviewSRQ2} in the literature review will further discuss these new possibilities.
+With the public release of the Oculus Rift in March 2016 \citep{Oculus2016} and the HTC Vive in April 2016 \citep{Htcvive2016}, \gls{vr} has arrived at the consumer level and is all over the news. Although we currently only see the first iteration of consumer products, \cite{Gartner2015} predicts that within the next five to ten years, \gls{vr} will achieve mainstream adoption and enter the so called "Plateau of Productivity". Gesture Control is even a bit ahead of \gls{vr} and its mainstream adoption is already expected in the next two to five years \citep{Gartner2015}. The ways to interact with \glspl{ve} have recently been massively improved with new \glspl{hmd} and input devices such as very accurate gesture controllers or full 360° motion tracking, which all are just getting in the focus of research now. Since these big advancements in hardware happened only very recently, the software first has to catch up with all the new possibilities that became available. It is very easy now to create 3D visualisations, but the big questions remains about why we should do that. \cite{Ware2012} sees clear clear advantages in the conventional two-dimensional techniques with bar charts and scatter plots, since the powerful pattern-finding mechanism of our brain also works in 2D. Furthermore, there are well established and effective (2D) data representations that are also very easy to be included in any kind of two-dimensional medium such as a book or a report \citep{Ware2012}. On the other side, \cite{Ware2012} also points out that we live in a three-dimensional word and interact with it so frequently that our brains got very much used to it. It is also important to understand that ultimately a 2D space is part of 3D space and thus any two-dimensional object can always be flattened out and presented as such in 3D space. \cite{Kwon2015} stated that in a 2D environment/space (like a regular screen) it makes sense to use 2D objects for the presentation, whereas in a \gls{vr} environment where the viewing direction can be freely chosen by the user, the whole three-dimensional space should be utilized. It generally can be said that we are only at the beginning of understanding how to effectively use these new means. Chapter \ref{SectionLiteratureReviewSRQ1} and \ref{SectionLiteratureReviewSRQ2} in the literature review will further discuss these possibilities of \gls{vr}.
 
-Simultaneously, we see massive advancements in the functionalities provided by banks to their clients. Contact-less payments and mobile banking are on the rise, and in 2014 UBS AG even won the "Master of Swiss Web" award and two gold medals for their new e-banking platform \citep{UBSAG2014}. But when clients want to look at the financial situation, nothing has changed for a long time in terms of how it is presented to the users: always the same old bar- and pie charts. Figure \ref{fig:ubsspendinganalysis} gives an impression of how exemplary data is visualized on a 2D screen. Many challenges and requirements have to be covered nowadays: clients want to immediately see and understand their financial situation, they want to be able to make comparisons and see trends. This exploratory analysis is currently only possible with limitations, also due to the restriction of only two (real) axis that are possible on a display. \cite{Jamieson2007} see that it becomes increasingly difficult to get a meaningful understanding of the big amount of data that is still presented with traditional methods. They continue that these methods will sooner or later come to their limits and new visualisation methods have to be established \citep{Jamieson2007}. Chapter \ref{SectionLiteratureReviewSRQ3} in the literature review addresses the currently researched methods for data visualization in more detail.
+In recent years we also have seen massive advancements in the functionalities provided by banks to their clients. Contact-less payments and mobile banking are on the rise, and in 2014 UBS AG even won the "Master of Swiss Web" award and two gold medals for their new e-banking platform \citep{UBSAG2014}. But when clients want to look at the financial situation, nothing has changed for a long time in terms of how it is presented to the users: always the same old bar- and pie charts. Figure \ref{fig:ubsspendinganalysis} gives an impression of how categorized financial data is visualized on a 2D screen. These categories help to classify individual transaction into groups such as 'Living \& Energy' or 'Household' for a better understanding. Many challenges and requirements have to be covered nowadays: clients want to immediately see and understand their financial situation, they want to be able to make comparisons and see trends. This exploratory analysis is currently only possible with limitations, also due to the restriction of only two (real) axis that are possible on a 2D display. \cite{Jamieson2007} see that it becomes increasingly difficult to get a meaningful understanding of the big amount of data that is still presented with traditional methods. They continue that these methods will sooner or later come to their limits and new visualisation methods have to be established \citep{Jamieson2007}. Chapter \ref{SectionLiteratureReviewSRQ3} in the literature review addresses the currently researched methods for data visualization in more detail.
 \begin{figure}[b]
 	\begin{center}
 		\includegraphics[width=7cm]{03_Figures/06_Introduction/UBSAG2016_SpendingAnalysis2.png}
@@ -20,106 +20,9 @@ Simultaneously, we see massive advancements in the functionalities provided by b
 	\end{center}
 \end{figure}
 
-The focus of this master thesis is on the new possibilities of visualising and interacting with data about our financial situation in \gls{vr} by utilizing the latest available (consumer) \gls{vr}-hardware and research about data visualisation. The anonymized base data set of categorized financial data is shown in Appendix \ref{AppendixA} and contains detailed information about financial transactions of a single year. Not only does it contain data about the date, the currency and amount, or the recipient but every single transaction is also categorized in: \textit{Main category} and \textit{Subcategory}. A complete overview and mapping of these categories is shown below in Table \ref{tbl:financialcategories}.
-\begin{longtable}{ | p{5cm} | p{9cm} |}
-	\hline
-	\textbf{Main category} & \textbf{Subcategory} \\
-	\hline
-	\endfirsthead % Line(s) to appear as head of the table on the first page
-	\multicolumn{2}{c}%
-	{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
-	\hline
-	\textbf{Main category} & \textbf{Subcategory} \\
-	\hline
-	\endhead % Line(s) to appear at top of every page (except first)
-	\hline
-	\multicolumn{2}{r}{\textit{Continued on next page}} \\
-	\endfoot % Last line(s) to appear at the bottom of every page (except last)
-	\endlastfoot % Last line(s) to appear at the end of the table
-	\hline
-	Communication \& media &
-	- Film, photo, electronic devices and accessories \newline
-	- Miscellaneous \newline
-	- Multimedia (music, video \& apps) \newline
-	- Newspaper and magazine subscriptions \newline
-	- Radio and television fees \newline
-	- Telephone,  Internet and TV \\
-	\hline
-	Health &
-	- Medical services \\
-	\hline
-	Household &
-	- Children and family \newline
-	- Food and beverage \newline
-	- Household articles and accessories \newline
-	- Household equipment \newline
-	- Office articles and services \newline
-	- Pets \\
-	\hline
-	Income \& credits &
-	- Capital revenues (interest, dividends \& earnings) \newline
-	- Gifts and inheritance \newline
-	- Refunds \newline
-	- Salary and sideline \newline
-	- Sale of property \\
-	\hline
-	Leisure time, sport \& hobby &
-	- Books and literature \newline
-	- Going out, culture and cinema \newline
-	- Miscellaneous \newline
-	- Toys and hobby articles \\
-	\hline
-	Living \& energy &
-	- Building and property insurance \newline
-	- Electricity and gas \newline
-	- Rent and mortgage interest \newline
-	- Tools and garden \\
-	\hline
-	Other expenses &
-	- Banking services and charges \newline
-	- Benefactor contributions \newline
-	- Credit card invoice and fees \newline
-	- Loan and debt interest \newline
-	- Miscellaneous \newline
-	- Repayments \\
-	\hline
-	Personal expenditure &
-	- Clothing, shoes and accessories \newline
-	- Donations \newline
-	- Food (snacks, restaurants and bars) \newline
-	- Gifts \newline
-	- Miscellaneous \newline
-	- Personal hygiene and wellness \newline
-	- Training and further education \\
-	\hline
-	Taxes \& duties &
-	- Community and cantonal tax \newline
-	- Federal tax \newline
-	- Fees \newline
-	- Military exemption tax \\
-	\hline
-	Traffic, car \& transport &
-	- Fuel (gasoline, diesel, gas) \newline
-	- Public transport (tickets \& subscriptions) \newline
-	- Traffic charges \\
-	\hline
-	Vacation \& travel &
-	- Accommodation and hotels \newline
-	- Miscellaneous \newline
-	- Offers and services \newline
-	- Travel and flight costs \\
-	\hline
-	Withdrawals &
-	- Bancomat \newline
-	- Teller (branch) \\
-	\hline
-	\caption{Mapping of Main category and Subcategory of financial data set}
-	\label{tbl:financialcategories}
-\end{longtable}
+The focus of this master thesis is on the new possibilities of visualising and interacting with data about our financial situation in \gls{vr} by utilizing the latest available (consumer) \gls{vr}-hardware and research about data visualisation. The additional three-dimensional space of \gls{vr} can be utilized to make exploratory analysis more intuitive, efficient, and interactive compared to traditional 2D solutions.
 
-Due to the complexity of the data-set and the numerous different (sub-)categories, it can become difficult to keep a good overview, especially when the comparison goes across multiple months for various categories.
-
-In the following sub-chapters, more background information about the topic is given as well as the definition of the problem statement. Based on this, the thesis statement is proposed and research questions are derived from. Following these, the delineations and limitations are presented before this chapter is closed with the structure of the thesis and a brief overview of the chapters and their correlations.
+In the following sub-chapters, more background information about the topic is given as well as the definition of the problem statement. Based on this, the thesis statement is proposed and research questions are derived from it. Following these, the delineations and limitations are presented before this chapter is closed with the structure of the thesis and a brief overview of the chapters and their correlations.
 
 
 %----------------------------------------------------------------------------------------
@@ -129,7 +32,7 @@ In the following sub-chapters, more background information about the topic is gi
 \section{Background}
 
 \gls{vr} has been around us for a few decades already, but only in the last couple of years with increasingly fast hardware and reduced costs, \gls{vr} made rapid advancements \citep{vrs2015}. Computers and even smartphones are now powerful enough to provide good \gls{vr} experiences. Very dominant at the moment are the entertainment purposes, for which \gls{vr} is currently mainly utilized, but it can also go beyond that and provide profound educational experiences if curated with the right content \citep{Safrudin2015}. \gls{vr} even should be seen as disruptive, as a \textbf{game changer} that can become accessible to everyone and will be very promising for high-tech enterprises that focus on retail and banking \citep{Safrudin2015}. \newline
-Every year, Gartner publishes their hype cycle on different topics, including the \textit{Emerging Technology Hype Cycle} from 2015 (Figure \ref{fig:hypecycle}). This shows that if Gartner is to be believed, \gls{vr} has the phase of over-excitement and unrealistic expectations already behind it and is close to the point where it is widely understood by the general public. A bit further than \gls{vr} itself is Gesture Control that according to \cite{Gartner2015} will already reach mainstream adoption in the next two to five years.
+Every year, Gartner publishes their hype cycle on different topics, including the \textit{Emerging Technology Hype Cycle} from 2015 (Figure \ref{fig:hypecycle}). This shows that \gls{vr} has the phase of over-excitement and unrealistic expectations already behind it and is close to the point where it is widely understood by the general public. A bit further than \gls{vr} itself is Gesture Control that according to \cite{Gartner2015} will already reach mainstream adoption in the next two to five years.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=14cm]{03_Figures/03_Gartner/Gartner_EmergingTech2015.png}
@@ -146,8 +49,7 @@ There are different interaction methods (i.e. devices to interact with the \gls{
 
 \section{Problem Statement}
 
-\gls{vr} is becoming more important in our lives in the future and it is crucial to have effective and efficient means to interact with the \gls{ve} in order to secure the success of this technology. Their input methods such as speech recognition, gesture controllers, or full body tracking have seen major improvements over the last years but only little information is available as to when any of these is used in the most effective way. Research has been done on how to travel within the \gls{ve} and how to select objects, but not much has been done yet on the side of (data) manipulation. While there are some guidelines and recommendations, they are all of theoretical nature and no practical recommendations for specific technologies are available.\newline
-Major technical advancements can also be seen in the whole personal banking area that went from branch-only over e-banking to mobile banking that can be used anytime, anywhere. But there are only minor advancements in terms of how information about the financial situation is presented to the user and in a nutshell it still looks the same like a decade ago. The focus heavily lies on the (limited) 2D space while only very little research has been made in how to utilize the (real) third dimension in \gls{vr}.
+Over the last two decades, the personal banking area underwent some major technical advancements that went from branch-only interactions over e-banking to mobile banking that can be used anytime, anywhere. But there were only minor advancements in terms of how information about the financial situation is presented to the user. The focus still heavily lies on the (limited) 2D space for displaying the same old pie charts and tables that are known for over a decade now. Their interaction possibilities are quite limited and with all the single-page applications, comparisons of different date-ranges or categories of expenses are very difficult to make and new trends are hard to identify. These problems are challenged with the introduction of \gls{vr} for exploratory analysis of categorized financial data. With the additional (virtual) space of \gls{vr}, multiple views can be displayed simultaneously and new possibilities for data interaction can be made available to the user.
 
 
 %----------------------------------------------------------------------------------------
@@ -209,7 +111,7 @@ The first three \glspl{srq} are answered as part of the literature review, where
 \section{Research Objective}
 
 The research objective of this master thesis is to define how visualisation and interaction with categorized financial data in virtual reality can look like in order to enhance the exploratory analysis of it, compared to traditional approaches. \newline
-This objective will be addressed by first conducting a literature review on the research that has already bee done in the fields of input methods and interaction patterns, as well as data visualisation. Based on this, a dedicated approach for the visualisation and the corresponding interaction patterns will be defined and applied in a prototype application. This also acts as a verification that the visualisation approach and interaction patterns indeed are feasible.
+This objective will be addressed by first conducting a literature review on the research that has already bee done in the fields of input methods and interaction patterns, as well as data visualisation. Based on this, a dedicated approach for the visualisation and the corresponding interaction patterns will be defined and applied in a prototype application. This also acts as a verification that the visualisation approach and interaction patterns indeed are feasible. Finally, the prototype will be evaluated with a set of real-world scenarios that require an exploratory analysis of a set of categorized financial data as shown in Appendix \ref{AppendixA}.
 
 
 %----------------------------------------------------------------------------------------

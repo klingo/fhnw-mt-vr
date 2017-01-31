@@ -17,7 +17,7 @@ In the \textit{Evaluation} phase, the prototype is evaluated according to criter
 
 \section{Introduction}
 
-The evaluation of this prototype is based on the evaluation methods \textit{Testing} and \textit{Descriptive} as proposed by \cite{Hevner2004} and illustrated in Table \ref{tbl:designevaluationmethods} in Chapter \ref{EvaluationMethodology}. The \textit{Testing} evaluation method that focus on the functional aspect in executing the artefact interfaces to find defects and failures as well as the structural aspect for metric evaluation has been part of the artefact development and therefore is already covered in Chapter \ref{ChapterDevelopment}. The \textit{Descriptive} evaluation methods are broken further down into several different \textit{Scenarios} which are discussed in the following chapters.
+The evaluation of this prototype is based on the evaluation methods \textit{Testing} and \textit{Descriptive} as proposed by \cite{Hevner2004} and illustrated in Table \ref{tbl:designevaluationmethods} in Chapter \ref{EvaluationMethodology}. The \textit{Testing} evaluation method that focuses on the functional aspect in executing the artefact interfaces to find defects and failures as well as the structural aspect for metric evaluation have been part of the artefact development and therefore are already covered in Chapter \ref{ChapterDevelopment}. The \textit{Descriptive} evaluation methods are broken further down into several different \textit{Scenarios} which are discussed in the following chapters.
 
 
 %----------------------------------------------------------------------------------------
@@ -63,9 +63,9 @@ At the current time, only the UBS e-banking offers an integrated way for categor
 
 \textbf{Scenario title:} \scenone
 
-\textbf{Exemplary situation:} On Friday before the weekend, a bank transfer was create to pay an outstanding invoice. The user now would like to see if this payment has already been executed and the money transferred away from his account. 
+\textbf{Exemplary situation:} On Friday before the weekend, a bank transfer was created to pay an outstanding invoice. The user now would like to see if this payment has already been executed and the money transferred away from his account. 
 
-While not exactly an exploratory scenario, it is a situation that can commonly happen and also question like these have to be answerable by the prototype whose since \gls{mdg} 4 defined that at least the same information as existing applications must be provided.
+While not exactly an exploratory scenario, it is a situation that can commonly happen and also a question like this has to be answerable by the prototype since \gls{mdg} 4 defined that at least the same information as existing applications must be provided.
 
 %-----------------------------------
 %	SUBSUBSECTION 1
@@ -73,7 +73,7 @@ While not exactly an exploratory scenario, it is a situation that can commonly h
 
 \subsubsection{E-Banking}
 
-With the e-banking demo of UBS, the information can be found by navigating over two screens, which depending on the amount of transaction can require 2 - 10 mouse clicks to reach the final screen. After navigating to the "Expenses" view, all transactions of the last 30 days are shown by default, giving the user the option to apply a more specific filter or look for the transaction on this bigger list. The visualised flow for this scenario is shown in Figure \ref{fig:scenariooneebanking}.
+With the e-banking demo of UBS, the information can be found by navigating over two screens, which depending on the amount of transaction can require 2 - 10 mouse clicks to reach the final screen. After navigating to the "Expenses" view, all transactions of the last 30 days are shown by default, giving the user the option to apply a more specific filter or look for the transaction on this bigger list. The visualized flow for this scenario is shown in Figure \ref{fig:scenariooneebanking}.
 \begin{enumerate}[noitemsep,nolistsep]
 	\item Go via "Budget" to "Expenses" (2 clicks)
 	\item OPTIONAL: Set filter for specific date range (4 clicks)
@@ -86,13 +86,13 @@ With the e-banking demo of UBS, the information can be found by navigating over 
 		\includegraphics[width=4.7cm]{03_Figures/09_Evaluation/UBS_1_Overview.png}
 		\includegraphics[width=4.7cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis.png}
 		\includegraphics[width=4.7cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_Filter.png}
-		\caption{Visualised flow of screens in e-banking demo for Scenario 1}
+		\caption{Visualized flow of screens in e-banking demo for Scenario 1}
 		\label{fig:scenariooneebanking}
 	\end{center}
 \end{figure}
 
 
-\textbf{Evaluation:} Due to displaying all transaction of the last 30 days by default, the initial exclusivity of the data is relatively low. If additional filters are applied, the exclusivity can vary between medium and high, depending on how specific it is set. The narrower it is, the more mouse clicks are required. In terms of the comprehensibility of the data, some interpretation is required in order to know whether the transaction did not execute, or if it just has been filtered out.
+\textbf{Evaluation:} Due to displaying all transaction of the last 30 days by default, the initial exclusivity of the data is relatively low. If additional filters are applied, the exclusivity can vary between medium and high, depending on how specific it is set. The narrower it is, the more mouse clicks are required. In terms of the comprehensibility of the data, some interpretation is required in order to know whether the transaction has been executed, or if it just has been filtered out.
 \begin{itemize}[noitemsep,nolistsep]
 	\item Min. number of steps: \textbf{2 - 10}
 	\item Exclusivity: \textbf{High} (+2 filters), \textbf{Medium} (+1 filter), \textbf{Low} (default filter)
@@ -106,7 +106,7 @@ With the e-banking demo of UBS, the information can be found by navigating over 
 
 \subsubsection{Prototype Application}
 
-With the prototype application, the answer to this scenario can be found in 3-5 interaction steps, depending on the amount of transactions. The visualised flow for this scenario is shown in Figure \ref{fig:scenariooneprototype}.
+With the prototype application, the answer to this scenario can be found in 3 - 5 interaction steps, depending on the amount of transactions. The visualized flow for this scenario is shown in Figure \ref{fig:scenariooneprototype}.
 \begin{enumerate}[noitemsep,nolistsep]
 	\item Activate corresponding category, OR activate all (View 4)
 	\item Click on the current month in the Year Overview bar chart (View 1)
@@ -121,13 +121,13 @@ With the prototype application, the answer to this scenario can be found in 3-5 
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View2_MonthOverview.png}
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View5_FinTransactionsOverview.png}
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View5_FinTransactionsOverview.png}
-		\caption{Visualised flow of views in prototype for Scenario 1}
+		\caption{Visualized flow of views in prototype for Scenario 1}
 		\label{fig:scenariooneprototype}
 	\end{center}
 \end{figure}
 
 
-\textbf{Evaluation:} Depending on the amount of rows in the table, the exclusivity can be rated a bit higher or not. Selecting a specific day in the Month Overview clearly helps to reduce the amount of rows, but might require additional interaction steps if it is not known on what exact date the transaction was executed. Since it is not directly possible to search for a specific booking text or similar, some interpretation on the table rows is required.
+\textbf{Evaluation:} Depending on the amount of rows in the table, the exclusivity can be rated a bit higher or not. Selecting a specific day in the Month Overview clearly helps to reduce the amount of rows, but might require additional interaction steps if it is not known on what exact date the transaction was supposed to be executed. Since it is not directly possible to search for a specific booking text or similar, some interpretation on the table rows is required.
 \begin{itemize}[noitemsep,nolistsep]
 	\item Min. number of steps: \textbf{3 - 5}
 	\item Exclusivity: \textbf{Medium} (with filtered day), \textbf{Low} (without)
@@ -141,7 +141,7 @@ With the prototype application, the answer to this scenario can be found in 3-5 
 
 \subsubsection{Conclusion: Scenario 1}
 
-Table \ref{tbl:scenarioonecomparison} summarizes the individual evaluations of the prototype and the e-banking regarding the first scenario. It can be seen that has only half of the maximum required amount of steps compared to e-banking, but regarding the exclusivity cannot compete as the filter criteria are much more limited and thus also display more unwanted data. The comprehensibility is for both the same, as the format of the displayed data is equivalent.
+Table \ref{tbl:scenarioonecomparison} summarizes the individual evaluations of the prototype and the e-banking regarding the first scenario. It can be seen that the prototype only requires half of the maximum required amount of steps of e-banking, but regarding the exclusivity cannot compete as the filter criteria are much more limited and thus also display more unwanted data. The comprehensibility is for both the same, as the format of the displayed data is equivalent.
 \begin{table}[h]
 	\begin{center}
 		\begin{tabular}{ | p{3.2cm} | p{3.8cm} | p{3.5cm} | p{2.5cm} | }
@@ -178,7 +178,7 @@ Table \ref{tbl:scenarioonecomparison} summarizes the individual evaluations of t
 
 \subsubsection{E-Banking}
 
-Compared to Scenario 1, many more filters need to be applied for this second scenario which results in an increased amount of interaction steps to a total of 14 mouse clicks, on the same two screens as before. Since the option to toggle the individual categories are hidden behind an expandable section, an additional click is required. The same applies to the situation when the view is shifted to the previous years when again both start and end date need to be manually adjusted. The visualised flow for this scenario is shown in Figure \ref{fig:scenariotwoebanking}.
+Compared to Scenario 1, many more filters need to be applied for this second scenario which results in an increased amount of interaction steps to a total of 14 mouse clicks, on the same two screens as before. Since the option to toggle the individual categories are hidden behind an expandable section, an additional click is required. The same applies to the situation when the view is shifted to the previous years when again both start and end date need to be manually adjusted. The visualized flow for this scenario is shown in Figure \ref{fig:scenariotwoebanking}.
 \begin{enumerate}[noitemsep,nolistsep]
 	\item Go via "Budget" to "Expenses" (2 clicks)
 	\item Set filter for the two categories (4 clicks)
@@ -192,13 +192,13 @@ Compared to Scenario 1, many more filters need to be applied for this second sce
 		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_FilterCat.png}
 		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_Filter.png}
 		\includegraphics[width=2.8cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_Filter.png}
-		\caption{Visualised flow of screens in e-banking demo for Scenario 2}
+		\caption{Visualized flow of screens in e-banking demo for Scenario 2}
 		\label{fig:scenariotwoebanking}
 	\end{center}
 \end{figure}
 
 
-\textbf{Evaluation:}  Although quite a lot of individual steps are required, the final data that is presented shows exclusively what has been searched for, and no other information. The comprehensibility however is only average as a ew additional steps are required to switch between the two years and no simultaneous view is possible. 
+\textbf{Evaluation:}  Although quite a lot of individual steps are required, the final data that is presented shows exclusively what has been searched for, and no other information. The comprehensibility however is only average as a few additional steps are required to switch between the two years and no simultaneous view is possible. 
 \begin{itemize}[noitemsep,nolistsep]
 	\item Min. number of steps: \textbf{14}
 	\item Exclusivity: \textbf{High}
@@ -212,7 +212,7 @@ Compared to Scenario 1, many more filters need to be applied for this second sce
 
 \subsubsection{Prototype Application}
 
-With the prototype application, the answer to this scenario can again be found in 3-5 interaction steps, depending on whether more detailed information from a single month is also looked at. The visualised flow for this scenario is shown in Figure \ref{fig:scenariotwoprototype}.
+With the prototype application, the answer to this scenario can again be found in 3 - 5 interaction steps, depending on whether more detailed information from a single month is also looked at. The visualized flow for this scenario is shown in Figure \ref{fig:scenariotwoprototype}.
 \begin{enumerate}[noitemsep,nolistsep]
 	\item Activate "Household" category (View 4)
 	\item Activate "Vacation \& travel" category (View 4)
@@ -227,7 +227,7 @@ With the prototype application, the answer to this scenario can again be found i
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View1_YearOverview.png}
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View3_YearSelection.png}
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View1_YearOverview.png}
-		\caption{Visualised flow of views in prototype for Scenario 2}
+		\caption{Visualized flow of views in prototype for Scenario 2}
 		\label{fig:scenariotwoprototype}
 	\end{center}
 \end{figure}
@@ -283,7 +283,7 @@ In Table \ref{tbl:scenariotwocomparison} the individual evaluations of e-banking
 
 \subsubsection{E-Banking}
 
-For this scenario, the default filtering for the last 30 days helps to reduce the amount of interaction steps. Since also the current balance is always shown, in best case only 1 - 2 mouse clicks are required in order to find the data. Depending on the amount of transactions, additional filtering may be applied, or the list has to be scrolled through to find the suspicious transaction. The visualised flow for this scenario is shown in Figure \ref{fig:scenariothreeebanking}.
+For this scenario, the default filtering for the last 30 days helps to reduce the amount of interaction steps. Since also the current balance is always shown, in best case only 1 - 2 mouse clicks are required in order to find the data. Depending on the amount of transactions, additional filtering may be applied, or the list has to be scrolled through to find the suspicious transaction. The visualized flow for this scenario is shown in Figure \ref{fig:scenariothreeebanking}.
 \begin{enumerate}[noitemsep,nolistsep]
 	\item Select the desired account (1 click)
 	\item OPTIONAL: Set additional filter for specific date/amount range (4 clicks)
@@ -296,12 +296,12 @@ For this scenario, the default filtering for the last 30 days helps to reduce th
 		\includegraphics[width=3.5cm]{03_Figures/09_Evaluation/UBS_3_AccountTransactions.png}
 		\includegraphics[width=3.5cm]{03_Figures/09_Evaluation/UBS_3_AccountTransactions.png}
 		\includegraphics[width=3.5cm]{03_Figures/09_Evaluation/UBS_4_AccountTransactionDetails.png}
-		\caption{Visualised flow of screens in e-banking demo for Scenario 3}
+		\caption{Visualized flow of screens in e-banking demo for Scenario 3}
 		\label{fig:scenariothreeebanking}
 	\end{center}
 \end{figure}
 
-\textbf{Evaluation:} The default filtering helps to directly achieve an average exclusivity of the presented data, whereas with an additional filter it can be narrowed to almost exclusively to the root cause of the unexpected high expenses. The comprehensibility also is very high since the current account balance is shown together with the transaction amount, which makes the understanding of the data much simpler.
+\textbf{Evaluation:} The default filtering helps to directly achieve an average exclusivity of the presented data, whereas with an additional filter it can be almost narrowed down to exclusively the root cause of the unexpected high expenses. The comprehensibility also is very high since the current account balance is shown together with the transaction amount, which makes the understanding of the data much simpler.
 \begin{itemize}[noitemsep,nolistsep]
 	\item Min. number of steps: \textbf{1 - 6}
 	\item Exclusivity: \textbf{High} (with filtered day), \textbf{Medium} (without)
@@ -315,7 +315,7 @@ For this scenario, the default filtering for the last 30 days helps to reduce th
 
 \subsubsection{Prototype Application}
 
-The answer to this scenario can be found with only 2-5 interaction steps in the prototype application, depending how spread out the suspicious payments were over the selected month. The visualised flow for this scenario is shown in Figure \ref{fig:scenariothreeprototype}.
+The answer to this scenario can be found with 2 - 5 interaction steps in the prototype application, depending how spread out the suspicious payments were over the selected month. The visualized flow for this scenario is shown in Figure \ref{fig:scenariothreeprototype}.
 \begin{enumerate}[noitemsep,nolistsep]
 	\item Toggle-activate all categories (View 4)
 	\item Click on the current month in the Year Overview bar chart (View 1)
@@ -330,7 +330,7 @@ The answer to this scenario can be found with only 2-5 interaction steps in the 
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View2_MonthOverview.png}
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View5_FinTransactionsOverview.png}
 		\includegraphics[width=2.8cm]{03_Figures/08_Development/View6_FinTransactionDetails.png}
-		\caption{Visualised flow of views in prototype for Scenario 3}
+		\caption{Visualized flow of views in prototype for Scenario 3}
 		\label{fig:scenariothreeprototype}
 	\end{center}
 \end{figure}
@@ -386,7 +386,7 @@ A comparison of e-banking and the prototype for the third scenario is shown in T
 
 \subsubsection{E-Banking}
 
-Enabling the filter for the four categories requires some additional steps, as well as the filter for the date range which is required in this situation. The default filter of the last 30 days will provide wrong information about the monthly expenses and thus first has to be adjusted manually. Afterwards, a summary of the expenses for the date range and category selection is presented alongside a list of all transactions within this filter set. The visualised flow for this scenario is shown in Figure \ref{fig:scenariofourebanking}.
+Enabling the filter for the four categories requires some additional steps, as well as the filter for the date range which is required in this situation. The default filter of the last 30 days will provide wrong information about the monthly expenses and thus first has to be adjusted manually. Afterwards, a summary of the expenses for the date range and category selection is presented alongside a list of all transactions within this filter set. The visualized flow for this scenario is shown in Figure \ref{fig:scenariofourebanking}.
 \begin{enumerate}[noitemsep,nolistsep]
 	\item Go via "Budget" to "Expenses" (2 clicks)
 	\item Set filter for the four categories (6 clicks)
@@ -399,7 +399,7 @@ Enabling the filter for the four categories requires some additional steps, as w
 		\includegraphics[width=3.5cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis.png}
 		\includegraphics[width=3.5cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_FilterCat.png}
 		\includegraphics[width=3.5cm]{03_Figures/09_Evaluation/UBS_2_SpendingAnalysis_Filter.png}
-		\caption{Visualised flow of screens in e-banking demo for Scenario 4}
+		\caption{Visualized flow of screens in e-banking demo for Scenario 4}
 		\label{fig:scenariofourebanking}
 	\end{center}
 \end{figure}
@@ -418,7 +418,7 @@ Enabling the filter for the four categories requires some additional steps, as w
 
 \subsubsection{Prototype Application}
 
-An answer to the fourth scenario can be found with 5-6 interaction steps in the prototype application. The visualised flow for this scenario is shown in Figure \ref{fig:scenariofourprototype}.
+An answer to the fourth scenario can be found with 5 - 6 interaction steps in the prototype application. The visualized flow for this scenario is shown in Figure \ref{fig:scenariofourprototype}.
 \begin{enumerate}[noitemsep,nolistsep]
 	\item Activate "Household" category (View 4)
 	\item Activate "Personal expenditure" category (View 4)
@@ -435,12 +435,12 @@ An answer to the fourth scenario can be found with 5-6 interaction steps in the 
 		\includegraphics[width=2.35cm]{03_Figures/08_Development/View4_CategoriesFiltering.png}
 		\includegraphics[width=2.35cm]{03_Figures/08_Development/View1_YearOverview.png}
 		\includegraphics[width=2.35cm]{03_Figures/08_Development/View5_FinTransactionsOverview.png}
-		\caption{Visualised flow of views in prototype for Scenario 4}
+		\caption{Visualized flow of views in prototype for Scenario 4}
 		\label{fig:scenariofourprototype}
 	\end{center}
 \end{figure}
 
-\textbf{Evaluation:} The most interaction steps are spent on activating all relevant categories. Once the current month has been selected in the Year Overview, the Month Overview shows a cumulative chart with all expenses that can give an indication if and by when the threshold line might be reached if not already exceeded. For more details, the Transactions Overview table can be consulted on the right side to see what transaction had already been executed on the account. The exclusivity is also high since the categories can be individually toggled and the month selection is also don exclusively. For the comprehensibility, again some interpretation is required in order to understand how much budget is left until the end of the month.
+\textbf{Evaluation:} The most interaction steps are spent on activating all relevant categories. Once the current month has been selected in the Year Overview, the Month Overview shows a cumulative chart with all expenses that can give an indication if and by when the threshold line might be reached if not already exceeded. For more details, the Transactions Overview table can be consulted on the right side to see what transaction had already been executed on the account. The exclusivity is also high since the categories can be individually toggled and the month selection is also done exclusively. For the comprehensibility, again some interpretation is required in order to understand how much budget is left until the end of the month.
 \begin{itemize}[noitemsep,nolistsep]
 	\item Min. number of steps: \textbf{5 - 6}
 	\item Exclusivity: \textbf{High}
@@ -454,7 +454,7 @@ An answer to the fourth scenario can be found with 5-6 interaction steps in the 
 
 \subsubsection{Conclusion: Scenario 3}
 
-For scenario 4, the summary of both evaluations are shown in Table \ref{tbl:scenariofourcomparison}. Compared to scenario 3, the e-banking cannot rely on the account-specific view anymore for this scenario and has to rely on the "Expenses" page again. With this flow, the prototype beats the e-banking both in the minimum number of steps required as well as in the comprehensibility die to its inherent design for such scenario questions. In terms of the exclusivity, both applications apply the same filters and therefore have the same exclusivity at the end.
+For scenario 4, the summary of both evaluations are shown in Table \ref{tbl:scenariofourcomparison}. Compared to scenario 3, the e-banking cannot rely on the account-specific view anymore for this scenario and has to rely on the "Expenses" page again. With this flow, the prototype beats the e-banking both in the minimum number of steps required as well as in the comprehensibility due to its inherent design for such scenario questions. In terms of the exclusivity, both applications apply the same filters and therefore have the same exclusivity at the end.
 \begin{table}[h]
 	\begin{center}
 		\begin{tabular}{ | p{3.2cm} | p{3.8cm} | p{3.5cm} | p{2.5cm} | }
@@ -480,7 +480,7 @@ For scenario 4, the summary of both evaluations are shown in Table \ref{tbl:scen
 
 \section{Conclusion}
 
-A summary of the conclusions of all individual scenarios together with the corresponding winner is shown in Table \ref{tbl:scenariosummary}. It can be seen that regarding the minimum amount of steps required, the prototype in most cases has to upper hand or at least is equally efficient as the e-banking. This shows that with the prototype it generally is simpler and faster to reach the point where an open question in a specific scenario can be answered. With the multiple different views that are all linked together, additional benefits can be created the more navigation is required compared to the traditional e-banking solution. In terms of exclusivity, generally the e-banking provides more direct answers which is also related to the fact that compared to the prototype many more different filters can be applied compared to the prototype which only has two was of filtering. As for the comprehensibility, on average both solutions are more or less equal. When information about a specific account in the last 30 days is required, the e-banking is hard to beat by the prototype application, but as soon as the queries become more complex and have to cover a longer period of time, the benefits of the prototype application can shine. \newline
+A summary of the conclusions of all individual scenarios together with the corresponding winner is shown in Table \ref{tbl:scenariosummary}. It can be seen that regarding the minimum amount of steps required, the prototype in most cases has to upper hand or at least is equally efficient as the e-banking. This shows that with the prototype it generally is simpler and faster to reach the point where an open question in a specific scenario can be answered. With the multiple different views that are all linked together, additional benefits can be created the more navigation is required compared to the traditional e-banking solution. In terms of exclusivity, generally the e-banking provides more direct answers which is also related to the fact that many more different filters can be applied compared to the prototype which only has two ways of filtering. As for the comprehensibility, on average both solutions are more or less equal. When information about a specific account in the last 30 days is required, the e-banking is hard to beat by the prototype application, but as soon as the queries become more complex and have to cover a longer period of time, the benefits of the prototype application can shine. \newline
 Overall it can be said that in the scenario testing, the prototype application has proven its worthiness and that it can compete with the traditional solution. With further research into the prototype and more advanced filtering possibilities, the prototype has good chances to surpass the effectiveness of e-banking.
 \begin{table}[h]
 	\begin{center}
