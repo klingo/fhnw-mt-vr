@@ -611,8 +611,8 @@ When the \texttt{StartUsing} method is called by selecting one of the chart bars
 	\end{center}
 \end{figure}
 This implementation with a Coroutine that calls a 2nd Thread was necessary in order to avoid freezing the whole \gls{ve} for several seconds during the very CPU intensive task of filtering and preparing the datasets. It further mitigates the risk of potential motion-sickness that could occur in such situations. Figure \ref{fig:unityprofilemulti} shows the CPU Usage again, but this time with the second thread and a Coroutine running. While there still are some \gls{fps} spikes during the execution (caused by the Coroutine to regularly check for the Thread execution status), they are much less intrusive and never go below 60 \gls{fps}. Since the CPU is not limited anymore, the temporal representation of the graph also is correct now. \newline
-Some additional challenges came up with this approach though, as certain functions are only allowed (by the Unity Game Engine) to be called from the \textbf{Main Thread} and not from a 2nd Thread. This required that the output of these function calls had to be generated before calling the 2nd Thread and then passing them on into it, respectively making it available to it inside the class itself.
-\begin{figure}[b]
+Some additional challenges that came up with this approach though, as certain functions are only allowed (by the Unity Game Engine) to be called from the \textbf{Main Thread} and not from a 2nd Thread. This required that the output of these function calls had to be generated before calling the 2nd Thread and then passing them on into it, respectively making it available to it inside the class itself.
+\begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=15cm]{03_Figures/08_Development/CPU_Usage_Multithreaded.png}
 		\caption{Unity 3D CPU Usage with multi-threaded execution of updateSelection() workflow}
