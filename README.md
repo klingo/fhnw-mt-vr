@@ -1,3 +1,5 @@
-# Master Thesis Research Proposal
+# Business Information Systems Master Thesis at FHNW
 
-## Virtual Reality, Gesture Controllers and 360° Motion Tracking
+## Using Virtual Reality to Enhance Exploratory Analysis of Categorized Financial Data
+
+(c) by Fabian Schär
