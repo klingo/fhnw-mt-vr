@@ -2,4 +2,6 @@
 
 ## Using Virtual Reality to Enhance Exploratory Analysis of Categorized Financial Data
 
-(c) by Fabian Schär
+Prototype Application: https://github.com/klingo/fhnw-mt-prototype/
+
+(c) by Fabian Schär (2017)
